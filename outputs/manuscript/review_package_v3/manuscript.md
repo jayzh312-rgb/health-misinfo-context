@@ -126,7 +126,7 @@ For engagement, the outcome was distinct tweet IDs per item, including zeros (Po
 
 Engagement uncertainty is reported as bootstrap percentile intervals. Fold and seed standard deviations describe variability and are not confidence intervals. Text comparisons are descriptive. No significance tests were used to declare one model or source superior. Analyses used Python 3.14 with scikit-learn ([Pedregosa et al., 2011](#ref-pedregosa2011)) and statsmodels ([Seabold & Perktold, 2010](#ref-seabold2010)), and Python 3.12 with PyTorch ([Paszke et al., 2019](#ref-paszke2019)) and Transformers ([Wolf et al., 2020](#ref-wolf2020)) for the transformer; versions, seeds and provenance records are given in [Supplementary Methods S7](supplementary_material.md#s7-reproducibility-records). 
 
-[Data and code availability statement to be added per venue.]
+Code and data availability are described at the end of the paper.
 
 ## 3. Results
 
@@ -304,6 +304,18 @@ Explaining why sharing differs would also need exposure and behavioral measures.
 ## 5. Conclusion
 
 Fake health items drew fewer observed posts than Real ones in both health datasets, but the size of the gap differed: about a quarter as many in COVID-focused CoAID, where the shortfall came from Fake items rarely being posted at all, largely among items the collection could not trace to a publisher, and nearly as many in FakeHealth. Outside health, the gap was uncertain in PolitiFact and reversed in GossipCop. Text separability also differed: high within CoAID, modest within FakeHealth and only modestly above chance across them. Neither dataset's word cues carried over to the other; the cue that did was that Fake items were shorter. Across these collections, the distance between Fake and Real items, in language and in observed engagement, was larger where a dataset's classes differed more in construct and source. Which of the features that distinguish the datasets produces this difference, and whether crisis periods change it, is a question for data that hold platform, labeling and observation windows fixed. Until such data exist, engagement findings and detection scores should be reported alongside the definition of misinformation that produced them, the sources each class was drawn from, and the processing steps (item resolution, dependence and collection scope) that shaped the counts.
+
+## Author contributions
+
+J.Z. designed the study, carried out the analyses and wrote the manuscript. J.V. introduced the evaluation metrics (ROC-AUC and macro F1), taught and guided the use of pandas, suggested the models and related literature to consult, and provided overall direction on the machine-learning methodology and data processing.
+
+## Use of AI tools
+
+We used Anthropic’s Claude (including Claude Code) as an assistant in this work. It helped write and debug analysis and formatting scripts, run and audit the analysis pipeline, check reported numbers against saved outputs, verify references, and suggest edits to the manuscript’s wording and structure. The study design, interpretation of results and all final text were decided and reviewed by the authors, who take full responsibility for the content.
+
+## Data and code availability
+
+Code, data splits, model locks, classical model bundles, aggregate tables, bootstrap draws and item-level predictions are available at https://github.com/jayzh312-rgb/health-misinfo-context (release v1.0.0; archived at https://doi.org/10.5281/zenodo.24015772). Code is released under the MIT license and derived tables under CC BY 4.0. The source datasets (CoAID, FakeHealth, the COVID-19 Rumor Dataset and FakeNewsNet; [Cui & Lee, 2020](#ref-coaid); [Dai et al., 2020](#ref-fakehealth); [Cheng et al., 2021](#ref-covidrumor); [Shu et al., 2020](#ref-fakenewsnet)) are available from their providers and are not redistributed. Processed tables are shared without article text or post identifiers, so rebuilding the text features requires the providers' data. Transformer checkpoints are not included; the pinned base model, locked settings, seeds and all predictions are.
 
 ## References
 

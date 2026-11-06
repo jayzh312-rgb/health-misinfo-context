@@ -13,7 +13,8 @@ authors:
     orcid: "https://orcid.org/0000-0002-8542-1247"
     affiliation: "Department of Computer Science, Princeton University"
 version: "1.0.0"
-date-released: "2026-10-19"
+doi: "10.5281/zenodo.24015772"
+date-released: "2026-11-06"
 repository-code: "https://github.com/jayzh312-rgb/health-misinfo-context"
 license:
   - MIT

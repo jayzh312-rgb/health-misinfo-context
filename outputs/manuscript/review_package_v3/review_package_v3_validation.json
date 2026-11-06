@@ -22,8 +22,8 @@
   "anchors_missing": []
  },
  "numeric_trace": {
-  "tokens_checked": 463,
-  "sourced": 463,
+  "tokens_checked": 464,
+  "sourced": 464,
   "unsourced": [],
   "method": "Each numeric token in manuscript prose, captions and tables was matched at its displayed precision (half-up) against every numeric cell of outputs/tables/*.csv, outputs/extension_v1/tables/*.csv and figures/figure_1_sources.csv; tokens with no table match were resolved against a manual map of prose-sourced values; years, section/figure/table numbers and date fragments were excluded.",
   "tokens": [
@@ -1285,7 +1285,7 @@
    {
     "token": "3.1",
     "line": 133,
-    "context": "ement to be added per venue.]  ## 3. Results  ### 3.1 Fake items drew far fewer obs",
+    "context": "ibed at the end of the paper.  ## 3. Results  ### 3.1 Fake items drew far fewer obs",
     "sources": [
      "cross_context_no_dominant_bootstrap_refits.csv",
      "distilroberta_memory_pilot.csv",
@@ -5568,12 +5568,22 @@
      "fakenewsnet_engagement_bootstrap_refits.csv"
     ],
     "status": "sourced"
+   },
+   {
+    "token": "4.0",
+    "line": 318,
+    "context": "er the MIT license and derived tables under CC BY 4.0. The source datasets (CoAID, ",
+    "sources": [
+     "coaid_content_version_member_evidence.csv",
+     "coaid_content_version_validation.csv",
+     "coaid_cross_entity_social_overlap.csv",
+     "coaid_dataset_summary.csv"
+    ],
+    "status": "sourced"
    }
   ]
  },
- "placeholders_remaining": [
-  "[Data and code availability statement to be added per venue.]"
- ],
+ "placeholders_remaining": [],
  "manuscript_edits": [
   {
    "edit": "E1 remove build header comment",
@@ -6561,8 +6571,8 @@
   },
   {
    "path": "manuscript.md",
-   "bytes": 71672,
-   "sha256": "f86916d4c49b60dc0a3b8f9d0fb62771d3cc5b2208c4ad1d3060f9aa079f54c0"
+   "bytes": 73405,
+   "sha256": "6db9e47e3e3205238fbd84303f578685a17f72ef7b2061d8693178d6e259df5d"
   },
   {
    "path": "manuscript_review.pdf",
@@ -6581,8 +6591,8 @@
   },
   {
    "path": "review_package_v3_validation.json",
-   "bytes": 224872,
-   "sha256": "f80acdfbefd004e8cd01c4c4b2ac8b8508a7ada4245464df298b1a7b9108ba60"
+   "bytes": 220177,
+   "sha256": "92e603d2daf5d671fda8d66673a6fd9827a6edf48d75416340d3900e67bbbcbc"
   },
   {
    "path": "scripts/figure_1_four_context.py",

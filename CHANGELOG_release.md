@@ -26,6 +26,9 @@ Edits made for the public release. Nothing under `outputs/tables/`, `outputs/ext
 | `README.md` | Research question, Dataset roles, Planned research | `45d7b473fd9ba4da988e111209e49795282edf58d0cb9c2a75e62da231b0b8f9` | `9158045a600e9cb4fc8aeb0a4e78bfe649b0dfb0bf0dc703a92efaa0bac25e29` | pre-analysis plan replaced by the study as conducted |
 | `scripts/build_release_staging.py`, `LICENSE`, `CITATION.cff`, `REPRODUCING.md`, `outputs/manuscript/review_package_v3/{README,manuscript,supplementary_material}.md`, `outputs/manuscript/socarxiv_v1/` | copied from the `release-v1.0.0` branch at e244468 (2026-11-06) | — | builder `0f8443a00b6801a9501c9de170c1a16c7eb56ccbaea8ad114a87b5b712b2306f`; manuscript `f86916d4c49b60dc0a3b8f9d0fb62771d3cc5b2208c4ad1d3060f9aa079f54c0` | v1.0.0 final pass: round-7 manuscript and supplement sources, posted SocArXiv PDFs with build record, both authors in LICENSE and CITATION.cff, REPRODUCING.md, build script ships socarxiv_v1 and excludes the superseded review renderings |
 | `.zenodo.json` (new), `scripts/build_release_staging.py` | root-files list, name-redaction exemption, deposit README bullet | `0f8443a00b6801a9501c9de170c1a16c7eb56ccbaea8ad114a87b5b712b2306f` | `0ba4fba9f3303926079fc48150dec94ea1f3a1da543a6dc1ab17b625b684e4d6`; `.zenodo.json` `eba90d8d7f3db6ab0b16a439d994755a762d5aa0fef5247daa4a16dd188814d4` | Zenodo could not load CITATION.cff ('Citation metadata load failed'); .zenodo.json supplies the archive metadata |
+| `CITATION.cff` | `date-released`, `doi` | `95dda98b85972604a0c30184d1bd385bcbc4c8ce705abecfafd8081c65f545d9` | `f1329b4cd6d18bd3cb339c9f6fc8a5b1e70722a1d2fa554d69d0e83caeb197f3` | Zenodo concept DOI and release date (2026-11-06) |
+| `scripts/build_release_staging.py` | deposit README "How to cite" | `0ba4fba9f3303926079fc48150dec94ea1f3a1da543a6dc1ab17b625b684e4d6` | `2554c7028ae3c298a44d6bf39f080ec4291f03abe289bde42784177aea964738` | Zenodo concept DOI added |
+| `outputs/manuscript/review_package_v3/manuscript.md` | 2.12 availability pointer; end statements before References | `f86916d4c49b60dc0a3b8f9d0fb62771d3cc5b2208c4ad1d3060f9aa079f54c0` | `6db9e47e3e3205238fbd84303f578685a17f72ef7b2061d8693178d6e259df5d` | package source aligned with the posted PDF; archived-at DOI clause added |
 
 New files: `LICENSE` (MIT, placeholders for year and author), `CITATION.cff` (placeholders), `requirements-render.txt`, `outputs/manuscript/revision_v3/check1_inputs/` (two inputs copied from the session scratch directory), `scripts/build_release_staging.py`.
 
@@ -36,3 +39,5 @@ Rebuild 2026-10-13 (second pass): staging tree regenerated after the mentor-roun
 Release pass 2026-10-19 (v1.0.0): rebuilt after manuscript rounds 6 and 6b; LICENSE and CITATION.cff completed; editorial records excluded.
 
 Release pass 2026-11-06 (v1.0.0 final): research folder aligned with the release branch; rebuilt for the single-commit public repository.
+
+Post-release follow-up 2026-11-06: Zenodo concept DOI and release date added; package manuscript source aligned with the posted PDF (availability pointer and end statements). No release created.
