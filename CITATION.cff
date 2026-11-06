@@ -1,0 +1,38 @@
+cff-version: 1.2.0
+message: "If you use this code or the derived tables, please cite the paper and this repository."
+type: software
+title: "health-misinfo-context: code and derived tables for a comparison of CoAID and FakeHealth"
+abstract: "Code, saved splits, model locks, classical model bundles, aggregate tables, bootstrap draws and item-level predictions behind a comparison of Fake–Real differences in observed social-media engagement and text detectability across CoAID, FakeHealth, the COVID-19 Rumor Dataset and FakeNewsNet. Source datasets are not redistributed."
+authors:
+  - family-names: "Zhao"
+    given-names: "Ji"
+    orcid: "https://orcid.org/0009-0001-5218-0192"
+    affiliation: "New England Innovation Academy"
+  - family-names: "Valdiviezo"
+    given-names: "Jesús"
+    orcid: "https://orcid.org/0000-0002-8542-1247"
+    affiliation: "Department of Computer Science, Princeton University"
+version: "1.0.0"
+date-released: "2026-10-19"
+repository-code: "https://github.com/jayzh312-rgb/health-misinfo-context"
+license:
+  - MIT
+  - CC-BY-4.0
+keywords:
+  - health misinformation
+  - social media engagement
+  - cross-dataset generalization
+  - dataset construction
+preferred-citation:
+  type: article
+  title: "Fake–Real gaps in observed spread and detectability differ between health misinformation datasets built in different ways: a comparison of CoAID and FakeHealth"
+  authors:
+    - family-names: "Zhao"
+      given-names: "Ji"
+      orcid: "https://orcid.org/0009-0001-5218-0192"
+    - family-names: "Valdiviezo"
+      given-names: "Jesús"
+      orcid: "https://orcid.org/0000-0002-8542-1247"
+  year: 2026
+  status: preprint
+  notes: "SocArXiv preprint. DOI to be added after posting."

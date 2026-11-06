@@ -1,0 +1,17 @@
+criterion,COVID_Rumor_evidence,CoAID_evidence,classification,reason
+content unit,NEWS short rumor statement; TWITTER rumor tweet; separate subsets,News/Claim content items,uncertain,NEWS is item-like but not full article; TWITTER is post-level
+English-language suitability,English-designated repository; heuristic quantified in report,English COVID health information,similar,Both are primarily English
+fake/real labeling,"Item-level T/F/U, manually cross-validated and fact-check informed",Item-level Fake/Real file categorization,COVID Rumor better,"Explicit unverified class and documented validation, but not binary-equivalent"
+item-level veracity,Direct on both subsets,Direct filename category,similar,Both assign item labels
+full-text availability,Short rumor sentences/tweet text; no full articles,News content available for 74.81%; claims short,CoAID better,CoAID includes article bodies
+publication-date coverage,NEWS only repost dates; TWITTER release dates only for items with per-item files,19.62% parsed content dates plus Snowflake post times,uncertain,Different date meanings and missingness
+post/tweet counts,TWITTER is one rumor tweet per row; no content-to-many-post mapping,Observed tweet IDs mapped to content,CoAID better,COVID Rumor TWITTER unit is already a tweet
+reply counts,Direct aggregate counts on all Twitter rows,Direct mapped reply rows,similar,Definitions/collection differ
+retweets,Direct aggregate counts on Twitter rows,Unavailable,COVID Rumor better,"Adds retweet volume, but not edges"
+likes,Direct aggregate counts on Twitter rows,Unavailable,COVID Rumor better,Platform engagement measure only
+temporal engagement,Response times for subset with per-item files,Snowflake original-post times; reply timestamps derivable from IDs,uncertain,Neither provides fully comparable complete timelines
+propagation edges,No child IDs; counts and first-order response records only,Explicit tweet_id->reply_id pairs,CoAID better,CoAID has verifiable ID edges
+API dependence,No hydration needed for text/counts; IDs insufficient for graph,No hydration needed for counts/reply IDs,similar,Neither needs API for primary counts
+duplication,No release-overlap design; local duplicates audited,Known cumulative release overlap,COVID Rumor better,"Cleaner release structure, though repeated content remains"
+source-selection confounding,Wide mixed news/social/fact-check sources; labels manually/fact-check derived,Fact-check/official-source class confounding,uncertain,Different but material ascertainment confounds
+compatibility with FakeHealth,NEWS item-like but website reposts differ; TWITTER engagement richer but unit differs,Content-level tweet/reply mappings align better,CoAID better,CoAID preserves a closer content-to-social mapping

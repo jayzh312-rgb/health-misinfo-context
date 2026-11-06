@@ -1,0 +1,81 @@
+{
+  "verification_date": "2026-10-05",
+  "loomba": {
+    "key": "loomba",
+    "metadata": {
+      "title": "Measuring the impact of COVID-19 vaccine misinformation on vaccination intent in the UK and USA",
+      "authors": [
+        "Sahil Loomba",
+        "Alexandre de Figueiredo",
+        "Simon J. Piatek",
+        "Kristen de Graaf",
+        "Heidi J. Larson"
+      ],
+      "year": 2021,
+      "journal": "Nature Human Behaviour",
+      "volume": 5,
+      "issue": 3,
+      "pages": "337–348",
+      "doi": "10.1038/s41562-021-01056-1"
+    },
+    "primary_sources": [
+      "https://www.nature.com/articles/s41562-021-01056-1",
+      "https://pubmed.ncbi.nlm.nih.gov/33547453/"
+    ],
+    "verification_level": "Publisher updated abstract and article metadata; both primary correction notices reviewed. No full-original-article verification claimed.",
+    "claim_scope": {
+      "outcome": "Reported intention to definitely accept vaccination, not uptake",
+      "comparison": "COVID-19 vaccine misinformation exposure relative to factual information",
+      "respondents": "Those initially expressing definite acceptance",
+      "UK": "6.2 percentage points",
+      "USA": "6.4 percentage points",
+      "relationship_to_current_study": "Motivating example only; the current study measures observed-post engagement and text portability, not vaccination intentions."
+    },
+    "corrections_checked": [
+      {
+        "date": "2021-03-08",
+        "doi": "10.1038/s41562-021-01088-7",
+        "url": "https://www.nature.com/articles/s41562-021-01088-7.pdf",
+        "content": "Ethics-application identifier corrected and respondent-debriefing clarification added.",
+        "quantitative_claim_effect": "No revision of the cited intention estimates."
+      },
+      {
+        "date": "2021-07-08",
+        "doi": "10.1038/s41562-021-01172-y",
+        "url": "https://www.nature.com/articles/s41562-021-01172-y",
+        "content": "Gamma-element subscript in equation (7) corrected from j to k.",
+        "quantitative_claim_effect": "No revision of the cited intention estimates."
+      }
+    ]
+  },
+  "kapoor": {
+    "key": "kapoor",
+    "metadata": {
+      "title": "Leakage and the reproducibility crisis in machine-learning-based science",
+      "authors": [
+        "Sayash Kapoor",
+        "Arvind Narayanan"
+      ],
+      "year": 2023,
+      "journal": "Patterns",
+      "volume": 4,
+      "issue": 9,
+      "article_number": "100804",
+      "doi": "10.1016/j.patter.2023.100804"
+    },
+    "primary_sources": [
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC10499856/",
+      "https://par.nsf.gov/servlets/purl/10513990",
+      "https://reproducible.cs.princeton.edu/"
+    ],
+    "verification_level": "Published article metadata, summary and relevant introduction passages in the primary PMC record; author project documentation inspected.",
+    "claim_scope": "General concern that data leakage can produce overoptimistic results; no claim that this source validates the present protocol.",
+    "correction_check": {
+      "searched": "Exact-title correction/erratum searches restricted to publisher and NCBI records, and primary record inspected.",
+      "result": "No relevant correction notice identified.",
+      "caveat": "Publisher direct access returned HTTP 403; verification uses the published primary article record in PMC. No absence-of-correction guarantee claimed."
+    }
+  },
+  "bibliography_count": 22,
+  "prior_entries": "Original 20 entries retained byte for byte; two entries added without duplicate keys. Correction notices are verification records, not additional manuscript citations."
+}

@@ -1,0 +1,10 @@
+publisher_family,fakehealth_N,coaid_N,identity_note
+host:abcnews.go.com,29,4,metadata family/account overlap; not evidence of identical articles
+host:azcentral.com,1,1,metadata family/account overlap; not evidence of identical articles
+host:cbsnews.com,35,2,metadata family/account overlap; not evidence of identical articles
+host:cnn.com,68,7,metadata family/account overlap; not evidence of identical articles
+host:foxnews.com,29,4,metadata family/account overlap; not evidence of identical articles
+host:medicalnewstoday.com,2,459,metadata family/account overlap; not evidence of identical articles
+host:nbcnews.com,35,1,metadata family/account overlap; not evidence of identical articles
+host:theguardian.com,21,1,metadata family/account overlap; not evidence of identical articles
+host:webmd.com,136,626,metadata family/account overlap; not evidence of identical articles

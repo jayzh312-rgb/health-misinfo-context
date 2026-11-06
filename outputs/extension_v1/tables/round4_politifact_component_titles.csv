@@ -1,0 +1,3 @@
+group,rows,fake_N,real_N,exact_duplicate_title_share,distinct_titles,near_duplicate_share_frozen_rule_min8,near_pairs_min8,near_duplicate_share_relaxed_min4,near_pairs_min4,mean_pairwise_title_bigram_jaccard,pairs,median_title_tokens
+dominant_component_84,84,5,79,0.20238095238095238,74,0.0,0,0.0,0,0.005356001826053861,3486,6.0
+rest_of_PolitiFact,968,425,543,0.08677685950413223,916,0.0,0,0.0,0,0.0006275111278299577,468028,10.0

@@ -1,0 +1,274 @@
+{
+  "date": "2026-10-02",
+  "new_references": {
+    "sanh2019": {
+      "author": "Sanh, Victor and Debut, Lysandre and Chaumond, Julien and Wolf, Thomas",
+      "title": "DistilBERT, a distilled version of BERT: smaller, faster, cheaper and lighter",
+      "year": "2019",
+      "venue": "arXiv preprint arXiv:1910.01108",
+      "url": "https://arxiv.org/abs/1910.01108",
+      "rationale": "Distillation procedure; not the identity or training record of the exact DistilRoBERTa checkpoint.",
+      "verification_level": "abstract_and_metadata",
+      "type": "misc",
+      "eprint": "1910.01108"
+    },
+    "liu2019": {
+      "author": "Liu, Yinhan and Ott, Myle and Goyal, Naman and Du, Jingfei and Joshi, Mandar and Chen, Danqi and Levy, Omer and Lewis, Mike and Zettlemoyer, Luke and Stoyanov, Veselin",
+      "title": "RoBERTa: A Robustly Optimized BERT Pretraining Approach",
+      "year": "2019",
+      "venue": "arXiv preprint arXiv:1907.11692",
+      "url": "https://arxiv.org/abs/1907.11692",
+      "rationale": "RoBERTa teacher/pretraining provenance identified by the pinned model card.",
+      "verification_level": "abstract_and_metadata",
+      "type": "misc",
+      "eprint": "1907.11692"
+    },
+    "wolf2020": {
+      "author": "Wolf, Thomas and Debut, Lysandre and Sanh, Victor and Chaumond, Julien and Delangue, Clement and Moi, Anthony and Cistac, Pierric and Rault, Tim and Louf, Remi and Funtowicz, Morgan and Davison, Joe and Shleifer, Sam and von Platen, Patrick and Ma, Clara and Jernite, Yacine and Plu, Julien and Xu, Canwen and Le Scao, Teven and Gugger, Sylvain and Drame, Mariama and Lhoest, Quentin and Rush, Alexander",
+      "title": "Transformers: State-of-the-Art Natural Language Processing",
+      "year": "2020",
+      "venue": "Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing: System Demonstrations",
+      "url": "https://aclanthology.org/2020.emnlp-demos.6/",
+      "rationale": "Transformers library attribution adjacent to the retained software version.",
+      "verification_level": "abstract_and_metadata",
+      "type": "inproceedings",
+      "doi": "10.18653/v1/2020.emnlp-demos.6",
+      "pages": "38--45"
+    },
+    "paszke2019": {
+      "author": "Paszke, Adam and Gross, Sam and Massa, Francisco and Lerer, Adam and Bradbury, James and Chanan, Gregory and Killeen, Trevor and Lin, Zeming and Gimelshein, Natalia and Antiga, Luca and Desmaison, Alban and Kopf, Andreas and Yang, Edward and DeVito, Zachary and Raison, Martin and Tejani, Alykhan and Chilamkurthy, Sasank and Steiner, Benoit and Fang, Lu and Bai, Junjie and Chintala, Soumith",
+      "title": "PyTorch: An Imperative Style, High-Performance Deep Learning Library",
+      "year": "2019",
+      "venue": "Advances in Neural Information Processing Systems 32",
+      "url": "https://papers.neurips.cc/paper_files/paper/2019/hash/bdbca288fee7f92f2bfa9f7012727740-Abstract.html",
+      "rationale": "PyTorch library attribution adjacent to the retained software version.",
+      "verification_level": "abstract_and_metadata",
+      "type": "inproceedings"
+    },
+    "pedregosa2011": {
+      "author": "Pedregosa, Fabian and Varoquaux, Gaël and Gramfort, Alexandre and Michel, Vincent and Thirion, Bertrand and Grisel, Olivier and Blondel, Mathieu and Prettenhofer, Peter and Weiss, Ron and Dubourg, Vincent and Vanderplas, Jake and Passos, Alexandre and Cournapeau, David and Brucher, Matthieu and Perrot, Matthieu and Duchesnay, Édouard",
+      "title": "Scikit-learn: Machine Learning in Python",
+      "year": "2011",
+      "venue": "Journal of Machine Learning Research",
+      "url": "https://jmlr.org/papers/v12/pedregosa11a.html",
+      "rationale": "scikit-learn library attribution; historical software paper is not evidence for the retained current version.",
+      "verification_level": "abstract_and_metadata",
+      "type": "article",
+      "volume": "12",
+      "pages": "2825--2830"
+    },
+    "seabold2010": {
+      "author": "Seabold, Skipper and Perktold, Josef",
+      "title": "Statsmodels: Econometric and Statistical Modeling with Python",
+      "year": "2010",
+      "venue": "Proceedings of the 9th Python in Science Conference",
+      "url": "https://doi.org/10.25080/Majora-92bf1922-011",
+      "rationale": "statsmodels attribution following the official project citation guidance.",
+      "verification_level": "official_citation_guidance_and_primary_metadata",
+      "type": "inproceedings",
+      "doi": "10.25080/Majora-92bf1922-011"
+    },
+    "distilroberta_card": {
+      "author": "Sanh, Victor and Debut, Lysandre and Chaumond, Julien and Wolf, Thomas",
+      "title": "Model Card for DistilRoBERTa base",
+      "year": "n.d.",
+      "venue": "Hugging Face model card",
+      "url": "https://huggingface.co/distilbert/distilroberta-base/blob/fb53ab8802853c8e4fbdbcd0529f21fc6f459b2b/README.md",
+      "rationale": "Exact checkpoint/model-card provenance, with immutable revision retained.",
+      "verification_level": "full_revision_specific_model_card",
+      "type": "misc",
+      "note": "Revision fb53ab8802853c8e4fbdbcd0529f21fc6f459b2b; model-card date not inferred"
+    },
+    "coaid_repo": {
+      "author": "{cuilimeng}",
+      "title": "CoAID repository",
+      "year": "n.d.",
+      "venue": "GitHub repository",
+      "url": "https://github.com/cuilimeng/CoAID",
+      "rationale": "Official dataset repository and documented release/schema provenance; no original commit or acquisition date inferred.",
+      "verification_level": "official_repository_documentation",
+      "type": "misc"
+    },
+    "fakehealth_repo": {
+      "author": "{EnyanDai}",
+      "title": "FakeHealth repository",
+      "year": "n.d.",
+      "venue": "GitHub repository",
+      "url": "https://github.com/EnyanDai/FakeHealth",
+      "rationale": "Official dataset repository and documented release/schema provenance; no original commit or acquisition date inferred.",
+      "verification_level": "official_repository_documentation",
+      "type": "misc"
+    },
+    "covidrumor_repo": {
+      "author": "{MickeysClubhouse}",
+      "title": "COVID-19 rumor dataset repository",
+      "year": "n.d.",
+      "venue": "GitHub repository",
+      "url": "https://github.com/MickeysClubhouse/COVID-19-rumor-dataset",
+      "rationale": "Official dataset repository and documented release/schema provenance; no original commit or acquisition date inferred.",
+      "verification_level": "official_repository_documentation",
+      "type": "misc"
+    }
+  },
+  "additional_primary_verification_sources": {
+    "seabold2010": [
+      "https://www.statsmodels.org/stable/index.html",
+      "https://doi.org/10.25080/Majora-92bf1922-011"
+    ],
+    "distilroberta_card": [
+      "https://huggingface.co/distilbert/distilroberta-base/resolve/fb53ab8802853c8e4fbdbcd0529f21fc6f459b2b/README.md"
+    ]
+  },
+  "pinned_model_card_sha256": "a4a8b2530f6a4db8c76049c25a2104b90782395085aea17ea86b31348de8ca94",
+  "existing_reference_records_reused": {
+    "entries": 10,
+    "citation_occurrences": 16,
+    "all_entries_cited": true,
+    "all_citations_resolve": true,
+    "citations": [
+      {
+        "section": "Introduction",
+        "label": "Vosoughi et al. (2018)",
+        "key": "vosoughi",
+        "original_url": "https://politics.media.mit.edu/papers/Vosoughi_Science.pdf"
+      },
+      {
+        "section": "Introduction",
+        "label": "Cinelli et al. (2020)",
+        "key": "cinelli",
+        "original_url": "https://www.nature.com/articles/s41598-020-73510-5"
+      },
+      {
+        "section": "Introduction",
+        "label": "Torabi Asr and Taboada (2018)",
+        "key": "asr",
+        "original_url": "https://aclanthology.org/W18-5502/"
+      },
+      {
+        "section": "Introduction",
+        "label": "Murayama et al. (2021)",
+        "key": "murayama",
+        "original_url": "https://aclanthology.org/2021.wnut-1.21/"
+      },
+      {
+        "section": "Introduction",
+        "label": "Cui and Lee (2020)",
+        "key": "coaid",
+        "original_url": "https://arxiv.org/abs/2006.00885"
+      },
+      {
+        "section": "Introduction",
+        "label": "Dai et al. (2020)",
+        "key": "fakehealth",
+        "original_url": "https://ojs.aaai.org/index.php/ICWSM/article/view/7350"
+      },
+      {
+        "section": "Introduction",
+        "label": "Dai et al. (2020)",
+        "key": "fakehealth",
+        "original_url": "https://ojs.aaai.org/index.php/ICWSM/article/view/7350"
+      },
+      {
+        "section": "Introduction",
+        "label": "Cheng et al. (2021)",
+        "key": "covidrumor",
+        "original_url": "https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2021.644801/full"
+      },
+      {
+        "section": "Discussion",
+        "label": "Cinelli et al. (2020)",
+        "key": "cinelli",
+        "original_url": "https://www.nature.com/articles/s41598-020-73510-5"
+      },
+      {
+        "section": "Discussion",
+        "label": "Torabi Asr and Taboada (2018)",
+        "key": "asr",
+        "original_url": "https://aclanthology.org/W18-5502/"
+      },
+      {
+        "section": "Discussion",
+        "label": "Murayama et al. (2021)",
+        "key": "murayama",
+        "original_url": "https://aclanthology.org/2021.wnut-1.21/"
+      },
+      {
+        "section": "Discussion",
+        "label": "Lee et al. (2021)",
+        "key": "lee",
+        "original_url": "https://aclanthology.org/2021.naacl-main.432/"
+      },
+      {
+        "section": "Discussion",
+        "label": "Cinelli et al. (2020)",
+        "key": "cinelli",
+        "original_url": "https://www.nature.com/articles/s41598-020-73510-5"
+      },
+      {
+        "section": "Discussion",
+        "label": "Pennycook et al. (2020)",
+        "key": "pennycook",
+        "original_url": "https://journals.sagepub.com/doi/pdf/10.1177/0956797620939054"
+      },
+      {
+        "section": "Discussion",
+        "label": "Roozenbeek et al. (2021)",
+        "key": "roozenbeek",
+        "original_url": "https://journals.sagepub.com/doi/pdf/10.1177/09567976211024535"
+      },
+      {
+        "section": "Discussion",
+        "label": "Murayama et al. (2021)",
+        "key": "murayama",
+        "original_url": "https://aclanthology.org/2021.wnut-1.21/"
+      }
+    ],
+    "keys": [
+      "vosoughi",
+      "cinelli",
+      "asr",
+      "murayama",
+      "coaid",
+      "fakehealth",
+      "covidrumor",
+      "pennycook",
+      "roozenbeek",
+      "lee"
+    ],
+    "deduplication": "DOI or stable URL; normalized title; author/year cross-check",
+    "shared_duplicates_reconciled": [
+      "cinelli",
+      "asr",
+      "murayama"
+    ],
+    "metadata_conflicts": [],
+    "new_primary_lookup": {
+      "key": "lee",
+      "url": "https://aclanthology.org/2021.naacl-main.432/",
+      "reason": "Full author list missing from existing et al. reference"
+    },
+    "verification_levels": {
+      "vosoughi": "full_text",
+      "cinelli": "full_text",
+      "asr": "full_text",
+      "murayama": "full_text",
+      "coaid": "full_text",
+      "fakehealth": "full_text",
+      "covidrumor": "full_text",
+      "pennycook": "abstract_only",
+      "roozenbeek": "abstract_only",
+      "lee": "abstract_only"
+    },
+    "verification_records": [
+      "introduction_validation.json",
+      "discussion_draft_validation.json",
+      "discussion_draft_v2_validation.json"
+    ],
+    "version_boundaries": {
+      "coaid": "arXiv preprint",
+      "fakehealth": "published ICWSM version retained from Introduction"
+    },
+    "unresolved_citations": []
+  },
+  "scope": "Original ten bibliography entries retained. Targeted primary-source checks support method/software/repository attribution; no scientific literature-review expansion. No original dataset access dates or commit IDs inferred."
+}

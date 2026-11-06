@@ -1,0 +1,9 @@
+dataset,scope,source_measure,fake_only_sources,real_only_sources,mixed_sources,exclusive_rows,mixed_rows,mixed_fake_N,mixed_real_N,missing_source_N,fake_support_sources,real_support_sources
+FakeHealth,cohort_eligible,publisher_source,8,5,35,19,1613,442,1171,16,43,40
+FakeHealth,cohort_eligible,article_host,12,31,47,73,1574,443,1131,1,59,78
+FakeHealth,modeling_ready,publisher_source,8,5,35,19,1613,442,1171,15,43,40
+FakeHealth,modeling_ready,article_host,12,31,47,73,1574,443,1131,0,59,78
+CoAID,cohort_eligible,publisher_source,142,29,10,3027,610,566,44,43,152,39
+CoAID,cohort_eligible,article_host,142,29,10,3027,610,566,44,43,152,39
+CoAID,modeling_ready,publisher_source,139,27,10,2930,604,561,43,43,149,37
+CoAID,modeling_ready,article_host,139,27,10,2930,604,561,43,43,149,37

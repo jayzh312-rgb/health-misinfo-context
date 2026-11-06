@@ -1,0 +1,85 @@
+{
+ "sources": {
+  "outputs/manuscript/review_package_v3/manuscript.md": "f86916d4c49b60dc0a3b8f9d0fb62771d3cc5b2208c4ad1d3060f9aa079f54c0",
+  "outputs/manuscript/review_package_v3/supplementary_material.md": "bb54981cdfef8b905ada1fedf068db8d302616a87cf62bacc99cd15b64894dd6"
+ },
+ "edits": [
+  "title block",
+  "2.12 availability pointer",
+  "end statements"
+ ],
+ "supplement_repo_links": 15,
+ "manuscript_to_supplement_links_in_source": 36,
+ "equations": {
+  "manuscript": 2,
+  "supplement": 0
+ },
+ "chrome": "Google Chrome for Testing 153.0.8010.12",
+ "pdfs": {
+  "socarxiv_preprint": {
+   "pages": 129,
+   "out_of_bounds_text": [],
+   "blank_pages": [],
+   "replacement_glyph_pages": [],
+   "internal_links": 81,
+   "internal_links_into_supplement": 39,
+   "unresolved_links": [],
+   "relative_file_links": [],
+   "visible_placeholders": [],
+   "leftover_markers": {
+    "to be added": 0,
+    "TBD": 0,
+    "<!--": 0,
+    "\\g<": 0,
+    "](": 0
+   },
+   "bytes": 5665893,
+   "sha256": "6d2a152ff9b831ad9015b653c4a7fea7329366e932d872dcde14f54e78765b77",
+   "file": "socarxiv_preprint.pdf"
+  },
+  "socarxiv_manuscript": {
+   "pages": 19,
+   "out_of_bounds_text": [],
+   "blank_pages": [],
+   "replacement_glyph_pages": [],
+   "internal_links": 42,
+   "internal_links_into_supplement": 0,
+   "unresolved_links": [],
+   "relative_file_links": [],
+   "visible_placeholders": [],
+   "leftover_markers": {
+    "to be added": 0,
+    "TBD": 0,
+    "<!--": 0,
+    "\\g<": 0,
+    "](": 0
+   },
+   "bytes": 996913,
+   "sha256": "0c52e6f88d2d8fbf9d8db21cd3c4eb0bb9d22f64af85bf6514d764c93a75ae82",
+   "file": "socarxiv_manuscript.pdf"
+  },
+  "socarxiv_supplementary_material": {
+   "pages": 110,
+   "out_of_bounds_text": [],
+   "blank_pages": [],
+   "replacement_glyph_pages": [],
+   "internal_links": 0,
+   "internal_links_into_supplement": 0,
+   "unresolved_links": [],
+   "relative_file_links": [],
+   "visible_placeholders": [],
+   "leftover_markers": {
+    "to be added": 0,
+    "TBD": 0,
+    "<!--": 0,
+    "\\g<": 0,
+    "](": 0
+   },
+   "bytes": 4707621,
+   "sha256": "5a8ef5713790390949a8dfa1445c303f9eb7569e3d780393332e20abe501fb90",
+   "file": "socarxiv_supplementary_material.pdf"
+  }
+ },
+ "abstract_searchable": false,
+ "abstract_words": 274
+}

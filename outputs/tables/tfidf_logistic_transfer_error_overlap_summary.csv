@@ -1,0 +1,17 @@
+direction,target_dataset,condition,error_category,N
+CA_to_FH,FakeHealth,natural,both_correct,204
+CA_to_FH,FakeHealth,natural,both_incorrect,53
+CA_to_FH,FakeHealth,natural,only_transfer_wrong,44
+CA_to_FH,FakeHealth,natural,only_within_wrong,29
+CA_to_FH,FakeHealth,source_masked,both_correct,205
+CA_to_FH,FakeHealth,source_masked,both_incorrect,54
+CA_to_FH,FakeHealth,source_masked,only_transfer_wrong,43
+CA_to_FH,FakeHealth,source_masked,only_within_wrong,28
+FH_to_CA,CoAID,natural,both_correct,281
+FH_to_CA,CoAID,natural,both_incorrect,17
+FH_to_CA,CoAID,natural,only_transfer_wrong,383
+FH_to_CA,CoAID,natural,only_within_wrong,21
+FH_to_CA,CoAID,source_masked,both_correct,291
+FH_to_CA,CoAID,source_masked,both_incorrect,17
+FH_to_CA,CoAID,source_masked,only_transfer_wrong,374
+FH_to_CA,CoAID,source_masked,only_within_wrong,20

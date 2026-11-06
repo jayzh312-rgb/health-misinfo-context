@@ -1,0 +1,5 @@
+dataset,outcome,N,mean,variance,variance_to_mean,zero_percentage,top_1_percent_item_count,top_1_percent_threshold,top_1_percent_share,top_5_percent_item_count,top_5_percent_threshold,top_5_percent_share,maximum,diagnostic_classification,outliers_removed
+FakeHealth HealthStory,unique_post_count,1690,227.2621301775148,154474.5511405159,679.7197184583969,0.41420118343195267,17,1504.0,0.14154340450903866,85,722.0,0.30864445040395966,5278.0,overdispersed,False
+FakeHealth HealthStory,unique_reply_count,1690,16.331952662721893,22836.707385764483,1398.283956448751,56.44970414201184,17,183.0,0.575558856563168,85,44.0,0.7829788775768994,4183.0,both overdispersed and zero-heavy,False
+CoAID News,unique_post_count,5073,29.696037847427558,74076.59134273673,2494.4941046791423,50.66035876207372,51,500.0,0.31023976421857574,254,105.0,0.7033681164038023,18428.0,both overdispersed and zero-heavy,False
+CoAID News,unique_reply_count,5073,23.760299625468164,101443.87668066731,4269.469589176887,78.00118273211118,51,650.0,0.5644371805933497,254,43.0,0.9431953939072144,21263.0,both overdispersed and zero-heavy,False

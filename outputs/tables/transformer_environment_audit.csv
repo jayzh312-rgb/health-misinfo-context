@@ -1,0 +1,63 @@
+category,name,status,value
+package,torch,installed,2.14.0
+package,transformers,installed,5.17.0
+package,datasets,installed,5.0.1
+package,accelerate,installed,1.15.0
+environment,python,measured,3.12.7
+environment,machine,measured,arm64
+environment,system,measured,Darwin
+environment,torch_version,measured,2.14.0
+environment,transformers_version,measured,5.17.0
+environment,macos_version,measured,26.6.2
+environment,executable,measured,[REDACTED_HOME]/Desktop/ML Research/.venv-transformer/bin/python
+environment,selected_device,measured,MPS
+environment,cuda_available,measured,not probed on macOS
+environment,mps_available,measured,True
+environment,mps_built,measured,True
+environment,system_memory_bytes,measured,17179869184
+environment,system_memory_status,measured,physical installed memory; not free memory
+environment,torch_import,measured,True
+environment,transformers_import,measured,True
+environment,cpu_available,measured,True
+checkpoint,checkpoint,verified,distilbert/distilroberta-base
+checkpoint,checked_date,verified,2026-09-21
+checkpoint,access,verified,pinned official Hugging Face snapshot downloaded for tokenizer and one inference-only model
+checkpoint,model_type,verified,roberta
+checkpoint,documented_tokenizer_model_max_length,verified,512
+checkpoint,vocab_size,verified,50265
+checkpoint,num_hidden_layers,verified,6
+checkpoint,hidden_size,verified,768
+checkpoint,num_attention_heads,verified,12
+checkpoint,approx_parameters,verified,82000000
+checkpoint,locally_instantiated_tokenizer,verified,True
+checkpoint,revision_pinned,verified,True
+checkpoint,sources,verified,"[""https://huggingface.co/distilbert/distilroberta-base"", ""https://huggingface.co/distilbert/distilroberta-base/raw/main/config.json"", ""https://huggingface.co/distilbert/distilroberta-base/blob/main/tokenizer_config.json""]"
+checkpoint,revision,verified,fb53ab8802853c8e4fbdbcd0529f21fc6f459b2b
+checkpoint,cache_dir,verified,.venv-transformer/huggingface-cache
+checkpoint,snapshot_directory,verified,.venv-transformer/huggingface-cache/models--distilbert--distilroberta-base/snapshots/fb53ab8802853c8e4fbdbcd0529f21fc6f459b2b
+checkpoint,tokenizer_class,verified,RobertaTokenizer
+checkpoint,tokenizer_model_max_length,verified,512
+checkpoint,tokenizer_vocab_size,verified,50265
+checkpoint,single_special_tokens,verified,2
+checkpoint,pair_special_tokens,verified,4
+checkpoint,artifact_sha256,verified,"{""model.safetensors"": ""2b11ca9cf3d2cbb44cc1a93ad96aedc2894231ae6e33e2d2268c3d7b1ff97663"", ""tokenizer_config.json"": ""994f46754c5bf4014f1aa92d34b1374319c3a6b3f702105cd5b742beaecd18ce"", ""config.json"": ""c89c71e1352d0d95f0cc3da0b4d1d22b64c2be0bbdaa36cd9be451d6c781b4fa"", ""tokenizer.json"": ""847bbeab6174d66a88898f729d52fa8d355fafe1bea101cf960dd404581df70e"", ""merges.txt"": ""1ce1664773c50f3e0cc8842619a93edc4624525b728b188a9e0be33b7726adc5"", ""vocab.json"": ""9e7f63c2d15d666b52e21d250d2e513b87c9b713cfa6987a82ed89e5e6e50655""}"
+pilot,status,completed,completed
+pilot,device,completed,mps
+pilot,unique_examples,completed,16
+pilot,examples_per_dataset,completed,"{""FakeHealth"": 8, ""CoAID"": 8}"
+pilot,selection,completed,first eight eligible sorted content_uid per dataset; label blind
+pilot,rows,completed,"[{""batch_size"": 1, ""unique_examples"": 16, ""timed_batches"": 16, ""max_length"": 512, ""padding"": ""fixed 512"", ""device"": ""mps"", ""precision"": ""float32"", ""mean_batch_seconds"": 0.02011846087043523, ""median_batch_seconds"": 0.015163416479481384, ""timed_seconds"": 0.32189537392696366, ""examples_per_second"": 49.70559161757421, ""sampled_max_mps_allocated_bytes"": 328568320, ""sampled_max_mps_driver_bytes"": 1082785792, ""memory_measurement"": ""post-forward samples, not a reliable transient peak; not training memory""}, {""batch_size"": 2, ""unique_examples"": 16, ""timed_batches"": 8, ""max_length"": 512, ""padding"": ""fixed 512"", ""device"": ""mps"", ""precision"": ""float32"", ""mean_batch_seconds"": 0.028723520881612785, ""median_batch_seconds"": 0.028697375004412606, ""timed_seconds"": 0.22978816705290228, ""examples_per_second"": 69.62934691200374, ""sampled_max_mps_allocated_bytes"": 330141184, ""sampled_max_mps_driver_bytes"": 1082785792, ""memory_measurement"": ""post-forward samples, not a reliable transient peak; not training memory""}]"
+pilot,parameters,completed,81527808
+pilot,gradients_created,completed,False
+pilot,parameter_versions_unchanged,completed,True
+pilot,training_runs,completed,0
+pilot,backward_passes,completed,0
+pilot,optimizer_steps,completed,0
+recommendation,local_fine_tuning_practicality,conditional,Local small-scale fine-tuning appears practical on MPS; start with microbatch 1 and test 2 under backward/optimizer memory load.
+validation,original_environment_fingerprint,passed,a8c01b895fc086fcb45292c417dae8ac679282983394b3e0320bc72f82d465d1
+validation,unrelated_output_stat_checks,passed,1321
+validation,unit_tests,passed,9 passed; 0 failed; 0 skipped
+validation,dependency_check,passed,pip check passed
+validation,cohorts_splits,passed,all 6 input hashes match previous audit
+validation,training,passed,0 training runs; 0 backward passes; 0 optimizer steps
+compatibility,transformers_5_pair_packing,resolved,Official pair template replaces removed build_inputs_with_special_tokens; checked against official tokenization

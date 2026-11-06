@@ -1,0 +1,5 @@
+subset,label,rows,title_present,body_text_present_locally,news_url_present,tweet_ids_present,zero_tweet_rows,zero_tweet_share,median_tweet_ids,quality_excluded,quality_near_empty_or_metadata_only,quality_fails_english_script_check,exact_duplicate_title_rows,median_analyzer_tokens,all_eligible,exact_source_overlap_excluded,clean_primary,high_similarity_flagged_clean,quality_obvious_artifact_only,label_conflict_excluded_ids_in_subset
+GossipCop,fake,5323,5323,0,5067,5135,188,0.03531842945707308,12.0,8,6.0,2.0,819,11.0,5315,0,5315,0,0.0,0.0
+GossipCop,real,16817,16817,0,16804,15759,1058,0.06291252898852352,45.0,18,17.0,0.0,1498,11.0,16799,0,16799,0,1.0,0.0
+PolitiFact,fake,430,430,0,426,390,40,0.09302325581395349,77.5,1,0.0,1.0,9,11.0,429,0,429,0,0.0,2.0
+PolitiFact,real,622,622,0,565,407,215,0.34565916398713825,7.5,26,11.0,2.0,105,7.0,596,0,596,0,13.0,2.0

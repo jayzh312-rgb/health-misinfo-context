@@ -1,0 +1,11 @@
+{
+  "bundles": {
+    "outputs/models/tfidf_linear_svm/transfer_coaid.joblib": "d0583a70a57733a65cf47448af887584bfa7c52b24cc1ebba41feb385e1365f8",
+    "outputs/models/tfidf_linear_svm/transfer_fakehealth.joblib": "719b50807ab343f4f0ec0c70a5e598b119dd92ae3f71c4231dfab4255d78b6e6",
+    "outputs/models/tfidf_linear_svm/within_coaid.joblib": "7388202c24d46aa58bccce144af2fcbef95c601427c62d7fed5274f15f72295c",
+    "outputs/models/tfidf_linear_svm/within_fakehealth.joblib": "ba0d059f64baeb69e207650f1d3aebc792208627481a2e3fa071f1c21bc7c87f"
+  },
+  "evaluation_labels_joined": false,
+  "selection_lock_sha256": "db199b6a95d50f63ac19b56bc9f6b803b75e911ec89af5243177bf2b56e1f9fc",
+  "threshold": 0.0
+}

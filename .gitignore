@@ -1,0 +1,14 @@
+__pycache__/
+*.pyc
+.DS_Store
+.venv*/
+logs/
+data/raw/
+*.ipynb
+.ipynb_checkpoints/
+*.zip
+*.pkg
+.env
+# transformer checkpoints stay out; the locked configuration is tracked
+outputs/models/distilroberta*/*
+!outputs/models/distilroberta/locked_configurations.json

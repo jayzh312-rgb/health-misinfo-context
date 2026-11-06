@@ -1,0 +1,17 @@
+dataset,scheme,assignment,N,groups,fake_N,real_N,fake_proportion,fraction_of_eligible,n_inner_folds,n_outer_folds,selected_outer_holdout_fold,notes
+FakeHealth,fixed_holdout,test,330,329,92,238,0.2787878787878788,0.20024271844660194,5,5,0,CV -1 rows are reserved test only; folds 0..K-1 are validation allocations within training pool
+FakeHealth,fixed_holdout,train,1318,1306,368,950,0.27921092564491656,0.7997572815533981,5,5,0,CV -1 rows are reserved test only; folds 0..K-1 are validation allocations within training pool
+FakeHealth,training_pool_CV,-1,330,329,92,238,0.2787878787878788,0.20024271844660194,5,5,0,CV -1 rows are reserved test only; folds 0..K-1 are validation allocations within training pool
+FakeHealth,training_pool_CV,0,264,263,74,190,0.2803030303030303,0.16019417475728157,5,5,0,CV -1 rows are reserved test only; folds 0..K-1 are validation allocations within training pool
+FakeHealth,training_pool_CV,1,263,262,73,190,0.27756653992395436,0.1595873786407767,5,5,0,CV -1 rows are reserved test only; folds 0..K-1 are validation allocations within training pool
+FakeHealth,training_pool_CV,2,264,254,74,190,0.2803030303030303,0.16019417475728157,5,5,0,CV -1 rows are reserved test only; folds 0..K-1 are validation allocations within training pool
+FakeHealth,training_pool_CV,3,264,264,74,190,0.2803030303030303,0.16019417475728157,5,5,0,CV -1 rows are reserved test only; folds 0..K-1 are validation allocations within training pool
+FakeHealth,training_pool_CV,4,263,263,73,190,0.27756653992395436,0.1595873786407767,5,5,0,CV -1 rows are reserved test only; folds 0..K-1 are validation allocations within training pool
+CoAID,fixed_holdout,test,707,667,167,540,0.2362093352192362,0.1921195652173913,5,5,3,CV -1 rows are reserved test only; folds 0..K-1 are validation allocations within training pool
+CoAID,fixed_holdout,train,2973,2166,667,2306,0.22435250588631012,0.8078804347826087,5,5,3,CV -1 rows are reserved test only; folds 0..K-1 are validation allocations within training pool
+CoAID,training_pool_CV,-1,707,667,167,540,0.2362093352192362,0.1921195652173913,5,5,3,CV -1 rows are reserved test only; folds 0..K-1 are validation allocations within training pool
+CoAID,training_pool_CV,0,822,126,133,689,0.16180048661800486,0.2233695652173913,5,5,3,CV -1 rows are reserved test only; folds 0..K-1 are validation allocations within training pool
+CoAID,training_pool_CV,1,538,509,134,404,0.24907063197026022,0.14619565217391303,5,5,3,CV -1 rows are reserved test only; folds 0..K-1 are validation allocations within training pool
+CoAID,training_pool_CV,2,538,514,134,404,0.24907063197026022,0.14619565217391303,5,5,3,CV -1 rows are reserved test only; folds 0..K-1 are validation allocations within training pool
+CoAID,training_pool_CV,3,538,514,133,405,0.24721189591078066,0.14619565217391303,5,5,3,CV -1 rows are reserved test only; folds 0..K-1 are validation allocations within training pool
+CoAID,training_pool_CV,4,537,503,133,404,0.24767225325884543,0.14592391304347826,5,5,3,CV -1 rows are reserved test only; folds 0..K-1 are validation allocations within training pool

@@ -1,0 +1,11 @@
+flowchart TD
+    A["CoAID News and FakeHealth HealthStory"] --> B["Validate identities, versions, and labels"]
+    B --> C["Engagement populations: unique observed posts"]
+    B --> D["Text populations: quality filters and leakage groups"]
+    C --> E["CoAID hurdle and FakeHealth NB2"]
+    E --> F["Standardized Fake/Real ratios and overlap-cluster bootstrap"]
+    F --> G["Cross-context ratio-of-ratios and sensitivities"]
+    D --> H["Grouped source-only selection and within-context holdouts"]
+    H --> I["Locked full-source fits and cross-context transfer"]
+    H --> J["Lexical, publisher, representation, and transformer checks"]
+    I --> K["Frozen LR/SVM on independent COVID-Rumor NEWS"]

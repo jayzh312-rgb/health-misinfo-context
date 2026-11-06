@@ -1,0 +1,140 @@
+MM-COVID SHORT SUITABILITY AUDIT
+Project root: resolved from the current Research workspace
+Local dataset directory: data/raw/MM-COVID-main/
+Audit scope: read-only; no hydration, scraping, processing, merging, or modeling.
+
+EVIDENCE CONVENTION
+[LOCAL] directly inspected in this download.
+[DOC] stated by the local README or the primary MM-COVID paper.
+[INFERENCE] research-design interpretation.
+
+1. LOCAL DIRECTORY STRUCTURE
+
+[LOCAL] Present:
+  MM-COVID-main/
+    README.md
+    FakeNewsCrawler.py
+    TwitterCrawlerHelper.py
+    project.config
+    requirements.txt
+    NewsCrawler/
+      ArchiveCrawler.py
+      FakeNewsRules.py
+      FakeRulesFactCheck.py
+      NewsCrawler.py
+      RealRules.py
+      __init__.py
+    util/
+      Constants.py
+      CrawlerUtil.py
+      TwarcConnector.py
+      Util.py
+      __init__.py
+    figure/pipeline.png
+    .idea/pythonProject4.iml
+    .gitignore
+
+[LOCAL] This is the collection-code repository, not the downloadable data release.
+
+2. EXPECTED CORE FILES
+
+  news_collection.json: ABSENT LOCALLY
+  news_tweet_relation.json: ABSENT LOCALLY
+  tweet_tweet_relation.json: ABSENT LOCALLY
+
+[DOC] README says the data are separately stored on Google Drive. It describes the files as news/fact-check/content/label data, news-to-Twitter discussion relations, and retweet/recursive-reply relations.
+[LOCAL] No equivalent JSON, CSV, database dump, or structured dataset file was found anywhere below data/raw/MM-COVID-main.
+
+3. LOCAL SCHEMA AND RECORD AVAILABILITY
+
+No dataset schema can be inspected empirically because all three data files are missing.
+Local record count: 0 accessible dataset records.
+Unavailable locally and therefore not countable/validatable: content/news IDs, labels, languages, publication dates, titles, full text, tweet IDs, reply IDs, retweet IDs, parent IDs, user IDs, user metadata, follower/following edges, conversation IDs, timestamps, and cascade structure.
+
+The crawler source mentions MongoDB collections and collection capabilities. Those code paths are not evidence that the corresponding fields or objects occur in the distributed JSON release.
+
+4. ENGLISH SUBSET
+
+[LOCAL] English content available for analysis: 0 records, because the dataset JSONs are absent.
+[DOC] The paper reports an expected English subset of 4,282 source-content items: 2,168 fake and 2,114 real. It reports aggregate English engagements of 32,811 fake + 26,565 real tweets; 25,888 fake + 18,749 real replies; and 43,048 fake + 41,270 real retweets.
+
+These documented engagement totals are not counts of news items with at least one engagement. Local counts of items with title, full text, linked tweets, replies, or retweets cannot be determined.
+
+5. LABEL DEFINITION
+
+[DOC] Fake items receive item-level veracity labels from Snopes and Poynter/IFCN fact-checking reviews. Poynter aggregates agencies such as PolitiFact and Full Fact. When source pages are unavailable, the claim itself may become the fake-news content.
+[DOC] Real items were added from selected official/health sources and filtered using COVID-19-related title keywords. English real sources listed by the paper are @WHO, @trvrb, @MayoClinic, @NIH, CDC, Cleveland Clinic newsroom, ECDC, Healthline, Medical News Today, WebMD, and WHO.
+
+[INFERENCE] Labels are primarily content/item-level, but the real class is substantially source-selected while the fake class is fact-check-selected. This induces a strong source, genre, institutional-authority, writing-style, and discoverability confound.
+[INFERENCE] MM-COVID and CoAID are conceptually more similar to each other than either is to FakeHealth: both use fact-checked misinformation and curated trusted/official COVID information. They are not identical, and both risk class-source confounding.
+
+6. PROPAGATION AVAILABILITY IN THIS DOWNLOAD
+
+  A news -> tweet mappings: unavailable locally; documented in missing news_tweet_relation.json
+  B tweet -> reply relationships: unavailable locally; documented in missing tweet_tweet_relation.json
+  C tweet -> retweet relationships: unavailable locally; documented in missing tweet_tweet_relation.json
+  D parent-child tweet edges: unavailable locally; cannot verify schema
+  E recursive reply structure: unavailable locally; claimed by README but not verifiable
+  F user IDs: unavailable locally; hydration/code collection documented
+  G follower/following relationships: unavailable locally
+  H conversation IDs: unavailable locally
+  I explicit timestamps: unavailable locally
+  I Snowflake-derived timestamps: unavailable because tweet IDs are absent
+  J cascade structures: unavailable locally
+
+7. MOST IMPORTANT EDGE QUESTION
+
+[LOCAL] tweet_tweet_relation.json is absent. Therefore no propagation edge can currently be reconstructed without first obtaining the missing release.
+[DOC] Its name and README description suggest that the full file may encode tweet-ID relations for retweets and recursively collected replies.
+[CAUTION] The local documentation does not expose the actual record schema. It is not possible to confirm whether records contain child-parent ID pairs, typed edges, nested trees, only membership lists, or sufficient directionality to build node=tweet and edge=reply-to/retweet-of graphs.
+
+Even if direct pairs are present in the full release, the result would be an observed partial response/resharing graph, not automatically a complete diffusion cascade. The paper says replies were approximated by searching tweet IDs and could only recover replies from the last week, creating explicit incompleteness.
+
+8. USER NETWORK
+
+[LOCAL] No user IDs, profiles, timelines, follower IDs, following IDs, or user-edge files exist in this download.
+[DOC] The paper/crawler pipeline says such information was collected. Distribution and local availability are separate questions; no user-network analysis is supported here.
+
+9. TEMPORAL INFORMATION
+
+[DOC] The full news collection is expected to include release dates. Coverage cannot be measured locally.
+[LOCAL] No explicit tweet timestamps or tweet IDs are present.
+[INFERENCE] If valid Twitter IDs are obtained, Snowflake timestamps may be derivable for compatible IDs, subject to legacy-ID and anomaly checks. Parent-before-child ordering cannot be tested now.
+
+10. DUPLICATES
+
+[LOCAL] Duplicate/repeated news cannot be tested without news_collection.json.
+[DOC] The paper notes that fake claims can have multiple similar versions within the same language, so semantic repetition may be intentional rather than accidental duplication.
+[INFERENCE] MM-COVID may avoid CoAID's known cumulative-release overlap because it is described as one collection rather than four dated snapshots, but there is no local evidence that it is cleaner. Classification: uncertain.
+
+11. MM-COVID VS FAKEHEALTH PRIMARY VARIABLES
+
+  observed post count: documented as potentially derivable in MM-COVID; directly derivable in FakeHealth; unavailable locally in MM-COVID
+  unique post count: potentially derivable if IDs are present; unavailable locally
+  reply count: potentially derivable; unavailable locally; FakeHealth has reply-ID membership counts
+  retweet count: potentially derivable and would align better with FakeHealth than CoAID; unavailable locally
+  engagement presence: potentially derivable; unavailable locally
+  first/last engagement time: would require IDs or explicit times; unavailable locally
+  engagement lifespan: would require validated times; unavailable locally
+  publication-to-first-engagement delay: would require both publication dates and validated tweet times; unavailable locally
+
+[INFERENCE] The full MM-COVID release might offer better structural alignment with FakeHealth for tweets, replies, and retweets. Whether definitions and edge directions are consistent cannot be decided until the JSON schemas and linkage coverage are inspected.
+
+12. RECOMMENDATION
+
+Recommendation C: Keep CoAID and do not use MM-COVID in its current local form.
+
+What MM-COVID genuinely promises: a larger English COVID subset, multilingual context, retweets, recursive replies, richer social context, and potentially more direct response/resharing structure than CoAID.
+
+What it makes worse: strong fake-vs-real source-selection differences; possible claim/article/social-post genre mixing; reply collection explicitly limited by a last-week search approximation; and presently zero empirically usable records.
+
+Richer propagation locally: no. The critical relation files are absent, so the advertised edge structure cannot be verified or reconstructed.
+
+Hydration: the documented full release exposes tweet IDs rather than tweet objects. Edge counts might not require hydration if direct relations are actually encoded, but user identities/metadata, explicit tweet fields, and possibly timestamps would still require hydration. This cannot be confirmed from the current download.
+
+Least-confounded actionable choice: retain the already inspected and processed CoAID as the primary COVID dataset. Do not add MM-COVID as a robustness dataset until the three official JSON files are downloaded and re-audited. If they are later supplied, revisit option B before considering replacement.
+
+Sources consulted:
+  Local README: data/raw/MM-COVID-main/README.md
+  Primary paper: https://arxiv.org/html/2011.04088v2
+  Official repository: https://github.com/bigheiniu/MM-COVID

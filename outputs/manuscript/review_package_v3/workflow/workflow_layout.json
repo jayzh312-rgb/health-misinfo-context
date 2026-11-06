@@ -1,0 +1,433 @@
+{
+  "canvas": [
+    1120,
+    1160
+  ],
+  "nodes": {
+    "A": {
+      "box": [
+        280,
+        10,
+        550,
+        75
+      ],
+      "lines": [
+        "CoAID News and FakeHealth HealthStory"
+      ],
+      "branch": "shared"
+    },
+    "B": {
+      "box": [
+        280,
+        110,
+        550,
+        85
+      ],
+      "lines": [
+        "Validate identities, versions and dataset labels"
+      ],
+      "branch": "shared"
+    },
+    "C": {
+      "box": [
+        35,
+        245,
+        440,
+        105
+      ],
+      "lines": [
+        "Engagement populations",
+        "Unique observed-post counts",
+        "Include zero-post entities"
+      ],
+      "branch": "engagement"
+    },
+    "D": {
+      "box": [
+        570,
+        245,
+        480,
+        105
+      ],
+      "lines": [
+        "Separate text populations",
+        "Quality filters and resource/text leakage groups",
+        "Engagement is excluded from predictors"
+      ],
+      "branch": "text"
+    },
+    "E": {
+      "box": [
+        35,
+        390,
+        440,
+        100
+      ],
+      "lines": [
+        "CoAID hurdle; FakeHealth NB2",
+        "Standardized Fake/Real",
+        "expected-post ratios"
+      ],
+      "branch": "engagement"
+    },
+    "F": {
+      "box": [
+        35,
+        530,
+        440,
+        100
+      ],
+      "lines": [
+        "Independent overlap-cluster",
+        "resampling within each dataset",
+        "Percentile intervals"
+      ],
+      "branch": "engagement"
+    },
+    "G": {
+      "box": [
+        35,
+        670,
+        440,
+        110
+      ],
+      "lines": [
+        "Cross-context ratio-of-ratios",
+        "Prespecified engagement sensitivities",
+        "RQ1"
+      ],
+      "branch": "engagement"
+    },
+    "H": {
+      "box": [
+        570,
+        390,
+        480,
+        130
+      ],
+      "lines": [
+        "Grouped source-only selection",
+        "Within-context fits: training pools",
+        "Evaluation: reserved holdouts",
+        "RQ2"
+      ],
+      "branch": "text"
+    },
+    "I": {
+      "box": [
+        570,
+        560,
+        480,
+        115
+      ],
+      "lines": [
+        "Transfer fits: all eligible source rows",
+        "Locked source-selected configurations",
+        "Cross-context evaluation; no target tuning",
+        "Matched target holdouts are primary"
+      ],
+      "branch": "text"
+    },
+    "K": {
+      "box": [
+        570,
+        730,
+        480,
+        115
+      ],
+      "lines": [
+        "Frozen full-source LR/SVM only",
+        "Common COVID-Rumor NEWS target",
+        "No target fitting or tuning",
+        "RQ3"
+      ],
+      "branch": "text"
+    },
+    "J": {
+      "box": [
+        570,
+        910,
+        480,
+        110
+      ],
+      "lines": [
+        "Separate supporting checks",
+        "Lexical audit: within-context LR models",
+        "Publisher, representation",
+        "and transformer checks"
+      ],
+      "branch": "text"
+    },
+    "N": {
+      "box": [
+        35,
+        1030,
+        440,
+        110
+      ],
+      "lines": [
+        "Extension: FakeNewsNet (PolitiFact, GossipCop)",
+        "Title-only LR external target (Table S13)",
+        "Engagement under frozen estimand (Table S17)",
+        "Supplementary; no frozen result changes"
+      ],
+      "branch": "external"
+    },
+    "R": {
+      "box": [
+        35,
+        830,
+        440,
+        160
+      ],
+      "lines": [
+        "Independent COVID-Rumor NEWS",
+        "Inherited True/False annotations",
+        "Quality and exact-overlap screening",
+        "External text evaluation only"
+      ],
+      "branch": "external"
+    }
+  },
+  "edges": [
+    [
+      "A",
+      "B"
+    ],
+    [
+      "B",
+      "C"
+    ],
+    [
+      "B",
+      "D"
+    ],
+    [
+      "C",
+      "E"
+    ],
+    [
+      "E",
+      "F"
+    ],
+    [
+      "F",
+      "G"
+    ],
+    [
+      "D",
+      "H"
+    ],
+    [
+      "H",
+      "I"
+    ],
+    [
+      "H",
+      "J"
+    ],
+    [
+      "I",
+      "K"
+    ],
+    [
+      "R",
+      "K"
+    ],
+    [
+      "N",
+      "K"
+    ],
+    [
+      "N",
+      "E"
+    ]
+  ],
+  "routes": {
+    "A-B": [
+      [
+        555,
+        85
+      ],
+      [
+        555,
+        110
+      ]
+    ],
+    "B-C": [
+      [
+        400,
+        195
+      ],
+      [
+        400,
+        221
+      ],
+      [
+        255,
+        221
+      ],
+      [
+        255,
+        245
+      ]
+    ],
+    "B-D": [
+      [
+        710,
+        195
+      ],
+      [
+        710,
+        221
+      ],
+      [
+        810,
+        221
+      ],
+      [
+        810,
+        245
+      ]
+    ],
+    "C-E": [
+      [
+        255,
+        350
+      ],
+      [
+        255,
+        390
+      ]
+    ],
+    "E-F": [
+      [
+        255,
+        490
+      ],
+      [
+        255,
+        530
+      ]
+    ],
+    "F-G": [
+      [
+        255,
+        630
+      ],
+      [
+        255,
+        670
+      ]
+    ],
+    "D-H": [
+      [
+        810,
+        350
+      ],
+      [
+        810,
+        390
+      ]
+    ],
+    "H-I": [
+      [
+        810,
+        520
+      ],
+      [
+        810,
+        560
+      ]
+    ],
+    "H-J": [
+      [
+        1050,
+        455
+      ],
+      [
+        1090,
+        455
+      ],
+      [
+        1090,
+        965
+      ],
+      [
+        1050,
+        965
+      ]
+    ],
+    "I-K": [
+      [
+        810,
+        675
+      ],
+      [
+        810,
+        730
+      ]
+    ],
+    "R-K": [
+      [
+        475,
+        900
+      ],
+      [
+        520,
+        900
+      ],
+      [
+        520,
+        787
+      ],
+      [
+        570,
+        787
+      ]
+    ],
+    "N-K": [
+      [
+        475,
+        1085
+      ],
+      [
+        540,
+        1085
+      ],
+      [
+        540,
+        787
+      ],
+      [
+        570,
+        787
+      ]
+    ],
+    "N-E": [
+      [
+        22,
+        1085
+      ],
+      [
+        22,
+        440
+      ],
+      [
+        35,
+        440
+      ]
+    ]
+  },
+  "protocol_mapping": {
+    "C": "Methods 2.2/2.4: distinct engagement populations and zero-inclusive unique observed-post counts",
+    "E": "Methods 2.5: CoAID hurdle, FakeHealth NB2 and common standardized ratio estimand",
+    "F": "Methods 2.4/2.5: overlap-component bootstrap independently within datasets",
+    "H": "Methods 2.6/2.7: training-pool source selection and reserved holdouts",
+    "I": "Methods 2.8: refits on all eligible source rows; locked settings and transform-only targets",
+    "J": "Methods 2.8\u20132.10: lexical models are within-context fits; other checks retain their own stated protocols",
+    "R": "Methods 2.11: inherited T/F NEWS target, quality/overlap restrictions; excluded from engagement",
+    "K": "Methods 2.11: frozen natural full-source LR/SVM only; no target adaptation",
+    "N": "Supplementary S8/S13/S17: FakeNewsNet extension; title-only LR scoring and engagement under the frozen estimand; populations and labels inherited"
+  }
+}

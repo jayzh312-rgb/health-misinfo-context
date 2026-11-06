@@ -1,0 +1,657 @@
+identifier,category,source_identity,provenance,case_sensitive
+2020electioncenter.com,domain,2020electioncenter.com,article_host/article_url,False
+2020electioncenter.com,domain,2020electioncenter.com,publisher_source,False
+21stcenturywire.com,domain,21stcenturywire.com,article_host/article_url,False
+21stcenturywire.com,domain,21stcenturywire.com,publisher_source,False
+3ccorp.net,domain,3ccorp.net,article_host/article_url,False
+3ccorp.net,domain,3ccorp.net,publisher_source,False
+ABC News,publisher_name,abcnews.go.com,fixed_identity_alias_of_metadata_host,False
+ABCNews.com,domain,abcnews.go.com,publisher_source,False
+AP Associated Press,publisher_name,abcnews.go.com,publisher_source,False
+AP Associated Press,publisher_name,denverpost.com,publisher_source,False
+AP Associated Press,publisher_name,hosted.ap.org,publisher_source,False
+AP Associated Press,publisher_name,huffingtonpost.com,publisher_source,False
+AP Associated Press,publisher_name,msnbc.msn.com,publisher_source,False
+AP Associated Press,publisher_name,npr.org,publisher_source,False
+AP Associated Press,publisher_name,philly.com,publisher_source,False
+AP Associated Press,publisher_name,stltoday.com,publisher_source,False
+AP Associated Press,publisher_name,the denver post.com,publisher_source,False
+AP Associated Press,publisher_name,tucson.com,publisher_source,False
+AP Associated Press,publisher_name,usa today.com,publisher_source,False
+AP Associated Press,publisher_name,usatoday.com,publisher_source,False
+AP Associated Press,publisher_name,vitals.nbcnews.com,publisher_source,False
+Associated Press,publisher_name,abcnews.go.com,publisher_source,False
+Associated Press,publisher_name,apnews.com,publisher_source,False
+Associated Press,publisher_name,articles.boston.com,publisher_source,False
+Associated Press,publisher_name,bostonglobe.com,publisher_source,False
+Associated Press,publisher_name,cbsnews.com,publisher_source,False
+Associated Press,publisher_name,denverpost.com,publisher_source,False
+Associated Press,publisher_name,detroitnews.com,publisher_source,False
+Associated Press,publisher_name,forbes.com,publisher_source,False
+Associated Press,publisher_name,foxnews.com,publisher_source,False
+Associated Press,publisher_name,huffingtonpost.com,publisher_source,False
+Associated Press,publisher_name,los angeles times.com,publisher_source,False
+Associated Press,publisher_name,msnbc.msn.com,publisher_source,False
+Associated Press,publisher_name,nbcnews.com,publisher_source,False
+Associated Press,publisher_name,news.yahoo.com,publisher_source,False
+Associated Press,publisher_name,nytimes.com,publisher_source,False
+Associated Press,publisher_name,philly.com,publisher_source,False
+Associated Press,publisher_name,sfgate.com,publisher_source,False
+Associated Press,publisher_name,statnews.com,publisher_source,False
+Associated Press,publisher_name,the denver post.com,publisher_source,False
+Associated Press,publisher_name,the mercury news.com,publisher_source,False
+Associated Press,publisher_name,thestar.com,publisher_source,False
+Associated Press,publisher_name,usatoday.com,publisher_source,False
+Associated Press,publisher_name,usnews.com,publisher_source,False
+Associated Press,publisher_name,washingtonpost.com,publisher_source,False
+Associated Press,publisher_name,wtop.com,publisher_source,False
+Associated Press,publisher_name,yourlife.usa today.com,publisher_source,False
+Associated Press,publisher_name,yourlife.usatoday.com,publisher_source,False
+Bloomberg,publisher_name,bloomberg.com,publisher_source,False
+BuzzFeed,publisher_name,buzzfeed.com,publisher_source,False
+BuzzFeed,publisher_name,buzzfeednews.com,publisher_source,False
+CBS News,publisher_name,cbsnews.com,fixed_identity_alias_of_metadata_host,False
+CBSNews,publisher_name,cbsnews.com,fixed_identity_alias_of_metadata_host,False
+CBSNews.com,domain,cbsnews.com,publisher_source,False
+CDC,publisher_name,cdc.gov,fixed_identity_alias_of_metadata_host,False
+CNN,publisher_name,cnn.com,fixed_identity_alias_of_metadata_host,False
+CNN,publisher_name,cnn.com,publisher_source,False
+CNN,publisher_name,pagingdrgupta.blogs.cnn.com,publisher_source,False
+CNN,publisher_name,thechart.blogs.cnn.com,publisher_source,False
+CNN Business,publisher_name,cnn.com,fixed_identity_alias_of_metadata_host,False
+CNN Health,publisher_name,cnn.com,fixed_identity_alias_of_metadata_host,False
+CNN Health,publisher_name,cnn.com,publisher_source,False
+CNN Health,publisher_name,pagingdrgupta.blogs.cnn.com,publisher_source,False
+CNN Health,publisher_name,thechart.blogs.cnn.com,publisher_source,False
+CNN Health,publisher_name,tinyurl.com,publisher_source,False
+Centers for Disease Control and Prevention,publisher_name,cdc.gov,fixed_identity_alias_of_metadata_host,False
+Chicago Sun-Times,publisher_name,suntimes.com,publisher_source,False
+Chicago Tribune,publisher_name,chicagotribune.com,publisher_source,False
+Chicago Tribune,publisher_name,featuresblogs.chicagotribune.com,publisher_source,False
+Chicago Tribune,publisher_name,los angeles times.com,publisher_source,False
+Des Moines Register,publisher_name,desmoinesregister.com,publisher_source,False
+Detroit Free Press,publisher_name,freep.com,publisher_source,False
+Facebook,publisher_name,facebook.com,fixed_identity_alias_of_metadata_host,False
+FiveThirtyEight,publisher_name,fivethirtyeight.com,publisher_source,False
+Fox News,publisher_name,foxnews.com,fixed_identity_alias_of_metadata_host,False
+FoxNews.com,domain,foxnews.com,publisher_source,False
+Hartford Courant,publisher_name,articles.courant.com,publisher_source,False
+Health Day,publisher_name,cbsnews.com,publisher_source,False
+Health Day,publisher_name,consumer.healthday.com,publisher_source,False
+Health Day,publisher_name,health.usnews.com,publisher_source,False
+Health News Review,publisher_name,healthnewsreview.org,fixed_identity_alias_of_metadata_host,False
+HealthDay,publisher_name,businessweek.com,publisher_source,False
+HealthDay,publisher_name,consumer.healthday.com,publisher_source,False
+HealthDay,publisher_name,health.msn.com,publisher_source,False
+HealthDay,publisher_name,health.usnews.com,publisher_source,False
+HealthDay,publisher_name,healthday.com,fixed_identity_alias_of_metadata_host,False
+HealthDay,publisher_name,healthday.com,publisher_source,False
+HealthDay,publisher_name,usnews.com,publisher_source,False
+HealthDay News,publisher_name,healthday.com,fixed_identity_alias_of_metadata_host,False
+HealthNewsReview,publisher_name,healthnewsreview.org,fixed_identity_alias_of_metadata_host,False
+Houston Chronicle,publisher_name,chron.com,publisher_source,False
+Know Your Value,institutional_boilerplate,nbcnews.com,fixed_identity_alias_of_metadata_host,False
+Los Angeles Times,publisher_name,articles.los angeles times.com,publisher_source,False
+Los Angeles Times,publisher_name,beta.latimes.com,publisher_source,False
+Los Angeles Times,publisher_name,latimes.com,publisher_source,False
+Los Angeles Times,publisher_name,los angeles times.com,publisher_source,False
+Los Angeles Times,publisher_name,los angeles timesblogs.los angeles times.com,publisher_source,False
+MSNBC,publisher_name,bodyodd.msnbc.msn.com,publisher_source,False
+MSNBC,publisher_name,moms.today.com,publisher_source,False
+MSNBC,publisher_name,msnbc.msn.com,publisher_source,False
+MSNBC,publisher_name,vitals.msnbc.msn.com,publisher_source,False
+MSNBC,publisher_name,vitals.nbcnews.com,publisher_source,False
+Medical Daily,publisher_name,medicaldaily.com,fixed_identity_alias_of_metadata_host,False
+Medical Daily,publisher_name,medicaldaily.com,publisher_source,False
+Medical News Today,publisher_name,medicalnewstoday.com,fixed_identity_alias_of_metadata_host,False
+NBC News,publisher_name,nbcnews.com,fixed_identity_alias_of_metadata_host,False
+NBCNews,publisher_name,nbcnews.com,fixed_identity_alias_of_metadata_host,False
+NBCNews.com,domain,nbcnews.com,publisher_source,False
+NBCNews.com,domain,today.com,publisher_source,False
+NBCNews.com,domain,vitals.nbcnews.com,publisher_source,False
+NIH,publisher_name,nih.gov,fixed_identity_alias_of_metadata_host,False
+NPR,publisher_name,npr.org,publisher_source,False
+National Institutes of Health,publisher_name,nih.gov,fixed_identity_alias_of_metadata_host,False
+New York Times,publisher_name,nytimes.com,fixed_identity_alias_of_metadata_host,False
+Newsweek,publisher_name,newsweek.com,publisher_source,False
+Orlando Sentinel,publisher_name,blogs.orlando sentinel.com,publisher_source,False
+Orlando Sentinel,publisher_name,orlando sentinel.com,publisher_source,False
+Reuters,publisher_name,foxnews.com,publisher_source,False
+Reuters,publisher_name,reuters.com,fixed_identity_alias_of_metadata_host,False
+Reuters,publisher_name,reuters.com,publisher_source,False
+Reuters,publisher_name,uk.reuters.com,publisher_source,False
+Reuters Health,publisher_name,cp2test.msnbc.msn.com,publisher_source,False
+Reuters Health,publisher_name,in.reuters.com,publisher_source,False
+Reuters Health,publisher_name,msnbc.msn.com,publisher_source,False
+Reuters Health,publisher_name,reuters.com,fixed_identity_alias_of_metadata_host,False
+Reuters Health,publisher_name,reuters.com,publisher_source,False
+Reuters Health,publisher_name,uk.reuters.com,publisher_source,False
+STAT,publisher_name,statnews.com,publisher_source,True
+Slate,publisher_name,slate.com,publisher_source,True
+Star Tribune,publisher_name,startribune.com,publisher_source,False
+Sun-Sentinel,publisher_name,articles.sun-sentinel.com,publisher_source,False
+TIME,publisher_name,healthland.time.com,publisher_source,True
+TIME,publisher_name,time.com,publisher_source,True
+The Arizona Republic,publisher_name,azcentral.com,publisher_source,False
+The Boston Globe,publisher_name,boston.com,publisher_source,False
+The Boston Globe,publisher_name,bostonglobe.com,publisher_source,False
+The Boston Globe,publisher_name,statnews.com,publisher_source,False
+The Dallas Morning News,publisher_name,dallasnews.com,publisher_source,False
+The Denver Post,publisher_name,denverpost.com,publisher_source,False
+The Denver Post,publisher_name,the denver post.com,publisher_source,False
+The Guardian,publisher_name,theguardian.com,fixed_identity_alias_of_metadata_host,False
+The Guardian,publisher_name,theguardian.com,publisher_source,False
+The Houston Chronicle,publisher_name,chron.com,publisher_source,False
+The Mercury News,publisher_name,the mercury news.com,publisher_source,False
+The New York Times,publisher_name,nytimes.com,fixed_identity_alias_of_metadata_host,False
+The New York Times,publisher_name,nytimes.com,publisher_source,False
+The New York Times,publisher_name,prescriptions.blogs.nytimes.com,publisher_source,False
+The New York Times,publisher_name,well.blogs.nytimes.com,publisher_source,False
+The Oregonian,publisher_name,oregonlive.com,publisher_source,False
+The Philadelphia Inquirer,publisher_name,healthnewsreview.org,publisher_source,False
+The Philadelphia Inquirer,publisher_name,philly.com,publisher_source,False
+The Philadelphia Inquirer,publisher_name,www2.philly.com,publisher_source,False
+The Wall Street Journal,publisher_name,blogs.wsj.com,publisher_source,False
+The Wall Street Journal,publisher_name,online.wsj.com,publisher_source,False
+The Wall Street Journal,publisher_name,wsj.com,publisher_source,False
+The Washington Post,publisher_name,voices.washingtonpost.com,publisher_source,False
+The Washington Post,publisher_name,washingtonpost.com,fixed_identity_alias_of_metadata_host,False
+The Washington Post,publisher_name,washingtonpost.com,publisher_source,False
+US News & World Report,publisher_name,health.usnews.com,publisher_source,False
+US News & World Report,publisher_name,usnews.com,publisher_source,False
+USA Today,publisher_name,usa today.com,publisher_source,False
+USA Today,publisher_name,usatoday.com,publisher_source,False
+USA Today,publisher_name,yourlife.usa today.com,publisher_source,False
+USA Today,publisher_name,yourlife.usatoday.com,publisher_source,False
+Vox,publisher_name,vox.com,publisher_source,True
+WHO,publisher_name,who.int,fixed_identity_alias_of_metadata_host,True
+Washington Post,publisher_name,washingtonpost.com,fixed_identity_alias_of_metadata_host,False
+WebMD,publisher_name,arthritis.webmd.com,publisher_source,False
+WebMD,publisher_name,children.webmd.com,publisher_source,False
+WebMD,publisher_name,diabetes.webmd.com,publisher_source,False
+WebMD,publisher_name,lupus.webmd.com,publisher_source,False
+WebMD,publisher_name,men.webmd.com,publisher_source,False
+WebMD,publisher_name,webmd.com,fixed_identity_alias_of_metadata_host,False
+WebMD,publisher_name,webmd.com,publisher_source,False
+WebMD,publisher_name,women.webmd.com,publisher_source,False
+World Health Organization,publisher_name,who.int,fixed_identity_alias_of_metadata_host,False
+YouTube,publisher_name,youtu.be,fixed_identity_alias_of_metadata_host,False
+YouTube,publisher_name,youtube.com,fixed_identity_alias_of_metadata_host,False
+abcnews.go.com,domain,abcnews.go.com,article_host/article_url,False
+abcnews.go.com,domain,abcnews.go.com,publisher_source,False
+americanthinker.com,domain,americanthinker.com,article_host/article_url,False
+americanthinker.com,domain,americanthinker.com,publisher_source,False
+apnews.com,domain,apnews.com,article_host/article_url,False
+arthritis.webmd.com,domain,arthritis.webmd.com,article_host/article_url,False
+articles.boston.com,domain,articles.boston.com,article_host/article_url,False
+articles.courant.com,domain,articles.courant.com,article_host/article_url,False
+articles.los angeles times.com,domain,articles.los angeles times.com,article_host/article_url,False
+articles.sun-sentinel.com,domain,articles.sun-sentinel.com,article_host/article_url,False
+aviationdaily.news,domain,aviationdaily.news,article_host/article_url,False
+aviationdaily.news,domain,aviationdaily.news,publisher_source,False
+azcentral.com,domain,azcentral.com,article_host/article_url,False
+azcentral.com,domain,azcentral.com,publisher_source,False
+banned.video,domain,banned.video,article_host/article_url,False
+banned.video,domain,banned.video,publisher_source,False
+beforeitsnews.com,domain,beforeitsnews.com,article_host/article_url,False
+beforeitsnews.com,domain,beforeitsnews.com,publisher_source,False
+beingtexan.com,domain,beingtexan.com,article_host/article_url,False
+beingtexan.com,domain,beingtexan.com,publisher_source,False
+beta.latimes.com,domain,beta.latimes.com,article_host/article_url,False
+betootaadvocate.com,domain,betootaadvocate.com,article_host/article_url,False
+betootaadvocate.com,domain,betootaadvocate.com,publisher_source,False
+biolifesas.org,domain,biolifesas.org,article_host/article_url,False
+biolifesas.org,domain,biolifesas.org,publisher_source,False
+blackmentravels.com,domain,blackmentravels.com,article_host/article_url,False
+blackmentravels.com,domain,blackmentravels.com,publisher_source,False
+blogs.orlando sentinel.com,domain,blogs.orlando sentinel.com,article_host/article_url,False
+blogs.wsj.com,domain,blogs.wsj.com,article_host/article_url,False
+bloomberg.com,domain,bloomberg.com,article_host/article_url,False
+bodyodd.msnbc.msn.com,domain,bodyodd.msnbc.msn.com,article_host/article_url,False
+boston.com,domain,boston.com,article_host/article_url,False
+bostonglobe.com,domain,bostonglobe.com,article_host/article_url,False
+breitbart.com,domain,breitbart.com,article_host/article_url,False
+breitbart.com,domain,breitbart.com,publisher_source,False
+buffalochronicle.com,domain,buffalochronicle.com,article_host/article_url,False
+buffalochronicle.com,domain,buffalochronicle.com,publisher_source,False
+buffalonews.com,domain,buffalonews.com,article_host/article_url,False
+buffalonews.com,domain,buffalonews.com,publisher_source,False
+businessinsider.com,domain,businessinsider.com,article_host/article_url,False
+businessinsider.com,domain,businessinsider.com,publisher_source,False
+businessweek.com,domain,businessweek.com,article_host/article_url,False
+bustatroll.org,domain,bustatroll.org,article_host/article_url,False
+bustatroll.org,domain,bustatroll.org,publisher_source,False
+buzzfeed.com,domain,buzzfeed.com,article_host/article_url,False
+buzzfeednews.com,domain,buzzfeednews.com,article_host/article_url,False
+c-span.org,domain,c-span.org,article_host/article_url,False
+c-span.org,domain,c-span.org,publisher_source,False
+cbn2.com,domain,cbn2.com,article_host/article_url,False
+cbn2.com,domain,cbn2.com,publisher_source,False
+cbsnews.com,domain,cbsnews.com,article_host/article_url,False
+cbsnews.com,domain,cbsnews.com,publisher_source,False
+cdc twenty four seven,institutional_boilerplate,cdc.gov,fixed_identity_alias_of_metadata_host,False
+cdc.gov,domain,cdc.gov,article_host/article_url,False
+cdc.gov,domain,cdc.gov,publisher_source,False
+channel45news.com,domain,channel45news.com,article_host/article_url,False
+channel45news.com,domain,channel45news.com,publisher_source,False
+chicagotribune.com,domain,chicagotribune.com,article_host/article_url,False
+children.webmd.com,domain,children.webmd.com,article_host/article_url,False
+chron.com,domain,chron.com,article_host/article_url,False
+cloverchronicle.com,domain,cloverchronicle.com,article_host/article_url,False
+cloverchronicle.com,domain,cloverchronicle.com,publisher_source,False
+cnbc.com,domain,cnbc.com,article_host/article_url,False
+cnbc.com,domain,cnbc.com,publisher_source,False
+cnn.com,domain,cnn.com,article_host/article_url,False
+cnn.com,domain,cnn.com,publisher_source,False
+conservativetears.com,domain,conservativetears.com,article_host/article_url,False
+conservativetears.com,domain,conservativetears.com,publisher_source,False
+consumer.healthday.com,domain,consumer.healthday.com,article_host/article_url,False
+corsination.com,domain,corsination.com,article_host/article_url,False
+corsination.com,domain,corsination.com,publisher_source,False
+covid.cdc.gov,domain,covid.cdc.gov,article_host/article_url,False
+covid.cdc.gov,domain,covid.cdc.gov,publisher_source,False
+cp2test.msnbc.msn.com,domain,cp2test.msnbc.msn.com,article_host/article_url,False
+crafty.diply.com,domain,crafty.diply.com,article_host/article_url,False
+crafty.diply.com,domain,crafty.diply.com,publisher_source,False
+dailymail.co.uk,domain,dailymail.co.uk,article_host/article_url,False
+dailymail.co.uk,domain,dailymail.co.uk,publisher_source,False
+dailyworldupdate.us,domain,dailyworldupdate.us,article_host/article_url,False
+dailyworldupdate.us,domain,dailyworldupdate.us,publisher_source,False
+dallasnews.com,domain,dallasnews.com,article_host/article_url,False
+dankingnews.com,domain,dankingnews.com,article_host/article_url,False
+dankingnews.com,domain,dankingnews.com,publisher_source,False
+denverpost.com,domain,denverpost.com,article_host/article_url,False
+desmoinesregister.com,domain,desmoinesregister.com,article_host/article_url,False
+detroitnews.com,domain,detroitnews.com,article_host/article_url,False
+diabetes.webmd.com,domain,diabetes.webmd.com,article_host/article_url,False
+disabledveterans.org,domain,disabledveterans.org,article_host/article_url,False
+disabledveterans.org,domain,disabledveterans.org,publisher_source,False
+drcarolehhaynes.com,domain,drcarolehhaynes.com,article_host/article_url,False
+drcarolehhaynes.com,domain,drcarolehhaynes.com,publisher_source,False
+drsergegregoire.com,domain,drsergegregoire.com,article_host/article_url,False
+drsergegregoire.com,domain,drsergegregoire.com,publisher_source,False
+edition.cnn.com,domain,edition.cnn.com,article_host/article_url,False
+edition.cnn.com,domain,edition.cnn.com,publisher_source,False
+emergency.cdc.gov,domain,emergency.cdc.gov,article_host/article_url,False
+emergency.cdc.gov,domain,emergency.cdc.gov,publisher_source,False
+envirowatchrangitikei.wordpress.com,domain,envirowatchrangitikei.wordpress.com,article_host/article_url,False
+envirowatchrangitikei.wordpress.com,domain,envirowatchrangitikei.wordpress.com,publisher_source,False
+espanol.cdc.gov,domain,espanol.cdc.gov,article_host/article_url,False
+espanol.cdc.gov,domain,espanol.cdc.gov,publisher_source,False
+eutimes.net,domain,eutimes.net,article_host/article_url,False
+eutimes.net,domain,eutimes.net,publisher_source,False
+facebook.com,domain,facebook.com,article_host/article_url,False
+facebook.com,domain,facebook.com,publisher_source,False
+factba.se,domain,factba.se,article_host/article_url,False
+factba.se,domain,factba.se,publisher_source,False
+featuresblogs.chicagotribune.com,domain,featuresblogs.chicagotribune.com,article_host/article_url,False
+fivethirtyeight.com,domain,fivethirtyeight.com,article_host/article_url,False
+forbes.com,domain,forbes.com,article_host/article_url,False
+fox32chicago.com,domain,fox32chicago.com,article_host/article_url,False
+fox32chicago.com,domain,fox32chicago.com,publisher_source,False
+fox40.com,domain,fox40.com,article_host/article_url,False
+fox40.com,domain,fox40.com,publisher_source,False
+foxnews.com,domain,foxnews.com,article_host/article_url,False
+foxnews.com,domain,foxnews.com,publisher_source,False
+freep.com,domain,freep.com,article_host/article_url,False
+fromrome.info,domain,fromrome.info,article_host/article_url,False
+fromrome.info,domain,fromrome.info,publisher_source,False
+gellerreport.com,domain,gellerreport.com,article_host/article_url,False
+gellerreport.com,domain,gellerreport.com,publisher_source,False
+gilmorehealth.com,domain,gilmorehealth.com,article_host/article_url,False
+gilmorehealth.com,domain,gilmorehealth.com,publisher_source,False
+gistflash.com,domain,gistflash.com,article_host/article_url,False
+gistflash.com,domain,gistflash.com,publisher_source,False
+globalresearch.ca,domain,globalresearch.ca,article_host/article_url,False
+globalresearch.ca,domain,globalresearch.ca,publisher_source,False
+gnews.org,domain,gnews.org,article_host/article_url,False
+gnews.org,domain,gnews.org,publisher_source,False
+gossipblend.com,domain,gossipblend.com,article_host/article_url,False
+gossipblend.com,domain,gossipblend.com,publisher_source,False
+governor.mo.gov,domain,governor.mo.gov,article_host/article_url,False
+governor.mo.gov,domain,governor.mo.gov,publisher_source,False
+governor.ny.gov,domain,governor.ny.gov,article_host/article_url,False
+governor.ny.gov,domain,governor.ny.gov,publisher_source,False
+grabien.com,domain,grabien.com,article_host/article_url,False
+grabien.com,domain,grabien.com,publisher_source,False
+greatgameindia.com,domain,greatgameindia.com,article_host/article_url,False
+greatgameindia.com,domain,greatgameindia.com,publisher_source,False
+greenmedinfo.com,domain,greenmedinfo.com,article_host/article_url,False
+greenmedinfo.com,domain,greenmedinfo.com,publisher_source,False
+gumshoenews.com,domain,gumshoenews.com,article_host/article_url,False
+gumshoenews.com,domain,gumshoenews.com,publisher_source,False
+halturnerradioshow.com,domain,halturnerradioshow.com,article_host/article_url,False
+halturnerradioshow.com,domain,halturnerradioshow.com,publisher_source,False
+hannity.com,domain,hannity.com,article_host/article_url,False
+hannity.com,domain,hannity.com,publisher_source,False
+hcqtrial.com,domain,hcqtrial.com,article_host/article_url,False
+hcqtrial.com,domain,hcqtrial.com,publisher_source,False
+health.msn.com,domain,health.msn.com,article_host/article_url,False
+health.usnews.com,domain,health.usnews.com,article_host/article_url,False
+healthchoice.org,domain,healthchoice.org,article_host/article_url,False
+healthchoice.org,domain,healthchoice.org,publisher_source,False
+healthday.com,domain,healthday.com,article_host/article_url,False
+healthfeedback.org,domain,healthfeedback.org,article_host/article_url,False
+healthfeedback.org,domain,healthfeedback.org,publisher_source,False
+healthimpactnews.com,domain,healthimpactnews.com,article_host/article_url,False
+healthimpactnews.com,domain,healthimpactnews.com,publisher_source,False
+healthland.time.com,domain,healthland.time.com,article_host/article_url,False
+healthline.com,domain,healthline.com,article_host/article_url,False
+healthline.com,domain,healthline.com,publisher_source,False
+healthnewsreview.org,domain,healthnewsreview.org,article_host/article_url,False
+hosted.ap.org,domain,hosted.ap.org,article_host/article_url,False
+huffingtonpost.com,domain,huffingtonpost.com,article_host/article_url,False
+in.reuters.com,domain,in.reuters.com,article_host/article_url,False
+indianapolismonthly.com,domain,indianapolismonthly.com,article_host/article_url,False
+indianapolismonthly.com,domain,indianapolismonthly.com,publisher_source,False
+informationisbeautiful.net,domain,informationisbeautiful.net,article_host/article_url,False
+informationisbeautiful.net,domain,informationisbeautiful.net,publisher_source,False
+infowars.com,domain,infowars.com,article_host/article_url,False
+infowars.com,domain,infowars.com,publisher_source,False
+instagram.com,domain,instagram.com,article_host/article_url,False
+instagram.com,domain,instagram.com,publisher_source,False
+intellihub.com,domain,intellihub.com,article_host/article_url,False
+intellihub.com,domain,intellihub.com,publisher_source,False
+introtimes.com,domain,introtimes.com,article_host/article_url,False
+introtimes.com,domain,introtimes.com,publisher_source,False
+jsonline.com,domain,jsonline.com,article_host/article_url,False
+jsonline.com,domain,jsonline.com,publisher_source,False
+kerririvera.com,domain,kerririvera.com,article_host/article_url,False
+kerririvera.com,domain,kerririvera.com,publisher_source,False
+kron4.com,domain,kron4.com,article_host/article_url,False
+kron4.com,domain,kron4.com,publisher_source,False
+ktrh.iheart.com,domain,ktrh.iheart.com,article_host/article_url,False
+ktrh.iheart.com,domain,ktrh.iheart.com,publisher_source,False
+latimes.com,domain,latimes.com,article_host/article_url,False
+lc.org,domain,lc.org,article_host/article_url,False
+lc.org,domain,lc.org,publisher_source,False
+legis.wisconsin.gov,domain,legis.wisconsin.gov,article_host/article_url,False
+legis.wisconsin.gov,domain,legis.wisconsin.gov,publisher_source,False
+lifenews.com,domain,lifenews.com,article_host/article_url,False
+lifenews.com,domain,lifenews.com,publisher_source,False
+lifesitenews.com,domain,lifesitenews.com,article_host/article_url,False
+lifesitenews.com,domain,lifesitenews.com,publisher_source,False
+livenews24.co.za,domain,livenews24.co.za,article_host/article_url,False
+livenews24.co.za,domain,livenews24.co.za,publisher_source,False
+los angeles times.com,domain,los angeles times.com,article_host/article_url,False
+los angeles timesblogs.los angeles times.com,domain,los angeles timesblogs.los angeles times.com,article_host/article_url,False
+lupus.webmd.com,domain,lupus.webmd.com,article_host/article_url,False
+m.facebook.com,domain,m.facebook.com,article_host/article_url,False
+m.facebook.com,domain,m.facebook.com,publisher_source,False
+madison365.com,domain,madison365.com,article_host/article_url,False
+madison365.com,domain,madison365.com,publisher_source,False
+mavenroundtable.io,domain,mavenroundtable.io,article_host/article_url,False
+mavenroundtable.io,domain,mavenroundtable.io,publisher_source,False
+mcmnt.com,domain,mcmnt.com,article_host/article_url,False
+mcmnt.com,domain,mcmnt.com,publisher_source,False
+mediaite.com,domain,mediaite.com,article_host/article_url,False
+mediaite.com,domain,mediaite.com,publisher_source,False
+medicaldaily.com,domain,medicaldaily.com,article_host/article_url,False
+medicalnewstoday.com,domain,medicalnewstoday.com,article_host/article_url,False
+medicalnewstoday.com,domain,medicalnewstoday.com,publisher_source,False
+medium.com,domain,medium.com,article_host/article_url,False
+medium.com,domain,medium.com,publisher_source,False
+men.webmd.com,domain,men.webmd.com,article_host/article_url,False
+merryjane.com,domain,merryjane.com,article_host/article_url,False
+merryjane.com,domain,merryjane.com,publisher_source,False
+moms.today.com,domain,moms.today.com,article_host/article_url,False
+montanadailygazette.com,domain,montanadailygazette.com,article_host/article_url,False
+montanadailygazette.com,domain,montanadailygazette.com,publisher_source,False
+motherjones.com,domain,motherjones.com,article_host/article_url,False
+motherjones.com,domain,motherjones.com,publisher_source,False
+msnbc.msn.com,domain,msnbc.msn.com,article_host/article_url,False
+mynacl.blogspot.com,domain,mynacl.blogspot.com,article_host/article_url,False
+mynacl.blogspot.com,domain,mynacl.blogspot.com,publisher_source,False
+n5ti.com,domain,n5ti.com,article_host/article_url,False
+n5ti.com,domain,n5ti.com,publisher_source,False
+nabjnahjconvention.com,domain,nabjnahjconvention.com,article_host/article_url,False
+nabjnahjconvention.com,domain,nabjnahjconvention.com,publisher_source,False
+naturalnews.com,domain,naturalnews.com,article_host/article_url,False
+naturalnews.com,domain,naturalnews.com,publisher_source,False
+nbcnews.com,domain,nbcnews.com,article_host/article_url,False
+nbcnews.com,domain,nbcnews.com,publisher_source,False
+neonnettle.com,domain,neonnettle.com,article_host/article_url,False
+neonnettle.com,domain,neonnettle.com,publisher_source,False
+news.yahoo.com,domain,news.yahoo.com,article_host/article_url,False
+news7pm.com,domain,news7pm.com,article_host/article_url,False
+news7pm.com,domain,news7pm.com,publisher_source,False
+newsnationnow.com,domain,newsnationnow.com,article_host/article_url,False
+newsnationnow.com,domain,newsnationnow.com,publisher_source,False
+newsnetwork.mayoclinic.org,domain,newsnetwork.mayoclinic.org,article_host/article_url,False
+newsnetwork.mayoclinic.org,domain,newsnetwork.mayoclinic.org,publisher_source,False
+newspressnow.com,domain,newspressnow.com,article_host/article_url,False
+newspressnow.com,domain,newspressnow.com,publisher_source,False
+newspunch.com,domain,newspunch.com,article_host/article_url,False
+newspunch.com,domain,newspunch.com,publisher_source,False
+newsradiowrva.radio.com,domain,newsradiowrva.radio.com,article_host/article_url,False
+newsradiowrva.radio.com,domain,newsradiowrva.radio.com,publisher_source,False
+newsroom.clevelandclinic.org,domain,newsroom.clevelandclinic.org,article_host/article_url,False
+newsroom.clevelandclinic.org,domain,newsroom.clevelandclinic.org,publisher_source,False
+newsweek.com,domain,newsweek.com,article_host/article_url,False
+newsweek.com,domain,newsweek.com,publisher_source,False
+newyorkonenews.com,domain,newyorkonenews.com,article_host/article_url,False
+newyorkonenews.com,domain,newyorkonenews.com,publisher_source,False
+nih.gov,domain,nih.gov,article_host/article_url,False
+nih.gov,domain,nih.gov,publisher_source,False
+njspotlight.com,domain,njspotlight.com,article_host/article_url,False
+njspotlight.com,domain,njspotlight.com,publisher_source,False
+npr.org,domain,npr.org,article_host/article_url,False
+nsemwoha.com,domain,nsemwoha.com,article_host/article_url,False
+nsemwoha.com,domain,nsemwoha.com,publisher_source,False
+nypost.com,domain,nypost.com,article_host/article_url,False
+nypost.com,domain,nypost.com,publisher_source,False
+nysenate.gov,domain,nysenate.gov,article_host/article_url,False
+nysenate.gov,domain,nysenate.gov,publisher_source,False
+nytimes.com,domain,nytimes.com,article_host/article_url,False
+obamawatcher.com,domain,obamawatcher.com,article_host/article_url,False
+obamawatcher.com,domain,obamawatcher.com,publisher_source,False
+off-guardian.org,domain,off-guardian.org,article_host/article_url,False
+off-guardian.org,domain,off-guardian.org,publisher_source,False
+onenewsnow.com,domain,onenewsnow.com,article_host/article_url,False
+onenewsnow.com,domain,onenewsnow.com,publisher_source,False
+online.wsj.com,domain,online.wsj.com,article_host/article_url,False
+opr.news,domain,opr.news,article_host/article_url,False
+opr.news,domain,opr.news,publisher_source,False
+oregonlive.com,domain,oregonlive.com,article_host/article_url,False
+orlando sentinel.com,domain,orlando sentinel.com,article_host/article_url,False
+orthomolecular.org,domain,orthomolecular.org,article_host/article_url,False
+orthomolecular.org,domain,orthomolecular.org,publisher_source,False
+pagingdrgupta.blogs.cnn.com,domain,pagingdrgupta.blogs.cnn.com,article_host/article_url,False
+palmerfoundation.com.au,domain,palmerfoundation.com.au,article_host/article_url,False
+palmerfoundation.com.au,domain,palmerfoundation.com.au,publisher_source,False
+patheos.com,domain,patheos.com,article_host/article_url,False
+patheos.com,domain,patheos.com,publisher_source,False
+pets.webmd.com,domain,pets.webmd.com,article_host/article_url,False
+pets.webmd.com,domain,pets.webmd.com,publisher_source,False
+philly.com,domain,philly.com,article_host/article_url,False
+pieceofmindful.com,domain,pieceofmindful.com,article_host/article_url,False
+pieceofmindful.com,domain,pieceofmindful.com,publisher_source,False
+plandemicmovie.com,domain,plandemicmovie.com,article_host/article_url,False
+plandemicmovie.com,domain,plandemicmovie.com,publisher_source,False
+prescriptions.blogs.nytimes.com,domain,prescriptions.blogs.nytimes.com,article_host/article_url,False
+presstv.com,domain,presstv.com,article_host/article_url,False
+presstv.com,domain,presstv.com,publisher_source,False
+priorities.org,domain,priorities.org,article_host/article_url,False
+priorities.org,domain,priorities.org,publisher_source,False
+prntly.com,domain,prntly.com,article_host/article_url,False
+prntly.com,domain,prntly.com,publisher_source,False
+pulpitandpen.org,domain,pulpitandpen.org,article_host/article_url,False
+pulpitandpen.org,domain,pulpitandpen.org,publisher_source,False
+radio.foxnews.com,domain,radio.foxnews.com,article_host/article_url,False
+radio.foxnews.com,domain,radio.foxnews.com,publisher_source,False
+react2424.com,domain,react2424.com,article_host/article_url,False
+react2424.com,domain,react2424.com,publisher_source,False
+react365.com,domain,react365.com,article_host/article_url,False
+react365.com,domain,react365.com,publisher_source,False
+redstate.com,domain,redstate.com,article_host/article_url,False
+redstate.com,domain,redstate.com,publisher_source,False
+reuters.com,domain,reuters.com,article_host/article_url,False
+rev.com,domain,rev.com,article_host/article_url,False
+rev.com,domain,rev.com,publisher_source,False
+rocketnews.com,domain,rocketnews.com,article_host/article_url,False
+rocketnews.com,domain,rocketnews.com,publisher_source,False
+ronpaulinstitute.org,domain,ronpaulinstitute.org,article_host/article_url,False
+ronpaulinstitute.org,domain,ronpaulinstitute.org,publisher_source,False
+rushlimbaugh.com,domain,rushlimbaugh.com,article_host/article_url,False
+rushlimbaugh.com,domain,rushlimbaugh.com,publisher_source,False
+s3.us-east-2.amazonaws.com,domain,s3.us-east-2.amazonaws.com,article_host/article_url,False
+s3.us-east-2.amazonaws.com,domain,s3.us-east-2.amazonaws.com,publisher_source,False
+saving lives protecting people,institutional_boilerplate,cdc.gov,fixed_identity_alias_of_metadata_host,False
+sciencedaily.com,domain,sciencedaily.com,article_host/article_url,False
+sciencedaily.com,domain,sciencedaily.com,publisher_source,False
+sciencetimes.com,domain,sciencetimes.com,article_host/article_url,False
+sciencetimes.com,domain,sciencetimes.com,publisher_source,False
+secondnexus.com,domain,secondnexus.com,article_host/article_url,False
+secondnexus.com,domain,secondnexus.com,publisher_source,False
+sendy.stopmandatoryvaccination.com,domain,sendy.stopmandatoryvaccination.com,article_host/article_url,False
+sendy.stopmandatoryvaccination.com,domain,sendy.stopmandatoryvaccination.com,publisher_source,False
+sfgate.com,domain,sfgate.com,article_host/article_url,False
+shtfplan.com,domain,shtfplan.com,article_host/article_url,False
+shtfplan.com,domain,shtfplan.com,publisher_source,False
+slate.com,domain,slate.com,article_host/article_url,False
+smartairfilters.com,domain,smartairfilters.com,article_host/article_url,False
+smartairfilters.com,domain,smartairfilters.com,publisher_source,False
+spiked-online.com,domain,spiked-online.com,article_host/article_url,False
+spiked-online.com,domain,spiked-online.com,publisher_source,False
+sportinglife.ng,domain,sportinglife.ng,article_host/article_url,False
+sportinglife.ng,domain,sportinglife.ng,publisher_source,False
+startribune.com,domain,startribune.com,article_host/article_url,False
+statesman.com,domain,statesman.com,article_host/article_url,False
+statesman.com,domain,statesman.com,publisher_source,False
+statnews.com,domain,statnews.com,article_host/article_url,False
+stltoday.com,domain,stltoday.com,article_host/article_url,False
+studentproblems.com,domain,studentproblems.com,article_host/article_url,False
+studentproblems.com,domain,studentproblems.com,publisher_source,False
+summit.news,domain,summit.news,article_host/article_url,False
+summit.news,domain,summit.news,publisher_source,False
+suntimes.com,domain,suntimes.com,article_host/article_url,False
+swns.com,domain,swns.com,article_host/article_url,False
+swns.com,domain,swns.com,publisher_source,False
+swprs.org,domain,swprs.org,article_host/article_url,False
+swprs.org,domain,swprs.org,publisher_source,False
+teaparty.org,domain,teaparty.org,article_host/article_url,False
+teaparty.org,domain,teaparty.org,publisher_source,False
+technocracy.news,domain,technocracy.news,article_host/article_url,False
+technocracy.news,domain,technocracy.news,publisher_source,False
+thailandmedical.news,domain,thailandmedical.news,article_host/article_url,False
+thailandmedical.news,domain,thailandmedical.news,publisher_source,False
+the denver post.com,domain,the denver post.com,article_host/article_url,False
+the mercury news.com,domain,the mercury news.com,article_host/article_url,False
+the-scientist.com,domain,the-scientist.com,article_host/article_url,False
+the-scientist.com,domain,the-scientist.com,publisher_source,False
+thechart.blogs.cnn.com,domain,thechart.blogs.cnn.com,article_host/article_url,False
+thedailybeast.com,domain,thedailybeast.com,article_host/article_url,False
+thedailybeast.com,domain,thedailybeast.com,publisher_source,False
+theeconomiccollapseblog.com,domain,theeconomiccollapseblog.com,article_host/article_url,False
+theeconomiccollapseblog.com,domain,theeconomiccollapseblog.com,publisher_source,False
+theepochtimes.com,domain,theepochtimes.com,article_host/article_url,False
+theepochtimes.com,domain,theepochtimes.com,publisher_source,False
+thefederalist.com,domain,thefederalist.com,article_host/article_url,False
+thefederalist.com,domain,thefederalist.com,publisher_source,False
+thefloridachannel.org,domain,thefloridachannel.org,article_host/article_url,False
+thefloridachannel.org,domain,thefloridachannel.org,publisher_source,False
+thegatewaypundit.com,domain,thegatewaypundit.com,article_host/article_url,False
+thegatewaypundit.com,domain,thegatewaypundit.com,publisher_source,False
+theguardian.com,domain,theguardian.com,article_host/article_url,False
+theguardian.com,domain,theguardian.com,publisher_source,False
+thehill.com,domain,thehill.com,article_host/article_url,False
+thehill.com,domain,thehill.com,publisher_source,False
+themillenniumreport.com,domain,themillenniumreport.com,article_host/article_url,False
+themillenniumreport.com,domain,themillenniumreport.com,publisher_source,False
+themissouritimes.com,domain,themissouritimes.com,article_host/article_url,False
+themissouritimes.com,domain,themissouritimes.com,publisher_source,False
+themonitor.com,domain,themonitor.com,article_host/article_url,False
+themonitor.com,domain,themonitor.com,publisher_source,False
+thenextweb.com,domain,thenextweb.com,article_host/article_url,False
+thenextweb.com,domain,thenextweb.com,publisher_source,False
+therepublicpost.wordpress.com,domain,therepublicpost.wordpress.com,article_host/article_url,False
+therepublicpost.wordpress.com,domain,therepublicpost.wordpress.com,publisher_source,False
+thestar.com,domain,thestar.com,article_host/article_url,False
+thesun.co.uk,domain,thesun.co.uk,article_host/article_url,False
+thesun.co.uk,domain,thesun.co.uk,publisher_source,False
+thetruthaboutcancer.com,domain,thetruthaboutcancer.com,article_host/article_url,False
+thetruthaboutcancer.com,domain,thetruthaboutcancer.com,publisher_source,False
+thewheelerreport.com,domain,thewheelerreport.com,article_host/article_url,False
+thewheelerreport.com,domain,thewheelerreport.com,publisher_source,False
+this-is-italy.com,domain,this-is-italy.com,article_host/article_url,False
+this-is-italy.com,domain,this-is-italy.com,publisher_source,False
+tiktok.com,domain,tiktok.com,article_host/article_url,False
+tiktok.com,domain,tiktok.com,publisher_source,False
+time.com,domain,time.com,article_host/article_url,False
+tinyurl.com,domain,tinyurl.com,article_host/article_url,False
+today.com,domain,today.com,article_host/article_url,False
+toine360.com,domain,toine360.com,article_host/article_url,False
+toine360.com,domain,toine360.com,publisher_source,False
+transcripts.cnn.com,domain,transcripts.cnn.com,article_host/article_url,False
+transcripts.cnn.com,domain,transcripts.cnn.com,publisher_source,False
+truththeory.com,domain,truththeory.com,article_host/article_url,False
+truththeory.com,domain,truththeory.com,publisher_source,False
+tucson.com,domain,tucson.com,article_host/article_url,False
+twitter.com,domain,twitter.com,article_host/article_url,False
+twitter.com,domain,twitter.com,publisher_source,False
+ucrtv.com,domain,ucrtv.com,article_host/article_url,False
+ucrtv.com,domain,ucrtv.com,publisher_source,False
+uk.reuters.com,domain,uk.reuters.com,article_host/article_url,False
+usa today.com,domain,usa today.com,article_host/article_url,False
+usatoday.com,domain,usatoday.com,article_host/article_url,False
+usnews.com,domain,usnews.com,article_host/article_url,False
+vaccine-coronavirus.com,domain,vaccine-coronavirus.com,article_host/article_url,False
+vaccine-coronavirus.com,domain,vaccine-coronavirus.com,publisher_source,False
+valleynewslive.com,domain,valleynewslive.com,article_host/article_url,False
+valleynewslive.com,domain,valleynewslive.com,publisher_source,False
+video.aptv.org,domain,video.aptv.org,article_host/article_url,False
+video.aptv.org,domain,video.aptv.org,publisher_source,False
+video.foxnews.com,domain,video.foxnews.com,article_host/article_url,False
+video.foxnews.com,domain,video.foxnews.com,publisher_source,False
+viralcocaine.com,domain,viralcocaine.com,article_host/article_url,False
+viralcocaine.com,domain,viralcocaine.com,publisher_source,False
+visualcapitalist.com,domain,visualcapitalist.com,article_host/article_url,False
+visualcapitalist.com,domain,visualcapitalist.com,publisher_source,False
+vitals.msnbc.msn.com,domain,vitals.msnbc.msn.com,article_host/article_url,False
+vitals.nbcnews.com,domain,vitals.nbcnews.com,article_host/article_url,False
+voices.washingtonpost.com,domain,voices.washingtonpost.com,article_host/article_url,False
+vox.com,domain,vox.com,article_host/article_url,False
+wakingtimes.com,domain,wakingtimes.com,article_host/article_url,False
+wakingtimes.com,domain,wakingtimes.com,publisher_source,False
+washingtonpost.com,domain,washingtonpost.com,article_host/article_url,False
+washingtontimes.com,domain,washingtontimes.com,article_host/article_url,False
+washingtontimes.com,domain,washingtontimes.com,publisher_source,False
+wearethemighty.com,domain,wearethemighty.com,article_host/article_url,False
+wearethemighty.com,domain,wearethemighty.com,publisher_source,False
+wearethene.ws,domain,wearethene.ws,article_host/article_url,False
+wearethene.ws,domain,wearethene.ws,publisher_source,False
+weblyf.com,domain,weblyf.com,article_host/article_url,False
+weblyf.com,domain,weblyf.com,publisher_source,False
+webmd.com,domain,webmd.com,article_host/article_url,False
+webmd.com,domain,webmd.com,publisher_source,False
+well.blogs.nytimes.com,domain,well.blogs.nytimes.com,article_host/article_url,False
+whitehouse.gov,domain,whitehouse.gov,article_host/article_url,False
+whitehouse.gov,domain,whitehouse.gov,publisher_source,False
+who.int,domain,who.int,article_host/article_url,False
+who.int,domain,who.int,publisher_source,False
+wikitrusted.com,domain,wikitrusted.com,article_host/article_url,False
+wikitrusted.com,domain,wikitrusted.com,publisher_source,False
+wivb.com,domain,wivb.com,article_host/article_url,False
+wivb.com,domain,wivb.com,publisher_source,False
+women.webmd.com,domain,women.webmd.com,article_host/article_url,False
+worldnewsdailyreport.com,domain,worldnewsdailyreport.com,article_host/article_url,False
+worldnewsdailyreport.com,domain,worldnewsdailyreport.com,publisher_source,False
+wral.com,domain,wral.com,article_host/article_url,False
+wral.com,domain,wral.com,publisher_source,False
+wsj.com,domain,wsj.com,article_host/article_url,False
+wtop.com,domain,wtop.com,article_host/article_url,False
+www2.philly.com,domain,www2.philly.com,article_host/article_url,False
+wwwnc.cdc.gov,domain,wwwnc.cdc.gov,article_host/article_url,False
+wwwnc.cdc.gov,domain,wwwnc.cdc.gov,publisher_source,False
+yc.news,domain,yc.news,article_host/article_url,False
+yc.news,domain,yc.news,publisher_source,False
+yourlife.usa today.com,domain,yourlife.usa today.com,article_host/article_url,False
+yourlife.usatoday.com,domain,yourlife.usatoday.com,article_host/article_url,False
+youtu.be,domain,youtu.be,article_host/article_url,False
+youtu.be,domain,youtu.be,publisher_source,False
+youtube.com,domain,youtube.com,article_host/article_url,False
+youtube.com,domain,youtube.com,publisher_source,False
+zenodo.org,domain,zenodo.org,article_host/article_url,False
+zenodo.org,domain,zenodo.org,publisher_source,False
+zerohedge.com,domain,zerohedge.com,article_host/article_url,False
+zerohedge.com,domain,zerohedge.com,publisher_source,False

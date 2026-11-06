@@ -1,0 +1,5 @@
+specification,overlap_components,singleton_components,multi_entity_components,median_component_size,maximum_component_size,entities_in_non_singletons,percent_entities_in_non_singletons,percent_post_memberships_in_non_singletons,fake_only_components,real_only_components,mixed_components,largest_component_post_share,top3_components_post_share,entity_weight_kish_equivalent,post_weight_kish_equivalent,concentration_warning
+A_primary_strict,5056,4986,70,1.0,187,351,6.57672849915683,50.46280785426644,917,4136,3,0.36097041839932203,0.3848235811933807,705.3705703177237,7.590923949899053,True
+B_resource_sensitivity,4938,4882,56,1.0,187,323,6.2055715658021136,51.88965716689452,916,4019,3,0.38272951940267114,0.410617572825744,673.3112558093297,6.758005556150005,True
+C_high_certainty,4905,4848,57,1.0,103,234,4.6044864226682405,41.63440032707246,916,3987,2,0.2592289747721315,0.27530202095508366,1635.6379987333755,14.51470263247723,True
+FakeHealth_HealthStory,1662,1641,21,1.0,4,49,2.899408284023669,4.933957867384586,464,1191,7,0.014288950277681586,0.040520942633301485,1620.9421112372304,415.205036280589,False

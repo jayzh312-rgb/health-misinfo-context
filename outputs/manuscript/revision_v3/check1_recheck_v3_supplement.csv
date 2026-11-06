@@ -1,0 +1,161 @@
+id,v2_line,fact,v3_methods,new_supplement,status
+2.0a,60,Engagement counts never enter text models; no language-to-sharing mediation,True,False,v3 Methods only
+2.1a,68,"Observational cross-dataset design; period/context not independently varied, no causal COVID estimate",False,True,supplement only
+2.1b,72,Spec A and natural combined-text LR are primary; alternatives are robustness,True,True,both
+2.1c,72,"Final validated cohorts and split assignments used, not mixed stages",False,True,supplement only
+2.2a,76,Four official CoAID release directories 05/07/09/11-01-2020,True,False,v3 Methods only
+2.2b,76,Fake/Real labels from original News filenames,True,True,both
+2.2c,76,"Content→post via content ID; →reply via news ID, within release and file category; release-local IDs not globally unique",True,True,both
+2.2d,76,"CoAID A engagement sample 5,337 entities (922 Fake, 4,415 Real)",False,True,supplement only
+2.2e,78,"FakeHealth review score <3 Fake, >=3 Real; HealthRelease not used",True,False,v3 Methods only
+2.2f,78,"FakeHealth engagement sample 1,690 items (472 Fake, 1,218 Real)",False,True,supplement only
+2.2g,78,FakeHealth outcome uses mapping tweet IDs; retweet mapping excluded (no CoAID equivalent),True,True,both
+2.2h,80,"COVID-Rumor NEWS only; T→Real, F→Fake, U excluded; Twitter subset excluded",True,True,both
+2.2i,80,Each item contributes one statement; website records used only for overlap screening,False,True,supplement only
+2.3a,84,Repeated release membership alone insufficient for identity; identity via audited URL/resource mapping and lineage,True,True,both
+2.3b,84,"Shared domains, generic titles, branding, boilerplate, social overlap never merge",True,True,both
+2.3c,86,Spec A: collapse high-confidence same/minor-update captures; split material updates; keep insufficient-evidence captures separate,True,True,both
+2.3d,86,Analytical unit may be a content version or separately retained capture with explicit uncertainty flags,False,True,supplement only
+2.3e,88,"Version decisions combine body, title, abstract and metadata evidence; material change needs corroboration",False,True,supplement only
+2.3f,88,Source-title changes or dates alone do not establish material change,False,True,supplement only
+2.3g,88,Complete-link pair checks for approved material-version partitions,True,True,both
+2.3h,90,Spec B assumes stability for insufficient-evidence captures of same resource; Spec C excludes uncertain-version and unresolved-identity captures,True,True,both
+2.3i,90,"Stable entity IDs, source UIDs, release/file/row refs, member captures, flags, exclusions preserved",True,True,both
+2.3j,90,Social counts reconstructed from unique ID unions within an entity,True,True,both
+2.3k,90,"Shared social IDs exposed by splitting are retained for dependence modeling, not deleted",True,True,both
+2.4a,94,Outcome: unique observed posts per entity incl. zeros; repeated IDs counted once,True,True,both
+2.4b,94,"No exposure denominator, cascades, network topology; deletions/private/uncaptured outside measurement",True,False,v3 Methods only
+2.4c,96,Overlap graph per dataset and spec; edge = shared counted post or reply ID; components incl. singletons are clusters,True,True,both
+2.4d,96,FakeHealth retweets excluded from primary outcome also excluded from the graph,False,True,supplement only
+2.4e,96,"A connected component is a dependence unit, not a claim of identical content",False,True,supplement only
+2.4f,98,Dominant-component exclusion: remaining entities define sensitivity population and standardization distribution,True,True,both
+2.4g,98,Common publishers/resources without shared IDs could add dependence not captured by graph,False,True,supplement only
+2.4h,98,Reply counts and occurrence summaries are secondary diagnostics,True,True,both
+2.4i,98,Posts-only occurrence (hurdle) distinguished from any-post-or-reply indicator,False,True,supplement only
+2.5a,102,CoAID hurdle: logistic for any post + zero-truncated NB2 for positive counts,True,True,both
+2.5b,102,"Both components include Fake indicator and first-recorded-release fixed effects, May as reference",False,True,supplement only
+2.5c,102,"First-recorded release = capture provenance, not publication/exposure time",True,True,both
+2.5d,102,FakeHealth NB2 with Fake indicator; no exposure offset or text covariate,True,False,v3 Methods only
+2.5e,104,Hurdle retained if AIC improves over NB2 by >2 or NB2 unstable; comparison on same full outcome counting all hurdle parameters,True,True,both
+2.5f,104,"Fits checked for convergence, gradients, Hessian behavior, parameter bounds",False,True,supplement only
+2.5g,104,Model-family selection fixed during resampling,True,True,both
+2.5h,106,"Standardized expected counts compared, not coefficients; R_d formula",True,True,both
+2.5i,118,Row-level products averaged before ratio; not positive-count coefficient nor product of averaged components,True,True,both
+2.5j,118,Each dataset retains its own covariate distribution incl. zero-count entities,True,True,both
+2.5k,118,"C = R_CoAID/R_FakeHealth, equivalently theta = log difference; C<1 means smaller CoAID ratio",False,True,supplement only
+2.5l,118,Contrast does not require equivalent coefficients or a shared reference population,True,True,both
+2.5m,120,Unstratified pairs bootstrap of overlap components; K components with replacement; all entities of a selected component,True,True,both
+2.5n,120,Repeated component selections repeat their rows,False,True,supplement only
+2.5o,120,Each draw refits and re-standardizes over its own sampled covariate distribution,True,True,both
+2.5p,120,"Target 1,000 successful finite post-ratio refits per dataset/spec; failures recorded and excluded; retry on same sampled data; seed 42",True,True,both
+2.5q,122,"Cross-context: all 1,000×1,000 ordered pairs, equally weighted; 1,000,000 values not independent",True,True,both
+2.5r,122,Linear empirical quantiles for 95% percentile intervals; point estimate is ratio of fitted standardized ratios,False,True,supplement only
+2.5s,122,"Assumes independence across datasets; excludes uncertainty from missing links, model-family selection, entity resolution",True,True,both
+2.6a,126,Text cohorts derived from HealthStory items and CoAID Spec A entities,False,True,supplement only
+2.6b,126,"Normalization: whitespace/null placeholders; retain case, punctuation, URLs",True,True,both
+2.6c,126,combined_text joins title and body with a blank line; title-only or body-only item allowed when the other is missing,False,True,supplement only
+2.6d,126,Empty/artifact-only records ineligible; label-blind quality audit excludes artifact-dominated content and reviews title provenance for label disclosure,True,True,both
+2.6e,126,Substantive headline with poor body eligible for combined text but excluded from body-only,False,True,supplement only
+2.6f,128,"Final cohorts 1,647 FH (459/1,188), 3,577 CoAID (825/2,752)",True,True,both
+2.6g,128,"Fake=1, Real=0",True,True,both
+2.6h,128,"Predictors exclude IDs, ratings, metadata, flags, engagement, lineage, splits",True,True,both
+2.6i,128,Quality audit retains original strings and exclusion reasons,False,True,supplement only
+2.6j,128,Masked representation: label-blind dictionary from prepared metadata incl. evaluation metadata; transductive sensitivity,True,True,both
+2.6k,130,"Leakage groups = connected components of resource identity, lineage, exact/very-high-similarity title/body",True,True,both
+2.6l,130,CoAID versions of a resource grouped together; unresolved identity contexts grouped conservatively,True,True,both
+2.6m,130,Exact generic-template matches could join evaluation groups,False,True,supplement only
+2.6n,130,Publisher identity or broad topic alone did not define primary groups,False,True,supplement only
+2.6o,130,Label-blind cross-dataset lexical overlap screening; no flagged overlap affected final cohorts,False,True,supplement only
+2.6p,132,Rows sorted by stable UID; seed-42 StratifiedGroupKFold candidate partitions,False,True,supplement only
+2.6q,132,"Holdout fold chosen by closeness to 20% of total and each class (counts, not performance)",True,True,both
+2.6r,132,Five grouped CV folds within training pool; quality filtering preserves assignments,True,True,both
+2.6s,132,"Training/holdout sizes 1,317/330 and 2,875/702",True,True,both
+2.6t,132,Groups never cross training/validation/test; holdouts never enter tuning,True,False,v3 Methods only
+2.6u,132,CoAID short excerpts vs FakeHealth long bodies are distinct information budgets,False,True,supplement only
+2.7a,136,"Vectorizer: lowercase, Unicode word tokens >=2 chars, sublinear TF, smoothed IDF, L2 norm, float64, no accent stripping, max_df 1.0",False,True,supplement only
+2.7b,136,"LR grid: 24 configs = n-gram (1,1)/(1,2) × min_df 2/5 × C 0.1/1/10 × None/balanced",True,True,both
+2.7c,136,"LR: L2 penalty, liblinear, tol 1e-4, max_iter 5,000, seed 42",False,True,supplement only
+2.7d,136,LR fit seed 42 (random_state),False,True,supplement only
+2.7e,138,Every CV fit learns vocabulary and IDF from its training fold only,True,True,both
+2.7f,138,Selection maximizes unweighted mean macro F1 across five saved folds,True,True,both
+2.7g,138,"Tie rule: mean within 0.001 tied; SD within 0.001 tied; then unigram, smaller C, None weighting, larger min_df, config ID",False,True,supplement only
+2.7h,138,Nonconverged configurations ineligible,False,True,supplement only
+2.7i,138,Selected natural settings locked before holdout prediction; final within fits use only training pool,True,True,both
+2.7j,138,Masked-text fits use the natural configuration without retuning,False,True,supplement only
+2.7k,140,"SVM: same cohorts/splits/TF-IDF; 32 configs adding C=0.01; LinearSVC L2, squared hinge, dual=auto, tol 1e-4, max_iter 20,000, seed 42",True,True,both
+2.7l,140,"SVM tie rule matches LR through unweighted preference, then config ID, without min_df preference",True,True,both
+2.7m,142,LR Fake at p>=0.5; SVM Fake at decision >=0; ROC/AP from probabilities/decision scores,True,True,both
+2.7n,142,"Metrics: macro F1, class-specific, balanced accuracy, confusion counts, ROC-AUC, non-interpolated AP",True,True,both
+2.7o,142,SVM scores not treated as calibrated probabilities,True,False,v3 Methods only
+2.7p,142,Training-only most-frequent and seed-42 stratified dummy baselines,False,True,supplement only
+2.8a,146,Transfer both directions; source-selected hyperparameters; refit on all eligible source rows incl. former holdout,True,True,both
+2.8b,146,"Vocabulary/IDF from source text only; target transformed without fitting, calibration or threshold tuning",True,False,v3 Methods only
+2.8c,146,Configurations locked before evaluation; predictions frozen before target labels joined,True,True,both
+2.8d,146,Reverse-direction results did not modify the opposite source model,False,True,supplement only
+2.8e,148,All-eligible and saved-holdout target scopes reported; holdout primary because identical target UIDs,True,True,both
+2.8f,148,"Within comparators remain training-pool-to-holdout models; only evaluation rows matched, not training populations/sizes",False,True,supplement only
+2.8g,148,Natural and masked LR transfer use corresponding within-target representations,False,True,supplement only
+2.8h,148,Existing overlap flags and group safeguards retained; target cohorts not redefined by performance,False,True,supplement only
+2.8i,150,"Lexical alignment uses frozen within-context natural LR models, not transfer fits; 4,174 shared unigrams, Fake-positive",True,True,both
+2.8j,150,FakeHealth bigrams excluded from intersection but remain in its fitted model,False,True,supplement only
+2.8k,150,Sign reversal = negative coefficient product; exact zeros accounted separately,True,True,both
+2.8l,150,"Prespecified subsets: all; above either model's median |coef|; top 1,000/500/100 by max |coef|, lexical ties",True,True,both
+2.8m,152,"Coefficients are conditional, not rescaled, not causal; alignment descriptive; no significance test",True,True,both
+2.9a,156,Title-only LR uses existing title_only_modeling_eligible flags and unchanged resource groups,True,True,both
+2.9b,156,Title-only tuned independently per dataset with same LR grid and tie policy; within fits on training pool; transfer refits on all eligible titles,True,True,both
+2.9c,156,Combined-vs-title transfer compared on identical title-eligible target rows,True,True,both
+2.9d,156,Masked-title sensitivities use audited masked field with locked natural-title hyperparameters,False,True,supplement only
+2.9e,156,Title design does not isolate text length (eligibility and configurations differ),False,True,supplement only
+2.9f,158,"Publisher families from prepared names, hosts, specific URLs, audited aliases; no labels or article text",True,True,both
+2.9g,158,Hosted tenants and platform accounts distinct; unresolved sources not grouped as one publisher,True,True,both
+2.9h,158,"Components combine publisher-family and resource/leakage barriers; 1,647 items, 49 families, 49 components",True,False,v3 Methods only
+2.9i,158,"Publisher families are source proxies, not corporate-ownership classification",False,True,supplement only
+2.9j,160,"Outer: 3-fold StratifiedGroupKFold, shuffled, seed 42; nested 3-fold inner tuning (2 permitted if infeasible; all used 3)",True,True,both
+2.9k,160,LR grid and tie rule unchanged; configuration locked before outer prediction; refit only on outer-training data,False,True,supplement only
+2.9l,160,Source-masked publisher fits reuse selected settings,False,True,supplement only
+2.9m,160,Outer-fold mean/SD/range and pooled summaries distinguished; ROC-AUC summarized within folds,False,True,supplement only
+2.9n,160,Comparison with resource-grouped CV baseline is descriptive and unpaired,True,True,both
+2.9o,162,"No CoAID publisher-held-out claim: class-exclusive families, sparse mixed support, unresolved rows mostly Fake",True,True,both
+2.10a,166,"distilbert/distilroberta-base at immutable revision fb53ab88...; AutoModelForSequenceClassification, 2 labels",False,True,supplement only
+2.10b,166,"Model card: RoBERTa teacher, DistilBERT procedure; attributions Liu 2019 / Sanh 2019",False,True,supplement only
+2.10c,166,"Pair packing: full title kept, four special tokens reserved, body prefix fills budget; dynamic padding per microbatch",True,True,both
+2.10d,166,"Max length 512 primary, 256 sensitivity; FakeHealth substantially truncated, CoAID not",True,True,both
+2.10e,168,FP32 on Apple Silicon MPS in Python 3.12 environment,False,True,supplement only
+2.10f,168,"Microbatch 2, gradient accumulation 8, effective batch 16",False,True,supplement only
+2.10g,168,"Weighted cross-entropy with class weight N_train/(2 N_train,c) from source-training labels only",False,True,supplement only
+2.10h,168,Gradients normalized by sum of training class weights per effective batch incl. partial final batch,False,True,supplement only
+2.10i,168,"AdamW weight decay 0.01 (not bias/LayerNorm), betas (0.9, 0.999), eps 1e-8, grad clip 1.0",False,True,supplement only
+2.10j,168,"Constant LR schedule, zero warmup",False,True,supplement only
+2.10k,170,Transformer selection uses same five grouped folds and holdouts as classical,True,False,v3 Methods only
+2.10l,170,Candidate LRs 2e-5 and 5e-5; epochs 2 and 3; 3-epoch trajectory validated at epochs 2 and 3,False,True,supplement only
+2.10m,170,"Transformer tie rule: within 0.001 of best mean macro F1 prefer lower SD, fewer epochs, lower LR",False,True,supplement only
+2.10n,170,Both datasets selected 2e-5 and 3 epochs; locked before holdout/transfer evaluation,False,True,supplement only
+2.10o,170,"No early stopping, mixed precision, oversampling, or target threshold tuning",False,True,supplement only
+2.10p,172,Within final models on source training pool; transfer models from pretrained checkpoint on all eligible source rows incl. former holdout,False,True,supplement only
+2.10q,172,Target transform-only; probability >=0.5 = Fake; all-eligible and matched holdout scopes reported,False,True,supplement only
+2.10r,172,256-token sensitivity reuses each source's selected LR and epochs without retuning,True,True,both
+2.10s,174,"Follow-up: FH→CoAID, 256 vs 512, seeds 42/123/2026; seed 42 reuses saved evaluations; other seeds refit full FH source",True,True,both
+2.10t,174,CoAID target token sequences identical at both caps; only FH source prefix changes,False,True,supplement only
+2.10u,174,"Paired differences, means, SDs, ranges, prediction agreement; stability check not new search",True,True,both
+2.11a,178,"Headerless NEWS table read via documented rumor-ID, label, statement, sentiment columns",False,True,supplement only
+2.11b,178,Binary T/F only; U and U(Twitter) excluded; website/repost records for screening only; no Twitter files/repost text,True,True,both
+2.11c,178,"IDs, sentiment, stance, dates, engagement, source metadata excluded as predictors",False,True,supplement only
+2.11d,180,"Quality rules fixed label-blind: normalization; exclude missing/artifact-only, <2 alphabetic tokens after URL stripping, <90% Latin letters",False,True,supplement only
+2.11e,180,Quality thresholds: two alphabetic analyzer tokens and 90% Latin letters,False,True,supplement only
+2.11f,180,English designation and script check do not establish complete language identification,False,True,supplement only
+2.11g,180,"3,700 eligible; exact overlap exclusions leave 3,667 (3,015 Fake, 652 Real)",True,True,both
+2.11h,182,Overlap screening against source title/body/combined incl. ineligible source records; exact text or exact specific-resource URL excluded,True,True,both
+2.11i,182,"URL checks: offline normalization, incl. website and review URLs; homepage-only matches not counted",False,True,supplement only
+2.11j,182,High-similarity matches flagged not excluded; all-eligible and clean-without-high-similarity are sensitivity scopes,False,True,supplement only
+2.11k,182,Missing website files do not exclude; redirects unresolved offline,False,True,supplement only
+2.11l,184,Four frozen full-source LR/SVM reused without refitting; target fingerprinted before scoring; predictions frozen before labels,True,True,both
+2.11m,184,Binary eligibility exposes membership only before prediction; thresholds 0.5 and 0; identical clean rows,True,True,both
+2.11n,184,Representation diagnostics: target unigram occurrences covered by source vocabulary; zero-feature rows; no bigram double counting,False,True,supplement only
+2.11o,184,External evaluations descriptive; no winner test or target adaptation,True,True,both
+2.12a,188,"Exact versions: Python 3.14.2, NumPy 2.5.1, pandas 3.0.5, scikit-learn 1.9.0, SciPy 1.18.0, statsmodels 0.15.0",False,True,supplement only
+2.12b,188,"Transformer env: Python 3.12.7, PyTorch 2.14.0, Transformers 5.17.0; pins and checkpoint revision retained",False,True,supplement only
+2.12c,188,Seed 42 primary; seeds 123 and 2026 only for the stability check; MPS seeded without bitwise reproducibility claim,False,True,supplement only
+2.12d,190,"Raw data unmodified; processed records, UIDs, lineage, manifests, configs, scripts, provenance retained",True,True,both
+2.12e,190,Checksum comparisons for reuse where fingerprints recorded; original within-engagement run lacks historical output hashes,False,True,supplement only
+2.12f,190,"Cross-context stage fingerprinted saved outputs and checked completion, convergence, identities, interval endpoints, draw counts",False,True,supplement only
+2.12g,192,"Engagement uncertainty = overlap-cluster percentile intervals; fold/seed SDs not CIs; text comparisons descriptive, no significance tests",True,True,both

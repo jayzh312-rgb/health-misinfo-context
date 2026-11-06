@@ -1,0 +1,127 @@
+source_artifact,row_selector,field,value
+outputs/tables/cross_context_engagement_contrast.csv,"{""coaid_specification"": ""A_primary_strict""}",fakehealth_ratio,0.8402633149648507
+outputs/tables/cross_context_engagement_contrast.csv,"{""coaid_specification"": ""A_primary_strict""}",coaid_ratio,0.2528032930591203
+outputs/tables/cross_context_engagement_contrast.csv,"{""coaid_specification"": ""A_primary_strict""}",CI_lower_ratio,0.1542877013356693
+outputs/tables/cross_context_engagement_contrast.csv,"{""coaid_specification"": ""A_primary_strict""}",CI_upper_ratio,0.6451736346990904
+outputs/tables/cross_context_engagement_contrast.csv,"{""coaid_specification"": ""A_primary_strict""}",ratio_of_ratios,0.3008619899938097
+outputs/tables/cross_context_engagement_contrast.csv,"{""coaid_specification"": ""B_resource_sensitivity""}",CI_lower_ratio,0.1541163953002401
+outputs/tables/cross_context_engagement_contrast.csv,"{""coaid_specification"": ""B_resource_sensitivity""}",CI_upper_ratio,0.60506667538993
+outputs/tables/cross_context_engagement_contrast.csv,"{""coaid_specification"": ""B_resource_sensitivity""}",ratio_of_ratios,0.2856920926959663
+outputs/tables/cross_context_engagement_contrast.csv,"{""coaid_specification"": ""C_high_certainty""}",CI_lower_ratio,0.1817206078037251
+outputs/tables/cross_context_engagement_contrast.csv,"{""coaid_specification"": ""C_high_certainty""}",CI_upper_ratio,0.6201689584639978
+outputs/tables/cross_context_engagement_contrast.csv,"{""coaid_specification"": ""C_high_certainty""}",ratio_of_ratios,0.3432988742715395
+outputs/tables/cross_context_sensitivity_results.csv,"{""sensitivity"": ""exclude_dominant_component""}",CI_lower_ratio,0.3103423321073382
+outputs/tables/cross_context_sensitivity_results.csv,"{""sensitivity"": ""exclude_dominant_component""}",CI_upper_ratio,0.7100890373617432
+outputs/tables/cross_context_sensitivity_results.csv,"{""sensitivity"": ""exclude_dominant_component""}",ratio_of_ratios,0.4894548820681029
+outputs/tables/tfidf_logistic_holdout_results.csv,"{""condition"": ""natural"", ""dataset"": ""CoAID""}",macro_f1,0.9259633424736614
+outputs/tables/tfidf_logistic_holdout_results.csv,"{""condition"": ""natural"", ""dataset"": ""FakeHealth""}",macro_f1,0.6751500600240097
+outputs/tables/tfidf_logistic_transfer_results.csv,"{""condition"": ""natural"", ""scope"": ""same_target_holdout"", ""source_dataset"": ""CoAID""}",macro_f1,0.4507078507078507
+outputs/tables/tfidf_logistic_transfer_results.csv,"{""condition"": ""natural"", ""scope"": ""same_target_holdout"", ""source_dataset"": ""CoAID""}",roc_auc,0.6190628425283158
+outputs/tables/tfidf_logistic_holdout_results.csv,"{""condition"": ""natural"", ""dataset"": ""FakeHealth""}",roc_auc,0.7700949945195469
+outputs/tables/tfidf_logistic_transfer_results.csv,"{""condition"": ""natural"", ""scope"": ""same_target_holdout"", ""source_dataset"": ""FakeHealth""}",macro_f1,0.4290129732807353
+outputs/tables/tfidf_logistic_transfer_results.csv,"{""condition"": ""natural"", ""scope"": ""same_target_holdout"", ""source_dataset"": ""FakeHealth""}",roc_auc,0.5705358748426541
+outputs/tables/tfidf_logistic_holdout_results.csv,"{""condition"": ""natural"", ""dataset"": ""CoAID""}",roc_auc,0.9826694839057722
+outputs/tables/tfidf_linear_svm_holdout_results.csv,"{""condition"": ""natural"", ""dataset"": ""CoAID""}",macro_f1,0.9127959730383683
+outputs/tables/tfidf_linear_svm_holdout_results.csv,"{""condition"": ""natural"", ""dataset"": ""FakeHealth""}",macro_f1,0.6697483797178803
+outputs/tables/tfidf_linear_svm_transfer_results.csv,"{""condition"": ""natural"", ""scope"": ""same_target_holdout"", ""source_dataset"": ""CoAID""}",macro_f1,0.4492881956270009
+outputs/tables/tfidf_linear_svm_transfer_results.csv,"{""condition"": ""natural"", ""scope"": ""same_target_holdout"", ""source_dataset"": ""CoAID""}",roc_auc,0.6312568505663134
+outputs/tables/tfidf_linear_svm_holdout_results.csv,"{""condition"": ""natural"", ""dataset"": ""FakeHealth""}",roc_auc,0.7695469492144684
+outputs/tables/tfidf_linear_svm_transfer_results.csv,"{""condition"": ""natural"", ""scope"": ""same_target_holdout"", ""source_dataset"": ""FakeHealth""}",macro_f1,0.4244967532467533
+outputs/tables/tfidf_linear_svm_transfer_results.csv,"{""condition"": ""natural"", ""scope"": ""same_target_holdout"", ""source_dataset"": ""FakeHealth""}",roc_auc,0.5827189354432656
+outputs/tables/tfidf_linear_svm_holdout_results.csv,"{""condition"": ""natural"", ""dataset"": ""CoAID""}",roc_auc,0.9794663729545046
+outputs/tables/text_coefficient_alignment_summary.csv,"{""cutoff"": ""all""}",pearson,-0.0147664512292903
+outputs/tables/text_coefficient_alignment_summary.csv,"{""cutoff"": ""all""}",spearman,-0.0034338168764389
+outputs/tables/text_coefficient_alignment_summary.csv,"{""cutoff"": ""all""}",sign_reversal_percent,48.39482510781025
+outputs/tables/text_coefficient_alignment_summary.csv,"{""cutoff"": ""top100""}",sign_reversal_percent,48.0
+outputs/tables/tfidf_logistic_title_vs_combined.csv,"{""condition"": ""natural"", ""direction"": ""CA_to_FH"", ""evaluation"": ""transfer"", ""metric"": ""macro_f1"", ""scope"": ""same_target_holdout""}",title,0.4635703918722786
+outputs/tables/tfidf_logistic_title_vs_combined.csv,"{""condition"": ""natural"", ""direction"": ""CA_to_FH"", ""evaluation"": ""transfer"", ""metric"": ""macro_f1"", ""scope"": ""same_target_holdout""}",combined_same_rows,0.4507078507078507
+outputs/tables/tfidf_logistic_title_vs_combined.csv,"{""condition"": ""natural"", ""direction"": ""CA_to_FH"", ""evaluation"": ""transfer"", ""metric"": ""roc_auc"", ""scope"": ""same_target_holdout""}",title,0.4265162586773839
+outputs/tables/tfidf_logistic_title_vs_combined.csv,"{""condition"": ""natural"", ""direction"": ""CA_to_FH"", ""evaluation"": ""transfer"", ""metric"": ""roc_auc"", ""scope"": ""same_target_holdout""}",combined_same_rows,0.6190628425283158
+outputs/tables/tfidf_logistic_title_vs_combined.csv,"{""condition"": ""natural"", ""direction"": ""FH_to_CA"", ""evaluation"": ""transfer"", ""metric"": ""macro_f1"", ""scope"": ""same_target_holdout""}",title,0.4286134583478026
+outputs/tables/tfidf_logistic_title_vs_combined.csv,"{""condition"": ""natural"", ""direction"": ""FH_to_CA"", ""evaluation"": ""transfer"", ""metric"": ""macro_f1"", ""scope"": ""same_target_holdout""}",combined_same_rows,0.428119238362512
+outputs/tables/tfidf_logistic_title_vs_combined.csv,"{""condition"": ""natural"", ""direction"": ""FH_to_CA"", ""evaluation"": ""transfer"", ""metric"": ""roc_auc"", ""scope"": ""same_target_holdout""}",title,0.4741632745364088
+outputs/tables/tfidf_logistic_title_vs_combined.csv,"{""condition"": ""natural"", ""direction"": ""FH_to_CA"", ""evaluation"": ""transfer"", ""metric"": ""roc_auc"", ""scope"": ""same_target_holdout""}",combined_same_rows,0.5706806874717322
+outputs/tables/fakehealth_publisher_heldout_summary.csv,"{""condition"": ""natural"", ""metric"": ""macro_f1""}",outer_sample_sd,0.0210060949209241
+outputs/tables/fakehealth_publisher_heldout_summary.csv,"{""condition"": ""natural"", ""metric"": ""macro_f1""}",outer_min,0.6029832480371278
+outputs/tables/fakehealth_publisher_heldout_summary.csv,"{""condition"": ""natural"", ""metric"": ""macro_f1""}",outer_max,0.6431821136097751
+outputs/tables/fakehealth_publisher_heldout_summary.csv,"{""condition"": ""natural"", ""metric"": ""macro_f1""}",outer_mean,0.6195580614352559
+outputs/tables/fakehealth_publisher_heldout_summary.csv,"{""condition"": ""natural"", ""metric"": ""roc_auc""}",outer_sample_sd,0.0194657013477859
+outputs/tables/fakehealth_publisher_heldout_summary.csv,"{""condition"": ""natural"", ""metric"": ""roc_auc""}",outer_min,0.6772133095662508
+outputs/tables/fakehealth_publisher_heldout_summary.csv,"{""condition"": ""natural"", ""metric"": ""roc_auc""}",outer_max,0.7133600689380883
+outputs/tables/fakehealth_publisher_heldout_summary.csv,"{""condition"": ""natural"", ""metric"": ""roc_auc""}",outer_mean,0.6994606751844975
+outputs/tables/fakehealth_publisher_heldout_results.csv,"{""condition"": ""source_masked"", ""scope"": ""pooled""}",macro_f1,0.6209233726633966
+outputs/tables/fakehealth_publisher_heldout_results.csv,"{""condition"": ""natural"", ""scope"": ""pooled""}",macro_f1,0.6208747920982756
+outputs/tables/distilroberta_holdout_results.csv,"{""max_length"": 512, ""target_dataset"": ""CoAID""}",macro_f1,0.938744880863738
+outputs/tables/distilroberta_holdout_results.csv,"{""max_length"": 512, ""target_dataset"": ""FakeHealth""}",macro_f1,0.6212257752397576
+outputs/tables/distilroberta_transfer_results.csv,"{""max_length"": 512, ""scope"": ""same_target_holdout"", ""source_dataset"": ""CoAID""}",macro_f1,0.4637698603755416
+outputs/tables/distilroberta_transfer_results.csv,"{""max_length"": 512, ""scope"": ""same_target_holdout"", ""source_dataset"": ""CoAID""}",roc_auc,0.4370661308001461
+outputs/tables/distilroberta_transfer_results.csv,"{""max_length"": 512, ""scope"": ""same_target_holdout"", ""source_dataset"": ""FakeHealth""}",macro_f1,0.3956291390728477
+outputs/tables/distilroberta_transfer_results.csv,"{""max_length"": 512, ""scope"": ""same_target_holdout"", ""source_dataset"": ""FakeHealth""}",roc_auc,0.4414673619852544
+outputs/tables/distilroberta_budget_seed_summary.csv,"{""kind"": ""paired_delta"", ""metric"": ""macro_f1"", ""scope"": ""same_target_holdout""}",N_seeds,3.0
+outputs/tables/distilroberta_budget_seed_summary.csv,"{""kind"": ""paired_delta"", ""metric"": ""macro_f1"", ""scope"": ""same_target_holdout""}",sample_sd,0.0789716504185957
+outputs/tables/distilroberta_budget_seed_summary.csv,"{""kind"": ""paired_delta"", ""metric"": ""macro_f1"", ""scope"": ""same_target_holdout""}",minimum,0.0237896404152785
+outputs/tables/distilroberta_budget_seed_summary.csv,"{""kind"": ""paired_delta"", ""metric"": ""macro_f1"", ""scope"": ""same_target_holdout""}",maximum,0.181633761111758
+outputs/tables/distilroberta_budget_seed_summary.csv,"{""kind"": ""paired_delta"", ""metric"": ""macro_f1"", ""scope"": ""same_target_holdout""}",positive_seeds,3.0
+outputs/tables/distilroberta_budget_seed_summary.csv,"{""kind"": ""paired_delta"", ""metric"": ""macro_f1"", ""scope"": ""same_target_holdout""}",mean,0.1010961554246615
+outputs/tables/distilroberta_budget_seed_summary.csv,"{""kind"": ""paired_delta"", ""metric"": ""roc_auc"", ""scope"": ""same_target_holdout""}",N_seeds,3.0
+outputs/tables/distilroberta_budget_seed_summary.csv,"{""kind"": ""paired_delta"", ""metric"": ""roc_auc"", ""scope"": ""same_target_holdout""}",sample_sd,0.1348007284210537
+outputs/tables/distilroberta_budget_seed_summary.csv,"{""kind"": ""paired_delta"", ""metric"": ""roc_auc"", ""scope"": ""same_target_holdout""}",minimum,-0.02965968351016
+outputs/tables/distilroberta_budget_seed_summary.csv,"{""kind"": ""paired_delta"", ""metric"": ""roc_auc"", ""scope"": ""same_target_holdout""}",maximum,0.2045045855062039
+outputs/tables/distilroberta_budget_seed_summary.csv,"{""kind"": ""paired_delta"", ""metric"": ""roc_auc"", ""scope"": ""same_target_holdout""}",positive_seeds,1.0
+outputs/tables/distilroberta_budget_seed_summary.csv,"{""kind"": ""paired_delta"", ""metric"": ""roc_auc"", ""scope"": ""same_target_holdout""}",mean,0.0488521249175807
+outputs/tables/distilroberta_budget_seed_summary.csv,"{""kind"": ""paired_delta"", ""metric"": ""average_precision"", ""scope"": ""same_target_holdout""}",N_seeds,3.0
+outputs/tables/distilroberta_budget_seed_summary.csv,"{""kind"": ""paired_delta"", ""metric"": ""average_precision"", ""scope"": ""same_target_holdout""}",sample_sd,0.0811517296002483
+outputs/tables/distilroberta_budget_seed_summary.csv,"{""kind"": ""paired_delta"", ""metric"": ""average_precision"", ""scope"": ""same_target_holdout""}",minimum,-0.0611162186219054
+outputs/tables/distilroberta_budget_seed_summary.csv,"{""kind"": ""paired_delta"", ""metric"": ""average_precision"", ""scope"": ""same_target_holdout""}",maximum,0.0926380805909724
+outputs/tables/distilroberta_budget_seed_summary.csv,"{""kind"": ""paired_delta"", ""metric"": ""average_precision"", ""scope"": ""same_target_holdout""}",positive_seeds,1.0
+outputs/tables/distilroberta_budget_seed_summary.csv,"{""kind"": ""paired_delta"", ""metric"": ""average_precision"", ""scope"": ""same_target_holdout""}",mean,0.000755297758963
+outputs/tables/covid_rumor_external_transfer_results.csv,"{""classifier"": ""LR"", ""scope"": ""clean_primary"", ""source_dataset"": ""CoAID""}",macro_f1,0.5579593364084342
+outputs/tables/covid_rumor_external_transfer_results.csv,"{""classifier"": ""LR"", ""scope"": ""clean_primary"", ""source_dataset"": ""FakeHealth""}",macro_f1,0.4969020267991697
+outputs/tables/covid_rumor_external_transfer_results.csv,"{""classifier"": ""LR"", ""scope"": ""clean_primary"", ""source_dataset"": ""CoAID""}",roc_auc,0.6995167312720652
+outputs/tables/covid_rumor_external_transfer_results.csv,"{""classifier"": ""LR"", ""scope"": ""clean_primary"", ""source_dataset"": ""FakeHealth""}",roc_auc,0.5218905472636816
+outputs/tables/covid_rumor_external_transfer_results.csv,"{""classifier"": ""LR"", ""scope"": ""clean_primary"", ""source_dataset"": ""CoAID""}",balanced_accuracy,0.5528889295852029
+outputs/tables/covid_rumor_external_transfer_results.csv,"{""classifier"": ""LR"", ""scope"": ""clean_primary"", ""source_dataset"": ""FakeHealth""}",balanced_accuracy,0.502105525542024
+outputs/tables/covid_rumor_external_transfer_results.csv,"{""classifier"": ""SVM"", ""scope"": ""clean_primary"", ""source_dataset"": ""CoAID""}",macro_f1,0.5314292974885934
+outputs/tables/covid_rumor_external_transfer_results.csv,"{""classifier"": ""SVM"", ""scope"": ""clean_primary"", ""source_dataset"": ""FakeHealth""}",macro_f1,0.4972503802489887
+outputs/tables/covid_rumor_external_transfer_results.csv,"{""classifier"": ""SVM"", ""scope"": ""clean_primary"", ""source_dataset"": ""CoAID""}",roc_auc,0.6815991616559329
+outputs/tables/covid_rumor_external_transfer_results.csv,"{""classifier"": ""SVM"", ""scope"": ""clean_primary"", ""source_dataset"": ""FakeHealth""}",roc_auc,0.5248237340902848
+outputs/tables/covid_rumor_external_transfer_results.csv,"{""classifier"": ""SVM"", ""scope"": ""clean_primary"", ""source_dataset"": ""CoAID""}",balanced_accuracy,0.534857918993987
+outputs/tables/covid_rumor_external_transfer_results.csv,"{""classifier"": ""SVM"", ""scope"": ""clean_primary"", ""source_dataset"": ""FakeHealth""}",balanced_accuracy,0.5059419161859414
+outputs/tables/covid_rumor_external_vocabulary_diagnostics.csv,"{""classifier"": ""LR"", ""scope"": ""clean_primary"", ""source_dataset"": ""CoAID""}",target_token_occurrence_coverage_percent,89.47141049773197
+outputs/tables/covid_rumor_external_vocabulary_diagnostics.csv,"{""classifier"": ""LR"", ""scope"": ""clean_primary"", ""source_dataset"": ""FakeHealth""}",target_token_occurrence_coverage_percent,81.87428641960071
+outputs/tables/covid_rumor_external_vocabulary_diagnostics.csv,"{""classifier"": ""LR"", ""scope"": ""clean_primary"", ""source_dataset"": ""CoAID""}",zero_feature_rows,0.0
+outputs/tables/covid_rumor_external_vocabulary_diagnostics.csv,"{""classifier"": ""LR"", ""scope"": ""clean_primary"", ""source_dataset"": ""FakeHealth""}",zero_feature_rows,0.0
+outputs/tables/tfidf_logistic_holdout_results.csv,"{""condition"": ""natural"", ""dataset"": ""CoAID""}",N,702.0
+outputs/tables/tfidf_logistic_holdout_results.csv,"{""condition"": ""natural"", ""dataset"": ""FakeHealth""}",N,330.0
+outputs/tables/tfidf_linear_svm_holdout_results.csv,"{""condition"": ""natural"", ""dataset"": ""CoAID""}",N,702.0
+outputs/tables/tfidf_linear_svm_holdout_results.csv,"{""condition"": ""natural"", ""dataset"": ""FakeHealth""}",N,330.0
+outputs/tables/tfidf_logistic_transfer_degradation.csv,"{""condition"": ""natural"", ""direction"": ""FH_to_CA"", ""metric"": ""macro_f1""}",transfer_drop,-0.4969503691929261
+outputs/tables/tfidf_logistic_transfer_degradation.csv,"{""condition"": ""natural"", ""direction"": ""CA_to_FH"", ""metric"": ""macro_f1""}",transfer_drop,-0.224442209316159
+outputs/tables/tfidf_linear_svm_transfer_degradation.csv,"{""direction"": ""FH_to_CA"", ""metric"": ""macro_f1""}",transfer_drop,-0.4882992197916151
+outputs/tables/tfidf_linear_svm_transfer_degradation.csv,"{""direction"": ""CA_to_FH"", ""metric"": ""macro_f1""}",transfer_drop,-0.2204601840908793
+outputs/tables/tfidf_logistic_title_vs_combined.csv,"{""condition"": ""natural"", ""direction"": ""FH_to_CA"", ""evaluation"": ""transfer"", ""metric"": ""macro_f1"", ""scope"": ""same_target_holdout""}",matched_target_N,701.0
+outputs/tables/tfidf_logistic_title_vs_combined.csv,"{""condition"": ""natural"", ""direction"": ""CA_to_FH"", ""evaluation"": ""transfer"", ""metric"": ""macro_f1"", ""scope"": ""same_target_holdout""}",matched_target_N,330.0
+outputs/tables/text_coefficient_alignment_summary.csv,"{""cutoff"": ""all""}",N,4174.0
+outputs/tables/text_coefficient_alignment_summary.csv,"{""cutoff"": ""top100""}",N,100.0
+outputs/tables/fakehealth_publisher_heldout_summary.csv,"{""condition"": ""natural"", ""metric"": ""macro_f1""}",pooled,0.6208747920982756
+outputs/tables/fakehealth_publisher_heldout_baseline_comparison.csv,"{""baseline_scope"": ""resource_grouped_cv"", ""metric"": ""macro_f1"", ""publisher_aggregation"": ""outer_mean""}",publisher_heldout,0.6195580614352559
+outputs/tables/fakehealth_publisher_heldout_baseline_comparison.csv,"{""baseline_scope"": ""resource_grouped_cv"", ""metric"": ""macro_f1"", ""publisher_aggregation"": ""outer_mean""}",resource_grouped,0.6597518195649718
+outputs/tables/fakehealth_publisher_heldout_baseline_comparison.csv,"{""baseline_scope"": ""resource_grouped_cv"", ""metric"": ""macro_f1"", ""publisher_aggregation"": ""outer_mean""}",publisher_minus_resource,-0.0401937581297158
+outputs/tables/distilroberta_transfer_results.csv,"{""max_length"": 512, ""scope"": ""same_target_holdout"", ""source_dataset"": ""FakeHealth""}",average_precision,0.2008569863383754
+outputs/tables/distilroberta_transfer_results.csv,"{""max_length"": 512, ""scope"": ""same_target_holdout"", ""source_dataset"": ""CoAID""}",average_precision,0.2610807401478766
+outputs/tables/transformer_truncation_audit.csv,"{""dataset"": ""FakeHealth"", ""max_length"": 512}",pair_percent_truncated,71.22040072859745
+outputs/tables/transformer_truncation_audit.csv,"{""dataset"": ""CoAID"", ""max_length"": 512}",pair_percent_truncated,0.0
+outputs/tables/transformer_truncation_audit.csv,"{""dataset"": ""FakeHealth"", ""max_length"": 256}",pair_percent_truncated,87.85670916818458
+outputs/tables/covid_rumor_external_cohort_summary.csv,"{""measure"": ""final_clean_binary_N""}",value,3667.0
+outputs/tables/covid_rumor_external_cohort_summary.csv,"{""measure"": ""clean_Fake_N""}",value,3015.0
+outputs/tables/covid_rumor_external_cohort_summary.csv,"{""measure"": ""clean_Real_N""}",value,652.0
+outputs/tables/covid_rumor_external_cohort_summary.csv,"{""measure"": ""exact_source_overlap_excluded_N""}",value,33.0
+outputs/tables/covid_rumor_external_transfer_results.csv,"{""classifier"": ""LR"", ""scope"": ""clean_primary"", ""source_dataset"": ""CoAID""}",predicted_fake_prevalence,0.927461139896373
+outputs/tables/covid_rumor_external_transfer_results.csv,"{""classifier"": ""LR"", ""scope"": ""clean_primary"", ""source_dataset"": ""FakeHealth""}",predicted_fake_prevalence,0.8961003545132261
+outputs/tables/covid_rumor_external_transfer_results.csv,"{""classifier"": ""SVM"", ""scope"": ""clean_primary"", ""source_dataset"": ""CoAID""}",predicted_fake_prevalence,0.943823288791928
+outputs/tables/covid_rumor_external_transfer_results.csv,"{""classifier"": ""SVM"", ""scope"": ""clean_primary"", ""source_dataset"": ""FakeHealth""}",predicted_fake_prevalence,0.9192800654485956
+outputs/tables/covid_rumor_external_transfer_results.csv,"{""classifier"": ""LR"", ""scope"": ""clean_primary"", ""source_dataset"": ""CoAID""}",actual_fake_prevalence,0.8221979820016362
+outputs/tables/covid_rumor_external_source_comparison.csv,"{""classifier"": ""LR"", ""metric"": ""macro_f1"", ""scope"": ""clean_primary""}",coaid_minus_fakehealth,0.0610573096092644
+outputs/tables/covid_rumor_external_source_comparison.csv,"{""classifier"": ""SVM"", ""metric"": ""macro_f1"", ""scope"": ""clean_primary""}",coaid_minus_fakehealth,0.0341789172396045
+outputs/tables/covid_rumor_external_source_comparison.csv,"{""classifier"": ""LR"", ""metric"": ""roc_auc"", ""scope"": ""clean_primary""}",coaid_minus_fakehealth,0.1776261840083836
+outputs/tables/covid_rumor_external_source_comparison.csv,"{""classifier"": ""SVM"", ""metric"": ""roc_auc"", ""scope"": ""clean_primary""}",coaid_minus_fakehealth,0.1567754275656481

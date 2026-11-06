@@ -1,0 +1,281 @@
+{
+  "configs": {
+    "CoAID": {
+      "C": 0.1,
+      "class_weight": "balanced",
+      "config_id": "cfg_03",
+      "min_df": 2,
+      "ngram_max": 1
+    },
+    "FakeHealth": {
+      "C": 0.1,
+      "class_weight": "balanced",
+      "config_id": "cfg_27",
+      "min_df": 5,
+      "ngram_max": 2
+    }
+  },
+  "cv_summary_sha256": "0b1cd5f62c4fdb87ce429b23dfe420264e5181ecfddd6bb9c439b393d30d41a7",
+  "protocol": {
+    "calibration": false,
+    "eligibility": "primary_modeling_eligible",
+    "grid": [
+      {
+        "C": 0.01,
+        "class_weight": "none",
+        "config_id": "cfg_00",
+        "min_df": 2,
+        "ngram_max": 1
+      },
+      {
+        "C": 0.01,
+        "class_weight": "balanced",
+        "config_id": "cfg_01",
+        "min_df": 2,
+        "ngram_max": 1
+      },
+      {
+        "C": 0.1,
+        "class_weight": "none",
+        "config_id": "cfg_02",
+        "min_df": 2,
+        "ngram_max": 1
+      },
+      {
+        "C": 0.1,
+        "class_weight": "balanced",
+        "config_id": "cfg_03",
+        "min_df": 2,
+        "ngram_max": 1
+      },
+      {
+        "C": 1.0,
+        "class_weight": "none",
+        "config_id": "cfg_04",
+        "min_df": 2,
+        "ngram_max": 1
+      },
+      {
+        "C": 1.0,
+        "class_weight": "balanced",
+        "config_id": "cfg_05",
+        "min_df": 2,
+        "ngram_max": 1
+      },
+      {
+        "C": 10.0,
+        "class_weight": "none",
+        "config_id": "cfg_06",
+        "min_df": 2,
+        "ngram_max": 1
+      },
+      {
+        "C": 10.0,
+        "class_weight": "balanced",
+        "config_id": "cfg_07",
+        "min_df": 2,
+        "ngram_max": 1
+      },
+      {
+        "C": 0.01,
+        "class_weight": "none",
+        "config_id": "cfg_08",
+        "min_df": 5,
+        "ngram_max": 1
+      },
+      {
+        "C": 0.01,
+        "class_weight": "balanced",
+        "config_id": "cfg_09",
+        "min_df": 5,
+        "ngram_max": 1
+      },
+      {
+        "C": 0.1,
+        "class_weight": "none",
+        "config_id": "cfg_10",
+        "min_df": 5,
+        "ngram_max": 1
+      },
+      {
+        "C": 0.1,
+        "class_weight": "balanced",
+        "config_id": "cfg_11",
+        "min_df": 5,
+        "ngram_max": 1
+      },
+      {
+        "C": 1.0,
+        "class_weight": "none",
+        "config_id": "cfg_12",
+        "min_df": 5,
+        "ngram_max": 1
+      },
+      {
+        "C": 1.0,
+        "class_weight": "balanced",
+        "config_id": "cfg_13",
+        "min_df": 5,
+        "ngram_max": 1
+      },
+      {
+        "C": 10.0,
+        "class_weight": "none",
+        "config_id": "cfg_14",
+        "min_df": 5,
+        "ngram_max": 1
+      },
+      {
+        "C": 10.0,
+        "class_weight": "balanced",
+        "config_id": "cfg_15",
+        "min_df": 5,
+        "ngram_max": 1
+      },
+      {
+        "C": 0.01,
+        "class_weight": "none",
+        "config_id": "cfg_16",
+        "min_df": 2,
+        "ngram_max": 2
+      },
+      {
+        "C": 0.01,
+        "class_weight": "balanced",
+        "config_id": "cfg_17",
+        "min_df": 2,
+        "ngram_max": 2
+      },
+      {
+        "C": 0.1,
+        "class_weight": "none",
+        "config_id": "cfg_18",
+        "min_df": 2,
+        "ngram_max": 2
+      },
+      {
+        "C": 0.1,
+        "class_weight": "balanced",
+        "config_id": "cfg_19",
+        "min_df": 2,
+        "ngram_max": 2
+      },
+      {
+        "C": 1.0,
+        "class_weight": "none",
+        "config_id": "cfg_20",
+        "min_df": 2,
+        "ngram_max": 2
+      },
+      {
+        "C": 1.0,
+        "class_weight": "balanced",
+        "config_id": "cfg_21",
+        "min_df": 2,
+        "ngram_max": 2
+      },
+      {
+        "C": 10.0,
+        "class_weight": "none",
+        "config_id": "cfg_22",
+        "min_df": 2,
+        "ngram_max": 2
+      },
+      {
+        "C": 10.0,
+        "class_weight": "balanced",
+        "config_id": "cfg_23",
+        "min_df": 2,
+        "ngram_max": 2
+      },
+      {
+        "C": 0.01,
+        "class_weight": "none",
+        "config_id": "cfg_24",
+        "min_df": 5,
+        "ngram_max": 2
+      },
+      {
+        "C": 0.01,
+        "class_weight": "balanced",
+        "config_id": "cfg_25",
+        "min_df": 5,
+        "ngram_max": 2
+      },
+      {
+        "C": 0.1,
+        "class_weight": "none",
+        "config_id": "cfg_26",
+        "min_df": 5,
+        "ngram_max": 2
+      },
+      {
+        "C": 0.1,
+        "class_weight": "balanced",
+        "config_id": "cfg_27",
+        "min_df": 5,
+        "ngram_max": 2
+      },
+      {
+        "C": 1.0,
+        "class_weight": "none",
+        "config_id": "cfg_28",
+        "min_df": 5,
+        "ngram_max": 2
+      },
+      {
+        "C": 1.0,
+        "class_weight": "balanced",
+        "config_id": "cfg_29",
+        "min_df": 5,
+        "ngram_max": 2
+      },
+      {
+        "C": 10.0,
+        "class_weight": "none",
+        "config_id": "cfg_30",
+        "min_df": 5,
+        "ngram_max": 2
+      },
+      {
+        "C": 10.0,
+        "class_weight": "balanced",
+        "config_id": "cfg_31",
+        "min_df": 5,
+        "ngram_max": 2
+      }
+    ],
+    "predictor": "combined_text",
+    "seed": 42,
+    "svm": {
+      "dual": "auto",
+      "fit_intercept": true,
+      "intercept_scaling": 1,
+      "loss": "squared_hinge",
+      "max_iter": 20000,
+      "penalty": "l2",
+      "random_state": 42,
+      "tol": 0.0001
+    },
+    "target_labels": "joined for scoring after all four prediction bundles frozen",
+    "tfidf": {
+      "lowercase": true,
+      "max_df": 1.0,
+      "norm": "l2",
+      "smooth_idf": true,
+      "sublinear_tf": true
+    },
+    "threshold": 0.0,
+    "tie_order": [
+      "macro F1 within .001 of best",
+      "SD within .001 of lowest",
+      "unigram",
+      "smaller C",
+      "class_weight none",
+      "config_id"
+    ],
+    "tie_tolerance": 0.001,
+    "transfer_source": "all eligible source rows including former source holdout"
+  },
+  "scope": "source training-pool grouped CV only; both configurations frozen before all final predictions"
+}

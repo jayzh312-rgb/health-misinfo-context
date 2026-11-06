@@ -1,0 +1,17 @@
+dataset,subset_or_release,table_family,raw_content_rows,processed_content_rows,raw_post_rows,processed_post_count_sum,raw_reply_rows,processed_reply_count_sum,post_mapping_keys_linked_to_content,post_mapping_unique_keys,reply_mapping_keys_linked_to_content,reply_mapping_unique_keys,counts_match_raw
+CoAID,05-01-2020,ClaimFakeCOVID-19,27,27,457,457,623,623,18,18,12,12,True
+CoAID,05-01-2020,ClaimRealCOVID-19,166,166,6342,6342,9764,9764,112,112,100,100,True
+CoAID,05-01-2020,NewsFakeCOVID-19,572,572,9218,9218,5721,5721,72,72,54,54,True
+CoAID,05-01-2020,NewsRealCOVID-19,1590,1590,87324,87324,64115,64115,1449,1449,654,654,True
+CoAID,07-01-2020,ClaimFakeCOVID-19,1,1,27,27,3,3,1,1,1,1,True
+CoAID,07-01-2020,ClaimRealCOVID-19,172,172,1453,1453,1909,1909,38,38,26,26,True
+CoAID,07-01-2020,NewsFakeCOVID-19,266,266,1198,1198,1672,1672,70,70,41,41,True
+CoAID,07-01-2020,NewsRealCOVID-19,1127,1127,54224,54224,50642,50642,1018,1018,429,429,True
+CoAID,09-01-2020,ClaimRealCOVID-19,116,116,297,297,778,778,16,16,11,11,True
+CoAID,09-01-2020,NewsFakeCOVID-19,56,56,23,23,43,43,4,4,4,4,True
+CoAID,09-01-2020,NewsRealCOVID-19,893,893,104,104,63,63,65,65,10,10,True
+CoAID,11-01-2020,ClaimRealCOVID-19,36,36,11,11,207,207,2,2,2,2,True
+CoAID,11-01-2020,NewsFakeCOVID-19,31,31,4,4,41,41,1,1,1,1,True
+CoAID,11-01-2020,NewsRealCOVID-19,922,922,193,193,296,296,48,48,13,13,True
+FakeHealth,HealthStory,HealthStory,1690,1690,384073,384073,27601,27601,1690,1690,1690,1690,True
+FakeHealth,HealthRelease,HealthRelease,606,606,47338,47338,1575,1575,606,606,606,606,True

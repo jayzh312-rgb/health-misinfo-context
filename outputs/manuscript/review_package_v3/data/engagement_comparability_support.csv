@@ -1,0 +1,722 @@
+population,dataset,group_type,group,group_count,N,fake_N,real_N,fake_with_observed_posts_N,real_with_observed_posts_N,retained_percent,status,note
+engagement_A_primary_strict,CoAID,cohort,all,,5337,922,4415,147,2530,100.0,observed_metadata_support,
+engagement_A_primary_strict,CoAID,publisher_metadata_coverage,prepared_source_name_missing,,43,40,3,3,1,0.8057,observed_metadata_support,May be resolved by URL host; not identical to unresolved family
+engagement_A_primary_strict,CoAID,publisher_metadata_coverage,prepared_article_host_missing,,43,40,3,3,1,0.8057,observed_metadata_support,May be resolved by source metadata; not identical to unresolved family
+engagement_A_primary_strict,CoAID,publisher_restriction,identified_families,262,4689,306,4383,101,2524,87.8583,observed_metadata_support,
+engagement_A_primary_strict,CoAID,publisher_metadata_status,identified,,4600,233,4367,96,2522,86.1907,observed_metadata_support,
+engagement_A_primary_strict,CoAID,publisher_metadata_status,identified_account_proxy,,89,73,16,5,2,1.6676,observed_metadata_support,
+engagement_A_primary_strict,CoAID,publisher_metadata_status,missing_source_metadata,,43,40,3,3,1,0.8057,observed_metadata_support,
+engagement_A_primary_strict,CoAID,publisher_metadata_status,unresolved_platform_publisher,,605,576,29,43,5,11.336,observed_metadata_support,
+engagement_A_primary_strict,CoAID,publisher_restriction,mixed_label_within_dataset,9,38,24,14,8,2,0.712,observed_metadata_support,
+engagement_A_primary_strict,CoAID,publisher_restriction,within_min_5_per_class,0,0,0,0,0,0,0.0,observed_metadata_support,
+engagement_A_primary_strict,CoAID,publisher_restriction,within_min_10_per_class,0,0,0,0,0,0,0.0,observed_metadata_support,
+engagement_A_primary_strict,CoAID,publisher_restriction,within_min_20_per_class,0,0,0,0,0,0,0.0,observed_metadata_support,
+engagement_A_primary_strict,CoAID,publisher_restriction,shared_families_any_label,10,2190,12,2178,6,1232,41.0343,observed_metadata_support,
+engagement_A_primary_strict,CoAID,publisher_restriction,shared_families_mixed_in_both,2,11,5,6,2,1,0.2061,observed_metadata_support,
+engagement_A_primary_strict,CoAID,publisher_restriction,shared_min_5_per_class_per_dataset,0,0,0,0,0,0,0.0,observed_metadata_support,
+engagement_A_primary_strict,CoAID,publisher_restriction,shared_min_10_per_class_per_dataset,0,0,0,0,0,0,0.0,observed_metadata_support,
+engagement_A_primary_strict,CoAID,publisher_restriction,shared_min_20_per_class_per_dataset,0,0,0,0,0,0,0.0,observed_metadata_support,
+engagement_A_primary_strict,CoAID,shared_publisher_family,host:abcnews.go.com,,4,2,2,2,0,0.0749,observed_metadata_support,Both classes in each dataset
+engagement_A_primary_strict,CoAID,shared_publisher_family,host:azcentral.com,,1,0,1,0,1,0.0187,observed_metadata_support,Lacks a class in at least one dataset
+engagement_A_primary_strict,CoAID,shared_publisher_family,host:cbsnews.com,,2,2,0,2,0,0.0375,observed_metadata_support,Lacks a class in at least one dataset
+engagement_A_primary_strict,CoAID,shared_publisher_family,host:cnn.com,,7,3,4,0,1,0.1312,observed_metadata_support,Both classes in each dataset
+engagement_A_primary_strict,CoAID,shared_publisher_family,host:foxnews.com,,4,4,0,2,0,0.0749,observed_metadata_support,Lacks a class in at least one dataset
+engagement_A_primary_strict,CoAID,shared_publisher_family,host:medicalnewstoday.com,,459,0,459,0,289,8.6003,observed_metadata_support,Lacks a class in at least one dataset
+engagement_A_primary_strict,CoAID,shared_publisher_family,host:nbcnews.com,,1,0,1,0,0,0.0187,observed_metadata_support,Lacks a class in at least one dataset
+engagement_A_primary_strict,CoAID,shared_publisher_family,host:newsweek.com,,1,1,0,0,0,0.0187,observed_metadata_support,Lacks a class in at least one dataset
+engagement_A_primary_strict,CoAID,shared_publisher_family,host:theguardian.com,,1,0,1,0,0,0.0187,observed_metadata_support,Lacks a class in at least one dataset
+engagement_A_primary_strict,CoAID,shared_publisher_family,host:webmd.com,,1710,0,1710,0,941,32.0405,observed_metadata_support,Lacks a class in at least one dataset
+engagement_A_primary_strict,CoAID,timing_metadata_coverage,publication_date_present,,1081,140,941,73,559,20.2548,observed_metadata_support,Presence is not a verified common observation window
+engagement_A_primary_strict,CoAID,timing_metadata_coverage,first_observed_post_time_present,,2677,147,2530,147,2530,50.1593,observed_metadata_support,Presence is not a verified common observation window
+engagement_A_primary_strict,CoAID,timing_metadata_coverage,last_observed_post_time_present,,2677,147,2530,147,2530,50.1593,observed_metadata_support,Presence is not a verified common observation window
+engagement_A_primary_strict,CoAID,timing_metadata_coverage,publication_date_valid,,1080,139,941,72,559,20.2361,observed_metadata_support,Valid parsing/range flag; not verified exposure start
+engagement_HealthStory,FakeHealth,cohort,all,,1690,472,1218,471,1212,100.0,observed_metadata_support,
+engagement_HealthStory,FakeHealth,publisher_metadata_coverage,prepared_source_name_missing,,19,8,11,8,11,1.1243,observed_metadata_support,May be resolved by URL host; not identical to unresolved family
+engagement_HealthStory,FakeHealth,publisher_metadata_coverage,prepared_article_host_missing,,1,1,0,1,0,0.0592,observed_metadata_support,May be resolved by source metadata; not identical to unresolved family
+engagement_HealthStory,FakeHealth,publisher_restriction,identified_families,51,1689,471,1218,470,1212,99.9408,observed_metadata_support,
+engagement_HealthStory,FakeHealth,publisher_metadata_status,identified,,1689,471,1218,470,1212,99.9408,observed_metadata_support,
+engagement_HealthStory,FakeHealth,publisher_metadata_status,missing_source_metadata,,1,1,0,1,0,0.0592,observed_metadata_support,
+engagement_HealthStory,FakeHealth,publisher_restriction,mixed_label_within_dataset,36,1666,461,1205,460,1199,98.5799,observed_metadata_support,
+engagement_HealthStory,FakeHealth,publisher_restriction,within_min_5_per_class,21,1490,429,1061,428,1056,88.1657,observed_metadata_support,
+engagement_HealthStory,FakeHealth,publisher_restriction,within_min_10_per_class,11,1228,337,891,336,887,72.6627,observed_metadata_support,
+engagement_HealthStory,FakeHealth,publisher_restriction,within_min_20_per_class,5,829,235,594,234,592,49.0533,observed_metadata_support,
+engagement_HealthStory,FakeHealth,publisher_restriction,shared_families_any_label,10,382,151,231,150,230,22.6036,observed_metadata_support,
+engagement_HealthStory,FakeHealth,publisher_restriction,shared_families_mixed_in_both,2,97,28,69,28,69,5.7396,observed_metadata_support,
+engagement_HealthStory,FakeHealth,publisher_restriction,shared_min_5_per_class_per_dataset,0,0,0,0,0,0,0.0,observed_metadata_support,
+engagement_HealthStory,FakeHealth,publisher_restriction,shared_min_10_per_class_per_dataset,0,0,0,0,0,0,0.0,observed_metadata_support,
+engagement_HealthStory,FakeHealth,publisher_restriction,shared_min_20_per_class_per_dataset,0,0,0,0,0,0,0.0,observed_metadata_support,
+engagement_HealthStory,FakeHealth,shared_publisher_family,host:abcnews.go.com,,29,9,20,9,20,1.716,observed_metadata_support,Both classes in each dataset
+engagement_HealthStory,FakeHealth,shared_publisher_family,host:azcentral.com,,1,1,0,1,0,0.0592,observed_metadata_support,Lacks a class in at least one dataset
+engagement_HealthStory,FakeHealth,shared_publisher_family,host:cbsnews.com,,35,19,16,19,16,2.071,observed_metadata_support,Lacks a class in at least one dataset
+engagement_HealthStory,FakeHealth,shared_publisher_family,host:cnn.com,,68,19,49,19,49,4.0237,observed_metadata_support,Both classes in each dataset
+engagement_HealthStory,FakeHealth,shared_publisher_family,host:foxnews.com,,29,20,9,20,9,1.716,observed_metadata_support,Lacks a class in at least one dataset
+engagement_HealthStory,FakeHealth,shared_publisher_family,host:medicalnewstoday.com,,2,0,2,0,2,0.1183,observed_metadata_support,Lacks a class in at least one dataset
+engagement_HealthStory,FakeHealth,shared_publisher_family,host:nbcnews.com,,35,9,26,9,26,2.071,observed_metadata_support,Lacks a class in at least one dataset
+engagement_HealthStory,FakeHealth,shared_publisher_family,host:newsweek.com,,26,7,19,7,19,1.5385,observed_metadata_support,Lacks a class in at least one dataset
+engagement_HealthStory,FakeHealth,shared_publisher_family,host:theguardian.com,,21,15,6,15,6,1.2426,observed_metadata_support,Lacks a class in at least one dataset
+engagement_HealthStory,FakeHealth,shared_publisher_family,host:webmd.com,,136,52,84,51,83,8.0473,observed_metadata_support,Lacks a class in at least one dataset
+engagement_HealthStory,FakeHealth,timing_metadata_coverage,publication_date_present,,1038,292,746,291,741,61.4201,observed_metadata_support,Presence is not a verified common observation window
+engagement_HealthStory,FakeHealth,timing_metadata_coverage,first_observed_post_time_present,,1683,471,1212,471,1212,99.5858,observed_metadata_support,Presence is not a verified common observation window
+engagement_HealthStory,FakeHealth,timing_metadata_coverage,last_observed_post_time_present,,1683,471,1212,471,1212,99.5858,observed_metadata_support,Presence is not a verified common observation window
+engagement_HealthStory,FakeHealth,timing_metadata_coverage,publication_date_valid,,1038,292,746,291,741,61.4201,observed_metadata_support,Valid parsing/range flag; not verified exposure start
+engagement_HealthStory,FakeHealth,topic_metadata_coverage,review_tags_nonempty,,1194,296,898,296,897,70.6509,observed_metadata_support,Native review tags; not harmonized with CoAID; multi-label
+engagement_HealthStory,FakeHealth,topic_metadata_coverage,review_tags_empty,,496,176,320,175,315,29.3491,observed_metadata_support,No native review tags
+engagement_HealthStory,FakeHealth,topic_metadata_coverage,review_category_nonempty,,1326,342,984,342,983,78.4615,observed_metadata_support,Native categories mix publishers and subject/review themes; not a common topic taxonomy
+engagement_HealthStory,FakeHealth,topic_metadata_coverage,review_category_missing,,364,130,234,129,229,21.5385,observed_metadata_support,No native review category
+engagement_A_primary_strict,CoAID,topic_metadata_coverage,no_prepared_topic_annotation,,5337,922,4415,147,2530,100.0,observed_metadata_support,"No dedicated topic field in prepared engagement metadata; raw schema lists meta_keywords, coverage not audited here"
+engagement_HealthStory,FakeHealth,native_review_category,[missing],,364,130,234,129,229,21.5385,observed_metadata_support,"Native review category, not a common topic taxonomy"
+engagement_HealthStory,FakeHealth,native_review_category,"""cure""",,4,0,4,0,4,0.2367,observed_metadata_support,"Native review category, not a common topic taxonomy"
+engagement_HealthStory,FakeHealth,native_review_category,ABC News,,15,8,7,8,7,0.8876,observed_metadata_support,"Native review category, not a common topic taxonomy"
+engagement_HealthStory,FakeHealth,native_review_category,Alzheimer's,,39,11,28,11,28,2.3077,observed_metadata_support,"Native review category, not a common topic taxonomy"
+engagement_HealthStory,FakeHealth,native_review_category,Appendicitis,,2,0,2,0,2,0.1183,observed_metadata_support,"Native review category, not a common topic taxonomy"
+engagement_HealthStory,FakeHealth,native_review_category,Associated Press,,72,5,67,5,67,4.2604,observed_metadata_support,"Native review category, not a common topic taxonomy"
+engagement_HealthStory,FakeHealth,native_review_category,Autism,,16,7,9,7,9,0.9467,observed_metadata_support,"Native review category, not a common topic taxonomy"
+engagement_HealthStory,FakeHealth,native_review_category,Back pain,,7,1,6,1,6,0.4142,observed_metadata_support,"Native review category, not a common topic taxonomy"
+engagement_HealthStory,FakeHealth,native_review_category,Bloomberg,,17,3,14,3,14,1.0059,observed_metadata_support,"Native review category, not a common topic taxonomy"
+engagement_HealthStory,FakeHealth,native_review_category,Boston Globe,,9,1,8,1,8,0.5325,observed_metadata_support,"Native review category, not a common topic taxonomy"
+engagement_HealthStory,FakeHealth,native_review_category,BuzzFeed,,10,1,9,1,9,0.5917,observed_metadata_support,"Native review category, not a common topic taxonomy"
+engagement_HealthStory,FakeHealth,native_review_category,CBS News,,26,15,11,15,11,1.5385,observed_metadata_support,"Native review category, not a common topic taxonomy"
+engagement_HealthStory,FakeHealth,native_review_category,CNN,,43,10,33,10,33,2.5444,observed_metadata_support,"Native review category, not a common topic taxonomy"
+engagement_HealthStory,FakeHealth,native_review_category,Cancer,,163,41,122,41,122,9.645,observed_metadata_support,"Native review category, not a common topic taxonomy"
+engagement_HealthStory,FakeHealth,native_review_category,Cardiovascular disease,,13,3,10,3,10,0.7692,observed_metadata_support,"Native review category, not a common topic taxonomy"
+engagement_HealthStory,FakeHealth,native_review_category,Chicago Tribune,,6,5,1,5,1,0.355,observed_metadata_support,"Native review category, not a common topic taxonomy"
+engagement_HealthStory,FakeHealth,native_review_category,Conflict of interest,,2,1,1,1,1,0.1183,observed_metadata_support,"Native review category, not a common topic taxonomy"
+engagement_HealthStory,FakeHealth,native_review_category,Depression,,17,3,14,3,14,1.0059,observed_metadata_support,"Native review category, not a common topic taxonomy"
+engagement_HealthStory,FakeHealth,native_review_category,Detroit Free Press,,1,0,1,0,1,0.0592,observed_metadata_support,"Native review category, not a common topic taxonomy"
+engagement_HealthStory,FakeHealth,native_review_category,Devices,,27,9,18,9,18,1.5976,observed_metadata_support,"Native review category, not a common topic taxonomy"
+engagement_HealthStory,FakeHealth,native_review_category,Diabetes,,13,3,10,3,10,0.7692,observed_metadata_support,"Native review category, not a common topic taxonomy"
+engagement_HealthStory,FakeHealth,native_review_category,Diet studies,,41,15,26,15,26,2.426,observed_metadata_support,"Native review category, not a common topic taxonomy"
+engagement_HealthStory,FakeHealth,native_review_category,Drug costs,,1,0,1,0,1,0.0592,observed_metadata_support,"Native review category, not a common topic taxonomy"
+engagement_HealthStory,FakeHealth,native_review_category,FiveThirtyEight.com,,2,0,2,0,2,0.1183,observed_metadata_support,"Native review category, not a common topic taxonomy"
+engagement_HealthStory,FakeHealth,native_review_category,Fox News,,19,14,5,14,5,1.1243,observed_metadata_support,"Native review category, not a common topic taxonomy"
+engagement_HealthStory,FakeHealth,native_review_category,Harms of medical treatment,,4,0,4,0,4,0.2367,observed_metadata_support,"Native review category, not a common topic taxonomy"
+engagement_HealthStory,FakeHealth,native_review_category,HealthDay,,123,28,95,28,95,7.2781,observed_metadata_support,"Native review category, not a common topic taxonomy"
+engagement_HealthStory,FakeHealth,native_review_category,Imaging studies,,4,3,1,3,1,0.2367,observed_metadata_support,"Native review category, not a common topic taxonomy"
+engagement_HealthStory,FakeHealth,native_review_category,Irritable bowel syndrome,,1,1,0,1,0,0.0592,observed_metadata_support,"Native review category, not a common topic taxonomy"
+engagement_HealthStory,FakeHealth,native_review_category,Kidney Disease,,2,1,1,1,1,0.1183,observed_metadata_support,"Native review category, not a common topic taxonomy"
+engagement_HealthStory,FakeHealth,native_review_category,Los Angeles Times,,40,7,33,7,33,2.3669,observed_metadata_support,"Native review category, not a common topic taxonomy"
+engagement_HealthStory,FakeHealth,native_review_category,MSNBC,,6,4,2,4,2,0.355,observed_metadata_support,"Native review category, not a common topic taxonomy"
+engagement_HealthStory,FakeHealth,native_review_category,Medical Daily,,4,3,1,3,1,0.2367,observed_metadata_support,"Native review category, not a common topic taxonomy"
+engagement_HealthStory,FakeHealth,native_review_category,NBC News,,26,7,19,7,19,1.5385,observed_metadata_support,"Native review category, not a common topic taxonomy"
+engagement_HealthStory,FakeHealth,native_review_category,NPR,,47,4,43,4,43,2.7811,observed_metadata_support,"Native review category, not a common topic taxonomy"
+engagement_HealthStory,FakeHealth,native_review_category,New York Times,,61,11,50,11,50,3.6095,observed_metadata_support,"Native review category, not a common topic taxonomy"
+engagement_HealthStory,FakeHealth,native_review_category,Newsweek,,24,6,18,6,18,1.4201,observed_metadata_support,"Native review category, not a common topic taxonomy"
+engagement_HealthStory,FakeHealth,native_review_category,Osteoporosis,,2,0,2,0,2,0.1183,observed_metadata_support,"Native review category, not a common topic taxonomy"
+engagement_HealthStory,FakeHealth,native_review_category,Philadelphia Inquirer,,27,1,26,1,26,1.5976,observed_metadata_support,"Native review category, not a common topic taxonomy"
+engagement_HealthStory,FakeHealth,native_review_category,Reuters,,34,18,16,18,16,2.0118,observed_metadata_support,"Native review category, not a common topic taxonomy"
+engagement_HealthStory,FakeHealth,native_review_category,Reuters Health,,62,13,49,13,49,3.6686,observed_metadata_support,"Native review category, not a common topic taxonomy"
+engagement_HealthStory,FakeHealth,native_review_category,STAT,,17,2,15,2,15,1.0059,observed_metadata_support,"Native review category, not a common topic taxonomy"
+engagement_HealthStory,FakeHealth,native_review_category,Screening,,3,0,3,0,3,0.1775,observed_metadata_support,"Native review category, not a common topic taxonomy"
+engagement_HealthStory,FakeHealth,native_review_category,Shared decision-making,,1,0,1,0,1,0.0592,observed_metadata_support,"Native review category, not a common topic taxonomy"
+engagement_HealthStory,FakeHealth,native_review_category,Smoking,,2,0,2,0,2,0.1183,observed_metadata_support,"Native review category, not a common topic taxonomy"
+engagement_HealthStory,FakeHealth,native_review_category,Stroke,,6,0,6,0,6,0.355,observed_metadata_support,"Native review category, not a common topic taxonomy"
+engagement_HealthStory,FakeHealth,native_review_category,Supplements,,5,2,3,2,3,0.2959,observed_metadata_support,"Native review category, not a common topic taxonomy"
+engagement_HealthStory,FakeHealth,native_review_category,TIME,,22,8,14,8,14,1.3018,observed_metadata_support,"Native review category, not a common topic taxonomy"
+engagement_HealthStory,FakeHealth,native_review_category,The Dallas Morning News,,1,1,0,1,0,0.0592,observed_metadata_support,"Native review category, not a common topic taxonomy"
+engagement_HealthStory,FakeHealth,native_review_category,The Denver Post,,1,1,0,1,0,0.0592,observed_metadata_support,"Native review category, not a common topic taxonomy"
+engagement_HealthStory,FakeHealth,native_review_category,The Guardian,,18,13,5,13,5,1.0651,observed_metadata_support,"Native review category, not a common topic taxonomy"
+engagement_HealthStory,FakeHealth,native_review_category,U.S. News & World Report,,12,3,9,3,8,0.7101,observed_metadata_support,"Native review category, not a common topic taxonomy"
+engagement_HealthStory,FakeHealth,native_review_category,USA Today,,12,3,9,3,9,0.7101,observed_metadata_support,"Native review category, not a common topic taxonomy"
+engagement_HealthStory,FakeHealth,native_review_category,Vox,,13,1,12,1,12,0.7692,observed_metadata_support,"Native review category, not a common topic taxonomy"
+engagement_HealthStory,FakeHealth,native_review_category,Wall Street Journal,,46,8,38,8,38,2.7219,observed_metadata_support,"Native review category, not a common topic taxonomy"
+engagement_HealthStory,FakeHealth,native_review_category,Washington Post,,31,8,23,8,23,1.8343,observed_metadata_support,"Native review category, not a common topic taxonomy"
+engagement_HealthStory,FakeHealth,native_review_category,WebMD,,29,8,21,8,21,1.716,observed_metadata_support,"Native review category, not a common topic taxonomy"
+engagement_HealthStory,FakeHealth,native_review_category,animal research,,4,1,3,1,3,0.2367,observed_metadata_support,"Native review category, not a common topic taxonomy"
+engagement_HealthStory,FakeHealth,native_review_category,health food claims,,25,4,21,4,21,1.4793,observed_metadata_support,"Native review category, not a common topic taxonomy"
+engagement_HealthStory,FakeHealth,native_review_category,heart disease,,32,11,21,11,21,1.8935,observed_metadata_support,"Native review category, not a common topic taxonomy"
+engagement_HealthStory,FakeHealth,native_review_category,limits of observational studies,,5,2,3,2,3,0.2959,observed_metadata_support,"Native review category, not a common topic taxonomy"
+engagement_HealthStory,FakeHealth,native_review_category,mental health,,4,2,2,2,2,0.2367,observed_metadata_support,"Native review category, not a common topic taxonomy"
+engagement_HealthStory,FakeHealth,native_review_category,premature babies,,1,0,1,0,1,0.0592,observed_metadata_support,"Native review category, not a common topic taxonomy"
+engagement_HealthStory,FakeHealth,native_review_category,skin cancer/sun protection,,3,1,2,1,2,0.1775,observed_metadata_support,"Native review category, not a common topic taxonomy"
+engagement_HealthStory,FakeHealth,native_review_category,women's health,,1,0,1,0,1,0.0592,observed_metadata_support,"Native review category, not a common topic taxonomy"
+engagement_HealthStory,FakeHealth,native_review_tag,ADHD,,8,3,5,3,5,0.4734,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,ALD,,2,0,2,0,2,0.1183,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,ALS,,3,0,3,0,3,0.1775,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,ASCO,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,Africa,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,Aimovig,,1,1,0,1,0,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,Alcohol,,7,3,4,3,4,0.4142,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,American Heart Association,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,Amgen,,2,1,1,1,1,0.1183,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,Angelina Jolie,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,Anorexia,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,Antiaging,,5,1,4,1,4,0.2959,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,ApoE4,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,BAN2401,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,BMI,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,BRCA,,6,0,6,0,6,0.355,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,BioSure,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,Biogen,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,Blood clots,,3,1,2,1,2,0.1775,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,Bloomberg,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,Boehringer Ingelheim,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,Boston Scientific,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,Botox,,4,1,3,1,3,0.2367,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,Bristol-Myers Squibb,,1,1,0,1,0,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,British Medical Journal,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,COPD,,2,1,1,1,1,0.1183,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,CPR,,2,1,1,1,1,0.1183,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,CTAs,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,CTCA,,1,1,0,1,0,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,Canakinumab,,2,0,2,0,2,0.1183,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,Cervical cancer,,5,0,5,0,5,0.2959,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,Cesarean,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,Cherries,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,Chris Kilham,,1,1,0,1,0,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,Clean air,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,Clear Passage,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,Colorectal cancer,,2,2,0,2,0,0.1183,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,Computed tomography coronary angiography,,1,1,0,1,0,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,Concussion,,5,0,5,0,5,0.2959,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,Crohn's Disease,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,DASH diet,,1,1,0,1,0,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,DSM,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,Dialysis,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,Downs Syndrome,,4,1,3,1,3,0.2367,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,Dr. Harlan Krumholz,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,Dr. Jorge Chavarro,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,Dr. Manny Alvarez,,1,1,0,1,0,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,Dr. Praveen Mummaneni,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,Dr. Robert Lustig,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,Dr. Steven Nissen,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,EEG,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,Ebola,,2,0,2,0,2,0.1183,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,Eli Lilly,,2,0,2,0,2,0.1183,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,Energy drinks,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,Enzymes,,1,1,0,1,0,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,Epilepsy,,8,0,8,0,8,0.4734,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,Essure device,,1,1,0,1,0,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,FDA,,12,2,10,2,10,0.7101,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,Fasting Mimicking Diet,,2,1,1,1,1,0.1183,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,Fiber,,4,0,4,0,4,0.2367,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,Fitbit,,1,1,0,1,0,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,GHRH,,2,0,2,0,2,0.1183,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,GeneSight,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,Gina Kolata,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,Gluten,,5,2,3,2,3,0.2959,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,Gocovri,,1,1,0,1,0,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,Gokhale Method,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,Gout,,1,1,0,1,0,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,HIV/AIDS,,11,1,10,1,10,0.6509,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,HPV,,6,1,5,1,5,0.355,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,HRT,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,Hepatitis C,,4,1,3,1,3,0.2367,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,Herceptin,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,Hispanic,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,Huntington's Disease,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,I,,1,1,0,1,0,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,IUD,,2,0,2,0,2,0.1183,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,IV fluids,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,IVF,,3,1,2,1,2,0.1775,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,Ilaris,,2,0,2,0,2,0.1183,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,Intermittent fasting,,2,1,1,1,1,0.1183,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,Irritable bowel syndrome,,2,1,1,1,1,0.1183,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,JAMA,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,Januvia,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,Jardiance,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,Johns Hopkins University,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,Journal of General Internal Medicine,,1,1,0,1,0,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,Keytruda,,8,3,5,3,5,0.4734,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,King-Devick Testing,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,Knees,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,Kybella,,2,0,2,0,2,0.1183,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,Kythera,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,Lancet,,1,1,0,1,0,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,Lariat,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,Lorenzo's oil,,2,0,2,0,2,0.1183,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,Lou Gehrig's disease,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,Lumosity,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,Lunesta,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,MRI,,4,2,2,2,2,0.2367,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,March of Dimes,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,Mediterranean diet,,5,1,4,1,4,0.2959,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,Medtronic,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,Merck,,3,1,2,1,2,0.1775,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,Mohs surgery,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,Multiple sclerosis,,13,3,10,3,10,0.7692,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,Myriad Genetics,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,NEJM,,2,0,2,0,2,0.1183,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,NSAIDs,,4,2,2,2,2,0.2367,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,National Lung Screening Trial,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,New England Journal of Medicine,,3,0,3,0,3,0.1775,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,Newsweek,,1,1,0,1,0,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,Novartis,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,Omega-3,,9,4,5,4,5,0.5325,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,Omega-6,,2,0,2,0,2,0.1183,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,Opdivo,,2,0,2,0,2,0.1183,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,PAD,,1,1,0,1,0,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,PCSK9 inhibitors,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,PMS,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,Parkinson's,,11,4,7,4,7,0.6509,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,Pathway Genomics,,2,0,2,0,2,0.1183,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,Paxil,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,Perjeta,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,Pilates,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,Pregnancy,,21,4,17,4,17,1.2426,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,Probiotics,,5,0,5,0,5,0.2959,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,Prozac,,3,0,3,0,3,0.1775,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,Psoriasis,,4,1,3,1,3,0.2367,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,Radiological Society of North America,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,ReShape,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,Reclast,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,Restless Leg syndrome,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,Restoril,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,Sauna Bathing,,2,1,1,1,1,0.1183,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,Sonata,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,Soy,,4,2,2,2,2,0.2367,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,Stress Management,,1,1,0,1,0,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,Stress Testing,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,T-VEC,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,TAVR,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,TIA,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,TIME,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,Theradome,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,Tomatoes,,3,0,3,0,3,0.1775,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,Tonsillectomy,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,Tylenol,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,UA,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,UC Davis,,1,1,0,1,0,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,US Preventive Services Task Force,,4,0,4,0,4,0.2367,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,University of Pennsylvania,,2,0,2,0,2,0.1183,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,Vegetarians,,1,1,0,1,0,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,Veracyte,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,Vitamin D,,11,1,10,1,10,0.6509,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,Watchman,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,Well blog,,3,1,2,1,2,0.1775,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,Zika virus,,2,0,2,0,2,0.1183,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,acne,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,acupuncture,,13,5,8,5,8,0.7692,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,addiction,,5,0,5,0,5,0.2959,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,adolescents,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,after-sun products,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,air quality monitor,,1,1,0,1,0,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,akkermansia,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,alcohol use disorder,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,allergies,,11,4,7,4,7,0.6509,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,allergy,,2,0,2,0,2,0.1183,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,alzheimer's disease,,15,7,8,7,8,0.8876,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,anecdotes over evidence,,7,4,3,4,3,0.4142,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,anemia,,2,0,2,0,2,0.1183,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,aneurysm,,1,1,0,1,0,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,angina,,2,0,2,0,2,0.1183,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,anti-clotting drug,,2,2,0,2,0,0.1183,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,anti-psychotic drugs,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,antibiotic resistance,,2,1,1,1,1,0.1183,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,antibiotics,,10,4,6,4,6,0.5917,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,antidepressants,,10,2,8,2,8,0.5917,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,antioxidants,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,antivirals,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,anxiety,,1,1,0,1,0,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,aromatase inhibitors,,2,0,2,0,2,0.1183,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,artificial sweeteners,,1,1,0,1,0,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,aspirin,,22,3,19,3,19,1.3018,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,asthma,,9,2,7,2,7,0.5325,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,atrial fibrillation,,4,0,4,0,4,0.2367,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,autism,,5,2,3,2,3,0.2959,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,awair,,1,1,0,1,0,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,ayahuasca,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,babies,,6,0,6,0,6,0.355,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,baby formula,,2,0,2,0,2,0.1183,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,back pain,,8,2,6,2,6,0.4734,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,baldness remedies,,2,1,1,1,1,0.1183,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,bariatric surgery,,6,0,6,0,6,0.355,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,beet juice,,2,1,1,1,1,0.1183,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,behavior,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,beta amyloid,,2,0,2,0,2,0.1183,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,beta-blockers,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,biologic drugs,,3,0,3,0,3,0.1775,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,biological clock,,1,1,0,1,0,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,bipolar disorder,,4,0,4,0,4,0.2367,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,birth,,8,0,8,0,8,0.4734,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,bisphosphonates,,2,0,2,0,2,0.1183,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,blood cell cancer,,2,0,2,0,2,0.1183,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,blood test,,2,0,2,0,2,0.1183,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,blood tests,,13,5,8,5,8,0.7692,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,blueberries,,3,1,2,1,2,0.1775,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,bone scans,,1,1,0,1,0,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,book authors,,1,1,0,1,0,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,brain cancer,,3,0,3,0,3,0.1775,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,brain games,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,brain tumor,,2,2,0,2,0,0.1183,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,breast cancer,,65,14,51,14,51,3.8462,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,breastfeeding,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,breath testing,,2,1,1,1,1,0.1183,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,breathing,,2,2,0,2,0,0.1183,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,c-section,,2,0,2,0,2,0.1183,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,calcium,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,canavan disease,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,cancer,,14,4,10,4,10,0.8284,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,cancer prevention,,1,1,0,1,0,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,cancer test,,3,1,2,1,2,0.1775,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,cancer treatments,,2,1,1,1,1,0.1183,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,cardiac arrest,,3,1,2,1,2,0.1775,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,cardiac rehab,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,cataracts,,2,0,2,0,2,0.1183,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,catheter-caused UTI,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,cavities,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,celebrities,,1,1,0,1,0,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,celiac disease,,2,1,1,1,1,0.1183,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,cellulite,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,chelation therapy,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,chemotherapy,,4,0,4,0,4,0.2367,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,chest protection,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,childhood obesity,,3,1,2,1,2,0.1775,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,chin fat,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,chocolate,,4,1,3,1,3,0.2367,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,cholesterol,,25,4,21,4,21,1.4793,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,chronic fatigue syndrome,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,circumcision,,3,0,3,0,3,0.1775,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,cluster headaches,,1,1,0,1,0,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,coffee,,9,2,7,2,7,0.5325,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,cognitive behavioral therapy,,4,2,2,2,2,0.2367,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,cognitive decline,,4,0,4,0,4,0.2367,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,cold turkey,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,colon cancer,,24,4,20,4,20,1.4201,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,colonoscopy,,7,2,5,2,5,0.4142,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,color genomics,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,common cold,,7,1,6,1,6,0.4142,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,computer app,,3,1,2,1,2,0.1775,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,concussions,,4,0,4,0,4,0.2367,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,confirmation bias,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,conflict of interest,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,congenital cataracts,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,contraceptives,,10,1,9,1,9,0.5917,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,controlled substances,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,coronary calcium score,,1,1,0,1,0,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,coronary heart disease,,1,1,0,1,0,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,cortisol,,1,1,0,1,0,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,cosmetic procedures,,4,1,3,1,3,0.2367,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,cosmetics,,2,1,1,1,1,0.1183,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,craving,,1,1,0,1,0,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,ct,,1,1,0,1,0,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,cupping,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,cystic fibrosis,,6,1,5,1,5,0.355,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,deaf children,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,deep brain stimulation,,5,1,4,1,4,0.2959,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,defibrillators,,2,0,2,0,2,0.1183,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,dementia,,18,6,12,6,12,1.0651,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,dentistry,,3,1,2,1,2,0.1775,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,depression,,20,4,16,4,16,1.1834,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,dermatitis,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,dermatology,,4,2,2,2,2,0.2367,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,dermira,,1,1,0,1,0,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,desmopressin,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,device,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,diabetes,,15,1,14,1,14,0.8876,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,diagnosis,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,diagnostic tests,,2,2,0,2,0,0.1183,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,diarrhea,,1,1,0,1,0,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,diet,,6,3,3,3,3,0.355,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,diet plans,,1,1,0,1,0,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,diet studies,,7,0,7,0,7,0.4142,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,digestive health,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,disease mongering,,2,2,0,2,0,0.1183,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,dissolvable stent,,2,0,2,0,2,0.1183,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,double chins,,2,1,1,1,1,0.1183,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,drug costs,,9,3,6,3,6,0.5325,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,drug trials,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,e-cigarettes,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,eczema,,4,0,4,0,4,0.2367,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,embryo screening,,1,1,0,1,0,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,endometriosis,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,entresto,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,exercise,,20,6,14,6,14,1.1834,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,eye disease,,2,0,2,0,2,0.1183,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,eyesight,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,fecal incontinence,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,fecal transplant,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,female sexual dysfunction,,1,1,0,1,0,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,fertility,,5,0,5,0,5,0.2959,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,fibroids,,2,0,2,0,2,0.1183,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,fibromyalgia,,2,0,2,0,2,0.1183,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,fine motor skills,,2,0,2,0,2,0.1183,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,fish oil,,3,0,3,0,3,0.1775,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,fitness,,1,1,0,1,0,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,flibanserin,,1,1,0,1,0,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,flu shot,,4,0,4,0,4,0.2367,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,focused ultrasound,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,folic acid,,7,1,6,1,6,0.4142,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,fox news,,1,1,0,1,0,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,freezing,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,frequent urination,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,fructose,,1,1,0,1,0,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,fruit and breast cancer risk,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,gastric balloon,,2,1,1,1,1,0.1183,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,gene therapy,,14,2,12,2,12,0.8284,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,genetic testing,,10,1,9,1,9,0.5917,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,genetics,,2,1,1,1,1,0.1183,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,gerd,,1,1,0,1,0,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,ginger,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,glaucoma,,2,0,2,0,2,0.1183,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,glioblastoma,,3,0,3,0,3,0.1775,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,global health,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,glucose,,1,1,0,1,0,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,gonorrhea,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,grief,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,gut bacteria,,2,0,2,0,2,0.1183,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,gut flora,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,hair loss,,2,0,2,0,2,0.1183,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,hallucinogens,,2,0,2,0,2,0.1183,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,harms,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,head injuries,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,headache,,1,1,0,1,0,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,health costs,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,hearing,,1,1,0,1,0,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,heart attack,,8,2,6,2,6,0.4734,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,heart attacks,,10,2,8,2,8,0.5917,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,heart disease,,17,4,13,4,13,1.0059,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,heart failure,,8,2,6,2,6,0.4734,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,heart health,,8,3,5,3,5,0.4734,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,heartburn,,1,1,0,1,0,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,high blood pressure,,11,2,9,2,9,0.6509,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,hip replacement,,3,2,1,2,1,0.1775,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,hip surgery,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,home testing,,2,0,2,0,2,0.1183,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,hormone-releasing hormone,,2,0,2,0,2,0.1183,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,hospital readmissions,,1,1,0,1,0,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,hot chili peppers,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,hot flashes,,14,4,10,4,10,0.8284,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,hydration,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,hypertension,,5,0,5,0,5,0.2959,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,hypnosis,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,ibuprofen,,3,0,3,0,3,0.1775,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,immunotherapy,,21,5,16,5,16,1.2426,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,impotence,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,in vitro fertlization,,2,0,2,0,2,0.1183,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,infertility,,10,6,4,6,4,0.5917,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,inflammation,,1,1,0,1,0,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,influenza,,6,4,2,4,2,0.355,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,infrared saunas,,1,1,0,1,0,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,insomnia,,6,0,6,0,6,0.355,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,insulin,,3,2,1,2,1,0.1775,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,intensive cardiac rehabilitation,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,interventional radiology,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,ipilimumab,,2,0,2,0,2,0.1183,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,iron,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,iron deficiency,,2,0,2,0,2,0.1183,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,jet lag,,4,0,4,0,4,0.2367,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,jimmy carter,,2,0,2,0,2,0.1183,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,journalism,,2,2,0,2,0,0.1183,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,ketamine,,4,1,3,1,3,0.2367,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,kidney donation,,3,1,2,1,2,0.1775,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,knee,,1,1,0,1,0,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,knee osteoarthritis,,7,2,5,2,5,0.4142,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,knee replacement,,4,1,3,1,2,0.2367,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,kratom,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,lab-grown islet cells,,1,1,0,1,0,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,labor,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,laser ablation,,1,1,0,1,0,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,leukemia,,6,1,5,1,5,0.355,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,lice,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,light therapy,,5,1,4,1,4,0.2959,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,limits of observational studies,,7,3,4,3,4,0.4142,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,liquid biopsy,,3,1,2,1,2,0.1775,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,lithium,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,liver,,2,1,1,1,1,0.1183,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,livia,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,low-dose CT,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,lung cancer,,18,6,12,6,12,1.0651,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,lung disease,,3,1,2,1,2,0.1775,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,lymphoma,,4,2,2,2,2,0.2367,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,major depression,,1,1,0,1,0,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,mammography,,19,4,15,4,15,1.1243,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,marijuana,,7,3,4,3,4,0.4142,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,marketing,,3,2,1,2,1,0.1775,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,massage,,3,0,3,0,3,0.1775,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,medical devices,,11,5,6,5,6,0.6509,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,medical marijuana,,5,1,4,1,4,0.2959,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,meditation,,4,2,2,2,2,0.2367,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,melanoma,,23,2,21,2,21,1.3609,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,melatonin,,3,0,3,0,3,0.1775,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,men's health,,5,0,5,0,5,0.2959,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,menopause,,13,6,7,6,7,0.7692,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,menstrual pain,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,mental health,,7,1,6,1,6,0.4142,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,mental illness,,7,0,7,0,7,0.4142,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,metformin,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,mice studies,,12,6,6,6,6,0.7101,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,microbiome,,2,0,2,0,2,0.1183,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,migraine,,11,4,7,4,7,0.6509,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,migraines,,5,1,4,1,4,0.2959,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,mild cognitive impairment,,4,0,4,0,4,0.2367,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,mindfulness,,2,1,1,1,1,0.1183,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,mini-strokes,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,monoclonal antibody drugs,,4,0,4,0,4,0.2367,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,multivitamins,,2,0,2,0,2,0.1183,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,muscular dystrophy,,3,1,2,1,2,0.1775,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,nasopharyngeal carcinoma,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,neural tube defects,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,neurology,,3,0,3,0,3,0.1775,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,news release journalism,,2,0,2,0,2,0.1183,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,nicotine addiction,,4,0,4,0,4,0.2367,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,nicotine addition,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,night milk,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,nitrous oxide,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,nocturia,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,nonmelanoma skin cancer,,2,0,2,0,2,0.1183,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,nutrition,,4,0,4,0,4,0.2367,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,obesity,,14,4,10,4,10,0.8284,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,older people,,2,2,0,2,0,0.1183,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,olive oil,,4,0,4,0,4,0.2367,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,online therapy,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,opioid drugs,,2,0,2,0,2,0.1183,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,opioids,,7,1,6,1,6,0.4142,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,optimism,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,oral health,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,oral insulin,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,orbera,,1,1,0,1,0,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,organ-on-a-chip,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,osteoarthritis,,2,1,1,1,1,0.1183,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,osteoporosis,,7,0,7,0,7,0.4142,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,ovarian cancer,,10,3,7,3,7,0.5917,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,ovaries,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,overdiagnosis,,2,0,2,0,2,0.1183,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,overscreening,,2,1,1,1,1,0.1183,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,pacemaker,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,pain,,7,2,5,2,5,0.4142,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,pain relief,,2,0,2,0,2,0.1183,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,painful intercourse,,1,1,0,1,0,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,painkiller addiction,,4,1,3,1,3,0.2367,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,pancreatic cancer,,7,4,3,4,3,0.4142,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,panic disorder,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,pap smears,,2,1,1,1,1,0.1183,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,paralysis,,2,0,2,0,2,0.1183,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,parp inhibitors,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,patient safety,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,peanuts,,5,2,3,2,3,0.2959,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,pelvic exams,,1,1,0,1,0,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,persistent pulmonary hypertension,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,phages,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,physician-journalists,,1,1,0,1,0,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,pills,,9,2,7,2,7,0.5325,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,platelet-rich plasma,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,pneumonia,,1,1,0,1,0,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,polypill,,1,1,0,1,0,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,postmenopause,,1,1,0,1,0,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,postpartum depression,,4,1,3,1,3,0.2367,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,practice guidelines,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,precision medicine,,1,1,0,1,0,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,premature babies,,5,0,5,0,5,0.2959,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,premature ejaculation,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,premature infants,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,prenatal testing,,3,1,2,1,2,0.1775,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,prevention,,3,0,3,0,3,0.1775,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,preventive care,,1,1,0,1,0,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,pritikin,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,prostate cancer,,45,11,34,11,34,2.6627,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,proton beam radiation,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,psilocybin,,2,0,2,0,2,0.1183,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,psychedelics,,2,0,2,0,2,0.1183,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,psychiatry,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,ptsd,,6,3,3,3,3,0.355,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,public health,,3,0,3,0,3,0.1775,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,pulsed radiofrequency,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,quality of life,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,radiation therapy,,3,1,2,1,2,0.1775,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,raspberries,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,red palm oil,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,red wine,,2,0,2,0,2,0.1183,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,relative vs. absolute risk,,7,0,7,0,7,0.4142,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,repatha,,2,0,2,0,2,0.1183,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,resistant hypertension,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,resistant starches,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,resveratrol,,2,1,1,1,1,0.1183,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,retina treatment,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,rewards,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,rheumatoid arthritis,,1,1,0,1,0,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,rhinitis,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,saturated fats,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,schizophrenia,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,screening,,3,1,2,1,2,0.1775,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,screening tests,,4,2,2,2,2,0.2367,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,seasonal affective disorder,,2,0,2,0,2,0.1183,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,second skin,,2,1,1,1,1,0.1183,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,seizures,,3,1,2,1,2,0.1775,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,selfies,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,sensitivity/specificity,,2,1,1,1,1,0.1183,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,sexuality,,1,1,0,1,0,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,sexually transmitted,,3,0,3,0,3,0.1775,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,shared decision-making,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,shingles,,2,0,2,0,2,0.1183,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,single source stories,,1,1,0,1,0,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,sleep apnea,,1,1,0,1,0,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,sleep problems,,16,3,13,3,13,0.9467,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,smart drugs,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,smoking cessation,,3,0,3,0,3,0.1775,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,smoking cessation research,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,social skills,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,sonography-guided transcervical ablation,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,spinal cord injuries,,2,1,1,1,1,0.1183,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,spinal cord injury,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,sponsored content,,1,1,0,1,0,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,sprout pharmaceuticals,,1,1,0,1,0,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,squamous cell carcinoma,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,statins,,18,4,14,4,14,1.0651,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,statins for breast cancer,,1,1,0,1,0,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,stem,,1,1,0,1,0,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,stem cell research,,7,3,4,3,4,0.4142,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,stem cell therapies,,6,2,4,2,4,0.355,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,stem cell therapy,,11,3,8,3,8,0.6509,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,stem cells,,16,5,11,5,11,0.9467,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,stent,,3,1,2,1,2,0.1775,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,stent retriever therapy,,1,1,0,1,0,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,strawberries,,4,2,2,2,2,0.2367,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,stroke,,13,2,11,2,11,0.7692,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,student athletes,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,sugar,,2,1,1,1,1,0.1183,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,suicide,,3,0,3,0,3,0.1775,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,supplements,,6,1,5,1,5,0.355,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,surgery,,27,6,21,6,20,1.5976,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,surrogates,,1,1,0,1,0,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,systematic review,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,talk therapy,,2,0,2,0,2,0.1183,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,tamoxifen,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,teens,,3,1,2,1,2,0.1775,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,telomere test,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,tennis elbow,,2,0,2,0,2,0.1183,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,testosterone,,3,1,2,1,2,0.1775,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,text messaging,,2,0,2,0,2,0.1183,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,text neck,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,texting,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,therapy,,6,1,5,1,5,0.355,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,thyroid,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,trans fats,,2,0,2,0,2,0.1183,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,transcranial magnetic stimulation,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,type 1 diabetes,,5,1,4,1,4,0.2959,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,ulcerative colitis,,2,1,1,1,1,0.1183,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,uliprital acetate,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,umbilical cord,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,umbilical cord clamping,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,underarm sweating,,1,1,0,1,0,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,underscreening,,1,1,0,1,0,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,urinary incontinence,,3,1,2,1,2,0.1775,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,urinary tract infection,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,urology,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,uspstf,,3,0,3,0,3,0.1775,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,vaccine,,2,0,2,0,2,0.1183,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,vaccines,,15,1,14,1,14,0.8876,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,vaginal,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,vaginal atrophy,,2,2,0,2,0,0.1183,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,vaginal dryness,,1,1,0,1,0,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,vaginal ring,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,vagus nerve stimulator,,1,1,0,1,0,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,vasopressin,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,vertigo,,1,1,0,1,0,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,video games,,1,1,0,1,0,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,video therapy,,1,1,0,1,0,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,virtual colonoscopy,,2,2,0,2,0,0.1183,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,virtual reality,,2,1,1,1,1,0.1183,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,vision,,2,0,2,0,2,0.1183,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,vision loss,,6,0,6,0,6,0.355,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,vitamin B3,,2,0,2,0,2,0.1183,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,vitamins,,8,2,6,2,6,0.4734,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,walnuts,,3,0,3,0,3,0.1775,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,weight loss,,37,6,31,6,31,2.1893,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,wisdom teeth,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,women's health,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,worms,,2,1,1,1,1,0.1183,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,xpl,,2,1,1,1,1,0.1183,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,yoga,,8,3,5,3,5,0.4734,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_HealthStory,FakeHealth,native_review_tag,zinc,,1,0,1,0,1,0.0592,observed_metadata_support,Native review tag only; multi-label counts overlap; no CoAID counterpart established
+engagement_A_primary_strict,CoAID,common_topic_support,harmonized_topic_categories,0,,,,,,,not_established,"No common validated topic annotation; blank counts mean not assessable, not zero overlap"
+engagement_HealthStory,FakeHealth,common_topic_support,harmonized_topic_categories,0,,,,,,,not_established,"No common validated topic annotation; blank counts mean not assessable, not zero overlap"

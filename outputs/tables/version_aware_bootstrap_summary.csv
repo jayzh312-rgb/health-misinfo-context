@@ -1,0 +1,5 @@
+specification,attempts,successful_post_refits,failed_post_refits,successful_any_refits,successful_reply_refits,target_successful_post_refits,target_met,pilot_only,median_attempt_seconds,largest_component_omitted_fraction
+A_primary_strict,1000,1000,0,1000,1000,1000,True,False,0.1225395414949162,0.363
+B_resource_sensitivity,1000,1000,0,1000,1000,1000,True,False,0.12370056250074413,0.363
+C_high_certainty,1000,1000,0,1000,1000,1000,True,False,0.11309568749857135,0.37
+FakeHealth_HealthStory,1000,1000,0,0,1000,1000,True,False,0.010718770499806851,0.38

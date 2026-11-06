@@ -1,0 +1,5 @@
+specification,pilot_attempts,successful_post_refits,wall_seconds,projected_target_seconds,target
+A_primary_strict,20,20,5.979350083987811,298.96750419939053,1000
+B_resource_sensitivity,20,20,0.8001833339949371,40.00916669974686,1000
+C_high_certainty,20,20,0.6783767500019167,33.91883750009583,1000
+FakeHealth_HealthStory,20,20,0.13153816699923482,6.576908349961741,1000

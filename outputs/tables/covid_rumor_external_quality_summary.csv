@@ -1,0 +1,7 @@
+scope,measure,N,minimum,p05,median,p95,maximum
+all_NEWS,normalized_character_N,4129,13,40.0,90.0,249.0,727
+all_NEWS,analyzer_token_N,4129,2,6.0,14.0,40.0,123
+all_eligible,normalized_character_N,3700,13,40.0,89.0,247.0,727
+all_eligible,analyzer_token_N,3700,2,6.0,14.0,39.0,123
+clean_primary,normalized_character_N,3667,13,40.0,89.0,247.0,727
+clean_primary,analyzer_token_N,3667,2,6.0,14.0,39.0,123

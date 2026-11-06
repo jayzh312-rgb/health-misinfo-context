@@ -1,0 +1,3 @@
+field,unique_strings,strings_meeting_token_minimum,verified_candidate_comparisons,shingle_width,minimum_tokens,jaccard_threshold,near_matching_string_pairs
+title_text,4532,3377,3,2,8,0.95,2
+body_text,4588,4333,21,5,30,0.9,5

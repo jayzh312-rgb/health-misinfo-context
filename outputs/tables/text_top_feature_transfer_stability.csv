@@ -1,0 +1,5 @@
+source_dataset,source_association,selected_N,same_direction_N,opposite_direction_N,near_zero_N
+fakehealth,Fake,25,9,16,0
+fakehealth,Real,25,15,9,1
+coaid,Fake,25,7,14,4
+coaid,Real,25,12,9,4

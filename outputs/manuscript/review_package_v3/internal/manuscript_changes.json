@@ -1,0 +1,1402 @@
+{
+ "edits": [
+  {
+   "edit": "E1 remove build header comment",
+   "before": "<!\\-\\-\\\nv3\\ DRAFT,\\ 2026\\-10\\-12\\.\\ Thesis\\-led\\ rewrite\\ of\\ manuscript_mentor_revised\\.md\\ \\(intermediate\\ mentor\\ revision\\)\\.\\\nVenue\\-neutral:\\ unstructured\\ abstract,\\ separate\\ Conclusion,\\ existing\\ citation\\ style\\.\\\nNumbers\\ match\\ the\\ v2\\ manuscript\\ and\\ outputs/tables;\\ extension\\-derived\\ values\\ \\(hurdle\\ components,\\ top\\ words,\\ encoding\\ audit,\\ FakeNewsNet\\ text\\ and\\ engagement",
+   "after": "",
+   "occurrences": 1,
+   "status": "applied"
+  },
+  {
+   "edit": "E2 replace Mermaid block with rendered Figure M1 image",
+   "before": "```mermaid\nflowchart TD\n    A[\"CoAID News and FakeHealth HealthStory\"] --> B[\"Validate identities, versions, and labels\"]\n    B --> C[\"Engagement populations: unique observed posts\"]\n    B --> D[\"Text populations: quality filters and leakage groups\"]\n    C --> E[\"CoAID hurdle and FakeHealth NB2\"]\n    E --> F[\"Standardized Fake/Real ratios and overlap-cluster bootstrap\"]\n    F --> G[\"Cross-context ",
+   "after": "![Figure M1. Analytical workflow](workflow/figure_M1_workflow.png)\n",
+   "occurrences": 1,
+   "status": "applied"
+  },
+  {
+   "edit": "E2b caption: name the FakeNewsNet extension node",
+   "before": "COVID-Rumor serves only as an external text target.*",
+   "after": "COVID-Rumor serves only as an external text target. The FakeNewsNet extension (title-only text target and engagement under the frozen estimand) is a supplementary branch described in Supplementary S8.*",
+   "occurrences": 1,
+   "status": "applied"
+  },
+  {
+   "edit": "E3 Juul and Ugander: optional bracket to verified sentence",
+   "before": "[Optional, if added after verification: Juul and Ugander (2021, PNAS) found that many structural differences between false and true cascades shrink once cascade size is matched.]",
+   "after": "Juul and Ugander later showed that the reported structural differences between false- and true-news cascades can almost entirely be explained by false-news cascades being larger. [Juul and Ugander (2021)](#ref-juul2021)",
+   "occurrences": 0,
+   "status": "already present in draft"
+  },
+  {
+   "edit": "E4a CoAID repository citation",
+   "before": "`11-01-2020`), with Fake/Real labels from the original News filenames. [Cui and Lee (2020)](#ref-coaid)",
+   "after": "`11-01-2020`), with Fake/Real labels from the original News filenames. [Cui and Lee (2020)](#ref-coaid), [cuilimeng (n.d.)](#ref-coaid_repo)",
+   "occurrences": 0,
+   "status": "skipped: anchor absent (author revised this passage)"
+  },
+  {
+   "edit": "E4a2 CoAID repository citation (re-anchored to revised sentence)",
+   "before": "nine health agencies and health-information publishers. [Cui and Lee (2020)](#ref-coaid) The primary engagement population",
+   "after": "nine health agencies and health-information publishers. [Cui and Lee (2020)](#ref-coaid), [cuilimeng (n.d.)](#ref-coaid_repo) The primary engagement population",
+   "occurrences": 1,
+   "status": "applied"
+  },
+  {
+   "edit": "E3b map draft anchor ref-juul to bibliography key juul2021",
+   "before": "(#ref-juul)",
+   "after": "(#ref-juul2021)",
+   "occurrences": 2,
+   "status": "applied"
+  },
+  {
+   "edit": "E4b FakeHealth repository citation",
+   "before": "Real. [Dai et al. (2020)](#ref-fakehealth) Reviews,",
+   "after": "Real. [Dai et al. (2020)](#ref-fakehealth), [EnyanDai (n.d.)](#ref-fakehealth_repo) Reviews,",
+   "occurrences": 1,
+   "status": "applied"
+  },
+  {
+   "edit": "E4c COVID-Rumor repository citation",
+   "before": "Twitter subset. [Cheng et al. (2021)](#ref-covidrumor) Annotations",
+   "after": "Twitter subset. [Cheng et al. (2021)](#ref-covidrumor), [MickeysClubhouse (n.d.)](#ref-covidrumor_repo) Annotations",
+   "occurrences": 1,
+   "status": "applied"
+  },
+  {
+   "edit": "E5 transformer checkpoint and attribution citations",
+   "before": "- **Transformer.** DistilRoBERTa (pinned revision), title plus body prefix",
+   "after": "- **Transformer.** DistilRoBERTa at a pinned revision [Sanh et al. (n.d.)](#ref-distilroberta_card), with architecture and distillation attributions to [Liu et al. (2019)](#ref-liu2019) and [Sanh et al. (2019)](#ref-sanh2019); title plus body prefix",
+   "occurrences": 1,
+   "status": "applied"
+  },
+  {
+   "edit": "E6 FakeNewsNet citation and verified label wording (reference_checks.md)",
+   "before": "with the same quality and overlap rules. [Cite FakeNewsNet; add to references.] Only titles were available locally, so the existing title-only LR models were used; no title-only SVM exists. Labels were inherited: PolitiFact from fact-checker verdicts, GossipCop from entertainment-site scores. [Verify label definitions against the FakeNewsNet documentation.]",
+   "after": "with the same quality and overlap rules. [Shu et al. (2020)](#ref-fakenewsnet) Only titles were available locally, so the existing title-only LR models were used; no title-only SVM exists. Labels were inherited: PolitiFact from fact-checker verdicts; GossipCop items scored below 5 of 10 by GossipCop as Fake and items FakeNewsNet took from E! Online as Real, although the local news URLs of the Real",
+   "occurrences": 0,
+   "status": "skipped: anchor absent (author revised this passage)"
+  },
+  {
+   "edit": "E7 software citations",
+   "before": "Analyses used Python 3.14 with scikit-learn and statsmodels, and Python 3.12 with PyTorch and Transformers for the transformer;",
+   "after": "Analyses used Python 3.14 with scikit-learn [Pedregosa et al. (2011)](#ref-pedregosa2011) and statsmodels [Seabold and Perktold (2010)](#ref-seabold2010), and Python 3.12 with PyTorch [Paszke et al. (2019)](#ref-paszke2019) and Transformers [Wolf et al. (2020)](#ref-wolf2020) for the transformer;",
+   "occurrences": 1,
+   "status": "applied"
+  },
+  {
+   "edit": "E8 FakeNewsNet engagement paragraph and Table 2 replace conditional placeholder",
+   "before": "[If the FakeNewsNet engagement extension is completed: add PolitiFact and GossipCop as further contexts here and in Figure 1, with the same estimand.]",
+   "after": "Two non-health FakeNewsNet collections, analysed under the same estimand as a supplementary extension, gave ratios of 0.559 (0.439\u20131.868) for PolitiFact and 2.144 (1.212\u20133.290) for GossipCop. Excluding each collection's largest shared-tweet component, which changes the reference population, moved them to 1.446 (1.073\u20132.046) and 1.374 (1.146\u20131.621) (Figure 1; Table 2). The PolitiFact direction ther",
+   "occurrences": 0,
+   "status": "skipped: anchor absent (author revised this passage)"
+  },
+  {
+   "edit": "E8b Figure 1 caption: four contexts",
+   "before": "*Figure 1. Fake/Real observed-post ratios in CoAID and FakeHealth. Points are model-standardized ratios of expected unique observed posts, including items with no observed posts; bars are 95% cluster-bootstrap percentile intervals. Log scale; the dashed line marks parity. Ratio-of-ratios 0.301 (0.154\u20130.645).*",
+   "after": "*Figure 1. Fake/Real observed-post ratios in four contexts. Filled markers are model-standardized ratios of expected unique observed posts, including items with no observed posts, for CoAID News (A), FakeHealth HealthStory and the supplementary FakeNewsNet PolitiFact and GossipCop collections; bars are 95% component-bootstrap percentile intervals. Open markers below each primary value show the rat",
+   "occurrences": 1,
+   "status": "applied"
+  },
+  {
+   "edit": "E9a Supplementary Table S12",
+   "before": "(Supplementary Table [Sx]). CoAID",
+   "after": "(Supplementary Table S12). CoAID",
+   "occurrences": 0,
+   "status": "already present in draft"
+  },
+  {
+   "edit": "E9b Supplementary Table S13",
+   "before": "weak evidence on its own (Supplementary [Sx]).",
+   "after": "weak evidence on its own (Supplementary Table S13).",
+   "occurrences": 0,
+   "status": "already present in draft"
+  },
+  {
+   "edit": "E12a CoAID Real source wording (reference_checks.md)",
+   "before": "while Real items come from official health agencies and established news sources. [Verify against Cui and Lee (2020).]",
+   "after": "while Real items come from official health agencies and reliable health-information outlets.",
+   "occurrences": 0,
+   "status": "skipped: anchor absent (author revised this passage)"
+  },
+  {
+   "edit": "E12b remove verified FakeHealth criteria bracket",
+   "before": " [Verify criteria wording against Dai et al. (2020).]",
+   "after": "",
+   "occurrences": 0,
+   "status": "skipped: anchor absent (author revised this passage)"
+  },
+  {
+   "edit": "E12c remove verified review-criteria bracket",
+   "before": " [verify the review criteria in Dai et al. (2020)]",
+   "after": "",
+   "occurrences": 0,
+   "status": "skipped: anchor absent (author revised this passage)"
+  },
+  {
+   "edit": "E12d collection-method sentence (both datasets used title search)",
+   "before": "If CoAID gathered posts by searching for each item [verify collection method in Cui and Lee (2020)], low-profile items may have fewer captured posts, so some Fake zeros could reflect discoverability rather than absence of sharing.",
+   "after": "Both CoAID and FakeHealth gathered posts by searching for each item's title [Cui and Lee (2020)](#ref-coaid), [Dai et al. (2020)](#ref-fakehealth); if search-based capture missed low-profile items more often among CoAID's sources, some Fake zeros could reflect discoverability rather than absence of sharing.",
+   "occurrences": 0,
+   "status": "skipped: anchor absent (author revised this passage)"
+  },
+  {
+   "edit": "E13 encoding-artifact quantification (Supplementary S12, S16)",
+   "before": "[Pending quantification: two of CoAID's most Fake-leaning words are character-encoding errors, so part of CoAID's within-dataset separability may reflect how its Fake text was scraped.]",
+   "after": "Two of CoAID's 25 most Fake-leaning words are character-encoding errors, present in 25.9% of CoAID Fake documents and in no Real document (Supplementary Tables S12 and S16); repairing them left holdout macro F1 essentially unchanged (0.926 to 0.928), so the artifact marks the Fake class without carrying its separability.",
+   "occurrences": 0,
+   "status": "skipped: anchor absent (author revised this passage)"
+  },
+  {
+   "edit": "E14 feasibility support table reference",
+   "before": " [Confirm wording against the 2026-10-09 feasibility report; decide whether the support table goes in the Supplement.]",
+   "after": " (Supplementary Table S15).",
+   "occurrences": 0,
+   "status": "already present in draft"
+  },
+  {
+   "edit": "E15 Cram\u00e9r's V reference",
+   "before": "[Cram\u00e9r's V \u2248 0.97 against \u2248 0.35 in FakeHealth; Supplementary Methods S3 \u2014 confirm and decide whether to report in Results]",
+   "after": "(Cram\u00e9r's V 0.97 against 0.35 in FakeHealth; Supplementary Table S14)",
+   "occurrences": 0,
+   "status": "skipped: anchor absent (author revised this passage)"
+  },
+  {
+   "edit": "E11 references generated from merged bibliography (replaces the draft reference section, including its two hand-formatted entries)",
+   "before": "## References\n\n[Carry over the v2 reference list and add the two verified entries from references_v3_additions.bib:]\n\n<a id=\"ref-juul\"></a>\n\nJuul, J. L., & Ugander, J. (2021). [Comparing information diffusion mechanisms by matching on cascade size](https://doi.org/10.1073/pnas.2100786118). *Proceedings of the National Academy of Sciences*, 118(46), e2100786118.\n\n<a id=\"ref-fakenewsnet\"></a>\n\nShu, ",
+   "after": "## References\n\n<a id=\"ref-covidrumor\"></a>\n\nCheng, M., Wang, S., Yan, X., Yang, T., Wang, W., Huang, Z., Xiao, X., Nazarian, S., & Bogdan, P. (2021). [A COVID-19 Rumor Dataset](https://doi.org/10.3389/fpsyg.2021.644801). *Frontiers in Psychology*, 12, 644801.\n\n<a id=\"ref-cinelli\"></a>\n\nCinelli, M., Quattrociocchi, W., Galeazzi, A., Valensise, C. M., Brugnoli, E., Schmidt, A. L., Zola, P., Zollo, F",
+   "occurrences": 1,
+   "status": "applied"
+  },
+  {
+   "edit": "E10 supplementary cross-reference links",
+   "before": "plain mentions of Supplementary Methods S1\u2013S7, S8 and Tables S11\u2013S17",
+   "after": "markdown links to supplementary_material.md anchors (render step rewrites to supplement_review.pdf#page=N)",
+   "occurrences": 19
+  }
+ ],
+ "placeholders_remaining": [
+  "[Data and code availability statement to be added per venue.]"
+ ],
+ "citations": {
+  "bib_entries": 24,
+  "bib_duplicate_keys": [],
+  "cited_keys": 24,
+  "citations_without_bib_entry": [],
+  "bib_entries_not_cited": [],
+  "citations_without_reference_anchor": [],
+  "anchors_not_cited": [],
+  "supplement_citation_anchors": 0
+ },
+ "copied": {
+  "assets/review.css": {
+   "source": "outputs/manuscript/review_package_v2/assets/review.css",
+   "sha256": "71c14add6486d55f31bf7bf794ae9e6740cf9468e44f708e17fdd4c4ca42752e"
+  },
+  "assets/mentor_review.css": {
+   "source": "outputs/manuscript/review_package_v2/assets/mentor_review.css",
+   "sha256": "3206495b61d3299e85e6a2e6db8df06c72c8b9848d854ebb148dade32c03a772"
+  },
+  "figures/figure_2_within_vs_cross_context_transfer.png": {
+   "source": "outputs/manuscript/review_package_v2/figures/figure_2_within_vs_cross_context_transfer.png",
+   "sha256": "59129757e1286af5a0adb0541cdc213600a090f7f33b77d5bafceb24a71c4c13"
+  },
+  "figures/figure_2_within_vs_cross_context_transfer.pdf": {
+   "source": "outputs/manuscript/review_package_v2/figures/figure_2_within_vs_cross_context_transfer.pdf",
+   "sha256": "fbe8996656c8f9f7da916d5742738218c491f9763c503d70ba1549dbd3bf86e4"
+  },
+  "figures/figure_2_within_vs_cross_context_transfer.svg": {
+   "source": "outputs/manuscript/review_package_v2/figures/figure_2_within_vs_cross_context_transfer.svg",
+   "sha256": "02391b8815521d39a8bb572c0b4cc717ef1c58bb065165c78173ae3ceacf6e85"
+  },
+  "figures/figure_3_lexical_alignment.png": {
+   "source": "outputs/manuscript/review_package_v2/figures/figure_3_lexical_alignment.png",
+   "sha256": "b84268e1c14c4a7c8c0b38c0960f74dca929520bb423ebccf88c35cf3ee1150b"
+  },
+  "figures/figure_3_lexical_alignment.pdf": {
+   "source": "outputs/manuscript/review_package_v2/figures/figure_3_lexical_alignment.pdf",
+   "sha256": "a25a0477a7fdb4db4d213eb1aa1244c78fbd3292a6b860733ab2dbdb0f82e7f1"
+  },
+  "figures/figure_3_lexical_alignment.svg": {
+   "source": "outputs/manuscript/review_package_v2/figures/figure_3_lexical_alignment.svg",
+   "sha256": "33a1cf39f92fa0359c904532f295cf3ce507b48f6469e80b9d2997b671a41085"
+  },
+  "figures/figure_4_external_covid_transfer.svg": {
+   "source": "outputs/manuscript/review_package_v2/figures/figure_4_external_covid_transfer.svg",
+   "sha256": "1f9bdf5756c86654094e06eb9be4bd0991ced9cbafdbd58e120cdf7127d06bca"
+  },
+  "figures/figure_4_external_covid_transfer.pdf": {
+   "source": "outputs/manuscript/review_package_v2/figures/figure_4_external_covid_transfer.pdf",
+   "sha256": "e9e8552c7ce16f1ce7792624f774ac1c2e5ba67be9557b5d2059887c3913bc05"
+  },
+  "figures/figure_4_external_covid_transfer.png": {
+   "source": "outputs/manuscript/review_package_v2/figures/figure_4_external_covid_transfer.png",
+   "sha256": "872b5ed58c02cee617997da31084154a31e0ba91fae4f21437984553438c725d"
+  },
+  "data/cross_context_sensitivity_results.csv": {
+   "source": "outputs/manuscript/review_package_v2/data/cross_context_sensitivity_results.csv",
+   "sha256": "0f64747be5546d76c3a01140fc6f924e028a7674ccdbaf9e3144822a029ca9b2"
+  },
+  "data/fakehealth_publisher_heldout_summary.csv": {
+   "source": "outputs/manuscript/review_package_v2/data/fakehealth_publisher_heldout_summary.csv",
+   "sha256": "b6c25d7e2db40d7b590b1ce593522a1979627922157a7d740336ef2cb2f2eaf7"
+  },
+  "data/fakehealth_publisher_heldout_results.csv": {
+   "source": "outputs/manuscript/review_package_v2/data/fakehealth_publisher_heldout_results.csv",
+   "sha256": "29263de49fa6af02658001aac04e1adc3667c90258b58ce2d5095475125974e2"
+  },
+  "data/distilroberta_budget_seed_summary.csv": {
+   "source": "outputs/manuscript/review_package_v2/data/distilroberta_budget_seed_summary.csv",
+   "sha256": "3c4d2f0d0690d8db51254011c9495f6a2947d0ea3ff0ec24ac3794a063e55335"
+  },
+  "data/cross_context_engagement_contrast.csv": {
+   "source": "outputs/manuscript/review_package_v2/data/cross_context_engagement_contrast.csv",
+   "sha256": "916df8bbe0bf878f1e5c500afe8860bec6b4441971c14018551c8bef371869b2"
+  },
+  "data/distilroberta_budget_seed_paired_deltas.csv": {
+   "source": "outputs/manuscript/review_package_v2/data/distilroberta_budget_seed_paired_deltas.csv",
+   "sha256": "560046cfeb72a537669248eef43ce71a22b3dbe5d735d8a1fef68896a9d8455b"
+  },
+  "data/tfidf_logistic_title_vs_combined.csv": {
+   "source": "outputs/manuscript/review_package_v2/data/tfidf_logistic_title_vs_combined.csv",
+   "sha256": "cb849e40cfd7a62d88864d7d36520fd831f09f48d4dede3ef392ece199974eb1"
+  },
+  "data/covid_rumor_external_transfer_results.csv": {
+   "source": "outputs/manuscript/review_package_v2/data/covid_rumor_external_transfer_results.csv",
+   "sha256": "1dce9ce5b49053b6280d1a6502512de32393830412db8014641738eb4bc11532"
+  },
+  "data/table_1_robustness_summary.md": {
+   "source": "outputs/manuscript/review_package_v2/data/table_1_robustness_summary.md",
+   "sha256": "80eeccd62a4a569d6c691c9c53a7ced32094d1d14d161cdce8730aa7fd1a8644"
+  },
+  "data/covid_rumor_external_cohort_summary.csv": {
+   "source": "outputs/manuscript/review_package_v2/data/covid_rumor_external_cohort_summary.csv",
+   "sha256": "57216d3e39d96d36104d5858875df3429c5774d8029affdf9376c763c6fb2762"
+  },
+  "data/version_aware_sample_confirmation.csv": {
+   "source": "outputs/manuscript/review_package_v2/data/version_aware_sample_confirmation.csv",
+   "sha256": "e6a1422489915cd072f0057fc41eb457f88e7ced0c9438b8afa60409153b4546"
+  },
+  "data/covid_rumor_external_vocabulary_diagnostics.csv": {
+   "source": "outputs/manuscript/review_package_v2/data/covid_rumor_external_vocabulary_diagnostics.csv",
+   "sha256": "52531b08759cdc4117dce9f9011facfd92c316cbe9f077b087cc2f47ab392bae"
+  },
+  "data/tfidf_linear_svm_cohort_summary.csv": {
+   "source": "outputs/manuscript/review_package_v2/data/tfidf_linear_svm_cohort_summary.csv",
+   "sha256": "e5665be2bb991ed42a1eb8f4f012c5b4f78fb3bcad65de0565b4455bd3c0b077"
+  },
+  "data/table_1_robustness_summary.csv": {
+   "source": "outputs/manuscript/review_package_v2/data/table_1_robustness_summary.csv",
+   "sha256": "9af750ac99b4a1c2818b024a7f92085c41a2850733e0dded6a5ac75046448b57"
+  },
+  "data/text_coefficient_alignment_summary.csv": {
+   "source": "outputs/manuscript/review_package_v2/data/text_coefficient_alignment_summary.csv",
+   "sha256": "52d4a80f97ae60891bfc0e803d45df82f2d382953e4bdbe48ac93200946c7067"
+  },
+  "data/extension_v1/coaid_hurdle_components.csv": {
+   "source": "outputs/extension_v1/tables/coaid_hurdle_components.csv",
+   "sha256": "5d2cd1f9ecef71bbd44d11c9e45ddf2bb36c113670fa874cedb1f92cfaa6bec7"
+  },
+  "data/extension_v1/top_fake_real_terms.csv": {
+   "source": "outputs/extension_v1/tables/top_fake_real_terms.csv",
+   "sha256": "640cc327ee98308e3326b6aa5a3b29a8ae4a3381851cf1f580842307139e29c9"
+  },
+  "data/extension_v1/fakenewsnet_external_cohort_summary.csv": {
+   "source": "outputs/extension_v1/tables/fakenewsnet_external_cohort_summary.csv",
+   "sha256": "c5b9a442fb8df016b7182d87634555190d8121c73141e0dde985ac8d4d093b45"
+  },
+  "data/extension_v1/fakenewsnet_external_transfer_results.csv": {
+   "source": "outputs/extension_v1/tables/fakenewsnet_external_transfer_results.csv",
+   "sha256": "bebc7cdbef8661c05f886ad25db6d3b4e716158ff3102ee631ac550d0f04d337"
+  },
+  "data/extension_v1/coaid_encoding_sensitivity.csv": {
+   "source": "outputs/extension_v1/tables/coaid_encoding_sensitivity.csv",
+   "sha256": "a062cc7468425eb642f7e2e8edae125e8fc981492bb0073d59540dc6307d82c1"
+  },
+  "data/extension_v1/coaid_encoding_prevalence.csv": {
+   "source": "outputs/extension_v1/tables/coaid_encoding_prevalence.csv",
+   "sha256": "a25d6fa88689dfdcf87be8869e9e71b0bea7a6979997031d1ad806bcd027abde"
+  },
+  "data/extension_v1/fakenewsnet_overlap_graph_summary.csv": {
+   "source": "outputs/extension_v1/tables/fakenewsnet_overlap_graph_summary.csv",
+   "sha256": "927370a317e951421b18575082e742e240d9ec5a064225b09cfa566df0027a5c"
+  },
+  "data/extension_v1/fakenewsnet_engagement_model_comparison.csv": {
+   "source": "outputs/extension_v1/tables/fakenewsnet_engagement_model_comparison.csv",
+   "sha256": "55e4dd922f93d42ffc2b80dfe246e4384d5a50d55e97e6aadbf9ddd817ef8227"
+  },
+  "data/extension_v1/fakenewsnet_engagement_results.csv": {
+   "source": "outputs/extension_v1/tables/fakenewsnet_engagement_results.csv",
+   "sha256": "a6ffd970be011b3c4002c1ecbb0895d6bd008d656b107ba9b1ff1e941ec7f3df"
+  },
+  "data/extension_v1/fakenewsnet_engagement_contrast.csv": {
+   "source": "outputs/extension_v1/tables/fakenewsnet_engagement_contrast.csv",
+   "sha256": "d4944bb55c05de060d83b2de06dfeec579a89daa7b135cc7dd2939613aaed11b"
+  },
+  "data/extension_v1/fakenewsnet_duplicate_title_sensitivity.csv": {
+   "source": "outputs/extension_v1/tables/fakenewsnet_duplicate_title_sensitivity.csv",
+   "sha256": "41e3dd5ad3b8a2c629fcb2a958fb73d44715f8da5809dc84cb042299c5741a74"
+  },
+  "data/extension_v1/fakenewsnet_round3_exclusion_results.csv": {
+   "source": "outputs/extension_v1/tables/fakenewsnet_round3_exclusion_results.csv",
+   "sha256": "5c0b715621ead0383116696390df3811fbe6a18a0d2ffa28e7902d1a063046f3"
+  },
+  "data/extension_v1/fakenewsnet_round3_exclusion_contrast.csv": {
+   "source": "outputs/extension_v1/tables/fakenewsnet_round3_exclusion_contrast.csv",
+   "sha256": "af3d12d2b7f4cb8a625405d72c1716ff4967e342093a67e22f35b3abcf0ff98f"
+  },
+  "data/extension_v1/fakenewsnet_round3_multimembership.csv": {
+   "source": "outputs/extension_v1/tables/fakenewsnet_round3_multimembership.csv",
+   "sha256": "a30739690536ed1c49c19b16533a3b7fbf370d49eb0f8c9aefdb1df2541b8c8d"
+  },
+  "data/extension_v1/fakenewsnet_round3_domain_composition.csv": {
+   "source": "outputs/extension_v1/tables/fakenewsnet_round3_domain_composition.csv",
+   "sha256": "d0058437ebee433be78087c8bf9e756396eed75ef0850b4d3f6de4ebb7a50069"
+  },
+  "data/text_source_label_association.csv": {
+   "source": "outputs/tables/text_source_label_association.csv",
+   "sha256": "1be6b53c5bbb8d1362ab55cfeda8425c084e3de2849cd6e1feb3a132e614cd64"
+  },
+  "data/engagement_comparability_support.csv": {
+   "source": "outputs/tables/engagement_comparability_support.csv",
+   "sha256": "37c2987f7b6964d348d72815e8a9d394faf9c62ca2320df156ec68935cc6832a"
+  },
+  "internal/pinned_model_card.md": {
+   "source": "outputs/manuscript/review_package_v2/internal/pinned_model_card.md",
+   "sha256": "a4a8b2530f6a4db8c76049c25a2104b90782395085aea17ea86b31348de8ca94"
+  },
+  "internal/provenance_notes.md": {
+   "source": "outputs/manuscript/review_package_v2/internal/provenance_notes.md",
+   "sha256": "1ee62a35612079c8b9626b892b5e60cca3336087a2ebe45f71cc9eb823df2b32"
+  },
+  "internal/methods_protocol_checklist.csv": {
+   "source": "outputs/manuscript/review_package_v2/internal/methods_protocol_checklist.csv",
+   "sha256": "93f575f18061b60f96df2b6aba97d9fed9b4f37b57f3ee18b773726fdab79686"
+  },
+  "internal/citation_verification.json": {
+   "source": "outputs/manuscript/review_package_v2/internal/citation_verification.json",
+   "sha256": "1f8549a736bcfc78e1b157acc0a8fa3ad6caeb5e6c7e8da7ed9c766ab4f772e4"
+  },
+  "internal/mentor_reference_verification.json": {
+   "source": "outputs/manuscript/review_package_v2/internal/mentor_reference_verification.json",
+   "sha256": "3749d022d76c18058a1377056c893caff60c50611e4777e8ebc9da0b0754582b"
+  },
+  "workflow/workflow_mentor_original.mmd": {
+   "source": "outputs/manuscript/review_package_v2/workflow/workflow_mentor_original.mmd",
+   "sha256": "5c4b69add5d144bf97a8419caaa2a078ef0876cbfacaa02bc4f32e590808e07e"
+  },
+  "workflow/workflow_v2.mmd": {
+   "source": "outputs/manuscript/review_package_v2/workflow/workflow.mmd",
+   "sha256": "573052f485bd7a6d7fab63772a488153e0d34540f15e65bd5cdaa00d907dd00d"
+  }
+ },
+ "table2": "**Table 2. Overall and component Fake/Real ratios by context and population.**\n\n| Context | Population | Overall ratio (95%) | Share with any post, Fake / Real | Posts once posted, Fake / Real (ratio, 95%) |\n| --- | --- | --- | --- | --- |\n| CoAID News (A) | All 5,337 entities | 0.253 (0.132\u20130.522) | 11.7% / 61.7% | 51.4 / 39.5 (1.300 (0.729\u20132.546)) |\n| CoAID News (A) | Largest shared-post component excluded (5,150 entities) | 0.411 (0.271\u20130.573) | not saved | not saved |\n| FakeHealth HealthStory | All 1,690 items | 0.840 (0.714\u20130.997) | NB2 model, no occurrence component (99.6% of items have a post) | \u2014 |\n| FakeNewsNet PolitiFact | All 1,052 items | 0.559 (0.439\u20131.868) | 90.7% / 65.4% | 413.5 / 1024.7 (0.403 (0.336\u20131.255)) |\n| FakeNewsNet PolitiFact | Largest shared-tweet component excluded (968 items) | 1.446 (1.073\u20132.046) | 90.6% / 60.4% | 265.4 / 275.3 (0.964 (0.726\u20131.351)) |\n| FakeNewsNet GossipCop | All 22,140 items | 2.144 (1.212\u20133.290) | 96.5% / 93.7% | 116.5 / 55.9 (2.083 (1.185\u20133.179)) |\n| FakeNewsNet GossipCop | Largest shared-tweet component excluded (21,448 items) | 1.373 (1.146\u20131.621) | 96.0% / 93.7% | 73.7 / 55.0 (1.340 (1.118\u20131.577)) |\n\n*Hurdle components (CoAID, PolitiFact, GossipCop): standardized probability of at least one observed post and standardized expected posts given at least one; intervals are 95% component-bootstrap percentiles from 1,000 draws. Excluding a dominant component changes the reference population, so those rows are sensitivities, not replacement estimates. Sources: Supplementary Tables S11 and S17 and Table S4.*",
+ "mentor_round1": {
+  "date": "2026-10-13",
+  "source": "outputs/manuscript/revision_v3/mentor_round1_inserts.md",
+  "manuscript_sha256_before": "1c63255f328a27ea2b324851f4962b5d1942af8f45181536ca9aab9062bc92c9",
+  "manuscript_sha256_after": "dce838a2c689ec16b39b0cf5c020abc37e7d85f68f2b4ffa83d3887db2a80a0a",
+  "edits": [
+   {
+    "edit": "R1 renumber 4.7 Future work -> 4.8",
+    "before": "### 4.7 Future work",
+    "after": "### 4.8 Future work",
+    "occurrences": 1,
+    "note": ""
+   },
+   {
+    "edit": "R2 renumber 4.6 Limitations -> 4.7",
+    "before": "### 4.6 Limitations",
+    "after": "### 4.7 Limitations",
+    "occurrences": 1,
+    "note": ""
+   },
+   {
+    "edit": "R3 renumber 4.5 Sharing, attention and crisis -> 4.6",
+    "before": "### 4.5 Sharing, attention and crisis",
+    "after": "### 4.6 Sharing, attention and crisis",
+    "occurrences": 1,
+    "note": ""
+   },
+   {
+    "edit": "M1 insert new Discussion 4.5 \"What the results ask of related work\" (verbatim from mentor_round1_inserts.md)",
+    "before": "### 4.6 Sharing, attention and crisis\n",
+    "after": "### 4.5 What the results ask of related work\n\nSeveral of these results say less about misinformation than about how misinformation data are built and used. Each points to a check that related work can adopt.\n\n**Misinformation research.** A Fake/Real comparison describes a dataset as much as it describes misinformation. The same estimand gave ratios from about a quarter in CoAID to about two in GossipCop. PolitiFact, which shares CoAID's fact-check construct, moved from below 1 to above 1 when one cluster of items sharing tweets was set aside. Studies should therefore say what both classes consist of, because CoAID's Real category of health agencies and health-information publishers shaped its gap as much as its Fake label did. They should also say whether the outcome counts every item or only items that circulated. In CoAID the whole gap lay in whether items were posted at all, which a design that starts from cascades cannot see. Comparisons across datasets need a common estimand, such as standardized expected counts rather than coefficients from different model families. They also need uncertainty that respects shared posts, because a single dependent cluster changed the magnitude of CoAID's contrast and the direction of PolitiFact's.\n\n**Machine-learning work.** A high within-dataset score can measure how a dataset was assembled rather than how detectable misinformation is. In CoAID, source and label were nearly the same variable (Cram\u00e9r's V 0.971). Real texts carried years and photo credits that Fake texts almost never did, and encoding errors appeared only in Fake texts. Removing source names, encoding errors, or dates and credits barely changed CoAID's 0.926 macro F1. The signal is spread across many collection-linked cues, so no single cleanup removes it, and the same model transferred poorly and learned word associations unrelated to FakeHealth's. Five practical checks follow:\n\n- audit how source and label co-vary before training;\n- scan for formatting and encoding markers that differ by class;\n- group data splits by resource, version lineage and near-duplicate text rather than by row;\n- report transfer on the same target items alongside within-dataset scores;\n- state the text representation, because titles, excerpts and full articles give a model different information.\n\n**Data processing.** Many of the decisions that most affected these results were made before any model ran. In an early representation of CoAID, generic branding and domain-level links merged distinct pages into one item joining 110 source records. Engagement counts became meaningful only after items were resolved by specific resource and version lineage. Items that share posts are not independent rows; treating them as clusters set the width of every engagement interval here. Engagement scope also has to match across datasets. We excluded FakeHealth's retweets because CoAID has no equivalent, and pooled CoAID posts across its four releases, and both choices change the counts. Collection methods have to be compared, not assumed. Both health datasets searched for posts by title, so search alone was not the difference, but query terms, crawl dates and release pooling were not held equal. If dataset releases documented these steps, others could tell a finding about misinformation from a finding about its data.\n\n### 4.6 Sharing, attention and crisis\n",
+    "occurrences": 1,
+    "note": ""
+   },
+   {
+    "edit": "M2 Abstract final sentence (mentor draft)",
+    "before": "Engagement studies and detection benchmarks should report both and test beyond a single dataset.",
+    "after": "The results are as much about data handling as about misinformation: engagement studies and detection benchmarks should report how labels, sources and collection were defined, check for source\u2013label entanglement and shared-post dependence, and test beyond a single dataset.",
+    "occurrences": 1,
+    "note": ""
+   },
+   {
+    "edit": "M3 Conclusion final sentence (mentor draft)",
+    "before": "Until then, engagement findings and detection scores should be reported alongside the definition of misinformation that produced them.",
+    "after": "Until then, any misinformation dataset should be read with care: engagement findings and detection scores should be reported alongside the definition of misinformation that produced them, the sources each class was drawn from, and the processing steps (item resolution, dependence and collection scope) that shaped the counts.",
+    "occurrences": 1,
+    "note": ""
+   },
+   {
+    "edit": "M4 delete advice sentence in 4.4 (now carried by 4.5)",
+    "before": " Benchmarks should state which misinformation construct their labels encode, evaluate on grouped splits, and report transfer to at least one external target on the same items.",
+    "after": "",
+    "occurrences": 1,
+    "note": ""
+   },
+   {
+    "edit": "M5 resolve over-merge placeholder (example kept in Methods 2.3; used by new 4.5)",
+    "before": " [Confirm whether the over-merge example belongs in main text or Supplement S1.]",
+    "after": "",
+    "occurrences": 1,
+    "note": ""
+   },
+   {
+    "edit": "M6 Table 2 FakeHealth any-post shares by class",
+    "before": "| FakeHealth HealthStory | Expert-rated poor reporting | 0.840 (0.714\u20130.997) | Near ceiling | Not separated (single-part model) |",
+    "after": "| FakeHealth HealthStory | Expert-rated poor reporting | 0.840 (0.714\u20130.997) | 0.998 / 0.995 (observed) | Not separated (single-part model) |",
+    "occurrences": 1,
+    "note": "Source: outputs/tables/version_aware_engagement_descriptives.csv (SHA-256 0fe7c6117f5975aec05b43c21b2cb26d0d3de20f034152a59af17f630d66bfce), rows specification=FakeHealth_HealthStory, outcome=unique_post_count, veracity=fake (N 472, zero_count 1 -> 471/472 = 0.9979) and veracity=real (N 1218, zero_count 6 -> 1212/1218 = 0.9951); observed shares of items with at least one unique post. The version-aware occurrence table (version_aware_occurrence_results.csv) holds CoAID specifications only, so the observed descriptives row is the saved FakeHealth source."
+   },
+   {
+    "edit": "M6b Table 2 caption: say FakeHealth values are observed shares; remove bracket",
+    "before": "Probabilities are standardized (CoAID) or fitted class values (FakeNewsNet).",
+    "after": "Probabilities are standardized (CoAID), fitted class values (FakeNewsNet) or observed shares of items with at least one post (FakeHealth, single-part model).",
+    "occurrences": 1,
+    "note": ""
+   },
+   {
+    "edit": "M6c remove Table 2 bracket",
+    "before": " [Add FakeHealth's observed any-post shares by class from the saved occurrence table if wanted.]",
+    "after": "",
+    "occurrences": 1,
+    "note": ""
+   },
+   {
+    "edit": "E1 reference equation (1) at its introduction",
+    "before": "and other covariates unchanged. For each dataset,\n",
+    "after": "and other covariates unchanged. For each dataset, the standardized ratio is given by equation (1),\n",
+    "occurrences": 1,
+    "note": ""
+   },
+   {
+    "edit": "E2 reference equation (2) at its introduction",
+    "before": "For the CoAID hurdle,\n",
+    "after": "For the CoAID hurdle, the row-level expectation is equation (2),\n",
+    "occurrences": 1,
+    "note": ""
+   },
+   {
+    "edit": "E3 reference equations in the estimand sentence",
+    "before": "with row-level products averaged before forming the ratio.",
+    "after": "with the row-level products of (2) averaged before forming the ratio in (1).",
+    "occurrences": 1,
+    "note": ""
+   },
+   {
+    "edit": "E4 reference equation (1) in the component sentence",
+    "before": "Because the estimand averages row-level products, the two component ratios",
+    "after": "Because the estimand (1) averages row-level products, the two component ratios",
+    "occurrences": 1,
+    "note": ""
+   }
+  ]
+ },
+ "reviewer_round1": {
+  "date": "2026-10-13",
+  "source": "outputs/manuscript/revision_v3/reviewer_round1_inserts.md",
+  "manuscript_sha256_before": "dce838a2c689ec16b39b0cf5c020abc37e7d85f68f2b4ffa83d3887db2a80a0a",
+  "manuscript_sha256_after": "942e757274af930decaeb1fce479d412917ee255a4c4d8316b64980354d0be78",
+  "supplement_sha256_before": "c477105dafa713364132e3dbf144562ea6618fbd08d4a06999b45c5f252ae01e",
+  "supplement_sha256_after": "329ca499208ced93a1e51148bb5408f450901a87efe5e294c538c28f71e01a4a",
+  "edits": [
+   {
+    "edit": "A1 Abstract full replacement (reviewer insert 1)",
+    "before": "Health misinformation datasets disagree about what misinformation is. FakeHealth labels mainstream health news by expert-rated reporting quality, whereas CoAID contrasts fact-checked COVID-19 claims with material from health agencies and health-information publishers. We asked whether such differences extend to how Fake and Real items circulate and how portable their textual signals are. We compared model-standardized Fake/Real ratios of unique observed social-media posts, including items with no observed posts, between CoAID News and FakeHealth HealthStory, and evaluated leakage-controlled te",
+    "after": "Health misinformation datasets disagree about what misinformation is. FakeHealth labels mainstream health news by expert-rated reporting quality, whereas CoAID contrasts fact-checked COVID-19 claims with material from health agencies and health-information publishers. We compared model-standardized Fake/Real ratios of observed social-media posts, counting items never posted, between CoAID News and FakeHealth HealthStory, and evaluated leakage-controlled text classifiers within, across and beyond the two datasets. Fake items drew fewer observed posts than Real items in both datasets, but the ra",
+    "occurrences": 1
+   },
+   {
+    "edit": "M2.5 mean-vs-typical caveat",
+    "before": "values below 1 indicate a larger relative Fake\u2013Real gap in CoAID.",
+    "after": "values below 1 indicate a larger relative Fake\u2013Real gap in CoAID. The estimand compares expected posts per item, which is a mean. Where counts are heavily skewed, a few highly shared items can set its direction, and the typical Fake and Real items can differ in the opposite direction. We therefore also report medians and the probability that a randomly chosen Fake item has more observed posts than a randomly chosen Real one, counting ties as one half (Supplementary Table S21).",
+    "occurrences": 1
+   },
+   {
+    "edit": "M2.9 round-4 diagnostics paragraph",
+    "before": "(Full protocols are in \\[Supplementary Methods S5\\]\\([^)]*\\) and S6\\.\\n)",
+    "after": "\\g<1>\\nSix diagnostics were added after the main analyses, in response to review, under a written protocol with the locked configurations and saved splits (Supplementary Section S8, Tables S18\u2013S23). For CoAID we broke down any observed post by whether an item's publisher could be resolved and by first-recorded release. To test whether document length acts as a class cue, we fitted a logistic regression on log token count alone on each source training pool and scored it on every target. This is a diagnostic of a shared confound, not a candidate classifier. We summarized the saved bootstrap draw",
+    "occurrences": 1
+   },
+   {
+    "edit": "M2.12 mixture-interval sentence",
+    "before": "Intervals are 95% percentile intervals.",
+    "after": "Intervals are 95% percentile intervals. When one cluster dominates the outcome, a percentile interval mixes draws that include that cluster zero, one or more times, so its width and asymmetry reflect that mixture rather than sampling noise around a single value (Supplementary Table S20, Figure S1).",
+    "occurrences": 1
+   },
+   {
+    "edit": "R3.1a findability paragraph",
+    "before": "Nearly all FakeHealth items had observed posts, so its ratio reflects posting volume alone.\n",
+    "after": "Nearly all FakeHealth items had observed posts, so its ratio reflects posting volume alone.\n\nThe occurrence gap partly reflects which items the collection could find. Because CoAID's Fake items were selected by fact-checkers, most had already circulated somewhere. Fake items whose publisher could be resolved had any observed post 33.0% of the time, against 7.5% for those hosted on platforms without an identifiable account or lacking source metadata, which make up two-thirds of CoAID's Fake items. Resolved Real items were posted 57.6% of the time, so a gap remains among items that could be trac",
+    "occurrences": 1
+   },
+   {
+    "edit": "R3.1b exclusion sentence",
+    "before": "Its magnitude depended on one cluster: excluding CoAID's largest group of items linked by shared posts moved the ratio-of-ratios to 0.489 (0.310\u20130.710), weaker but in the same direction.",
+    "after": "Its magnitude depended on one cluster. Excluding CoAID's largest group of items linked by shared posts moved the ratio-of-ratios to 0.489 (0.310\u20130.710), weaker but in the same direction and inside the primary interval.",
+    "occurrences": 1
+   },
+   {
+    "edit": "R3.1b bootstrap mixture sentences",
+    "before": "Because the exclusion changes the CoAID reference population, this is an influence check, not a replacement estimate.",
+    "after": "Because the exclusion changes the CoAID reference population, this is an influence check, not a replacement estimate. The same cluster shapes the primary interval. It entered 63.7% of bootstrap draws, and the CoAID ratio had a median of 0.408 in draws without it, 0.249 in draws with it once and 0.182 in draws with it two or more times (Supplementary Table S20, Figure S1). The interval 0.132\u20130.522 is therefore a mixture of three largely separate clumps, not a spread around one value.",
+    "occurrences": 1
+   },
+   {
+    "edit": "R3.2a PolitiFact cluster passage",
+    "before": "Its overall direction rested on one cluster of 84 items.*?so we claim no direction for PolitiFact\\.",
+    "after": "Its primary interval includes parity, so we claim no direction for PolitiFact. One cluster of 84 items, 79 of them Real, holds two-thirds of the collection's post links. Its items are mostly generically titled pages and transcripts, such as web-portal pages and debate transcripts, linked by shared tweets rather than paraphrases of one story (Supplementary Table S20). Bootstrap draws without the cluster centered on a ratio of 1.465, and draws that included it once on 0.554, so PolitiFact's interval spans two separate clumps. Excluding the cluster gives 1.446 (1.073\u20132.046), and posted Fake and R",
+    "occurrences": 1
+   },
+   {
+    "edit": "R3.2b typical-item sentences",
+    "before": "The excess rests on a heavy Fake tail: the median item had 12 posts if Fake and 45 if Real.",
+    "after": "The excess rests on a heavy Fake tail. The median item had 12 posts if Fake and 45 if Real, and a random Fake item had more posts than a random Real one only 37% of the time (Table 2). PolitiFact shows the mirror image: its mean ratio is below 1, but the median Fake item had 77.5 posts against 7.5 for the median Real item, and a random Fake item outdrew a random Real one 63% of the time. In both non-health collections the mean and the typical item point in opposite directions. In the health datasets they agree (0.29 in CoAID, 0.46 in FakeHealth).",
+    "occurrences": 1
+   },
+   {
+    "edit": "R3.2 rounding 1.374->1.373 (round-4 Check 7)",
+    "before": "without its largest cluster (1.374, 1.146\u20131.621)",
+    "after": "without its largest cluster (1.373, 1.146\u20131.621)",
+    "occurrences": 1
+   },
+   {
+    "edit": "T2 header columns",
+    "before": "| Collection | Fake label | Fake/Real ratio (95% interval) | Any observed post, Fake / Real | Posts given any, Fake/Real ratio (95% interval) |\n| --- | --- | --- | --- | --- |",
+    "after": "| Collection | Fake label | Fake/Real ratio (95% interval) | Any observed post, Fake / Real | Posts given any, Fake/Real ratio (95% interval) | Median observed posts, Fake / Real | P(Fake > Real) |\n| --- | --- | --- | --- | --- | --- | --- |",
+    "occurrences": 1
+   },
+   {
+    "edit": "T2 typical-item columns (CoAID News)",
+    "before": "| CoAID News | Fact-checked claims (Real: health agencies and publishers) | 0.253 (0.132\u20130.522) | 0.117 / 0.617 | 1.30 (0.73\u20132.55) |",
+    "after": "| CoAID News | Fact-checked claims (Real: health agencies and publishers) | 0.253 (0.132\u20130.522) | 0.117 / 0.617 | 1.30 (0.73\u20132.55) | 0 / 3 | 0.29 |",
+    "occurrences": 1
+   },
+   {
+    "edit": "T2 typical-item columns (FakeHealth HealthStory)",
+    "before": "| FakeHealth HealthStory | Expert-rated poor reporting | 0.840 (0.714\u20130.997) | 0.998 / 0.995 (observed) | Not separated (single-part model) |",
+    "after": "| FakeHealth HealthStory | Expert-rated poor reporting | 0.840 (0.714\u20130.997) | 0.998 / 0.995 (observed) | Not separated (single-part model) | 113 / 129 | 0.46 |",
+    "occurrences": 1
+   },
+   {
+    "edit": "T2 typical-item columns (FakeNewsNet PolitiFact)",
+    "before": "| FakeNewsNet PolitiFact | Fact-checker verdicts | 0.559 (0.439\u20131.868) | 0.907 / 0.654 | 0.404 (0.336\u20131.255) |",
+    "after": "| FakeNewsNet PolitiFact | Fact-checker verdicts | 0.559 (0.439\u20131.868) | 0.907 / 0.654 | 0.404 (0.336\u20131.255) | 77.5 / 7.5 | 0.63 |",
+    "occurrences": 1
+   },
+   {
+    "edit": "T2 typical-item columns (FakeNewsNet GossipCop)",
+    "before": "| FakeNewsNet GossipCop | Site score below 5 of 10 | 2.144 (1.212\u20133.290) | 0.965 / 0.937 | 2.083 (1.185\u20133.179) |",
+    "after": "| FakeNewsNet GossipCop | Site score below 5 of 10 | 2.144 (1.212\u20133.290) | 0.965 / 0.937 | 2.083 (1.185\u20133.179) | 12 / 45 | 0.37 |",
+    "occurrences": 1
+   },
+   {
+    "edit": "T2 exclusion row PolitiFact dashes",
+    "before": "| PolitiFact, largest cluster excluded | | 1.446 (1.073\u20132.046) | 0.906 / 0.604 | 0.964 (0.726\u20131.351) |",
+    "after": "| PolitiFact, largest cluster excluded | | 1.446 (1.073\u20132.046) | 0.906 / 0.604 | 0.964 (0.726\u20131.351) | \u2014 | \u2014 |",
+    "occurrences": 1
+   },
+   {
+    "edit": "T2 exclusion row GossipCop dashes + rounding 1.374->1.373",
+    "before": "| GossipCop, largest cluster excluded | | 1.374 (1.146\u20131.621) | 0.960 / 0.937 | 1.340 (1.118\u20131.577) |",
+    "after": "| GossipCop, largest cluster excluded | | 1.373 (1.146\u20131.621) | 0.960 / 0.937 | 1.340 (1.118\u20131.577) | \u2014 | \u2014 |",
+    "occurrences": 1
+   },
+   {
+    "edit": "T2 caption addition",
+    "before": "Component ratios do not multiply exactly to the overall ratio because the estimand averages row-level products.",
+    "after": "Component ratios do not multiply exactly to the overall ratio because the estimand averages row-level products. Medians and P(Fake > Real) are observed, not model-standardized, and count items with no posts. P(Fake > Real) is the probability that a randomly chosen Fake item has more observed posts than a randomly chosen Real item, with ties counted as one half (Supplementary Table S21).",
+    "occurrences": 1
+   },
+   {
+    "edit": "R3.3 rounding 0.980->0.979 (SVM CoAID ROC-AUC)",
+    "before": "(CoAID 0.913 and 0.980; FakeHealth 0.670 and 0.770)",
+    "after": "(CoAID 0.913 and 0.979; FakeHealth 0.670 and 0.770)",
+    "occurrences": 1
+   },
+   {
+    "edit": "R3.3a masking caveat",
+    "before": "Masking explicit source names barely changed either dataset (CoAID 0.926 to 0.928; FakeHealth 0.675 to 0.673).",
+    "after": "Masking explicit source names barely changed either dataset (CoAID 0.926 to 0.928; FakeHealth 0.675 to 0.673). The models did not need the names, but this does not show that they were not learning source, which formatting, page structure and house vocabulary can also carry.",
+    "occurrences": 1
+   },
+   {
+    "edit": "R3.3b formatting-marker wording",
+    "before": "CoAID's separability did not rest on formatting artifacts, although its classes differ sharply in format",
+    "after": "CoAID's separability did not rest on any single formatting marker we could identify, although its classes differ sharply in format",
+    "occurrences": 1
+   },
+   {
+    "edit": "R3.3b paragraph end",
+    "before": "and removing years, month names and credits as well gave 0.919.\n",
+    "after": "and removing years, month names and credits as well gave 0.919. These checks remove specific markers; they cannot remove everything that distinguishes CoAID's sources.\n\nDocument length accounts for much of the separability in both datasets (Supplementary Table S19). A logistic regression on log token count alone reached ROC-AUC 0.882 on the CoAID holdout, against 0.983 for the word model, and 0.729 on the FakeHealth holdout, against 0.770. In CoAID the shortest fifth of texts (4\u201336 tokens) was 93% Fake, and the other fifths were 2\u201310% Fake. The word models' scores fell with length within both ",
+    "occurrences": 1
+   },
+   {
+    "edit": "R3.4 rounding 0.425->0.424 (SVM FakeHealth-to-CoAID macro F1)",
+    "before": "SVM reproduced both results (0.425 and 0.583; 0.449 and 0.631).",
+    "after": "SVM reproduced both results (0.424 and 0.583; 0.449 and 0.631).",
+    "occurrences": 1
+   },
+   {
+    "edit": "R3.4a independence and fold stability",
+    "before": "so the strongest cues were no more consistent than the rest.",
+    "after": "so the strongest cues were no more consistent than the rest. A reversal share near one half is what independent associations would produce, so the two datasets' cues are unrelated rather than opposed. Nor is this coefficient noise. Refitted on different training folds, each dataset's coefficients agreed closely with themselves (mean Spearman \u03c1 0.78 in FakeHealth and 0.82 in CoAID), against \u22120.003 between datasets (Supplementary Table S23).",
+    "occurrences": 1
+   },
+   {
+    "edit": "R3.4b length-cue paragraph",
+    "before": "\n![Figure 2. Within-dataset and transferred text performance]",
+    "after": "\nOne cue did carry across. Length alone ranked the transfer targets better than either word model. On all eligible items, the length baseline reached ROC-AUC 0.852 on CoAID when fitted on FakeHealth, against 0.537 for the FakeHealth word model, and 0.649 on FakeHealth when fitted on CoAID, against 0.605 (Supplementary Table S19). Both datasets encode short as Fake, but the word models did not pass this on equally. CoAID-trained scores fell with length on FakeHealth (\u03c1 \u22120.69), so long FakeHealth articles were scored as Real. FakeHealth-trained scores barely tracked length on CoAID (\u03c1 \u22120.12), be",
+    "occurrences": 1
+   },
+   {
+    "edit": "R3.5a heading",
+    "before": "### 3.5 CoAID-trained models ranked independent COVID rumors better\n",
+    "after": "### 3.5 CoAID-trained models ranked independent COVID rumors better, largely through length\n",
+    "occurrences": 1
+   },
+   {
+    "edit": "R3.5b length explanation",
+    "before": "when all eligible items were retained.\n",
+    "after": "when all eligible items were retained.\n\nLength explains most of this ordering. COVID-Rumor items are short statements, and a length-only model fitted on either source pool reached ROC-AUC 0.716 on them, slightly above the CoAID word model (Supplementary Table S19). The CoAID-trained models' scores fell with length on this target (\u03c1 \u22120.36 for LR), whereas the FakeHealth-trained models' did not (\u03c1 0.04). What CoAID's models carried to COVID-Rumor was mostly that its Fake items, like CoAID's, are short.\n",
+    "occurrences": 1
+   },
+   {
+    "edit": "R3.5c PolitiFact length sentence",
+    "before": "(weak evidence on its own \\(\\[Supplementary Table S13\\]\\([^)]*\\)\\)\\.)",
+    "after": "\\g<1> Length alone, fitted on CoAID, ranked PolitiFact titles better than the CoAID title model (ROC-AUC 0.739 vs 0.608), so this ordering also follows the length of fact-checked claims rather than their vocabulary.",
+    "occurrences": 1
+   },
+   {
+    "edit": "R3.6a truncation sentences",
+    "before": "FakeHealth-to-CoAID ROC-AUC was 0.442 and CoAID-to-FakeHealth 0.437.",
+    "after": "FakeHealth-to-CoAID ROC-AUC was 0.442 and CoAID-to-FakeHealth 0.437. Truncation explains part of DistilRoBERTa's shortfall in FakeHealth (macro F1 0.621 against 0.675 for LR), but not all of it. Refitting the LR on only the text before the 512-token cut gave 0.651, and the text after the cut alone gave 0.653 with a higher ROC-AUC (0.766 vs 0.718). The FakeHealth signal is spread through each article, and 40.9% of the occurrences of the LR's 50 strongest terms fall after the cut (Supplementary Table S22).",
+    "occurrences": 1
+   },
+   {
+    "edit": "T1 masking reading",
+    "before": "| Signal not carried by explicit names |",
+    "after": "| Names not needed; does not rule out other source cues |",
+    "occurrences": 1
+   },
+   {
+    "edit": "T1 encoding reading",
+    "before": "| Signal not carried by formatting artifacts |",
+    "after": "| These markers not needed; other format cues remain |",
+    "occurrences": 1
+   },
+   {
+    "edit": "T1 three new rows",
+    "before": "| DistilRoBERTa, 256 vs 512 tokens, 3 seeds | Macro F1 +0.101 (SD 0.079); ranking better in 1 of 3 | Seed-sensitive |\n",
+    "after": "| DistilRoBERTa, 256 vs 512 tokens, 3 seeds | Macro F1 +0.101 (SD 0.079); ranking better in 1 of 3 | Seed-sensitive |\n| Length-only baseline (log token count) | ROC-AUC within CoAID 0.882 (word LR 0.983), FakeHealth 0.729 (0.770); beats word LR on both transfer targets and COVID-Rumor | Length carries much of within-dataset signal and most of what transfers |\n| FakeHealth LR on text before 512-token cut | Macro F1 0.651 (vs 0.675); text after cut alone 0.653 | Truncation explains part of transformer shortfall |\n| Fold-to-fold LR coefficient stability | Mean Spearman \u03c1 0.78 (FakeHealth), 0.82 (",
+    "occurrences": 1
+   },
+   {
+    "edit": "D4.1a FakeHealth length clause",
+    "before": "text separates them only modestly (macro F1 0.675, most of which survives evaluation on unseen publishers)",
+    "after": "text separates them only modestly (macro F1 0.675, most of which survives evaluation on unseen publishers and much of which is length)",
+    "occurrences": 1
+   },
+   {
+    "edit": "D4.1a CoAID length clause",
+    "before": "text separates the classes almost perfectly (0.926)",
+    "after": "text separates the classes almost perfectly (0.926), largely because Fake items are short excerpts and Real items long institutional articles",
+    "occurrences": 1
+   },
+   {
+    "edit": "D4.1b fold stability",
+    "before": "The near-zero alignment of word\u2013label associations fits this reading. If the two Fake labels encode different constructs, a word that signals one need carry no information about the other, and neither model's lessons should transfer.",
+    "after": "The near-zero alignment of word\u2013label associations fits this reading. If the two Fake labels encode different constructs, a word that signals one need carry no information about the other, and neither model's lessons should transfer. A weak FakeHealth signal could also produce near-zero alignment, but each dataset's coefficients were stable across training folds, so the two vocabularies are reliably different, not noisy.",
+    "occurrences": 1
+   },
+   {
+    "edit": "D4.1c transfer-error cause",
+    "before": "The direction of the transfer errors is consistent with the same account: a model trained on CoAID, where Fake means a fringe claim, treats mainstream journalism as Real, and FakeHealth's Fake items are mainstream journalism.",
+    "after": "The direction of the transfer errors has a simpler cause than vocabulary. A model trained on CoAID, where Fake items are short excerpts, scores long texts as Real, and every FakeHealth item, Fake or Real, is a full article. Length is the one cue the datasets share, since short items lean Fake in both. That a length-only model transferred better than either word model shows that what the word models learned did not travel, while a simple genre cue did.",
+    "occurrences": 1
+   },
+   {
+    "edit": "D4.2a findability explanation",
+    "before": "Whether CoAID's Fake items were harder to find is a question about those items:.*?may make poor search queries\\.",
+    "after": "Round-4 checks support this explanation for the occurrence gap. Fact-checkers generally check claims that are already circulating, yet CoAID's Fake items had any observed post far less often when no publisher could be resolved (7.5%) than when one could (33.0%), and Real items first captured in CoAID's later releases were almost never posted either. Much of CoAID's zero-inflation therefore reflects what the collection could find and when it looked, and the occurrence gap is partly a measurement result. Resolved Fake items were still posted less often than resolved Real ones, so measurement doe",
+    "occurrences": 1
+   },
+   {
+    "edit": "D4.2b genre clause",
+    "before": "This explanation accounts for every text result, including the external one, since COVID-Rumor's labels, like CoAID's, derive from fact-checking.",
+    "after": "This explanation accounts for every text result, provided that genre is counted as part of it: fact-checked claims are short statements in CoAID and COVID-Rumor, PolitiFact's titles behaved the same way, and length is the cue that carried between them.",
+    "occurrences": 1
+   },
+   {
+    "edit": "D4.2c COVID-topic passage",
+    "before": "This is consistent with CoAID-trained models transferring better to COVID rumors, but that result cannot separate shared topic from shared fact-check labeling\\..*?although the title-only comparison is too weak to settle it\\.",
+    "after": "CoAID-trained models did transfer better to COVID rumors, but length alone matched that advantage, and it did the same for non-COVID PolitiFact titles. The ordering is therefore better explained by the shared short-claim genre of fact-checked items than by COVID topic or shared vocabulary, and it gives no support to a crisis effect on language.",
+    "occurrences": 1
+   },
+   {
+    "edit": "D4.3a findability clause",
+    "before": "(ratio 1.30, with an interval that includes parity).",
+    "after": "(ratio 1.30, with an interval that includes parity). Because those items had been fact-checked, the first part reflects what the collection could find as much as what circulated.",
+    "occurrences": 1
+   },
+   {
+    "edit": "D4.3b sensitivity paragraph",
+    "before": "The CoAID magnitude should be read with its sensitivity. Excluding a single large cluster of items linked by shared posts moved the contrast from 0.301 to 0.489. The direction is robust; the size depends on how a small number of heavily shared items is treated.",
+    "after": "The CoAID magnitude should be read with its sensitivity. Excluding a single large cluster of items linked by shared posts moved the contrast from 0.301 to 0.489, a value still inside the primary interval, and the interval itself is a mixture of bootstrap draws with that cluster drawn zero, one or more times. The direction held in every check, but the size depends on how a small number of heavily shared items is treated.\n\nThese ratios describe expected posts per item, not the typical item, and the two can disagree. In GossipCop, Fake items drew about twice as many expected posts, yet a random F",
+    "occurrences": 1
+   },
+   {
+    "edit": "D4.4a DistilRoBERTa clause",
+    "before": "DistilRoBERTa matched the classical models within datasets, did not improve transfer,",
+    "after": "DistilRoBERTa matched the classical models within CoAID but fell short in FakeHealth (macro F1 0.621 against 0.675), partly because most FakeHealth articles were cut, and it did not improve transfer;",
+    "occurrences": 1
+   },
+   {
+    "edit": "D4.5a PolitiFact sentence",
+    "before": "PolitiFact, which shares CoAID's fact-check construct, moved from below 1 to above 1 when one cluster of items sharing tweets was set aside.",
+    "after": "PolitiFact, which shares CoAID's fact-check construct, had an interval spanning parity, with the direction set by how often one cluster of generically titled pages was drawn.",
+    "occurrences": 1
+   },
+   {
+    "edit": "D4.5a means-vs-typical sentence",
+    "before": "because a single dependent cluster changed the magnitude of CoAID's contrast and the direction of PolitiFact's.",
+    "after": "because a single dependent cluster changed the magnitude of CoAID's contrast and the direction of PolitiFact's. Studies should also say whether they compare means or typical items, since heavy tails made the two disagree in both non-health collections.",
+    "occurrences": 1
+   },
+   {
+    "edit": "D4.5b machine-learning paragraph and list",
+    "before": "\\*\\*Machine-learning work\\.\\*\\* A high within-dataset score can measure.*?- state the text representation, because titles, excerpts and full articles give a model different information\\.",
+    "after": "**Machine-learning work.** A high within-dataset score can measure how a dataset was assembled rather than how detectable misinformation is. In CoAID, source and label were nearly the same variable (Cram\u00e9r's V 0.971), and Fake texts were short excerpts while Real texts were long institutional articles. Length alone ranked CoAID's holdout at ROC-AUC 0.882. Real texts also carried years and photo credits that Fake texts almost never did, and encoding errors appeared only in Fake texts. Removing source names, encoding errors, or dates and credits barely changed CoAID's 0.926 macro F1, because the",
+    "occurrences": 1
+   },
+   {
+    "edit": "D4.5c release pooling",
+    "before": "We excluded FakeHealth's retweets because CoAID has no equivalent, and pooled CoAID posts across its four releases, and both choices change the counts.",
+    "after": "We excluded FakeHealth's retweets because CoAID has no equivalent, and pooled CoAID posts across its four releases. Both choices change the counts, and the second matters most: Real items first captured in CoAID's two later releases were almost never posted, against about nine in ten in the earlier two, which points to uneven collection rather than to anything about the items.",
+    "occurrences": 1
+   },
+   {
+    "edit": "D4.5c clusters sentence",
+    "before": "Items that share posts are not independent rows; treating them as clusters set the width of every engagement interval here.",
+    "after": "Items that share posts are not independent rows. Treating them as clusters set the width of every engagement interval here, and in three collections whether one cluster was drawn decided where a bootstrap draw landed.",
+    "occurrences": 1
+   },
+   {
+    "edit": "D4.7 engagement limitation",
+    "before": "the large influence of one CoAID cluster shows that magnitude estimates are fragile.",
+    "after": "the large influence of one CoAID cluster, which splits the bootstrap distribution into separate clumps, shows that magnitude estimates are fragile. CoAID's post coverage also differed sharply by release, and much of its zero-inflation reflects collection rather than circulation.",
+    "occurrences": 1
+   },
+   {
+    "edit": "D4.7 text limitation",
+    "before": "Removing these markers barely changed separability, but other collection traces may remain.",
+    "after": "Removing these markers barely changed separability, but other collection traces remain, the largest being length: Fake texts are shorter than Real ones in both datasets, and the text models were not adjusted for it.",
+    "occurrences": 1
+   },
+   {
+    "edit": "D4.7 external limitation",
+    "before": "PolitiFact's direction depends on one cluster",
+    "after": "PolitiFact's interval includes parity and its shape depends on one cluster of generic pages",
+    "occurrences": 1
+   },
+   {
+    "edit": "D4.8 last sentence",
+    "before": "A non-COVID fact-checked target with full article text, scored with both classical models, would give a firmer test of whether CoAID's portability follows its topic or its labels than the title-only check reported here.",
+    "after": "Detection benchmarks built from such data should match Fake and Real items on length and format, or report results within length strata, so that portability can be judged on content rather than genre.",
+    "occurrences": 1
+   },
+   {
+    "edit": "C conclusion length cue",
+    "before": "although CoAID-trained models ranked independent COVID rumors better.",
+    "after": "and the one cue that carried between them was that Fake items were shorter.",
+    "occurrences": 1
+   },
+   {
+    "edit": "C conclusion findability",
+    "before": "where the shortfall came from Fake items rarely being posted at all,",
+    "after": "where the shortfall came from Fake items rarely being posted at all, largely among items the collection could not trace to a publisher,",
+    "occurrences": 1
+   },
+   {
+    "edit": "L supplementary cross-reference links for S18\u2013S23, Figure S1, Section S8",
+    "before": "plain mentions",
+    "after": "markdown links (render step rewrites to supplement_review.pdf pages)",
+    "occurrences": 15
+   }
+  ],
+  "rounding_fixes": [
+   "1.374 -> 1.373 (Results 3.2 and Table 2; saved 1.3734525)",
+   "0.980 -> 0.979 (SVM CoAID ROC-AUC; saved 0.9794664)",
+   "0.425 -> 0.424 (SVM FakeHealth-to-CoAID macro F1; saved 0.4244968)"
+  ]
+ },
+ "round5_fixes": {
+  "date": "2026-10-13",
+  "cause": "apply_reviewer_round1.py edit() used re.sub(old, lambda m: new): the replacement string was inserted literally, so '\\g<1>' appeared in the text and the matched sentence was dropped (edits M2.9 and R3.5c)",
+  "script_fix": "edit() now uses m.expand(new) for regex edits (apply_reviewer_round1.py)",
+  "manuscript_sha256_before": "942e757274af930decaeb1fce479d412917ee255a4c4d8316b64980354d0be78",
+  "manuscript_sha256_after": "eb92ca22223b517b3682c7fce78e5ec4753ee6e8043d9c727544f8583517cae6",
+  "edits": [
+   {
+    "edit": "F1 restore Methods 2.9 lead sentence",
+    "before": "\\g<1>\\nSix diagnostics were added",
+    "after": "Full protocols are in [Supplementary Methods S5](supplementary_material.md#s5-publisher-family-evaluation) and S6.\n\nSix diagnostics were added"
+   },
+   {
+    "edit": "F2 restore Results 3.5 sentence end (Supplementary Table S13)",
+    "before": "so this comparison is \\g<1> Length alone, fitted on CoAID",
+    "after": "so this comparison is weak evidence on its own ([Supplementary Table S13](supplementary_material.md#table-s13-fakenewsnet-title-only-external-text-target-cohort-and-lr-transfer-results)). Length alone, fitted on CoAID"
+   }
+  ],
+  "numbers_changed": "none"
+ },
+ "round5_supplement": {
+  "date": "2026-10-13",
+  "added": [
+   "Table S19 description sentence",
+   "S19.3 (round4_length_bins.csv, all 80 rows)",
+   "S19.4 (round5_within_length_auc.csv, 48 rows)"
+  ],
+  "supplement_sha256_after": "feb549aa074a3229f34e49ceb47701d492272c90837ad6e41906aa3addd6a848",
+  "validator_change": "outputs/extension_v1/round5/*.csv added to the value index",
+  "renumbering": "none"
+ },
+ "round5_text": {
+  "date": "2026-10-13",
+  "approval": "author-approved insert of the length-stratified ROC-AUC result (round 5)",
+  "manuscript_sha256_before": "eb92ca22223b517b3682c7fce78e5ec4753ee6e8043d9c727544f8583517cae6",
+  "manuscript_sha256_after": "668047b470406c476017a9fe2e92c801a2b0a78cda50ea97cd7aca75ad116398",
+  "edits": [
+   {
+    "edit": "R3.3a lead sentence",
+    "before": "The words add to that, but they are not the main source of it. FakeHealth",
+    "after": "The words add to that within each dataset. Holding length fixed shows what the words add. Within length quintiles, the frozen LR separated Fake from Real with ROC-AUC 0.878 on the CoAID holdout (SVM 0.858) and 0.672 on the FakeHealth holdout, against 0.983 and 0.770 unstratified ([Supplementary Table S19](supplementary_material.md#table-s19-document-length-as-a-shared-cue-scorelength-correlations-and-a-length-only-diagnostic-baseline)). The words therefore carry signal beyond length within each dataset, weakest in CoAID's shortest fifth, where 131 Fake items faced 10 Real ones (0.584). Across datasets the opposite holds: within length quintiles the transferred models fall to 0.50\u20130.52 on both transfer targets, so what carried from one dataset to the other was length. FakeHealth",
+    "csv_rows_cited": "outputs/extension_v1/round5/round5_within_length_auc.csv rows 6, 12, 18, 24 (pooled roc_auc, unstratified_frozen_roc_auc), 1 (CoAID LR quintile 1: fake_N, real_N, roc_auc), 30, 36, 42, 48 (transfer pooled roc_auc)"
+   },
+   {
+    "edit": "L limitations length clause",
+    "before": "Fake texts are shorter than Real ones in both datasets, and the text models were not adjusted for it.",
+    "after": "Fake texts are shorter than Real ones in both datasets. The text models were not adjusted for it; a post hoc check within length quintiles ([Supplementary Table S19](supplementary_material.md#table-s19-document-length-as-a-shared-cue-scorelength-correlations-and-a-length-only-diagnostic-baseline)) shows that the word signal survives in both datasets, but that check rests on small Fake counts in CoAID's longer quintiles and reports no intervals.",
+    "csv_rows_cited": "round5 rows 6, 12, 18, 24; CoAID quintile 3-5 fake_N (rows 3-5)"
+   },
+   {
+    "edit": "T summary-table length row",
+    "before": "| Length carries much of within-dataset signal and most of what transfers |",
+    "after": "| Length carries much of within-dataset signal and most of what transfers; within length quintiles the word models are at 0.50\u20130.52 on transfer |",
+    "csv_rows_cited": "round5 rows 30, 36, 42, 48"
+   },
+   {
+    "edit": "D4.2 length clause",
+    "before": "length is the cue that carried between them.",
+    "after": "length is the cue that carried between them, and within length quintiles nothing else did (ROC-AUC 0.50\u20130.52, [Supplementary Table S19](supplementary_material.md#table-s19-document-length-as-a-shared-cue-scorelength-correlations-and-a-length-only-diagnostic-baseline)).",
+    "csv_rows_cited": "round5 rows 30, 36, 42, 48"
+   }
+  ],
+  "abstract": "unchanged (no \"mostly\"/\"largely\" present)",
+  "numbers_changed": "none; new numbers only"
+ },
+ "round5_final_read": {
+  "date": "2026-10-13",
+  "scope": "prose-only; no value changed; the only numbers moved or repeated already in the file",
+  "manuscript_sha256_before": "668047b470406c476017a9fe2e92c801a2b0a78cda50ea97cd7aca75ad116398",
+  "manuscript_sha256_after": "68eacfb9ca9bf3eb3f46c3131e202b2993a1f33cfee2d4fd4c41d9c4092d140a",
+  "edits": [
+   {
+    "edit": "1 Methods 2.9 count",
+    "before": "Six diagnostics were added after the main analyses",
+    "after": "Seven diagnostics were added after the main analyses",
+    "occurrences": 1
+   },
+   {
+    "edit": "1b Methods 2.9 seventh diagnostic",
+    "before": "and we measured the stability of LR coefficients by correlating them across the five training folds within each dataset.",
+    "after": "and we measured the stability of LR coefficients by correlating them across the five training folds within each dataset. Finally, without refitting, we scored the frozen LR and SVM within quintiles of document length and report ROC-AUC within each quintile and pooled over Fake\u2013Real pairs from the same quintile.",
+    "occurrences": 1
+   },
+   {
+    "edit": "2 Results 3.3 length paragraph",
+    "before": "CoAID's macro F1 of 0.926 therefore largely measures how well a model can separate short fact-checked excerpts from long institutional articles. The words add to that within each dataset. Holding length fixed shows what the words add. Within length quintiles, the frozen LR separated Fake from Real with ROC-AUC 0.878 on the CoAID holdout (SVM 0.858) and 0.672 on the FakeHealth holdout, against 0.983 and 0.770 unstratified ([Supplementary Table S19](supplementary_material.md#table-s19-document-length-as-a-shared-cue-scorelength-correlations-and-a-length-only-diagnostic-baseline)). The words therefore carry signal beyond length within each dataset, weakest in CoAID's shortest fifth, where 131 Fake items faced 10 Real ones (0.584). Across datasets the opposite holds: within length quintiles the transferred models fall to 0.50\u20130.52 on both transfer targets, so what carried from one dataset to the other was length. FakeHealth's Fake items also tend to be shorter, though the classes overlap more.",
+    "after": "FakeHealth's Fake items also tend to be shorter, though the classes overlap more. Length is not the whole signal, however. With length held fixed, the frozen LR still separated Fake from Real with ROC-AUC 0.878 on the CoAID holdout (SVM 0.858) and 0.672 on the FakeHealth holdout, against 0.983 and 0.770 unstratified ([Supplementary Table S19](supplementary_material.md#table-s19-document-length-as-a-shared-cue-scorelength-correlations-and-a-length-only-diagnostic-baseline)). CoAID's macro F1 of 0.926 therefore reflects both how easily short fact-checked excerpts are told apart from long institutional articles and words that separate the classes at any length. The word signal was weakest in CoAID's shortest fifth, where 131 Fake items faced 10 Real ones (0.584).",
+    "occurrences": 1
+   },
+   {
+    "edit": "3 Results 3.4 transfer sentence",
+    "before": "FakeHealth-trained scores barely tracked length on CoAID (\u03c1 \u22120.12), because its vocabulary weights outweighed it.",
+    "after": "FakeHealth-trained scores barely tracked length on CoAID (\u03c1 \u22120.12), because its vocabulary weights outweighed it. With length held fixed, nothing else carried: within length quintiles the transferred models ranked both targets at ROC-AUC 0.50\u20130.52 ([Supplementary Table S19](supplementary_material.md#table-s19-document-length-as-a-shared-cue-scorelength-correlations-and-a-length-only-diagnostic-baseline)), so what carried from one dataset to the other was length.",
+    "occurrences": 1
+   },
+   {
+    "edit": "4 Table 1 length row",
+    "before": "| Length-only baseline (log token count) | ROC-AUC within CoAID 0.882 (word LR 0.983), FakeHealth 0.729 (0.770); beats word LR on both transfer targets and COVID-Rumor | Length carries much of within-dataset signal and most of what transfers; within length quintiles the word models are at 0.50\u20130.52 on transfer |",
+    "after": "| Length-only baseline (log token count) | ROC-AUC within CoAID 0.882 (word LR 0.983), FakeHealth 0.729 (0.770); beats word LR on both transfer targets and COVID-Rumor; word LR within length quintiles 0.878 (CoAID), 0.672 (FakeHealth) | Length carries much of the within-dataset signal, but words add to it; within length quintiles the word models are at 0.50\u20130.52 on transfer, so length is what transfers |",
+    "occurrences": 1
+   },
+   {
+    "edit": "5 Discussion 4.1",
+    "before": "text separates the classes almost perfectly (0.926), largely because Fake items are short excerpts and Real items long institutional articles,",
+    "after": "text separates the classes almost perfectly (0.926), partly because Fake items are short excerpts and Real items long institutional articles and partly through words that separate them at any length,",
+    "occurrences": 1
+   },
+   {
+    "edit": "6 Discussion 4.2 scope",
+    "before": "and length is the cue that carried between them, and within length quintiles nothing else did (ROC-AUC 0.50\u20130.52, [Supplementary Table S19](supplementary_material.md#table-s19-document-length-as-a-shared-cue-scorelength-correlations-and-a-length-only-diagnostic-baseline)).",
+    "after": "and length is the cue that carried between them. Between CoAID and FakeHealth, nothing beyond length carried: within length quintiles the transferred models ranked at ROC-AUC 0.50\u20130.52 ([Supplementary Table S19](supplementary_material.md#table-s19-document-length-as-a-shared-cue-scorelength-correlations-and-a-length-only-diagnostic-baseline)).",
+    "occurrences": 1
+   },
+   {
+    "edit": "7 Discussion 4.2 jargon",
+    "before": "Round-4 checks support this explanation for the occurrence gap.",
+    "after": "The findability breakdown supports this explanation for the occurrence gap.",
+    "occurrences": 1
+   },
+   {
+    "edit": "8 Discussion 4.5 checklist",
+    "before": "- compare every model with a length-only baseline, within and across datasets;",
+    "after": "- compare every model with a length-only baseline, within and across datasets, and report its scores within length strata;",
+    "occurrences": 1
+   },
+   {
+    "edit": "9 Conclusion run-on",
+    "before": "CoAID's labels were easy to learn and hard to export, FakeHealth's were harder to learn, and neither dataset's lessons carried over to the other, and the one cue that carried between them was that Fake items were shorter.",
+    "after": "CoAID's labels were easy to learn and hard to export, and FakeHealth's were harder to learn. Neither dataset's word cues carried over to the other; the one cue that did was that Fake items were shorter.",
+    "occurrences": 1
+   },
+   {
+    "edit": "10 S8 anchors",
+    "before": "supplementary_material.md#s8-extension-protocols-extension_v1-2026-10-12)",
+    "after": "supplementary_material.md#s8-extension-protocols-extension_v1-2026-10-12-and-2026-10-13)",
+    "occurrences": 2
+   }
+  ],
+  "s8_heading_note": "S8 heading still reads \"S8. Extension protocols (extension_v1, 2026-10-12 and 2026-10-13)\"; reader-facing rename proposed in the report, not applied"
+ },
+ "round5_s8_cleanup": {
+  "date": "2026-10-13",
+  "scope": "prose and headings only; no value, row, CSV, hash or figure change",
+  "manuscript_sha256_before": "68eacfb9ca9bf3eb3f46c3131e202b2993a1f33cfee2d4fd4c41d9c4092d140a",
+  "manuscript_sha256_after": "6aa2f21a083dc76a97c88b46e79bb372b87cfe5763645f627a7e6ee0030dcee9",
+  "supplement_sha256_before": "feb549aa074a3229f34e49ceb47701d492272c90837ad6e41906aa3addd6a848",
+  "supplement_sha256_after": "54a7d9ad6c4ac5b30c75b27325e38e82ed8ee12f55779397e7bfa67c6478bb64",
+  "edits": [
+   {
+    "file": "supplement.md",
+    "edit": "1 S8 heading",
+    "before": "## S8. Extension protocols (extension_v1, 2026-10-12 and 2026-10-13)",
+    "after": "## S8. Protocols for analyses added in revision",
+    "occurrences": 1
+   },
+   {
+    "file": "manuscript.md",
+    "edit": "1 Figure M1 caption link",
+    "before": "[Supplementary S8](supplementary_material.md#s8-extension-protocols-extension_v1-2026-10-12-and-2026-10-13)",
+    "after": "[Supplementary Methods S8](supplementary_material.md#s8-protocols-for-analyses-added-in-revision)",
+    "occurrences": 1
+   },
+   {
+    "file": "manuscript.md",
+    "edit": "1 Methods 2.9 link",
+    "before": "[Supplementary Section S8](supplementary_material.md#s8-extension-protocols-extension_v1-2026-10-12-and-2026-10-13)",
+    "after": "[Supplementary Methods S8](supplementary_material.md#s8-protocols-for-analyses-added-in-revision)",
+    "occurrences": 1
+   },
+   {
+    "file": "manuscript.md",
+    "edit": "1 Methods 2.11 link",
+    "before": "[Supplementary Methods S8](supplementary_material.md#s8-extension-protocols-extension_v1-2026-10-12-and-2026-10-13)",
+    "after": "[Supplementary Methods S8](supplementary_material.md#s8-protocols-for-analyses-added-in-revision)",
+    "occurrences": 1
+   },
+   {
+    "file": "supplement.md",
+    "edit": "2 S16 description",
+    "before": "Round-2 extension (`protocols/coaid_encoding_sensitivity.md`).",
+    "after": "Added in revision (Supplementary Methods S8; protocol `protocols/coaid_encoding_sensitivity.md`).",
+    "occurrences": 1
+   },
+   {
+    "file": "supplement.md",
+    "edit": "2 S17 description",
+    "before": "Round-2 extension (`protocols/fakenewsnet_engagement_protocol.md`).",
+    "after": "Added in revision (Supplementary Methods S8; protocol `protocols/fakenewsnet_engagement_protocol.md`).",
+    "occurrences": 1
+   },
+   {
+    "file": "supplement.md",
+    "edit": "2 S18 description",
+    "before": "Round-4 Check 1 (`protocols/round4_reviewer_checks.md`).",
+    "after": "Added in revision (Supplementary Methods S8; protocol `protocols/round4_reviewer_checks.md`).",
+    "occurrences": 1
+   },
+   {
+    "file": "supplement.md",
+    "edit": "2 S19 description label",
+    "before": "Round-4 Check 2. S19.1:",
+    "after": "Added in revision (Supplementary Methods S8). S19.1:",
+    "occurrences": 1
+   },
+   {
+    "file": "supplement.md",
+    "edit": "2 S19 description round-5 line",
+    "before": "S19.4 was added in round 5 as a re-scoring check with no refit: the ROC-AUC",
+    "after": "S19.4 re-scores the frozen models within length quintiles without refitting: the ROC-AUC",
+    "occurrences": 1
+   },
+   {
+    "file": "supplement.md",
+    "edit": "2 S19.4 heading",
+    "before": "### S19.4 \u2014 round5_within_length_auc.csv (round 5, re-scoring check)",
+    "after": "### S19.4 \u2014 round5_within_length_auc.csv (re-scoring check)",
+    "occurrences": 1
+   },
+   {
+    "file": "supplement.md",
+    "edit": "2 S19.4 caption",
+    "before": "reconstructed by executing the round-4 scoring code and checked",
+    "after": "reconstructed by executing the same scoring code as S19.3 and checked",
+    "occurrences": 1
+   },
+   {
+    "file": "supplement.md",
+    "edit": "2 S20 description",
+    "before": "Round-4 Check 3, from the saved draws only",
+    "after": "Added in revision (Supplementary Methods S8), from the saved draws only",
+    "occurrences": 1
+   },
+   {
+    "file": "supplement.md",
+    "edit": "2 S21 description",
+    "before": "Round-4 Check 4. Share of items",
+    "after": "Added in revision (Supplementary Methods S8). Share of items",
+    "occurrences": 1
+   },
+   {
+    "file": "supplement.md",
+    "edit": "2 S22 description",
+    "before": "Round-4 Check 5. The cut position",
+    "after": "Added in revision (Supplementary Methods S8). The cut position",
+    "occurrences": 1
+   },
+   {
+    "file": "supplement.md",
+    "edit": "2 S23 description",
+    "before": "Round-4 Check 6. The locked natural LR",
+    "after": "Added in revision (Supplementary Methods S8). The locked natural LR",
+    "occurrences": 1
+   },
+   {
+    "file": "supplementary_material.md",
+    "edit": "S8 narrative label S16",
+    "before": "**Round 2: encoding-artifact sensitivity (Table S16).**",
+    "after": "**Encoding-artifact sensitivity (Table S16).**",
+    "occurrences": 1
+   },
+   {
+    "file": "supplementary_material.md",
+    "edit": "S8 narrative label S17",
+    "before": "**Round 2: FakeNewsNet engagement under the frozen estimand (Table S17).**",
+    "after": "**FakeNewsNet engagement under the frozen estimand (Table S17).**",
+    "occurrences": 1
+   },
+   {
+    "file": "supplementary_material.md",
+    "edit": "S8 narrative label S18-S23",
+    "before": "**Round 4: reviewer checks (Tables S18\u2013S23, Figure S1).**",
+    "after": "**Reviewer-prompted checks (Tables S18\u2013S23, Figure S1).**",
+    "occurrences": 1
+   }
+  ],
+  "left_in_place": [
+   "file names containing round4/round5 in Source CSV lines, headings and figure paths",
+   "line-1 HTML build comment (not rendered) carrying the build date"
+  ],
+  "s8_narrative_labels": {
+   "date": "2026-10-13",
+   "supplement_sha256_before_labels": "ee8d47e02f1deb6e47f71db74fb4c7e963acb6cef0aa5e8b8419c50731d783e3",
+   "note": "author-requested follow-up: the three S8 paragraph labels no longer name revision rounds"
+  }
+ },
+ "round6_prose_citations": {
+  "date": "2026-10-19",
+  "scope": "prose and citation format only; no value changed; every number in an AFTER string already appears elsewhere in the manuscript. Applied in two batches on 2026-10-19 (the instruction message was truncated at D15 and resent): A1, I1-I6, D1-D14, then D15-D19, C1, M1-M6 and the reference list.",
+  "manuscript_sha256_before": "6aa2f21a083dc76a97c88b46e79bb372b87cfe5763645f627a7e6ee0030dcee9",
+  "manuscript_sha256_after": "00b3d51311bba9b35c6b9a919d21c40fbf073f322ac79d453c8a631c705ab498",
+  "edits": [
+   {
+    "id": "A1",
+    "before": "Health misinformation datasets disagree about what misinformation is. FakeHealth labels mainstream health news by expert-rated reporting quality, whereas CoAID contrasts fact-checked COVID-19 claims with material from health agencies and health-information publishers. We compared model-standardized Fake/Real ratios of observed social-media posts, counting items never posted, between CoAID News and FakeHealth HealthStory, and evaluated leakage-controlled text classifiers within, across and beyond the two datasets. Fake items drew fewer observed posts than Real items in both datasets, but the ratio was 0.253 in CoAID and 0.840 in FakeHealth (ratio-of-ratios 0.301; 95% interval 0.154\u20130.645). The CoAID gap lay entirely in whether an item was posted at all and was concentrated among Fake items with no identifiable publisher, suggesting limited findability as much as limited spread. In two FakeNewsNet collections outside health, Fake items drew more observed posts in GossipCop (ratio 2.144) and PolitiFact's interval included parity, so neither the gap's size nor its direction carried across datasets. Text showed a parallel split: Fake and Real were highly separable within CoAID (macro F1 0.926) and modestly within FakeHealth (0.675), transfer was poor in both directions, and word\u2013label associations were uncorrelated between datasets. Text length travelled better than words: shorter for Fake items in both datasets, it alone ranked transferred items and independent COVID rumors better than the word-based models. Period, labels, sources and collection differ together, so these are contrasts between dataset contexts, not pandemic effects. The distance between Fake and Real items, in language and in observed engagement, depends on how a dataset defines misinformation and where it finds it. The results are as much about data handling as about misinformation: engagement studies and detection benchmarks should report how labels, sources and collection were defined, check for source\u2013label entanglement, shared-post dependence and simple length baselines, and test beyond a single dataset.",
+    "after": "Health misinformation datasets disagree about what misinformation is. FakeHealth labels mainstream health news by expert-rated reporting quality, whereas CoAID contrasts fact-checked COVID-19 claims with material from health agencies and health-information publishers. We compared model-standardized Fake/Real ratios of observed social-media posts, counting items never posted, between CoAID News and FakeHealth HealthStory, and evaluated leakage-controlled text classifiers within, across and beyond the two datasets. Fake items drew fewer observed posts than Real items in both datasets, but the ratio was 0.253 in CoAID and 0.840 in FakeHealth (ratio-of-ratios 0.301; 95% interval 0.154\u20130.645). The CoAID gap lay entirely in whether an item was posted at all and was concentrated among Fake items with no identifiable publisher, which points to limited findability as well as limited spread. In two FakeNewsNet collections outside health, Fake items drew more observed posts in GossipCop (ratio 2.144), and PolitiFact's interval included parity. Text showed a parallel split: Fake and Real were highly separable within CoAID (macro F1 0.926) and modestly within FakeHealth (0.675), transfer was poor in both directions, and word\u2013label associations were uncorrelated between datasets. Fake items were shorter in both datasets, and length alone ranked transferred items and independent COVID rumors better than the word-based models. Because period, labels, sources and collection differ together, these comparisons describe dataset contexts and cannot isolate a pandemic effect. The distance between Fake and Real items, in language and in observed engagement, differed between datasets that define and source misinformation differently. Engagement studies and detection benchmarks should report how labels, sources and collection were defined, check for source\u2013label entanglement, shared-post dependence and simple length baselines, and test beyond a single dataset.",
+    "occurrences": 1,
+    "note": "Weaker. \"suggesting limited findability as much as limited spread\" claimed an unmeasured proportion; now \"as well as\". \"depends on how a dataset defines misinformation\" was causal, which Limitations rules out; now descriptive (\"differed between datasets that\u2026\"). Cut: \"so neither the gap's size nor its direction carried across datasets\" (restates the two numbers before it) and \"The results are as much about data handling as about misinformation\" (rhetorical)."
+   },
+   {
+    "id": "I1",
+    "before": "Health misinformation can change health decisions. In a randomized exposure experiment, COVID-19 vaccine misinformation reduced the share of respondents who said they would definitely accept vaccination by 6.2 percentage points in the UK and 6.4 points in the USA, relative to factual information. [Loomba et al. (2021)](#ref-loomba) Evidence like this has driven two research programs: one that measures how misinformation circulates on social media, and one that builds classifiers to detect it. Both depend on labeled datasets, and both tend to treat \"misinformation\" as a single category.",
+    "after": "Health misinformation can affect health intentions. In a randomized exposure experiment, COVID-19 vaccine misinformation reduced the share of respondents who said they would definitely accept vaccination by 6.2 percentage points in the UK and 6.4 points in the USA, relative to factual information ([Loomba et al., 2021](#ref-loomba)). Research on health misinformation follows two lines: measuring how it circulates on social media and building classifiers to detect it. Both depend on labeled datasets, and the datasets do not share a definition of misinformation.",
+    "occurrences": 1,
+    "note": "Weaker. Loomba et al. measured vaccination intent, so \"change health decisions\" became \"affect health intentions\". \"Evidence like this has driven two research programs\" and \"both tend to treat misinformation as a single category\" were uncited generalizations; replaced by a plain statement that leads into the next paragraph."
+   },
+   {
+    "id": "I2",
+    "before": "Benchmarks for health misinformation do not share a definition of it. In FakeHealth, a story is labeled Fake when expert reviewers rate its reporting as poor, for example because it fails to quantify benefits or harms, ignores costs, or misjudges the quality of the evidence. The stories come from major US media outlets [Dai et al. (2020)](#ref-fakehealth), and many publishers carry both labels ([Supplementary Table S15](supplementary_material.md#table-s15-engagement-comparability-support-2026-10-09-feasibility-audit-aggregate-rows)). In CoAID, Fake items are claims flagged by fact-checking sites, while Real items come from health agencies and health-information publishers such as the CDC, WHO, NIH, Healthline and WebMD. [Cui and Lee (2020)](#ref-coaid) The first construct contrasts weaker and stronger reporting from the same kind of outlet; the second contrasts fact-checked claims with institutional health information. If Fake\u2013Real differences in engagement or language depend on which construct a dataset encodes, then results from any single benchmark describe that construct as much as they describe misinformation in general.",
+    "after": "In FakeHealth, a story is labeled Fake when expert reviewers rate its reporting as poor, for example because it fails to quantify benefits or harms, ignores costs, or misjudges the quality of the evidence. The stories come from major US media outlets ([Dai et al., 2020](#ref-fakehealth)), and many publishers carry both labels ([Supplementary Table S15](supplementary_material.md#table-s15-engagement-comparability-support-2026-10-09-feasibility-audit-aggregate-rows)). In CoAID, Fake items are claims flagged by fact-checking sites, while Real items come from health agencies and health-information publishers such as the CDC, WHO, NIH, Healthline and WebMD ([Cui & Lee, 2020](#ref-coaid)). The first construct contrasts weaker and stronger reporting from the same kind of outlet; the second contrasts fact-checked claims with institutional health information. If Fake\u2013Real differences in engagement or language depend on which construct a dataset encodes, results from a single benchmark may not generalize beyond that construct.",
+    "occurrences": 1,
+    "note": "Same strength. Opening sentence moved into I1. Last sentence: \"describe that construct as much as they describe misinformation in general\" became \"may not generalize beyond that construct\". Citations now parenthetical, before the full stop."
+   },
+   {
+    "id": "I3",
+    "before": "The best-known diffusion result is that false news on Twitter traveled faster and reached more people than true news, in fact-checked rumor cascades from 2006 to 2017. [Vosoughi et al. (2018)](#ref-vosoughi) That analysis began from content that formed cascades. Counting every labeled item, including those with no observed posts, asks a prior question: whether an item is taken up at all. Juul and Ugander later showed that the reported structural differences between false and true cascades largely disappear once cascade size is matched, because false-news cascades were mainly larger. [Juul and Ugander (2021)](#ref-juul2021) COVID-era comparisons add that circulation differs across platforms: Cinelli and colleagues found platform differences in the volume and amplification of questionable sources, but no distinct spreading patterns for reliable and questionable sources within their data. [Cinelli et al. (2020)](#ref-cinelli) What has not been examined is whether the Fake\u2013Real engagement gap itself changes with the misinformation construct a dataset encodes, measured on a common zero-inclusive scale.",
+    "after": "The best-known diffusion result is that false news on Twitter traveled faster and reached more people than true news, in fact-checked rumor cascades from 2006 to 2017 ([Vosoughi et al., 2018](#ref-vosoughi)). That analysis began from content that formed cascades. Counting every labeled item, including those with no observed posts, asks a prior question: whether an item is taken up at all. [Juul and Ugander (2021)](#ref-juul2021) later showed that the reported structural differences between false and true cascades largely disappear once cascade size is matched, because false-news cascades were mainly larger. For COVID-19, [Cinelli et al. (2020)](#ref-cinelli) found platform differences in the volume and amplification of questionable sources, but no distinct spreading patterns for reliable and questionable sources within their data. To our knowledge, no study has compared the Fake\u2013Real engagement gap across datasets that encode different misinformation constructs on a common zero-inclusive scale.",
+    "occurrences": 1,
+    "note": "Weaker. \"What has not been examined is\u2026\" was an unqualified novelty claim; now \"To our knowledge, no study has compared\u2026\". Citation format only otherwise (the narrative \"Juul and Ugander later showed\u2026 [Juul and Ugander (2021)]\" double naming removed)."
+   },
+   {
+    "id": "I4",
+    "before": "Measuring that gap fairly requires two things that existing comparisons rarely address. Repeated captures of an updated web page must be resolved into content items before engagement is counted, and items that share the same posts must be treated as dependent when estimating uncertainty.",
+    "after": "Measuring that gap requires two further steps. Repeated captures of an updated web page must be resolved into content items before engagement is counted, and items that share the same posts must be treated as dependent when estimating uncertainty.",
+    "occurrences": 1,
+    "note": "Weaker. \"two things that existing comparisons rarely address\" was an unsupported claim about the literature; dropped."
+   },
+   {
+    "id": "I5",
+    "before": "A classifier can learn a dataset's labels without learning anything that holds elsewhere. Torabi Asr and Taboada found that models trained on source-reputation labels did not recover article-level veracity in other collections, with performance varying by topic. [Torabi Asr and Taboada (2018)](#ref-asr) Murayama and colleagues showed that period-specific proper names can become predictive in fake-news datasets and degrade out-of-period performance. [Murayama et al. (2021)](#ref-murayama) Leakage between training and test material inflates such results further. [Kapoor and Narayanan (2023)](#ref-kapoor) Within-dataset scores therefore say little about portability unless they are reported alongside transfer to other datasets, evaluated on the same target items.",
+    "after": "A classifier can learn a dataset's labels without learning anything that holds elsewhere. [Torabi Asr and Taboada (2018)](#ref-asr) found that classifiers trained on labels derived from source reputation generalized poorly to article-level veracity labels and performed unevenly across topics, although their predictions showed some correspondence with article veracity. [Murayama et al. (2021)](#ref-murayama) showed that proper names specific to the period in which a fake-news dataset was created can become predictive, and examined how this bias affects robustness on datasets that differ in domain and creation period. Leakage between training and test material can also inflate performance estimates ([Kapoor & Narayanan, 2023](#ref-kapoor)). Within-dataset scores are therefore informative about portability only when they are reported alongside transfer to other datasets, evaluated on the same target items.",
+    "occurrences": 1,
+    "note": "Source corrections. Ref 22: \"did not recover article-level veracity\" was too categorical; now poor generalization, topic dependence and some correspondence with veracity. Ref 13: \"degrade out-of-period performance\" was more specific than the experiments; now robustness on datasets differing in domain and creation period. Kapoor: \"inflates such results further\" became \"can also inflate performance estimates\"."
+   },
+   {
+    "id": "I6",
+    "before": "Because COVID timing, label construction, source populations and collection procedures all differ between the two datasets, this design cannot attribute differences to the pandemic itself. We therefore treat each dataset as an information context, defined jointly by what it labels as misinformation and how it was assembled, and ask how the distance between its Fake and Real items varies across contexts. Engagement is measured as captured posts, not exposure or complete cascades, and the text models predict labels; they do not model why items were shared.",
+    "after": "Because COVID timing, label construction, source populations and collection procedures all differ between the two datasets, this design cannot attribute differences to the pandemic or to any other single factor. We therefore treat each dataset as an information context, defined jointly by what it labels as misinformation and how it was assembled, and ask how the distance between its Fake and Real items varies across contexts. Engagement is measured as captured posts rather than exposure or complete cascades, and the text models predict labels without modeling why items were shared.",
+    "occurrences": 1,
+    "note": "Stronger limit. Adds \"or to any other single factor\", which is what Limitations 4.7 already says. Last sentence loses one \"not\" clause."
+   },
+   {
+    "id": "D1",
+    "before": "The two branches of this study point the same way. In FakeHealth, Fake and Real items sit close together on every axis we measured. They come from overlapping publishers, text separates them only modestly (macro F1 0.675, most of which survives evaluation on unseen publishers and much of which is length), and Fake items draw nearly as many observed posts as Real ones (ratio 0.840). In CoAID they sit far apart. Source and label are nearly the same variable (Cram\u00e9r's V 0.971 against 0.352 in FakeHealth, in the text-modeling cohorts; [Supplementary Table S14](supplementary_material.md#table-s14-sourceclass-association-cramers-v)), text separates the classes almost perfectly (0.926), partly because Fake items are short excerpts and Real items long institutional articles and partly through words that separate them at any length, and Fake items draw about a quarter of the observed posts of Real ones (0.253). We read this as one pattern rather than two: what a dataset counts as misinformation, and where it finds it, sets how far its Fake items sit from its Real ones, in language and in audience alike. FakeHealth's Fake label marks weaker reporting from mainstream outlets that travels through the same channels as stronger reporting. CoAID's marks fact-checked claims, set against a Real category made up of health agencies and health-information publishers.",
+    "after": "The engagement and text branches ordered the two health datasets the same way. In FakeHealth, Fake and Real items come from overlapping publishers, text separates them modestly (macro F1 0.675, most of which survives evaluation on unseen publishers and much of which is length), and Fake items draw nearly as many observed posts as Real ones (ratio 0.840). In CoAID, source and label are nearly the same variable (Cram\u00e9r's V 0.971 against 0.352 in FakeHealth, in the text-modeling cohorts; [Supplementary Table S14](supplementary_material.md#table-s14-sourceclass-association-cramers-v)), Fake and Real are highly separable by text (0.926), through both length and words, and Fake items draw about a quarter of the observed posts of Real ones (0.253). FakeHealth's Fake label marks weaker reporting from mainstream outlets, many of which also supply its Real items; CoAID's marks fact-checked claims, set against health agencies and health-information publishers. In both branches, the dataset whose Fake and Real items differ more in construct and source showed the larger Fake\u2013Real distance. With two primary datasets this is an association between contexts, and the design cannot identify which feature of a context produces it.",
+    "occurrences": 1,
+    "note": "Weaker. \"We read this as one pattern rather than two: what a dataset counts as misinformation, and where it finds it, sets how far its Fake items sit from its Real ones\" was causal; now stated as an association with the design's limit. \"almost perfectly\" became \"highly\" to match Results 3.3. \"travels through the same channels as stronger reporting\" was not measured; now \"many of which also supply its Real items\" (Table S15)."
+   },
+   {
+    "id": "D2",
+    "before": "The near-zero alignment of word\u2013label associations fits this reading. If the two Fake labels encode different constructs, a word that signals one need carry no information about the other, and neither model's lessons should transfer. A weak FakeHealth signal could also produce near-zero alignment, but each dataset's coefficients were stable across training folds, so the two vocabularies are reliably different, not noisy. That is what we observed, in both directions and with both classical models. The direction of the transfer errors has a simpler cause than vocabulary. A model trained on CoAID, where Fake items are short excerpts, scores long texts as Real, and every FakeHealth item, Fake or Real, is a full article. Length is the one cue the datasets share, since short items lean Fake in both. That a length-only model transferred better than either word model shows that what the word models learned did not travel, while a simple genre cue did. The words each model relied on fit the same account. FakeHealth's model leaned on vocabulary that echoes its reviewers' criteria, with press-release language toward Fake and discussion of costs toward Real, both of which are explicit review criteria [Dai et al. (2020)](#ref-fakehealth). CoAID's model leaned on dates, image credits and function words, which mark how its sources format pages and how the text was collected: nearly half of CoAID's Real texts carry a year and a quarter a photo credit, against almost none of its Fake texts.",
+    "after": "Two further results fit this association. First, word\u2013label associations were unrelated between the datasets, as expected if the two Fake labels encode different constructs. A weak FakeHealth signal could also produce near-zero alignment, but each dataset's coefficients were stable across training folds, so the two vocabularies differ reliably. Second, length was the only cue we found that carried between the datasets. Short items lean Fake in both, a length-only model transferred better than either word model, and CoAID-trained scores fell with length on FakeHealth (\u03c1 \u22120.69), consistent with those models labeling too few FakeHealth items, all full articles, as Fake. The words each model weighted most also differed in kind. In FakeHealth, \"costs\" leaned Real, and coverage of costs is one of the review criteria; \"release\" leaned Fake, which may reflect the criterion on whether a story relies solely or largely on a news release ([Dai et al., 2020](#ref-fakehealth)), although the word alone does not show such reliance. CoAID's model leaned on dates, image-credit fragments and, toward Real, the word \"and\". These follow the formatting differences between its classes: 49.0% of CoAID's Real texts carry a year and 24.8% a photo credit, against 8.4% and 0.1% of its Fake texts.",
+    "occurrences": 1,
+    "note": "Cut the example (\"That is what we observed\u2026 simpler cause than vocabulary.\") and \"That a length-only model transferred better\u2026 shows that what the word models learned did not travel, while a simple genre cue did\". Ref 5 correction: \"press-release language toward Fake\u2026 both of which are explicit review criteria\" was our reading of one word; now the criterion is stated exactly and the inference is marked as possible. \"almost none of its Fake texts\" was wrong for years (8.4%); now the four shares from Results 3.3. Error-direction explanation now covers only the direction the data explain (CoAID to FakeHealth)."
+   },
+   {
+    "id": "D3",
+    "before": "The FakeNewsNet collections sharpen what this pattern can and cannot mean. PolitiFact shares CoAID's Fake construct, fact-checker verdicts, yet its Fake items were more likely, not less, to have any observed post, and without one dominant cluster they drew more posts overall. A fact-checked Fake label therefore does not by itself fix the direction or the source of the engagement gap. What the Fake items are compared against matters as much: CoAID sets fact-checked claims against institutional health information, which drew heavy attention in 2020, while PolitiFact sets them against political news. The description of CoAID's Fake items as claims that rarely gained traction describes CoAID, not fact-checked misinformation in general. What held across all four collections is that the Fake/Real ratio belongs to the dataset context: it ranged from about a quarter in CoAID to about two in GossipCop, with whether items were posted at all driving the gap in some collections and how much they were posted driving it in others.",
+    "after": "Across all four collections, the Fake/Real ratio ranged from about a quarter in CoAID to about two in GossipCop, and the component behind the gap varied: in CoAID it lay in whether items were posted at all, while in GossipCop posted Fake items drew more posts.",
+    "occurrences": 1,
+    "note": "Shorter. The PolitiFact construct argument moves to 4.2 (first explanation). Cut: \"sharpen what this pattern can and cannot mean\" (rhetorical); \"What the Fake items are compared against matters as much\" and \"institutional health information, which drew heavy attention in 2020\" (neither measured); \"rarely gained traction\" (contradicts the findability result)."
+   },
+   {
+    "id": "D4",
+    "before": "Three explanations could produce this pattern, and they are not equally supported. The first is label construct and source ecology: the datasets define Fake differently and draw Fake and Real items from differently separated sources. This explanation accounts for every text result, provided that genre is counted as part of it: fact-checked claims are short statements in CoAID and COVID-Rumor, PolitiFact's titles behaved the same way, and length is the cue that carried between them. Between CoAID and FakeHealth, nothing beyond length carried: within length quintiles the transferred models ranked at ROC-AUC 0.50\u20130.52 ([Supplementary Table S19](supplementary_material.md#table-s19-document-length-as-a-shared-cue-scorelength-correlations-and-a-length-only-diagnostic-baseline)). For engagement, PolitiFact shows that the label construct alone is not enough: it shares CoAID's construct but not its engagement pattern, which shifts weight toward source ecology and toward what the Real class consists of. The second is collection and measurement. Both CoAID and FakeHealth gathered tweets by searching for item titles, and FakeHealth also searched by keywords and URLs, so search itself is not what differs. [Dai et al. (2020)](#ref-fakehealth), [Cui and Lee (2020)](#ref-coaid) What differs is how queries were formed, when crawls ran, and, in CoAID, how posts were pooled across repeated captures. These differences could widen the engagement gap but would not explain the text results. The hurdle components make this explanation more pressing, not less: the whole CoAID gap lies in whether an item has any observed post, which is exactly where differences in capture would show. PolitiFact, also collected by headline search, showed no Fake occurrence deficit, so headline search does not produce one by itself. The findability breakdown supports this explanation for the occurrence gap. Fact-checkers generally check claims that are already circulating, yet CoAID's Fake items had any observed post far less often when no publisher could be resolved (7.5%) than when one could (33.0%), and Real items first captured in CoAID's later releases were almost never posted either. Much of CoAID's zero-inflation therefore reflects what the collection could find and when it looked, and the occurrence gap is partly a measurement result. Resolved Fake items were still posted less often than resolved Real ones, so measurement does not account for the whole gap. The third is the COVID context itself: a crisis may shift attention toward official sources and change the language of both true and false claims. CoAID-trained models did transfer better to COVID rumors, but length alone matched that advantage, and it did the same for non-COVID PolitiFact titles. The ordering is therefore better explained by the shared short-claim genre of fact-checked items than by COVID topic or shared vocabulary, and it gives no support to a crisis effect on language. The first explanation, with source ecology weighted as heavily as the label, fits the full pattern most economically. The second cannot be excluded for engagement. The third remains open and is the question a different design must answer.",
+    "after": "Three explanations could produce this pattern, and the evidence for them differs. The first is label construct and source ecology: the datasets define Fake differently and draw Fake and Real items from differently separated sources. It is consistent with the text results if genre is counted as part of source ecology: fact-checked claims are short statements in CoAID and COVID-Rumor, PolitiFact's titles behaved the same way, and length is the cue that carried between them. Between CoAID and FakeHealth, nothing beyond length carried: within length quintiles the transferred models ranked at ROC-AUC 0.50\u20130.52 ([Supplementary Table S19](supplementary_material.md#table-s19-document-length-as-a-shared-cue-scorelength-correlations-and-a-length-only-diagnostic-baseline)). For engagement, the label construct alone does not determine the gap, because PolitiFact shares CoAID's construct but not its engagement pattern. PolitiFact also differs from CoAID in its Real class, topic, period and collection, and these data cannot separate those differences.\n\nThe second explanation is how posts were collected and counted. Both CoAID and FakeHealth gathered tweets by searching for item titles, and FakeHealth also searched by keywords and URLs ([Cui & Lee, 2020](#ref-coaid); [Dai et al., 2020](#ref-fakehealth)). The procedures also differ in how queries were formed, when crawls ran and, in CoAID, how posts were pooled across repeated captures. These differences bear on the engagement counts, not on the text results. The whole CoAID gap lies in whether an item has any observed post, which is where differences in capture would appear. PolitiFact, also collected by headline search, showed no Fake occurrence deficit, so headline search does not produce one by itself. The findability breakdown supports this explanation for part of the occurrence gap. CoAID's Fake items had any observed post far less often when no publisher could be resolved (7.5%) than when one could (33.0%), and Real items first captured in CoAID's later releases were almost never posted either. If fact-checked claims had generally circulated before being checked, these zeros reflect what the collection could find and when it looked. Resolved Fake items were still posted less often than resolved Real ones (33.0% against 57.6%), so measurement does not account for the whole gap.\n\nThe third explanation is the COVID context itself: a crisis may shift attention toward official sources and change the language of both true and false claims. CoAID-trained models did rank COVID rumors better, but length alone matched that advantage and did the same for non-COVID PolitiFact titles. The ordering therefore tracks the short-claim form of fact-checked items, and the text results offer no evidence of a crisis effect on language.\n\nIn sum, the first explanation is consistent with both branches. The second is supported for part of CoAID's occurrence gap but cannot explain the text results. The third cannot be assessed with these data.",
+    "occurrences": 1,
+    "note": "Weaker in three places, split into four paragraphs. \"accounts for every text result\" became \"is consistent with the text results\". PolitiFact \"shifts weight toward source ecology\" ignored that PolitiFact also differs in collection, topic and period; now says the data cannot separate these. \"so search itself is not what differs\" removed. \"Fact-checkers generally check claims that are already circulating\" was uncited; now an explicit assumption. \"Much of CoAID's zero-inflation therefore reflects\u2026\" became conditional. The closing \"fits the full pattern most economically\" became a one-line verdict per explanation. Cut \"more pressing, not less\"."
+   },
+   {
+    "id": "D5",
+    "before": "These estimates do not fit a simple rule that misinformation draws more engagement than accurate information. They need not conflict with Vosoughi and colleagues' finding either. [Vosoughi et al. (2018)](#ref-vosoughi) Their unit was the fact-checked rumor cascade, so every item had been shared at least once; ours includes items that never were, and counts captured posts rather than cascade depth, speed or reach. The hurdle components show why the two findings can coexist. In CoAID, fact-checked Fake items were about one-fifth as likely as Real items to have any observed post, but those that were posted drew a comparable number of posts (ratio 1.30, with an interval that includes parity). Because those items had been fact-checked, the first part reflects what the collection could find as much as what circulated. A study that begins from cascades sees only the second part of this picture. Juul and Ugander's finding that structural differences largely reflect cascade size [Juul and Ugander (2021)](#ref-juul2021) points the same way: comparisons that condition on circulation and comparisons that count every item answer different questions. The split is not general, however. In PolitiFact, Fake items were more often posted, and without its dominant cluster they drew as many posts once posted, which is closer to the pattern cascade studies report. Cinelli and colleagues likewise found no distinct spreading patterns for reliable and questionable sources in their data. [Cinelli et al. (2020)](#ref-cinelli)",
+    "after": "These estimates do not support a general rule that misinformation draws more engagement than accurate information, but they need not conflict with [Vosoughi et al. (2018)](#ref-vosoughi). Their unit was the fact-checked rumor cascade, so every item had been shared at least once; ours includes items that never were, and counts captured posts instead of cascade depth, speed or reach. The hurdle components show how the two findings can coexist. In CoAID, fact-checked Fake items were about one-fifth as likely as Real items to have any observed post, but those that were posted drew a comparable number of posts (ratio 1.30, with an interval that includes parity). A study that begins from cascades sees only the second part, and the findability results suggest that the first part partly reflects what the collection could find. [Juul and Ugander (2021)](#ref-juul2021) likewise showed that comparisons of false and true news depend on what is held fixed: structural differences largely disappeared once cascade size was matched. The split did not recur in PolitiFact, where Fake items were more often posted and, without the dominant cluster, posted Fake and Real items drew similar numbers of posts (ratio 0.96).",
+    "occurrences": 1,
+    "note": "Weaker. \"the first part reflects what the collection could find as much as what circulated\" claimed a proportion; now \"partly\". Juul and Ugander \"points the same way\" was a stretch; now says what they showed. Removed \"which is closer to the pattern cascade studies report\" and the second Cinelli citation (Cinelli still cited in 1.2)."
+   },
+   {
+    "id": "D6",
+    "before": "The FakeHealth result deserves attention in its own right. Stories that expert reviewers judged poorly reported drew 84% of the observed posts of well-reported stories. Fabricated claims are the more visible form of health misinformation, but misleading coverage from mainstream outlets may be the more pervasive one, because it reaches audiences through the same channels as sound reporting.",
+    "after": "In FakeHealth, stories that expert reviewers judged poorly reported drew 84% of the observed posts of well-reported stories. In this collection of mainstream health news, reporting quality was only weakly related to observed engagement.",
+    "occurrences": 1,
+    "note": "Weaker. Cut \"misleading coverage from mainstream outlets may be the more pervasive one, because it reaches audiences through the same channels\", which the data do not test, and \"deserves attention in its own right\"."
+   },
+   {
+    "id": "D7",
+    "before": "The CoAID magnitude should be read with its sensitivity. Excluding a single large cluster of items linked by shared posts moved the contrast from 0.301 to 0.489, a value still inside the primary interval, and the interval itself is a mixture of bootstrap draws with that cluster drawn zero, one or more times. The direction held in every check, but the size depends on how a small number of heavily shared items is treated.",
+    "after": "The size of the CoAID contrast depends on one cluster of items linked by shared posts: without it the ratio-of-ratios was 0.489 against 0.301, and the primary interval mixes bootstrap draws that included the cluster zero, one or more times. Its direction held in every check.",
+    "occurrences": 1,
+    "note": "Same strength, shorter. Drops \"a value still inside the primary interval\" (in Results 3.1) and the opening \"should be read with its sensitivity\"."
+   },
+   {
+    "id": "D8",
+    "before": "These ratios describe expected posts per item, not the typical item, and the two can disagree. In GossipCop, Fake items drew about twice as many expected posts, yet a random Fake item outdrew a random Real one only 37% of the time. In PolitiFact, the mean ratio was below 1, yet Fake items outdrew Real ones 63% of the time. A study that reports means, medians or the share of items ever posted is answering a different question, and comparisons across studies should say which one they use.",
+    "after": "The ratios describe expected posts per item, and in both non-health collections the typical item pointed the other way: a random Fake item outdrew a random Real one only 37% of the time in GossipCop and 63% of the time in PolitiFact (Table 2).",
+    "occurrences": 1,
+    "note": "Same strength, shorter. The recommendation about stating means or typical items stays once, in 4.5."
+   },
+   {
+    "id": "D9",
+    "before": "High within-dataset accuracy is weak evidence of a general detector. CoAID's labels were easy to learn and hard to export: macro F1 of 0.926 within the dataset coexisted with near-chance transfer and word associations unrelated to FakeHealth's. This echoes Torabi Asr and Taboada's finding that source-reputation labels do not recover article veracity elsewhere [Torabi Asr and Taboada (2018)](#ref-asr), and Murayama and colleagues' evidence that period-specific names can become spurious cues. [Murayama et al. (2021)](#ref-murayama)",
+    "after": "High within-dataset accuracy is weak evidence of a general detector. In CoAID, macro F1 of 0.926 within the dataset coexisted with transfer only modestly above chance and with word associations unrelated to FakeHealth's. This parallels evidence that classifiers trained on source-reputation labels generalize poorly to article-level veracity, with performance that depends on topic ([Torabi Asr & Taboada, 2018](#ref-asr)), and that period-specific proper names can become spurious cues ([Murayama et al., 2021](#ref-murayama)).",
+    "occurrences": 1,
+    "note": "Source correction and a number-wording fix. Ref 22: \"source-reputation labels do not recover article veracity elsewhere\" was categorical; now poor generalization with topic dependence. \"near-chance transfer\" overstated Results 3.4; now matches. \"easy to learn and hard to export\" cut here (kept once, nowhere else)."
+   },
+   {
+    "id": "D10",
+    "before": "Threshold and ranking metrics need to be read together. Title-only models and shorter transformer inputs raised macro F1 without improving ranking, and on the external target the useful signal was entirely in ranking. A fixed threshold that suits one dataset's class balance will not suit another's.",
+    "after": "Threshold and ranking metrics need to be read together. Title-only models and shorter transformer inputs raised macro F1 without consistently improving ranking, and on the external target the signal that transferred was in ranking: balanced accuracy stayed between 0.50 and 0.55. A threshold fixed on one dataset's class balance need not suit another's.",
+    "occurrences": 1,
+    "note": "Weaker. The 256-token inputs improved ranking in one of three seeds (Results 3.6), so \"without improving ranking\" became \"without consistently improving ranking\". \"entirely in ranking\" now cites the balanced-accuracy range instead. \"will not suit\" became \"need not suit\"."
+   },
+   {
+    "id": "D11",
+    "before": "More capable models did not solve the problem. DistilRoBERTa matched the classical models within CoAID but fell short in FakeHealth (macro F1 0.621 against 0.675), partly because most FakeHealth articles were cut, and it did not improve transfer; and its transfer scores varied widely across seeds. This is evidence about the protocols tested here, not a ranking of model families, but it is consistent with the limit on portability lying in the labels rather than the representation. Work on joint learning across misinformation tasks [Lee et al. (2021)](#ref-lee) is a reasonable next step only if it is evaluated against fixed external targets with explicit label constructs.",
+    "after": "DistilRoBERTa did not improve transfer (ROC-AUC 0.442 and 0.437). It matched the classical models within CoAID but fell short in FakeHealth (macro F1 0.621 against 0.675), partly because most FakeHealth articles were truncated, and its transfer scores varied widely across seeds. With one transformer and three seeds, this does not rank model families; it shows that this pretrained model did not close the transfer gap. Joint learning across misinformation tasks ([Lee et al., 2021](#ref-lee)) would be most informative if evaluated against fixed external targets with explicit label constructs.",
+    "occurrences": 1,
+    "note": "Weaker. Cut \"More capable models did not solve the problem\" and \"consistent with the limit on portability lying in the labels rather than the representation\", which one model and three seeds cannot support."
+   },
+   {
+    "id": "D12",
+    "before": "Several of these results say less about misinformation than about how misinformation data are built and used. Each points to a check that related work can adopt.",
+    "after": "Several results concern how misinformation datasets are built and analyzed, and each suggests a check for related work.",
+    "occurrences": 1,
+    "note": "Same content, one sentence instead of two."
+   },
+   {
+    "id": "D13",
+    "before": "**Misinformation research.** A Fake/Real comparison describes a dataset as much as it describes misinformation. The same estimand gave ratios from about a quarter in CoAID to about two in GossipCop. PolitiFact, which shares CoAID's fact-check construct, had an interval spanning parity, with the direction set by how often one cluster of generically titled pages was drawn. Studies should therefore say what both classes consist of, because CoAID's Real category of health agencies and health-information publishers shaped its gap as much as its Fake label did. They should also say whether the outcome counts every item or only items that circulated. In CoAID the whole gap lay in whether items were posted at all, which a design that starts from cascades cannot see. Comparisons across datasets need a common estimand, such as standardized expected counts rather than coefficients from different model families. They also need uncertainty that respects shared posts, because a single dependent cluster changed the magnitude of CoAID's contrast and the direction of PolitiFact's. Studies should also say whether they compare means or typical items, since heavy tails made the two disagree in both non-health collections.",
+    "after": "**Misinformation research.** PolitiFact, which shares CoAID's fact-check construct, had an interval spanning parity, with its direction set by how often one cluster of generically titled pages was drawn. Studies should therefore say what both classes consist of: CoAID and PolitiFact share a Fake construct but differ in their Real class and in their engagement patterns. They should also say whether the outcome counts every item or only items that circulated. In CoAID the whole gap lay in whether items were posted at all, which a design that starts from cascades cannot see. Comparisons across datasets need a common estimand, such as standardized expected counts, and uncertainty that respects shared posts, because a single dependent cluster changed the magnitude of CoAID's contrast and the direction of PolitiFact's point estimate. Studies should also say whether they compare means or typical items, since heavy tails made the two disagree in both non-health collections.",
+    "occurrences": 1,
+    "note": "Weaker. \"CoAID's Real category\u2026 shaped its gap as much as its Fake label did\" claimed a split the design cannot make; now the observed CoAID\u2013PolitiFact contrast. Cut \"A Fake/Real comparison describes a dataset as much as it describes misinformation\" and the repeated quarter-to-two range (now in 4.1). \"direction of PolitiFact's\" became \"direction of PolitiFact's point estimate\"."
+   },
+   {
+    "id": "D14",
+    "before": "**Machine-learning work.** A high within-dataset score can measure how a dataset was assembled rather than how detectable misinformation is. In CoAID, source and label were nearly the same variable (Cram\u00e9r's V 0.971), and Fake texts were short excerpts while Real texts were long institutional articles. Length alone ranked CoAID's holdout at ROC-AUC 0.882. Real texts also carried years and photo credits that Fake texts almost never did, and encoding errors appeared only in Fake texts. Removing source names, encoding errors, or dates and credits barely changed CoAID's 0.926 macro F1, because the signal is spread across many collection-linked cues. The one cue that did travel between datasets was length, and a length-only model transferred better than the word models. Six practical checks follow:",
+    "after": "**Machine-learning work.** A high within-dataset score can reflect how a dataset was assembled. In CoAID, source and label were nearly the same variable (Cram\u00e9r's V 0.971), Fake texts were short excerpts while Real texts were long institutional articles, and length alone ranked the holdout at ROC-AUC 0.882. Real texts also carried years and photo credits that Fake texts rarely did, and encoding errors appeared only in Fake texts. Removing source names, encoding errors, or dates and credits barely changed CoAID's 0.926 macro F1, so none of these markers was necessary on its own. Six practical checks follow:",
+    "occurrences": 1,
+    "note": "Weaker. \"because the signal is spread across many collection-linked cues\" was not shown; now only what the removals show. Cut the third repetition of \"length was the one cue that travelled\"."
+   },
+   {
+    "id": "D15",
+    "before": "**Data processing.** Many of the decisions that most affected these results were made before any model ran. In an early representation of CoAID, generic branding and domain-level links merged distinct pages into one item joining 110 source records. Engagement counts became meaningful only after items were resolved by specific resource and version lineage. Items that share posts are not independent rows. Treating them as clusters set the width of every engagement interval here, and in three collections whether one cluster was drawn decided where a bootstrap draw landed. Engagement scope also has to match across datasets. We excluded FakeHealth's retweets because CoAID has no equivalent, and pooled CoAID posts across its four releases. Both choices change the counts, and the second matters most: Real items first captured in CoAID's two later releases were almost never posted, against about nine in ten in the earlier two, which points to uneven collection rather than to anything about the items. Collection methods have to be compared, not assumed. Both health datasets searched for posts by title, so search alone was not the difference, but query terms, crawl dates and release pooling were not held equal. If dataset releases documented these steps, others could tell a finding about misinformation from a finding about its data.",
+    "after": "**Data processing.** Several decisions that affected these results were made before any model ran. In an early representation of CoAID, generic branding and domain-level links merged distinct pages into one item joining 110 source records, so we counted engagement only after resolving items by specific resource and version lineage. Items that share posts are not independent rows. Treating them as clusters set the width of every engagement interval here, and in three collections whether one cluster was drawn largely determined where a bootstrap draw landed. Engagement scope also has to match across datasets. We excluded FakeHealth's retweets because CoAID has no equivalent, and pooled CoAID posts across its four releases. Both choices change the counts. Real items first captured in CoAID's two later releases were almost never posted, against about nine in ten in the earlier two, which suggests uneven collection across releases. Dataset releases that document these steps would let users judge which findings reflect collection.",
+    "occurrences": 1,
+    "note": "Weaker. \"the second matters most\" was not compared; cut. \"points to uneven collection rather than to anything about the items\" became \"suggests uneven collection across releases\". \"decided\" became \"largely determined\" (Table S20 clumps). Cut the repeat of the title-search point (it is in 4.2) and \"Collection methods have to be compared, not assumed\"."
+   },
+   {
+    "id": "D16",
+    "before": "Sharing is not a readout of accuracy. Pennycook and colleagues found that people discriminated true from false COVID headlines less well when deciding what to share than when judging accuracy [Pennycook et al. (2020)](#ref-pennycook), although a preregistered replication found a smaller effect for the accuracy-nudge intervention. [Roozenbeek et al. (2021)](#ref-roozenbeek) Observed engagement therefore reflects attention, source visibility and platform processes as well as content, and the text models here say nothing about why items were shared.",
+    "after": "[Pennycook et al. (2020)](#ref-pennycook) found that people discriminated true from false COVID-19 headlines less well when deciding what to share than when judging accuracy, and that an accuracy prompt improved sharing discernment; a preregistered replication found a smaller effect of the prompt ([Roozenbeek et al., 2021](#ref-roozenbeek)). Sharing decisions therefore do not track accuracy alone, and observed engagement can reflect attention, source visibility and platform processes as well as content.",
+    "occurrences": 1,
+    "note": "Same strength, one addition to check. The old replication clause was attached to the share-versus-accuracy finding, which Roozenbeek et al. did not replicate; the new clause says what Pennycook et al.'s second study tested (the accuracy prompt) so the replication sits next to it. Cut \"Sharing is not a readout of accuracy\" and the repeat of \"the text models here say nothing about why items were shared\" (in 1.4)."
+   },
+   {
+    "id": "D17",
+    "before": "One crisis-specific hypothesis deserves testing. A crisis may reorganize which institutions, topics and rhetorical forms appear alongside verified and false information, and draw unusual attention to official sources. If so, part of a crisis-period Fake\u2013Real gap would reflect elevated engagement with authoritative information, not only the behavior of misinformation. CoAID makes this concrete, because its Real category is health agencies and health-information publishers. The present data are consistent with this possibility but cannot test it.",
+    "after": "A crisis may also draw unusual attention to official sources. If so, part of a crisis-period Fake\u2013Real gap would reflect engagement with authoritative information as well as the behavior of misinformation. CoAID's Real category of health agencies and health-information publishers makes this possibility relevant here, but the present data cannot test it.",
+    "occurrences": 1,
+    "note": "Weaker. \"The present data are consistent with this possibility\" cut: the later-release Real items that were almost never posted cut against it, and the data cannot test it either way. \"deserves testing\" and \"CoAID makes this concrete\" cut."
+   },
+   {
+    "id": "D18",
+    "before": "CoAID's post coverage also differed sharply by release, and much of its zero-inflation reflects collection rather than circulation.",
+    "after": "CoAID's post coverage also differed sharply by release, and part of its zero-inflation may reflect collection rather than circulation.",
+    "occurrences": 1,
+    "note": "Weaker, to match D4: \"much\u2026 reflects\" became \"part\u2026 may reflect\". The rest of Limitations is unchanged."
+   },
+   {
+    "id": "D19",
+    "before": "can be verified. ([Supplementary Table S15](supplementary_material.md#table-s15-engagement-comparability-support-2026-10-09-feasibility-audit-aggregate-rows)) Restricting",
+    "after": "can be verified ([Supplementary Table S15](supplementary_material.md#table-s15-engagement-comparability-support-2026-10-09-feasibility-audit-aggregate-rows)). Restricting",
+    "occurrences": 1,
+    "note": "Format only: the table link moves inside the sentence."
+   },
+   {
+    "id": "C1",
+    "before": "Fake health items drew fewer observed posts than real ones in both health datasets we studied, but how many fewer depended on the dataset: about a quarter as many in COVID-focused CoAID, where the shortfall came from Fake items rarely being posted at all, largely among items the collection could not trace to a publisher, and nearly as many in FakeHealth. Outside health, the gap was uncertain in PolitiFact and reversed in GossipCop. Text showed the same dependence on the dataset. CoAID's labels were easy to learn and hard to export, and FakeHealth's were harder to learn. Neither dataset's word cues carried over to the other; the one cue that did was that Fake items were shorter. The common thread is that the distance between misinformation and real news is set by how a dataset defines misinformation and where it finds it, and what a dataset counts as real matters as much as what it counts as fake. Fact-checked false claims, poorly reported health news and low-rated entertainment stories are different objects, with different distances from real news in language and in reach. Whether crisis periods themselves change that distance remains open. Answering it requires data that hold platform, labeling and observation windows fixed across crisis and non-crisis periods. Until then, any misinformation dataset should be read with care: engagement findings and detection scores should be reported alongside the definition of misinformation that produced them, the sources each class was drawn from, and the processing steps (item resolution, dependence and collection scope) that shaped the counts.",
+    "after": "Fake health items drew fewer observed posts than Real ones in both health datasets, but the size of the gap differed: about a quarter as many in COVID-focused CoAID, where the shortfall came from Fake items rarely being posted at all, largely among items the collection could not trace to a publisher, and nearly as many in FakeHealth. Outside health, the gap was uncertain in PolitiFact and reversed in GossipCop. Text separability also differed: high within CoAID, modest within FakeHealth and only modestly above chance across them. Neither dataset's word cues carried over to the other; the one cue that did was that Fake items were shorter. Across these collections, the distance between Fake and Real items, in language and in observed engagement, differed with how each dataset defined and sourced its classes, including what it counted as Real. Because label construct, sources, period and collection vary together, these data cannot say which of them produces the difference, or whether crisis periods change it. That question requires data that hold platform, labeling and observation windows fixed across crisis and non-crisis periods. Until such data exist, engagement findings and detection scores should be reported alongside the definition of misinformation that produced them, the sources each class was drawn from, and the processing steps (item resolution, dependence and collection scope) that shaped the counts.",
+    "occurrences": 1,
+    "note": "Weaker. \"the distance between misinformation and real news is set by how a dataset defines misinformation\" was causal; now descriptive with the confound stated. Cut \"Fact-checked false claims, poorly reported health news and low-rated entertainment stories are different objects\u2026\" (rhetorical) and \"any misinformation dataset should be read with care\". \"easy to learn and hard to export\" replaced by the measured ordering."
+   },
+   {
+    "id": "M1",
+    "before": "publishers. [Cui and Lee (2020)](#ref-coaid), [cuilimeng (n.d.)](#ref-coaid_repo) The",
+    "after": "publishers ([Cui & Lee, 2020](#ref-coaid); [cuilimeng, n.d.](#ref-coaid_repo)). The",
+    "occurrences": 1,
+    "note": "Citation format only."
+   },
+   {
+    "id": "M2",
+    "before": "or above Real. [Dai et al. (2020)](#ref-fakehealth), [EnyanDai (n.d.)](#ref-fakehealth_repo) Reviews",
+    "after": "or above Real ([Dai et al., 2020](#ref-fakehealth); [EnyanDai, n.d.](#ref-fakehealth_repo)). Reviews",
+    "occurrences": 1,
+    "note": "Citation format only."
+   },
+   {
+    "id": "M3",
+    "before": "Twitter subset. [Cheng et al. (2021)](#ref-covidrumor), [MickeysClubhouse (n.d.)](#ref-covidrumor_repo) Annotations",
+    "after": "Twitter subset ([Cheng et al., 2021](#ref-covidrumor); [MickeysClubhouse, n.d.](#ref-covidrumor_repo)). Annotations",
+    "occurrences": 1,
+    "note": "Citation format only."
+   },
+   {
+    "id": "M4",
+    "before": "DistilRoBERTa at a pinned revision [Sanh et al. (n.d.)](#ref-distilroberta_card), with",
+    "after": "DistilRoBERTa at a pinned revision ([Sanh et al., n.d.](#ref-distilroberta_card)), with",
+    "occurrences": 1,
+    "note": "Citation format only."
+   },
+   {
+    "id": "M5",
+    "before": "collections [Shu et al. (2020)](#ref-fakenewsnet) under",
+    "after": "collections ([Shu et al., 2020](#ref-fakenewsnet)) under",
+    "occurrences": 1,
+    "note": "Citation format only."
+   },
+   {
+    "id": "M6",
+    "before": "scikit-learn [Pedregosa et al. (2011)](#ref-pedregosa2011) and statsmodels [Seabold and Perktold (2010)](#ref-seabold2010), and Python 3.12 with PyTorch [Paszke et al. (2019)](#ref-paszke2019) and Transformers [Wolf et al. (2020)](#ref-wolf2020) for",
+    "after": "scikit-learn ([Pedregosa et al., 2011](#ref-pedregosa2011)) and statsmodels ([Seabold & Perktold, 2010](#ref-seabold2010)), and Python 3.12 with PyTorch ([Paszke et al., 2019](#ref-paszke2019)) and Transformers ([Wolf et al., 2020](#ref-wolf2020)) for",
+    "occurrences": 1,
+    "note": "Citation format only."
+   },
+   {
+    "id": "REFS",
+    "before": "[previous reference list, 24 entries, same anchors]",
+    "after": "## References\n\n<a id=\"ref-covidrumor\"></a>\n\nCheng, M., Wang, S., Yan, X., Yang, T., Wang, W., Huang, Z., Xiao, X., Nazarian, S., & Bogdan, P. (2021). [A COVID-19 rumor dataset](https://doi.org/10.3389/fpsyg.2021.644801). *Frontiers in Psychology*, *12*, 644801.\n\n<a id=\"ref-cinelli\"></a>\n\nCinelli, M., Quattrociocchi, W., Galeazzi, A., Valensise, C. M., Brugnoli, E., Schmidt, A. L., Zola, P., Zollo, F., & Scala, A. (2020). [The COVID-19 social media infodemic](https://doi.org/10.1038/s41598-020-73510-5). *Scientific Reports*, *10*, 16598.\n\n<a id=\"ref-coaid\"></a>\n\nCui, L., & Lee, D. (2020). [CoAID: COVID-19 healthcare misinformation dataset](https://arxiv.org/abs/2006.00885). *arXiv preprint* arXiv:2006.00885.\n\n<a id=\"ref-coaid_repo\"></a>\n\ncuilimeng. (n.d.). [CoAID repository](https://github.com/cuilimeng/CoAID). *GitHub repository*.\n\n<a id=\"ref-fakehealth\"></a>\n\nDai, E., Sun, Y., & Wang, S. (2020). [Ginger cannot cure cancer: Battling fake health news with a comprehensive data repository](https://doi.org/10.1609/icwsm.v14i1.7350). *Proceedings of the International AAAI Conference on Web and Social Media*, *14*(1), 853\u2013862.\n\n<a id=\"ref-fakehealth_repo\"></a>\n\nEnyanDai. (n.d.). [FakeHealth repository](https://github.com/EnyanDai/FakeHealth). *GitHub repository*.\n\n<a id=\"ref-juul2021\"></a>\n\nJuul, J. L., & Ugander, J. (2021). [Comparing information diffusion mechanisms by matching on cascade size](https://doi.org/10.1073/pnas.2100786118). *Proceedings of the National Academy of Sciences*, *118*(46), e2100786118.\n\n<a id=\"ref-kapoor\"></a>\n\nKapoor, S., & Narayanan, A. (2023). [Leakage and the reproducibility crisis in machine-learning-based science](https://doi.org/10.1016/j.patter.2023.100804). *Patterns*, *4*(9), 100804.\n\n<a id=\"ref-lee\"></a>\n\nLee, N., Li, B. Z., Wang, S., Fung, P., Ma, H., Yih, W.-t., & Khabsa, M. (2021). [On unifying misinformation detection](https://doi.org/10.18653/v1/2021.naacl-main.432). *Proceedings of the 2021 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies*, 5479\u20135485.\n\n<a id=\"ref-liu2019\"></a>\n\nLiu, Y., Ott, M., Goyal, N., Du, J., Joshi, M., Chen, D., Levy, O., Lewis, M., Zettlemoyer, L., & Stoyanov, V. (2019). [RoBERTa: A robustly optimized BERT pretraining approach](https://arxiv.org/abs/1907.11692). *arXiv preprint* arXiv:1907.11692.\n\n<a id=\"ref-loomba\"></a>\n\nLoomba, S., de Figueiredo, A., Piatek, S. J., de Graaf, K., & Larson, H. J. (2021). [Measuring the impact of COVID-19 vaccine misinformation on vaccination intent in the UK and USA](https://doi.org/10.1038/s41562-021-01056-1). *Nature Human Behaviour*, *5*(3), 337\u2013348.\n\n<a id=\"ref-covidrumor_repo\"></a>\n\nMickeysClubhouse. (n.d.). [COVID-19 rumor dataset repository](https://github.com/MickeysClubhouse/COVID-19-rumor-dataset). *GitHub repository*.\n\n<a id=\"ref-murayama\"></a>\n\nMurayama, T., Wakamiya, S., & Aramaki, E. (2021). [Mitigation of diachronic bias in fake news detection dataset](https://doi.org/10.18653/v1/2021.wnut-1.21). *Proceedings of the Seventh Workshop on Noisy User-generated Text (W-NUT 2021)*, 182\u2013188.\n\n<a id=\"ref-paszke2019\"></a>\n\nPaszke, A., Gross, S., Massa, F., Lerer, A., Bradbury, J., Chanan, G., Killeen, T., Lin, Z., Gimelshein, N., Antiga, L., Desmaison, A., Kopf, A., Yang, E., DeVito, Z., Raison, M., Tejani, A., Chilamkurthy, S., Steiner, B., Fang, L., . . . Chintala, S. (2019). [PyTorch: An imperative style, high-performance deep learning library](https://papers.neurips.cc/paper_files/paper/2019/hash/bdbca288fee7f92f2bfa9f7012727740-Abstract.html). *Advances in Neural Information Processing Systems*, *32*, 8024\u20138035.\n\n<a id=\"ref-pedregosa2011\"></a>\n\nPedregosa, F., Varoquaux, G., Gramfort, A., Michel, V., Thirion, B., Grisel, O., Blondel, M., Prettenhofer, P., Weiss, R., Dubourg, V., Vanderplas, J., Passos, A., Cournapeau, D., Brucher, M., Perrot, M., & Duchesnay, \u00c9. (2011). [Scikit-learn: Machine learning in Python](https://jmlr.org/papers/v12/pedregosa11a.html). *Journal of Machine Learning Research*, *12*, 2825\u20132830.\n\n<a id=\"ref-pennycook\"></a>\n\nPennycook, G., McPhetres, J., Zhang, Y., Lu, J. G., & Rand, D. G. (2020). [Fighting COVID-19 misinformation on social media: Experimental evidence for a scalable accuracy-nudge intervention](https://doi.org/10.1177/0956797620939054). *Psychological Science*, *31*(7), 770\u2013780.\n\n<a id=\"ref-roozenbeek\"></a>\n\nRoozenbeek, J., Freeman, A. L. J., & van der Linden, S. (2021). [How accurate are accuracy-nudge interventions? A preregistered direct replication of Pennycook et al. (2020)](https://doi.org/10.1177/09567976211024535). *Psychological Science*, *32*(7), 1169\u20131178.\n\n<a id=\"ref-distilroberta_card\"></a>\n\nSanh, V., Debut, L., Chaumond, J., & Wolf, T. (n.d.). [Model card for DistilRoBERTa base](https://huggingface.co/distilbert/distilroberta-base/blob/fb53ab8802853c8e4fbdbcd0529f21fc6f459b2b/README.md). *Hugging Face model card*. Revision `fb53ab8802853c8e4fbdbcd0529f21fc6f459b2b`.\n\n<a id=\"ref-sanh2019\"></a>\n\nSanh, V., Debut, L., Chaumond, J., & Wolf, T. (2019). [DistilBERT, a distilled version of BERT: Smaller, faster, cheaper and lighter](https://arxiv.org/abs/1910.01108). *arXiv preprint* arXiv:1910.01108.\n\n<a id=\"ref-seabold2010\"></a>\n\nSeabold, S., & Perktold, J. (2010). [Statsmodels: Econometric and statistical modeling with Python](https://doi.org/10.25080/Majora-92bf1922-011). *Proceedings of the 9th Python in Science Conference*, 92\u201396.\n\n<a id=\"ref-fakenewsnet\"></a>\n\nShu, K., Mahudeswaran, D., Wang, S., Lee, D., & Liu, H. (2020). [FakeNewsNet: A data repository with news content, social context, and spatiotemporal information for studying fake news on social media](https://doi.org/10.1089/big.2020.0062). *Big Data*, *8*(3), 171\u2013188.\n\n<a id=\"ref-asr\"></a>\n\nTorabi Asr, F., & Taboada, M. (2018). [The data challenge in misinformation detection: Source reputation vs. content veracity](https://doi.org/10.18653/v1/W18-5502). *Proceedings of the First Workshop on Fact Extraction and VERification (FEVER)*, 10\u201315.\n\n<a id=\"ref-vosoughi\"></a>\n\nVosoughi, S., Roy, D., & Aral, S. (2018). [The spread of true and false news online](https://doi.org/10.1126/science.aap9559). *Science*, *359*(6380), 1146\u20131151.\n\n<a id=\"ref-wolf2020\"></a>\n\nWolf, T., Debut, L., Sanh, V., Chaumond, J., Delangue, C., Moi, A., Cistac, P., Rault, T., Louf, R., Funtowicz, M., Davison, J., Shleifer, S., von Platen, P., Ma, C., Jernite, Y., Plu, J., Xu, C., Le Scao, T., Gugger, S., . . . Rush, A. (2020). [Transformers: State-of-the-art natural language processing](https://doi.org/10.18653/v1/2020.emnlp-demos.6). *Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing: System Demonstrations*, 38\u201345.\n",
+    "occurrences": 1,
+    "note": "Reference list replaced: same 24 anchors, APA-style order and entry text."
+   }
+  ],
+  "manuscript_sha256_after_first_batch": "2a08ac9aa75a1ddfa406656db6c4752a6f7144a8b4c6a9fb775a5bc01bb71d9a",
+  "references_bib": {
+   "sha256_before": "f0db870fd3412b0da317b932e0ad25ffd336c03f1550cc5472b69bcde10b8a2e",
+   "sha256_after": "0bcfc42b093932ffd5974a0a728ee8d89cc173953a2d7def96c88182dca77fbc",
+   "edits": [
+    "paszke2019: pages = {8024--8035} added (NeurIPS proceedings page and its BibTeX give no pages; dblp/Bibsonomy 8024-8035; OpenAlex/Scispace 8026-8037)",
+    "seabold2010: pages = {92--96} added (Crossref record for the DOI: 92-96)",
+    "loomba: number = {3} already present (Crossref: 5(3), 337-348); unchanged"
+   ]
+  }
+ },
+ "round6b_title": {
+  "date": "2026-10-19",
+  "scope": "title only; no value, citation, link or other text changed",
+  "manuscript_sha256_before": "00b3d51311bba9b35c6b9a919d21c40fbf073f322ac79d453c8a631c705ab498",
+  "manuscript_sha256_after": "4cc34a7761af814dc08a6e6fae1c3d0e964ae6ea40f14b8d14e25cf51aebf44d",
+  "edits": [
+   {
+    "id": "T1",
+    "before": "# What counts as health misinformation shapes its observed spread and its detectability: a comparison of CoAID and FakeHealth",
+    "after": "# Fake\u2013Real differences in observed spread and detectability vary with how health misinformation datasets are built: a comparison of CoAID and FakeHealth",
+    "occurrences": 1,
+    "note": "Title approved by the author on 2026-10-19. The old title's \"shapes\" was a causal claim that the revised Abstract, Discussion and Conclusion no longer make."
+   }
+  ]
+ }
+}

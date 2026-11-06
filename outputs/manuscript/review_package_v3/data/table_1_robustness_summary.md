@@ -1,0 +1,14 @@
+# Table 1. Robustness and sensitivity summary
+
+| Analysis | Primary question | Headline result | Interpretation | Key limitation |
+| --- | --- | --- | --- | --- |
+| Engagement B/C specifications | Did entity/version choices alter the contrast? | Ratio-of-ratios: B 0.286; C 0.343; saved intervals below 1. | The primary ordering persisted. | Dependent sensitivity specifications; dataset/context confounding remains. |
+| Dominant-component exclusion | Was engagement sensitive to the largest overlap component? | Ratio-of-ratios 0.489 versus primary 0.301. | The contrast attenuated without reversing. | Exclusion changes the reference population; dependence remains incompletely captured. |
+| Title-only transfer | Did removing bodies restore transfer? | Small macro-F1 gains accompanied lower ROC-AUC in both directions. | Title-only text did not consistently rescue transfer. | Target rows matched; source cohorts and selected configurations differed. |
+| FakeHealth publisher-held-out | Did signal persist for unseen publisher families? | Outer mean macro F1 0.6196; sample SD 0.0210. | Modest signal remained; performance was lower than the resource-grouped reference. | Unpaired comparison of evaluation designs; publisher/style confounding remains. |
+| Linear SVM replication | Did classical conclusions depend on LR? | Within macro F1: CoAID 0.913, FakeHealth 0.670; strong transfer degradation. | The within-context gap and transfer failure replicated. | Replication used the same datasets and resource-group holdouts. |
+| DistilRoBERTa primary | Did the transformer consistently improve transfer? | A modest macro-F1 gain in one direction coexisted with lower ROC-AUC/AP in both. | No consistent transfer improvement was observed. | Single-seed primary; architecture and available text budget differ from TF-IDF. |
+| Transformer budget/seed sensitivity | Was the shorter-cap improvement stable? | Paired macro-F1 change +0.1011; SD 0.0790; positive in 3/3 seeds. Ranking gains: 1/3. | Threshold gains persisted; ranking gains were seed-sensitive. | One transfer direction; seed SD is variability, not a confidence interval. |
+| Independent COVID NEWS target | Was CoAID-source transfer better on independent COVID text? | ROC-AUC: LR 0.700 vs 0.522; SVM 0.682 vs 0.525. | Both classifiers showed greater CoAID-source portability. | Descriptive comparison; high Fake prevalence and source/label/genre differences. |
+
+All entries summarize validated results. Fold/seed SDs describe variability, not confidence intervals. Title comparisons use matched target rows; publisher comparisons are unpaired. LR = Logistic Regression; AP = average precision. In the final row, CoAID source is listed before FakeHealth source.

@@ -1,0 +1,7 @@
+subset,model,k,log_likelihood,AIC,BIC,converged,stable,hessian_ok,boundary,selected,selection_reason
+PolitiFact,Poisson,2,-1117285.7261587395,2234575.452317479,2234585.3692142656,True,True,True,False,False,
+PolitiFact,NB2,3,-5843.457930815225,11692.91586163045,11707.791206810343,True,True,True,False,False,
+PolitiFact,Hurdle_Logit_ZTNB2,5,-5777.091790094584,11564.183580189168,11588.975822155657,True,True,True,False,True,"Hurdle has >2 AIC improvement over NB2, stable fit, and directly separates engagement occurrence from positive volume. ZINB remains sensitivity: latent structural-zero mechanism is not established."
+GossipCop,Poisson,2,-1434907.401252659,2869818.802505318,2869834.8127877307,True,True,True,False,False,
+GossipCop,NB2,3,-111801.600059948,223609.200119896,223633.2155435148,True,True,True,False,False,
+GossipCop,Hurdle_Logit_ZTNB2,5,-111758.9186421528,223527.8372843056,223567.8629903369,True,True,True,False,True,"Hurdle has >2 AIC improvement over NB2, stable fit, and directly separates engagement occurrence from positive volume. ZINB remains sensitivity: latent structural-zero mechanism is not established."

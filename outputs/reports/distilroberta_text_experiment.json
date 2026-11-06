@@ -1,0 +1,153 @@
+{
+  "config_lock_sha256": "d8a59c8db196b348e2765b16b82e0b62ec854b487fad87c632a2c9be7d7ff63a",
+  "elapsed_seconds": 141742.08907532692,
+  "epoch_seconds": 10981.353331290185,
+  "figure_rendering": {
+    "aggregate_tables_only": true,
+    "classical_environment_file_metadata_unchanged": true,
+    "environment_files_checked": 29214,
+    "interpreter": ".venv/bin/python",
+    "script": "src/plot_distilroberta_results.py",
+    "script_sha256": "1730b92ba323c4a902b7cc62e5068f61c56e084f4f7b85a3caff32571e3bc2a2",
+    "visual_inspection_passed": true
+  },
+  "final_script_sha256": "66ef67b28aefcd92ef3c22b075cc59029ba43fac418cb2a47c6a1d0a49df2b3e",
+  "fit_epoch_count": 84,
+  "inputs_unchanged": true,
+  "memory_pilot": {
+    "accumulation": 8,
+    "fingerprint": "25994fb959ee45d5f00a6065c226c5bf55f4abac6af2394b03fff2ac5d00f84c",
+    "microbatch": 2,
+    "passed": true,
+    "rows": [
+      {
+        "backward_succeeded": true,
+        "device": "mps",
+        "elapsed_seconds": 4.363862917001825,
+        "fingerprint": "25994fb959ee45d5f00a6065c226c5bf55f4abac6af2394b03fff2ac5d00f84c",
+        "forward_succeeded": true,
+        "labels": "synthetic alternating labels; no observed labels read",
+        "max_length": 512,
+        "memory_note": "post-backward sample; not transient peak; optimizer state absent",
+        "microbatch": 1,
+        "optimizer_steps": 0,
+        "parameters_unchanged": true,
+        "sampled_mps_allocated_bytes": 663296512,
+        "sampled_mps_driver_bytes": 1084915712
+      },
+      {
+        "backward_succeeded": true,
+        "device": "mps",
+        "elapsed_seconds": 3.087736750021577,
+        "fingerprint": "25994fb959ee45d5f00a6065c226c5bf55f4abac6af2394b03fff2ac5d00f84c",
+        "forward_succeeded": true,
+        "labels": "synthetic alternating labels; no observed labels read",
+        "max_length": 512,
+        "memory_note": "post-backward sample; not transient peak; optimizer state absent",
+        "microbatch": 2,
+        "optimizer_steps": 0,
+        "parameters_unchanged": true,
+        "sampled_mps_allocated_bytes": 678734848,
+        "sampled_mps_driver_bytes": 2163965952
+      }
+    ]
+  },
+  "original_environment_unchanged": true,
+  "outputs": {
+    "outputs/figures/distilroberta/512_vs_256_sensitivity.svg": "36c9d9efb8d95db47af5ffedd7d43db41e95dfbc6c193e9dfbef388939a1476e",
+    "outputs/figures/distilroberta/transfer_confusion_matrices.svg": "f2b78a79e316e0363b97d679595bf20933a96c75051beb5c5cbedb8ec02b2542",
+    "outputs/figures/distilroberta/transfer_model_comparison.svg": "dfc114ae60d35d7580052b52196f9745293b2ddf2a744e04c9a0351238a45004",
+    "outputs/figures/distilroberta/within_model_comparison.svg": "2e22a963b6271be0273973a1e6882bab84f8eea655050b0d21076a0a9fe1f577",
+    "outputs/predictions/distilroberta_predictions.csv": "39f0bf510a247007ae1e782dba2f23c95ee5246290e51afb09ab5eb85c25483f",
+    "outputs/reports/distilroberta_text_experiment.md": "64e1f880b4e81b1ab6087009854047ff447f8f30a1d2ee7befd8e34799027d90",
+    "outputs/tables/distilroberta_256_sensitivity.csv": "38b386985a260141a01deca5d54c5a92c9e900b814ce559a6f9f6322285320e8",
+    "outputs/tables/distilroberta_cv_results.csv": "b5a1577aaa17405c65bac7eb90df48819aff2cab70636e80d2d856d6682c4849",
+    "outputs/tables/distilroberta_fit_manifest.csv": "aa686a237cde4135383d08e202dc10a2f091df87956eded8d6e9453987048d95",
+    "outputs/tables/distilroberta_holdout_results.csv": "95fe695ceb9c91f71d99f3b418ba9155bf9dd168b0f89141c2c694a6ae2b859d",
+    "outputs/tables/distilroberta_memory_pilot.csv": "fa8cff3014f64f14b9e049a1e18b867ab916495cb7f2c667bf990d000146d015",
+    "outputs/tables/distilroberta_model_selection.csv": "7df09f14f277ccf6daed22237eaceb4857bff632c7f651300dfa87c5395e89aa",
+    "outputs/tables/distilroberta_transfer_degradation.csv": "37ec4d687eec1d771070d2de7e94d3653a59ed2014a0e654ca2b8e37f2979e32",
+    "outputs/tables/distilroberta_transfer_results.csv": "eb8ee34a9cd0dd0fae414efebee0c06eacdb770946ccfb510034473512d63217",
+    "outputs/tables/distilroberta_vs_classical.csv": "92cec187d08baa1e967bbc558f3c40641a9998889d7a80670254060ef638dbd1"
+  },
+  "post_render_validation": {
+    "artifact_hashes_verified": true,
+    "errors": 0,
+    "failures": 0,
+    "skipped": 0,
+    "tests_run": 12
+  },
+  "prediction_rows": 12512,
+  "prior_outputs_unchanged": true,
+  "resource_policy": {
+    "mps_high_watermark": "0.8",
+    "mps_low_watermark": "0.3",
+    "recycle_after_fit": "1",
+    "release_cache_each_step": "1"
+  },
+  "selected": [
+    {
+      "dataset": "FakeHealth",
+      "epochs": 3,
+      "learning_rate": 2e-05,
+      "locked": true,
+      "macro_f1_mean": 0.6458144694471775,
+      "macro_f1_sd": 0.03948987502218568,
+      "max_length": 512,
+      "selection": "training-pool grouped CV only"
+    },
+    {
+      "dataset": "CoAID",
+      "epochs": 3,
+      "learning_rate": 2e-05,
+      "locked": true,
+      "macro_f1_mean": 0.95603882401638,
+      "macro_f1_sd": 0.00806416246639648,
+      "max_length": 512,
+      "selection": "training-pool grouped CV only"
+    }
+  ],
+  "signature": {
+    "classical_metrics_sha256": "7e10befff64c6f0ee9d4fadb21b807bf76cc48ab202f13cdf71175a01047be1c",
+    "inputs": {
+      "data/processed/coaid_text_modeling_ready.csv": "859b3db8888962de771f4ff48779f139027c9472bbe19367755f0657ad33812d",
+      "data/processed/fakehealth_text_modeling_ready.csv": "a38730db184727e3a84d2f603789e817c667fe75c6606d834f09ba106ef5cb91",
+      "outputs/splits/coaid_text_grouped_cv.csv": "e916ad95f11debbe5d1f1daa338c8cb4064f81030a552525bad90abfbe60f651",
+      "outputs/splits/coaid_text_holdout.csv": "0e55802b29b72407a60985e24292e4984c22bae5b06cb33486da93eaf9cddb3c",
+      "outputs/splits/fakehealth_text_grouped_cv.csv": "7b489b81a817bfecf34c89ea00060041f728a7edad182c2d0e44f3b821ee19c1",
+      "outputs/splits/fakehealth_text_holdout.csv": "2f14737ab373ebf029490579438d12f95f7df4a7245715ea1bccc10995251035"
+    },
+    "packer_sha256": "1a905b0ae66912489da77285748412d145c12d6330fb67fc492cd85250f47836",
+    "requirements_sha256": "647956e19d15873bf41137fb188e2257fb5cc34df0b98814b2b0872309bfcd31",
+    "settings": {
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "checkpoint": "distilbert/distilroberta-base",
+      "class_weight": "N_train/(2*N_train,c)",
+      "decay_policy": "all parameters except bias and LayerNorm weights",
+      "effective_batch_size": 16,
+      "epsilon": 1e-08,
+      "gradient_clip_norm": 1.0,
+      "optimizer": "torch.optim.AdamW",
+      "packing": "validated full-title pair; body prefix; dynamic padding",
+      "precision": "float32",
+      "revision": "fb53ab8802853c8e4fbdbcd0529f21fc6f459b2b",
+      "scheduler": "constant",
+      "seed": 42,
+      "threshold": 0.5,
+      "warmup_steps": 0,
+      "weight_decay": 0.01
+    },
+    "torch_version": "2.14.0",
+    "training_code_sha256": "58267e6771348a9327b67c3c8b27c7898926082cb51b41f82df39b0bf8968bbd"
+  },
+  "status": "complete",
+  "tests": {
+    "errors": 0,
+    "failures": 0,
+    "run": 12,
+    "skipped": 0
+  }
+}

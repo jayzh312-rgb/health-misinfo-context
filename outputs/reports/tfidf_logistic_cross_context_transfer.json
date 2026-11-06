@@ -1,0 +1,311 @@
+{
+  "all_refits_converged": true,
+  "existing_baseline_tuning_reused": true,
+  "outputs": {
+    "outputs/figures/tfidf_logistic_transfer/CA_to_FH_confusion_matrix.png": "72182d0c56eed45864d586ab8bfb9e99273bd563dea53133bc108ee1a239796e",
+    "outputs/figures/tfidf_logistic_transfer/FH_to_CA_confusion_matrix.png": "5bd765dcae1d7f05482fb6d721ae1bcf6f26ade1e74903bb7ebb2ef9bac91127",
+    "outputs/figures/tfidf_logistic_transfer/within_vs_transfer_fake_f1.png": "b6e9e458fcdf37c8cdb966a3fddf60b3cf66726f178d0e243f5b7b7c69bdf597",
+    "outputs/figures/tfidf_logistic_transfer/within_vs_transfer_macro_f1.png": "fffbdf5f4b159c3c80907cb1a51340ff0d669ff1e063b14628f9c64c6f879a64",
+    "outputs/models/tfidf_logistic_transfer/frozen_CA_to_FH_natural.joblib": "3c42a6e90284121d70d7cad66142cf92c9a5454e9ac0704584faca96f71703ac",
+    "outputs/models/tfidf_logistic_transfer/frozen_CA_to_FH_source_masked.joblib": "82c5426201d0751919db9e9c154f5f9e5a2645d5ac1dcb55731e4bc25840b491",
+    "outputs/models/tfidf_logistic_transfer/frozen_FH_to_CA_natural.joblib": "217dff2888e67d469b367265f450ed9b23eec9e16e3c1ab2759f2a4437e602e6",
+    "outputs/models/tfidf_logistic_transfer/frozen_FH_to_CA_source_masked.joblib": "ba6ba5075d5e9c429d6e73a9f829c588fe5dd064d4ce1e156ec7137cb18ec837",
+    "outputs/models/tfidf_logistic_transfer/prediction_lock.json": "b5e3db88b964aebb9114e6b50979c74cf76aa4e0250305829cdb0986b1fff9c5",
+    "outputs/models/tfidf_logistic_transfer/protocol_lock.json": "9870808590992e857a6dd89aeda3db27a9cf9b42dcbc23bfff117f40e9456e41",
+    "outputs/predictions/tfidf_logistic_cross_context_predictions.csv": "45cf00583f060fd20c48c7ab80864d840d228c5debb00aac97f155f0d360f3b5",
+    "outputs/reports/tfidf_logistic_cross_context_transfer.md": "502177c911a0529a44b3deeb5e04d7a842fb560257d06648baa4d762eb077581",
+    "outputs/tables/tfidf_logistic_transfer_degradation.csv": "e88793b00da36787c63d98f78742ed34c9b2d4b5fef4dda0772ac401d2a0842c",
+    "outputs/tables/tfidf_logistic_transfer_error_overlap.csv": "0fca40b5d876610302d62e294edc322777906be707d8d75515910c7238539838",
+    "outputs/tables/tfidf_logistic_transfer_error_overlap_summary.csv": "3ddf349724c448c0a8be886756336c36560281111ee371600702979d63292bc1",
+    "outputs/tables/tfidf_logistic_transfer_fit_manifest.csv": "2ef0b33b5c18466815c747aa810c2964b9377cc8d63f443e17423a6b3377da61",
+    "outputs/tables/tfidf_logistic_transfer_results.csv": "8e2096bdb5d2aee017d436be0aaad542e076cf182ab2453a322f859af200f1e9",
+    "outputs/tables/tfidf_logistic_transfer_source_mask_sensitivity.csv": "8433c773cb68d7ada101a185ec5c5fbf0ccd2338bcaf81ee563df76253639828",
+    "outputs/tables/tfidf_logistic_transfer_vocabulary_diagnostics.csv": "3219c8024633d543e87ed04c08158c258e074e812c49d93d1bf1601a9e0ee9f2"
+  },
+  "prediction_lock_sha256": "b5e3db88b964aebb9114e6b50979c74cf76aa4e0250305829cdb0986b1fff9c5",
+  "refit_count": 4,
+  "signature": {
+    "inputs": {
+      "data/processed/coaid_text_modeling_ready.csv": "859b3db8888962de771f4ff48779f139027c9472bbe19367755f0657ad33812d",
+      "data/processed/fakehealth_text_modeling_ready.csv": "a38730db184727e3a84d2f603789e817c667fe75c6606d834f09ba106ef5cb91",
+      "outputs/models/tfidf_logistic/run_signature.json": "1a2922e8f8aa7b7a9267c3b9e97206a8a3b526041d6c5f2bb6ffdbc0d1a37e4b",
+      "outputs/models/tfidf_logistic/selection_lock.json": "f6bec0b64be7cbbf60c430df181ecc8a7e5b54f8279d47b9259a13856f055d07",
+      "outputs/predictions/tfidf_logistic_holdout_predictions.csv": "8539c367e18273bf3c0a9ecd9ea376a16503adf7111f77886d8d5b354aa71f94",
+      "outputs/reports/tfidf_logistic_baseline.json": "88f15dd51f27532207b289400269a5dba52b0fa700bd8181454371b7003008ef",
+      "outputs/splits/coaid_text_holdout.csv": "0e55802b29b72407a60985e24292e4984c22bae5b06cb33486da93eaf9cddb3c",
+      "outputs/splits/fakehealth_text_holdout.csv": "2f14737ab373ebf029490579438d12f95f7df4a7245715ea1bccc10995251035",
+      "outputs/tables/text_cross_dataset_overlap_audit.csv": "585fdad59e0670d5b8d52062c8cf9e3a93c1db39b250aa549204616d534ac4d9",
+      "outputs/tables/tfidf_logistic_holdout_results.csv": "7cae7fd4e84123bca203e2a81e0eb82e7237c5e14492d668c357e0f5c0833c13",
+      "outputs/tables/tfidf_logistic_model_selection.csv": "94f586d3507529ac5d78a050c69d65cd3f12f38c59a11e735c63292eb120b62e",
+      "outputs/tables/tfidf_logistic_source_mask_sensitivity.csv": "bac5d62f88289d29f82638c8a73df31c079a646365793e80c50ff80a54bc76d8",
+      "outputs/tables/tfidf_logistic_top_features.csv": "68a3a6ef3d8dbd90b0199962df6582ef7c283a1fa79ad481d2abefd3ea3be914",
+      "src/run_tfidf_logistic_baseline.py": "a8644723c7bef66f152199eb27953a30b27815ae77f2e1cc3aaac1c98774b993"
+    },
+    "protocol": {
+      "descriptive_calibration_gap_warning_threshold": 0.1,
+      "diagnostic_token_definition": "Occurrences of preprocessed default word-tokenizer unigrams; no bigram double counting",
+      "directions": {
+        "CA_to_FH": [
+          "CoAID",
+          "FakeHealth"
+        ],
+        "FH_to_CA": [
+          "FakeHealth",
+          "CoAID"
+        ]
+      },
+      "near_single_class_prediction_threshold": 0.95,
+      "no_recalibration": true,
+      "no_retuning": true,
+      "no_threshold_selection": true,
+      "numerical_pipeline": {
+        "conditions": {
+          "natural": "combined_text",
+          "source_masked": "combined_text_source_masked"
+        },
+        "cv_standard_deviation_ddof": 1,
+        "grid": [
+          {
+            "C": 0.1,
+            "class_weight": "none",
+            "config_id": "cfg_00",
+            "min_df": 2,
+            "ngram_max": 1
+          },
+          {
+            "C": 0.1,
+            "class_weight": "balanced",
+            "config_id": "cfg_01",
+            "min_df": 2,
+            "ngram_max": 1
+          },
+          {
+            "C": 1.0,
+            "class_weight": "none",
+            "config_id": "cfg_02",
+            "min_df": 2,
+            "ngram_max": 1
+          },
+          {
+            "C": 1.0,
+            "class_weight": "balanced",
+            "config_id": "cfg_03",
+            "min_df": 2,
+            "ngram_max": 1
+          },
+          {
+            "C": 10.0,
+            "class_weight": "none",
+            "config_id": "cfg_04",
+            "min_df": 2,
+            "ngram_max": 1
+          },
+          {
+            "C": 10.0,
+            "class_weight": "balanced",
+            "config_id": "cfg_05",
+            "min_df": 2,
+            "ngram_max": 1
+          },
+          {
+            "C": 0.1,
+            "class_weight": "none",
+            "config_id": "cfg_06",
+            "min_df": 5,
+            "ngram_max": 1
+          },
+          {
+            "C": 0.1,
+            "class_weight": "balanced",
+            "config_id": "cfg_07",
+            "min_df": 5,
+            "ngram_max": 1
+          },
+          {
+            "C": 1.0,
+            "class_weight": "none",
+            "config_id": "cfg_08",
+            "min_df": 5,
+            "ngram_max": 1
+          },
+          {
+            "C": 1.0,
+            "class_weight": "balanced",
+            "config_id": "cfg_09",
+            "min_df": 5,
+            "ngram_max": 1
+          },
+          {
+            "C": 10.0,
+            "class_weight": "none",
+            "config_id": "cfg_10",
+            "min_df": 5,
+            "ngram_max": 1
+          },
+          {
+            "C": 10.0,
+            "class_weight": "balanced",
+            "config_id": "cfg_11",
+            "min_df": 5,
+            "ngram_max": 1
+          },
+          {
+            "C": 0.1,
+            "class_weight": "none",
+            "config_id": "cfg_12",
+            "min_df": 2,
+            "ngram_max": 2
+          },
+          {
+            "C": 0.1,
+            "class_weight": "balanced",
+            "config_id": "cfg_13",
+            "min_df": 2,
+            "ngram_max": 2
+          },
+          {
+            "C": 1.0,
+            "class_weight": "none",
+            "config_id": "cfg_14",
+            "min_df": 2,
+            "ngram_max": 2
+          },
+          {
+            "C": 1.0,
+            "class_weight": "balanced",
+            "config_id": "cfg_15",
+            "min_df": 2,
+            "ngram_max": 2
+          },
+          {
+            "C": 10.0,
+            "class_weight": "none",
+            "config_id": "cfg_16",
+            "min_df": 2,
+            "ngram_max": 2
+          },
+          {
+            "C": 10.0,
+            "class_weight": "balanced",
+            "config_id": "cfg_17",
+            "min_df": 2,
+            "ngram_max": 2
+          },
+          {
+            "C": 0.1,
+            "class_weight": "none",
+            "config_id": "cfg_18",
+            "min_df": 5,
+            "ngram_max": 2
+          },
+          {
+            "C": 0.1,
+            "class_weight": "balanced",
+            "config_id": "cfg_19",
+            "min_df": 5,
+            "ngram_max": 2
+          },
+          {
+            "C": 1.0,
+            "class_weight": "none",
+            "config_id": "cfg_20",
+            "min_df": 5,
+            "ngram_max": 2
+          },
+          {
+            "C": 1.0,
+            "class_weight": "balanced",
+            "config_id": "cfg_21",
+            "min_df": 5,
+            "ngram_max": 2
+          },
+          {
+            "C": 10.0,
+            "class_weight": "none",
+            "config_id": "cfg_22",
+            "min_df": 5,
+            "ngram_max": 2
+          },
+          {
+            "C": 10.0,
+            "class_weight": "balanced",
+            "config_id": "cfg_23",
+            "min_df": 5,
+            "ngram_max": 2
+          }
+        ],
+        "masked_retuning": false,
+        "max_iter": 5000,
+        "penalty": "l2",
+        "seed": 42,
+        "selection": "unweighted mean macro F1",
+        "sklearn_penalty_parameter": "l1_ratio=0.0",
+        "solver": "liblinear",
+        "threshold": 0.5,
+        "tie_order": [
+          "mean macro F1 within .001 of best",
+          "SD within .001 of lowest in tied set",
+          "unigram",
+          "smaller C",
+          "class_weight none",
+          "larger min_df",
+          "config_id"
+        ],
+        "tie_tolerance": 0.001,
+        "tol": 0.0001,
+        "vectorizer": {
+          "analyzer": "word",
+          "dtype": "float64",
+          "lowercase": true,
+          "max_df": 1.0,
+          "norm": "l2",
+          "smooth_idf": true,
+          "strip_accents": null,
+          "sublinear_tf": true,
+          "token_pattern": "(?u)\\b\\w\\w+\\b",
+          "use_idf": true
+        }
+      },
+      "seed": 42,
+      "source_configurations": {
+        "CoAID": {
+          "C": 10.0,
+          "class_weight": "balanced",
+          "config_id": "cfg_05",
+          "min_df": 2,
+          "ngram_max": 1
+        },
+        "FakeHealth": {
+          "C": 1.0,
+          "class_weight": "balanced",
+          "config_id": "cfg_21",
+          "min_df": 5,
+          "ngram_max": 2
+        }
+      },
+      "source_training": "all primary_modeling_eligible rows, including former source holdout",
+      "target_evaluation": [
+        "all_eligible",
+        "same_target_holdout"
+      ],
+      "target_labels": "joined only after all four prediction sets are frozen",
+      "text_fields": {
+        "natural": "combined_text",
+        "source_masked": "combined_text_source_masked"
+      },
+      "threshold": 0.5
+    },
+    "script_sha256": "8ac595a2e5ea3816ff03f02d3a3e10889428dcd61c663500a3b87192594f5104",
+    "versions": {
+      "numpy": "2.5.1",
+      "pandas": "3.0.5",
+      "python": "3.14.2",
+      "scipy": "1.18.0",
+      "sklearn": "1.9.0"
+    }
+  },
+  "source_only_fit": true,
+  "target_labels_joined_after_predictions_frozen": true,
+  "threshold": 0.5,
+  "validation": "passed"
+}

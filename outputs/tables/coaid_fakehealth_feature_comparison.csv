@@ -1,0 +1,18 @@
+concept,CoAID availability,FakeHealth availability,definition in CoAID,definition in FakeHealth,directly comparable?,cautions
+fake/real ground truth,direct: Fake/Real files,rating direct; author rule documented,curated COVID news/claims assigned to Fake/Real files,"expert item rating 0-5; paper uses <3 fake, >=3 real",No,"Different constructs/ascertainment; FakeHealth is reporting quality, not necessarily factual falsity."
+title,direct,direct,title/newstitle,crawled source title and review original_title,"Yes, with mapping",Retain source field.
+full text,direct but incomplete,direct but incomplete,content; claims often title-only,locally crawled text,Partly,Content type and crawl missingness differ.
+publication date,direct but incomplete,direct but incomplete,publish_date string,publish_date Unix seconds,Partly,Format and missingness differ.
+tweet/post count,derivable,derivable,rows in *_tweets per content,length of tweets list per news_id,"Yes, approximate",Different searches/windows/platform eras.
+unique tweet/post count,derivable,derivable,distinct tweet_id per content,distinct tweets-list ID per content,"Yes, approximate",Use provenance-aware keys.
+reply count,derivable,derivable,reply rows/distinct reply_id,reply-list rows/distinct IDs,Partly,Only CoAID supplies tweet parent column.
+retweet/repost count,unavailable,derivable,no retweet tables,retweets-list rows/distinct IDs,No,Exclude from core.
+unique engaged users,requires API,requires API,user IDs absent,user IDs absent locally,Not currently,Historical hydration attrition.
+first engagement time,derivable from IDs,derivable from IDs,minimum Snowflake tweet time,minimum Snowflake tweets-list time,"Yes, cautiously","Derived, not explicit; coverage bias."
+last engagement time,derivable from IDs,derivable from IDs,maximum Snowflake tweet time,maximum Snowflake tweets-list time,"Yes, cautiously",Truncated observation tails.
+engagement lifespan,derivable,derivable,last-first observed tweet time,last-first observed tweet time,"Yes, cautiously",Not full platform lifespan.
+publication-to-first-engagement delay,derivable where dated,derivable where dated,first tweet minus publication,first tweet minus publication,Partly,Missing dates/search recall/negative delays.
+replies per post,derivable,aggregate derivable,reply rows / tweet rows,reply IDs / tweet IDs,Partly,FakeHealth lacks per-parent attribution.
+user-user network,unavailable,separate archive; absent locally,none,directed follower/following lists,No,Not diffusion; likely crawl-time/truncated.
+interaction network,limited reply links,unavailable locally,"tweet->reply IDs, no users",no parents/users,No,Requires hydration.
+propagation/cascade structure,one-level reply links only,unavailable locally,"tweet/reply pair, no deeper tree",separate ID sets,No,Neither is a complete cascade.

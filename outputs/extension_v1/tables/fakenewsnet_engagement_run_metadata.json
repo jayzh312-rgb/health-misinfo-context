@@ -1,0 +1,20 @@
+{
+ "seed": 42,
+ "target": 1000,
+ "attempt_cap": 1250,
+ "inputs": {
+  "politifact": {
+   "politifact_fake.csv": "abe7fe7aad801b1e2ab5fc963cbd0881d9670190262ae3df85e91c3380bd004c",
+   "politifact_real.csv": "2500f86a7addca0f59fe8cf089c0f802d3eca6980f53538992b3b0e9687dbae0"
+  },
+  "gossipcop": {
+   "gossipcop_fake.csv": "c6932bffadb1230bc61c66bb2ca298f4ef28ce849d268313ad2eed41d18d4c99",
+   "gossipcop_real.csv": "d721e9a8b7e660da05c089691743c33fecb25367074e936b5fab3d85cdcbe79f"
+  }
+ },
+ "started": "2026-10-12 18:35:03",
+ "finished": "2026-10-12 18:36:31",
+ "saved_draws_sha256": "0216be3838d5dd1dcec6c5030cb74fae730aafde9591fe2ac7fc4337256cf1d2",
+ "script_sha256": "d2956c14d26173a9a4b2fa0d3d162356a89f90a8ffafee60ed11049a3f3dd96e",
+ "complete": true
+}

@@ -1,0 +1,5 @@
+variant,macro_f1,roc_auc,average_precision,vocabulary_size,empty_training_texts,converged,config
+frozen_saved,0.6751500600240097,0.7700949945195469,0.5706770634679956,28514,0,,"{""C"": 1.0, ""class_weight"": ""balanced"", ""config_id"": ""cfg_21"", ""min_df"": 5, ""ngram_max"": 2}"
+natural_refit_check,0.6751500600240097,0.7700949945195469,0.5706770634679956,28514,0,True,"{""C"": 1.0, ""class_weight"": ""balanced"", ""config_id"": ""cfg_21"", ""min_df"": 5, ""ngram_max"": 2}"
+before_512_cut,0.6508545040391343,0.7182133723054438,0.5323741152792247,16982,0,True,"{""C"": 1.0, ""class_weight"": ""balanced"", ""config_id"": ""cfg_21"", ""min_df"": 5, ""ngram_max"": 2}"
+after_512_cut,0.6525438005390836,0.7656421264157837,0.47712992395730197,14280,392,True,"{""C"": 1.0, ""class_weight"": ""balanced"", ""config_id"": ""cfg_21"", ""min_df"": 5, ""ngram_max"": 2}"

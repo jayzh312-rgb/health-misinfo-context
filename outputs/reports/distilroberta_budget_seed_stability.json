@@ -1,0 +1,152 @@
+{
+  "all_holdout_directions_positive": false,
+  "elapsed_seconds": 1376.2206058502197,
+  "figure_rendering": {
+    "aggregate_tables_only": true,
+    "classical_environment_unchanged": true,
+    "environment_files_checked": 29214,
+    "interpreter": ".venv/bin/python",
+    "script": "src/plot_distilroberta_budget_seed_stability.py",
+    "script_sha256": "5d3d8efb0c937bd927390a23fae6b1e89b43721f8ed970b7c8e0c29b81a0f5dd",
+    "visual_inspection_passed": true
+  },
+  "outputs": {
+    "outputs/figures/distilroberta/fh_to_coaid_budget_seed_paired_deltas.svg": "801185506d36f0e787d5584f236d516ac0143930aae657da9db06544a00ce0a1",
+    "outputs/predictions/distilroberta_budget_seed_predictions.csv": "79c1fe4c7dd842612a62b50892d0afc561450c0d4eb1db455cf5e28f36341e92",
+    "outputs/reports/distilroberta_budget_seed_stability.md": "80a6ed95cae5bcbfe2d6cb95a4d0d29c5dc3bdba4f0b14ff7209b85aa3ac71ca",
+    "outputs/tables/distilroberta_budget_seed_fit_manifest.csv": "9f5357ef78768aa4ed4212fb7ec947805b017b66a3f172577789358d0c21e536",
+    "outputs/tables/distilroberta_budget_seed_paired_deltas.csv": "560046cfeb72a537669248eef43ce71a22b3dbe5d735d8a1fef68896a9d8455b",
+    "outputs/tables/distilroberta_budget_seed_results.csv": "8a1f6568d9e85ee850bdefc3ecb6fff19882dd4adbd3a7adb7d4fe8e08718300",
+    "outputs/tables/distilroberta_budget_seed_summary.csv": "3c4d2f0d0690d8db51254011c9495f6a2947d0ea3ff0ec24ac3794a063e55335"
+  },
+  "reviewed_interpretation": {
+    "average_precision_positive_seeds": 1,
+    "joint_improvement_robust": false,
+    "macro_f1_positive_seeds": 3,
+    "no_significance_test_or_confidence_interval": true,
+    "roc_auc_positive_seeds": 1,
+    "same_sign_pattern_both_scopes": true
+  },
+  "signature": {
+    "budgets": [
+      512,
+      256
+    ],
+    "config": {
+      "epochs": 3,
+      "learning_rate": 2e-05
+    },
+    "content_audit": {
+      "holdout_uid_sha256": "ca96e0fc59899a1b35cbaafda638584850e74d87a6e8b3c344d882866c7496aa",
+      "identical_unpadded_content": true,
+      "maximum_unpadded_length": 190,
+      "packed_256_sha256": "b1ee46afd34204048d7cc97f5b5452f1a0b93b43199fb54d22fa6b24ff812141",
+      "packed_512_sha256": "b1ee46afd34204048d7cc97f5b5452f1a0b93b43199fb54d22fa6b24ff812141",
+      "target_N": 3577,
+      "target_uid_sha256": "d61e991983615e761ee171812fde1597b689c88dba8121705b9d3845e8e8c1ae"
+    },
+    "inputs": {
+      "data/processed/coaid_text_modeling_ready.csv": "859b3db8888962de771f4ff48779f139027c9472bbe19367755f0657ad33812d",
+      "data/processed/fakehealth_text_modeling_ready.csv": "a38730db184727e3a84d2f603789e817c667fe75c6606d834f09ba106ef5cb91",
+      "outputs/splits/coaid_text_grouped_cv.csv": "e916ad95f11debbe5d1f1daa338c8cb4064f81030a552525bad90abfbe60f651",
+      "outputs/splits/coaid_text_holdout.csv": "0e55802b29b72407a60985e24292e4984c22bae5b06cb33486da93eaf9cddb3c",
+      "outputs/splits/fakehealth_text_grouped_cv.csv": "7b489b81a817bfecf34c89ea00060041f728a7edad182c2d0e44f3b821ee19c1",
+      "outputs/splits/fakehealth_text_holdout.csv": "2f14737ab373ebf029490579438d12f95f7df4a7245715ea1bccc10995251035"
+    },
+    "original_script_sha256": "66ef67b28aefcd92ef3c22b075cc59029ba43fac418cb2a47c6a1d0a49df2b3e",
+    "prior_signature": {
+      "classical_metrics_sha256": "7e10befff64c6f0ee9d4fadb21b807bf76cc48ab202f13cdf71175a01047be1c",
+      "inputs": {
+        "data/processed/coaid_text_modeling_ready.csv": "859b3db8888962de771f4ff48779f139027c9472bbe19367755f0657ad33812d",
+        "data/processed/fakehealth_text_modeling_ready.csv": "a38730db184727e3a84d2f603789e817c667fe75c6606d834f09ba106ef5cb91",
+        "outputs/splits/coaid_text_grouped_cv.csv": "e916ad95f11debbe5d1f1daa338c8cb4064f81030a552525bad90abfbe60f651",
+        "outputs/splits/coaid_text_holdout.csv": "0e55802b29b72407a60985e24292e4984c22bae5b06cb33486da93eaf9cddb3c",
+        "outputs/splits/fakehealth_text_grouped_cv.csv": "7b489b81a817bfecf34c89ea00060041f728a7edad182c2d0e44f3b821ee19c1",
+        "outputs/splits/fakehealth_text_holdout.csv": "2f14737ab373ebf029490579438d12f95f7df4a7245715ea1bccc10995251035"
+      },
+      "packer_sha256": "1a905b0ae66912489da77285748412d145c12d6330fb67fc492cd85250f47836",
+      "requirements_sha256": "647956e19d15873bf41137fb188e2257fb5cc34df0b98814b2b0872309bfcd31",
+      "settings": {
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "checkpoint": "distilbert/distilroberta-base",
+        "class_weight": "N_train/(2*N_train,c)",
+        "decay_policy": "all parameters except bias and LayerNorm weights",
+        "effective_batch_size": 16,
+        "epsilon": 1e-08,
+        "gradient_clip_norm": 1.0,
+        "optimizer": "torch.optim.AdamW",
+        "packing": "validated full-title pair; body prefix; dynamic padding",
+        "precision": "float32",
+        "revision": "fb53ab8802853c8e4fbdbcd0529f21fc6f459b2b",
+        "scheduler": "constant",
+        "seed": 42,
+        "threshold": 0.5,
+        "warmup_steps": 0,
+        "weight_decay": 0.01
+      },
+      "torch_version": "2.14.0",
+      "training_code_sha256": "58267e6771348a9327b67c3c8b27c7898926082cb51b41f82df39b0bf8968bbd"
+    },
+    "script_sha256": "d617ecf21c453dbe6f2c7b2c5e0c55c80d1bed8acedc3064f37cdd578859be28",
+    "seed42_predictions": {
+      "256": "91a1e8527db7a36581fc5f86944b1f3c49e154db2e0a7c2eb719291fd3af4bd1",
+      "512": "c502fb37cd7a4587553542217ec1a70ebf1d46310364b56a51b1088f159d4fa2"
+    },
+    "seeds": [
+      42,
+      123,
+      2026
+    ],
+    "settings": {
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "checkpoint": "distilbert/distilroberta-base",
+      "class_weight": "N_train/(2*N_train,c)",
+      "decay_policy": "all parameters except bias and LayerNorm weights",
+      "effective_batch_size": 16,
+      "epsilon": 1e-08,
+      "gradient_clip_norm": 1.0,
+      "optimizer": "torch.optim.AdamW",
+      "packing": "validated full-title pair; body prefix; dynamic padding",
+      "precision": "float32",
+      "revision": "fb53ab8802853c8e4fbdbcd0529f21fc6f459b2b",
+      "scheduler": "constant",
+      "seed": 42,
+      "threshold": 0.5,
+      "warmup_steps": 0,
+      "weight_decay": 0.01
+    },
+    "source_uid_sha256": "70614b831ba540c2a3c4cfe73d616e85835c9fc57b2755b2a9b4e982b726d1d9"
+  },
+  "status": "complete",
+  "tests": {
+    "errors": 0,
+    "failures": 0,
+    "run": 7,
+    "skipped": 0
+  },
+  "validation": {
+    "classical_environment_unchanged": true,
+    "cohorts_and_splits_unchanged": true,
+    "final_artifact_hashes_verified": true,
+    "freezes_verified_before_target_labels": true,
+    "locked_protocol_unchanged": true,
+    "new_epoch_checkpoints": 12,
+    "new_fits": 4,
+    "passed": true,
+    "pinned_environment_versions_verified": 55,
+    "prediction_rows": 21462,
+    "prior_outputs_unchanged": true,
+    "reused_seed42_fits": 2,
+    "seed42_metrics_reused_and_verified": true,
+    "source_only_fitting": true,
+    "target_content_identical": true,
+    "threshold": 0.5,
+    "unique_fit_and_prediction_fingerprints": true
+  }
+}

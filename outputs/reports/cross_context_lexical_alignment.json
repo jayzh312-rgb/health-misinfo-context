@@ -1,0 +1,86 @@
+{
+  "category_counts": {
+    "stable_fake_features": 281,
+    "stable_real_features": 965,
+    "strong_sign_reversals": 1175
+  },
+  "context_dictionary": {
+    "covid_specific": [
+      "coronavirus",
+      "cov",
+      "covid",
+      "lockdown",
+      "pandemic",
+      "quarantine",
+      "sars"
+    ],
+    "election_political": [
+      "biden",
+      "democrat",
+      "election",
+      "president",
+      "republican",
+      "stimulus",
+      "trump"
+    ],
+    "generic_health": [
+      "cancer",
+      "disease",
+      "drug",
+      "drugs",
+      "health",
+      "infection",
+      "medical",
+      "patients",
+      "treatment",
+      "vaccine",
+      "vaccines",
+      "virus"
+    ]
+  },
+  "fit_guard_enabled": true,
+  "inputs": {
+    "data/processed/coaid_text_modeling_ready.csv": "859b3db8888962de771f4ff48779f139027c9472bbe19367755f0657ad33812d",
+    "data/processed/fakehealth_text_modeling_ready.csv": "a38730db184727e3a84d2f603789e817c667fe75c6606d834f09ba106ef5cb91",
+    "outputs/models/tfidf_logistic/final_coaid_natural.joblib": "9964b7fdb72cfdad54107ebf93492deb017e540e31a2a29f1cc35ea29f4ca9c7",
+    "outputs/models/tfidf_logistic/final_fakehealth_natural.joblib": "0a006e8851f6dcee2d608bd2c58fefe0387d57fc25b8af4e12a6739208641b55",
+    "outputs/models/tfidf_logistic/run_signature.json": "1a2922e8f8aa7b7a9267c3b9e97206a8a3b526041d6c5f2bb6ffdbc0d1a37e4b",
+    "outputs/models/tfidf_logistic/selection_lock.json": "f6bec0b64be7cbbf60c430df181ecc8a7e5b54f8279d47b9259a13856f055d07",
+    "outputs/reports/tfidf_logistic_baseline.json": "88f15dd51f27532207b289400269a5dba52b0fa700bd8181454371b7003008ef",
+    "outputs/tables/text_source_mask_dictionary.csv": "69dbe0592eb7450bed0a09640dcbb6f5d4505af87eff01cfe11135900aa764bc",
+    "outputs/tables/tfidf_logistic_holdout_results.csv": "7cae7fd4e84123bca203e2a81e0eb82e7237c5e14492d668c357e0f5c0833c13",
+    "outputs/tables/tfidf_logistic_model_selection.csv": "94f586d3507529ac5d78a050c69d65cd3f12f38c59a11e735c63292eb120b62e",
+    "outputs/tables/tfidf_logistic_top_features.csv": "68a3a6ef3d8dbd90b0199962df6582ef7c283a1fa79ad481d2abefd3ea3be914",
+    "src/run_tfidf_logistic_baseline.py": "a8644723c7bef66f152199eb27953a30b27815ae77f2e1cc3aaac1c98774b993"
+  },
+  "meaningful_both_N": 2421,
+  "median_scope": "shared unigrams; strict greater-than in either dataset",
+  "near_zero_tolerance": 0.05,
+  "optional_transfer_error_linkage": "skipped; not required for primary audit",
+  "outputs": {
+    "outputs/figures/text_feature_alignment/shared_unigram_coefficient_scatter.png": "073c2ce32227cb5623b010f597a54731782f2de1f59b4f5f53de9d8b64dcac41",
+    "outputs/figures/text_feature_alignment/sign_agreement_by_importance.png": "936fdfccf235685be60a6d209609a232e4db9fbf042e9975cfa11661278bc5e2",
+    "outputs/reports/cross_context_lexical_alignment.md": "3e3cb9f4f0f2e7c6cc5cd07c5edce736faa1c35713c06e3489be7805bb581d1a",
+    "outputs/tables/text_coefficient_alignment_summary.csv": "52d4a80f97ae60891bfc0e803d45df82f2d382953e4bdbe48ac93200946c7067",
+    "outputs/tables/text_feature_alignment_flag_summary.csv": "88a6401daaafb0d7c8293ba137ed924d914a9f97ff669ad85f70249abd881ccb",
+    "outputs/tables/text_shared_unigram_coefficients.csv": "643a2b763a0dd8977017ac300504bd373fca41bc1c4cc5af420824b84f582faa",
+    "outputs/tables/text_stable_fake_features.csv": "44a5f3aaa318846aa7b4b2d3ba19662803fcd1bd4394357d6ae2476c639e5db6",
+    "outputs/tables/text_stable_real_features.csv": "3386972a8a46e3748891db4195732484b1abce92122c6c9f553eb50e1d74217d",
+    "outputs/tables/text_strong_sign_reversals.csv": "839cdecd225365e5d2621eff14c58245a276f52f877fde831bf568be692a8f55",
+    "outputs/tables/text_top_feature_transfer_details.csv": "f371edef727ccfa5f0d3c43eb1ba136a9d254cf1df36823c651ecc92be9997a8",
+    "outputs/tables/text_top_feature_transfer_stability.csv": "af5e16a3a3fc3f1433afdaab96a09e5067c8f6b29e34a951109c7d6f8c6ae1f3"
+  },
+  "refit_count": 0,
+  "script_sha256": "9d3fa7d46b28f96c1a9d6ed6923b8bdf5fd042c7bb8c84348a46994044ae13fb",
+  "shared_unigrams": 4174,
+  "top_ns": [
+    1000,
+    500,
+    100
+  ],
+  "validation": "passed",
+  "vocabulary_sizes": {
+    "CoAID": 6428,
+    "FakeHealth": 7381
+  }
+}

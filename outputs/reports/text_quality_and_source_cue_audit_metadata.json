@@ -1,0 +1,30 @@
+{
+  "input_sha256": {
+    "data/processed/fakehealth_text_primary.csv": "ebc2a60de731f6ed1e2160795c2f495217b7575c2f100380ee59b8f346c04ea2",
+    "data/processed/coaid_text_primary.csv": "21f02f7de2f78504412a53875b23629683181947d96d67f4741915257ec38470",
+    "outputs/splits/fakehealth_text_holdout.csv": "2f14737ab373ebf029490579438d12f95f7df4a7245715ea1bccc10995251035",
+    "outputs/splits/fakehealth_text_grouped_cv.csv": "7b489b81a817bfecf34c89ea00060041f728a7edad182c2d0e44f3b821ee19c1",
+    "outputs/splits/coaid_text_holdout.csv": "0e55802b29b72407a60985e24292e4984c22bae5b06cb33486da93eaf9cddb3c",
+    "outputs/splits/coaid_text_grouped_cv.csv": "e916ad95f11debbe5d1f1daa338c8cb4064f81030a552525bad90abfbe60f651"
+  },
+  "script_sha256": "042dfc75b7ae77abe291ba2e0721e8757a2aa9d96486ce9f28ae0aa84c1dd9a0",
+  "dictionary_sha256": "69dbe0592eb7450bed0a09640dcbb6f5d4505af87eff01cfe11135900aa764bc",
+  "validation": "passed",
+  "original_inputs_unchanged": true,
+  "no_split_reassignment": true,
+  "no_models_trained": true,
+  "feature_allowlist": [
+    "title_text",
+    "body_text",
+    "combined_text",
+    "title_text_source_masked",
+    "body_text_source_masked",
+    "combined_text_source_masked"
+  ],
+  "dictionary_input_columns": [
+    "publisher_source",
+    "article_host",
+    "article_url"
+  ],
+  "dictionary_scope": "All prepared cohort metadata in both datasets; label-free transductive fixed sensitivity dictionary; no text-derived/learned aliases."
+}

@@ -1,0 +1,15 @@
+dataset,outcome,effect_type,estimate,lower_95_CI,upper_95_CI,fake_N,real_N,bootstrap_resamples,CI_method,random_seed
+FakeHealth HealthStory,unique_post_count,mean_difference_fake_minus_real,-37.99726559238542,-74.08230688681084,-1.987759786117879,472,1218,5000,stratified nonparametric percentile bootstrap,42
+FakeHealth HealthStory,unique_post_count,mean_ratio_fake_over_real,0.8402633149662085,0.7079052997230294,0.9915077922713488,472,1218,5000,stratified nonparametric percentile bootstrap,42
+FakeHealth HealthStory,unique_post_count,median_difference_fake_minus_real,-16.0,-31.5,1.5,472,1218,5000,stratified nonparametric percentile bootstrap,42
+FakeHealth HealthStory,unique_reply_count,mean_difference_fake_minus_real,-2.209690100470347,-16.66226143511174,16.873013379811265,472,1218,5000,stratified nonparametric percentile bootstrap,42
+FakeHealth HealthStory,unique_reply_count,mean_ratio_fake_over_real,0.869627855920709,0.2801609791096853,2.254994927127149,472,1218,5000,stratified nonparametric percentile bootstrap,42
+FakeHealth HealthStory,unique_reply_count,median_difference_fake_minus_real,0.0,0.0,0.0,472,1218,5000,stratified nonparametric percentile bootstrap,42
+FakeHealth HealthStory,engagement_present,engagement_proportion_difference_fake_minus_real,0.002807464306587626,-0.0035484678968021877,0.008210180623973717,472,1218,5000,stratified nonparametric percentile bootstrap,42
+CoAID News,unique_post_count,mean_difference_fake_minus_real,-22.057518105117232,-33.54746880900595,-14.040291135862086,903,4170,5000,stratified nonparametric percentile bootstrap,42
+CoAID News,unique_post_count,mean_ratio_fake_over_real,0.34396169538647786,0.21704228599150924,0.5111431638111427,903,4170,5000,stratified nonparametric percentile bootstrap,42
+CoAID News,unique_post_count,median_difference_fake_minus_real,-2.0,-3.0,-2.0,903,4170,5000,stratified nonparametric percentile bootstrap,42
+CoAID News,unique_reply_count,mean_difference_fake_minus_real,-18.913126508759767,-32.00365183600628,-10.061586757172337,903,4170,5000,stratified nonparametric percentile bootstrap,42
+CoAID News,unique_reply_count,mean_ratio_fake_over_real,0.3027896503546863,0.16822006003669898,0.5133474193907461,903,4170,5000,stratified nonparametric percentile bootstrap,42
+CoAID News,unique_reply_count,median_difference_fake_minus_real,0.0,0.0,0.0,903,4170,5000,stratified nonparametric percentile bootstrap,42
+CoAID News,engagement_present,engagement_proportion_difference_fake_minus_real,-0.4083056478405316,-0.43585703530199094,-0.37967731462670395,903,4170,5000,stratified nonparametric percentile bootstrap,42

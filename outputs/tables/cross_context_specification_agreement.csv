@@ -1,0 +1,4 @@
+comparison,intersection_lower,intersection_upper,intersection_over_union,relative_point_change_percent
+A_primary_strict versus B_resource_sensitivity,0.15428770133566938,0.60506667538993,0.9179764351017448,-5.042144837955598
+A_primary_strict versus C_high_certainty,0.1817206078037251,0.6201689584639978,0.8931776627945726,14.105099909298268
+B_resource_sensitivity versus C_high_certainty,0.1817206078037251,0.60506667538993,0.9083654957551496,20.163939796849164

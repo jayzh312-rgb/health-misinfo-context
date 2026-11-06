@@ -1,0 +1,9 @@
+dataset,scope,source_measure,distinct_nonmissing_sources,missing_source_rows,cramers_V,majority_label_baseline,major_nearly_exclusive_sources,rows_in_major_nearly_exclusive_sources,notes
+FakeHealth,all_input_rows,publisher_source,49,19,0.3531790656516845,0.7207100591715976,0,0,"Descriptive source-label association, no classifier or p-value; source is audit metadata, not a predictor"
+FakeHealth,all_input_rows,article_host,96,1,0.38586848476737196,0.7207100591715976,0,0,"Descriptive source-label association, no classifier or p-value; source is audit metadata, not a predictor"
+FakeHealth,primary_eligible,publisher_source,48,16,0.3518812989688064,0.720873786407767,0,0,"Descriptive source-label association, no classifier or p-value; source is audit metadata, not a predictor"
+FakeHealth,primary_eligible,article_host,90,1,0.3787072480255767,0.720873786407767,0,0,"Descriptive source-label association, no classifier or p-value; source is audit metadata, not a predictor"
+CoAID,all_input_rows,publisher_source,198,43,0.9692821379165911,0.8272437699081882,12,4905,"Descriptive source-label association, no classifier or p-value; source is audit metadata, not a predictor"
+CoAID,all_input_rows,article_host,198,43,0.9692821379165911,0.8272437699081882,12,4905,"Descriptive source-label association, no classifier or p-value; source is audit metadata, not a predictor"
+CoAID,primary_eligible,publisher_source,181,43,0.9709918657184962,0.7733695652173913,9,3298,"Descriptive source-label association, no classifier or p-value; source is audit metadata, not a predictor"
+CoAID,primary_eligible,article_host,181,43,0.9709918657184962,0.7733695652173913,9,3298,"Descriptive source-label association, no classifier or p-value; source is audit metadata, not a predictor"

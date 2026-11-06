@@ -1,0 +1,135 @@
+{
+  "automated_tests": {
+    "command": ".venv-transformer/bin/python -m unittest discover -s src -p test_transformer_feasibility.py -q",
+    "failed": 0,
+    "passed": 9,
+    "skipped": 0,
+    "test_file_sha256": "ab4f60c6a35869d9dc4db51afd79766ff8fc841967b19ea9e0d417ee8de585be"
+  },
+  "checkpoint_revision": "fb53ab8802853c8e4fbdbcd0529f21fc6f459b2b",
+  "compatibility_notes": [
+    "Transformers 5 pair API adapted and validated",
+    "Expected unused LM-head/pooler weights for base encoder",
+    "Sandbox hides MPS; actual pilot verified MPS outside sandbox"
+  ],
+  "dependency_check": "pip check passed",
+  "environment": {
+    "cpu_available": true,
+    "cuda_available": "not probed on macOS",
+    "executable": "[REDACTED_HOME]/Desktop/ML Research/.venv-transformer/bin/python",
+    "machine": "arm64",
+    "macos_version": "26.6.2",
+    "mps_available": true,
+    "mps_built": true,
+    "python": "3.12.7",
+    "selected_device": "MPS",
+    "system": "Darwin",
+    "system_memory_bytes": 17179869184,
+    "system_memory_status": "physical installed memory; not free memory",
+    "torch_import": true,
+    "torch_version": "2.14.0",
+    "transformers_import": true,
+    "transformers_version": "5.17.0"
+  },
+  "inputs": {
+    "data/processed/coaid_text_modeling_ready.csv": "859b3db8888962de771f4ff48779f139027c9472bbe19367755f0657ad33812d",
+    "data/processed/fakehealth_text_modeling_ready.csv": "a38730db184727e3a84d2f603789e817c667fe75c6606d834f09ba106ef5cb91",
+    "outputs/splits/coaid_text_grouped_cv.csv": "e916ad95f11debbe5d1f1daa338c8cb4064f81030a552525bad90abfbe60f651",
+    "outputs/splits/coaid_text_holdout.csv": "0e55802b29b72407a60985e24292e4984c22bae5b06cb33486da93eaf9cddb3c",
+    "outputs/splits/fakehealth_text_grouped_cv.csv": "7b489b81a817bfecf34c89ea00060041f728a7edad182c2d0e44f3b821ee19c1",
+    "outputs/splits/fakehealth_text_holdout.csv": "2f14737ab373ebf029490579438d12f95f7df4a7245715ea1bccc10995251035"
+  },
+  "missing_packages": [],
+  "official_tokenizer_audited": true,
+  "original_environment_fingerprint": {
+    "after": "a8c01b895fc086fcb45292c417dae8ac679282983394b3e0320bc72f82d465d1",
+    "before": "a8c01b895fc086fcb45292c417dae8ac679282983394b3e0320bc72f82d465d1",
+    "unchanged": true
+  },
+  "original_environment_unchanged": true,
+  "outputs": {
+    "outputs/reports/transformer_checkpoint_metadata.json": "fd65f7847844e8ad840f4213232ed11530d9ba11bb105739acacd35c07e0719b",
+    "outputs/reports/transformer_feasibility.md": "258282b154385549bcb10c74fb34461adad8485f6974b51cf80e6a5011d9b1b5",
+    "outputs/tables/transformer_environment_audit.csv": "9a58863b5231dbefa11008f14bcea7eb9a71e49030ee63229fe47f01adc9990b",
+    "outputs/tables/transformer_protocol_proposal.csv": "0fd01e0ffe383f3be4ed9054bc59b2e126e1ae31cfa041e0736c998390f59889",
+    "outputs/tables/transformer_token_length_audit.csv": "1c12a8218fd40d3e3c5c1e15634995c26cec7bcd183e151a19e4b37462a13c5e",
+    "outputs/tables/transformer_truncation_audit.csv": "141677daa237bf5d1d0e6b9efd40daffcb281b5dbb93d9c62622836d0c04a524"
+  },
+  "packages": {
+    "accelerate": {
+      "installed": true,
+      "version": "1.15.0"
+    },
+    "datasets": {
+      "installed": true,
+      "version": "5.0.1"
+    },
+    "torch": {
+      "installed": true,
+      "version": "2.14.0"
+    },
+    "transformers": {
+      "installed": true,
+      "version": "5.17.0"
+    }
+  },
+  "packages_installed": 0,
+  "pilot": {
+    "backward_passes": 0,
+    "device": "mps",
+    "examples_per_dataset": {
+      "CoAID": 8,
+      "FakeHealth": 8
+    },
+    "gradients_created": false,
+    "optimizer_steps": 0,
+    "parameter_versions_unchanged": true,
+    "parameters": 81527808,
+    "rows": [
+      {
+        "batch_size": 1,
+        "device": "mps",
+        "examples_per_second": 49.70559161757421,
+        "max_length": 512,
+        "mean_batch_seconds": 0.02011846087043523,
+        "median_batch_seconds": 0.015163416479481384,
+        "memory_measurement": "post-forward samples, not a reliable transient peak; not training memory",
+        "padding": "fixed 512",
+        "precision": "float32",
+        "sampled_max_mps_allocated_bytes": 328568320,
+        "sampled_max_mps_driver_bytes": 1082785792,
+        "timed_batches": 16,
+        "timed_seconds": 0.32189537392696366,
+        "unique_examples": 16
+      },
+      {
+        "batch_size": 2,
+        "device": "mps",
+        "examples_per_second": 69.62934691200374,
+        "max_length": 512,
+        "mean_batch_seconds": 0.028723520881612785,
+        "median_batch_seconds": 0.028697375004412606,
+        "memory_measurement": "post-forward samples, not a reliable transient peak; not training memory",
+        "padding": "fixed 512",
+        "precision": "float32",
+        "sampled_max_mps_allocated_bytes": 330141184,
+        "sampled_max_mps_driver_bytes": 1082785792,
+        "timed_batches": 8,
+        "timed_seconds": 0.22978816705290228,
+        "unique_examples": 16
+      }
+    ],
+    "selection": "first eight eligible sorted content_uid per dataset; label blind",
+    "status": "completed",
+    "training_runs": 0,
+    "unique_examples": 16
+  },
+  "requirements_sha256": "647956e19d15873bf41137fb188e2257fb5cc34df0b98814b2b0872309bfcd31",
+  "runtime_pilot_performed": true,
+  "script_sha256": "1a905b0ae66912489da77285748412d145c12d6330fb67fc492cd85250f47836",
+  "setup_packages_installed_in": ".venv-transformer",
+  "status": "feasibility_complete",
+  "training_runs": 0,
+  "unrelated_output_stat_checks": 1321,
+  "validation": "passed: 9 tests, dependency check, original environment fingerprint, cohort/split hashes, unrelated output stat checks, tokenizer and inference invariants"
+}

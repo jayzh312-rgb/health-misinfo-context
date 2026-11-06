@@ -1,0 +1,14 @@
+{
+ "inputs": {
+  "data/raw/fakenewsnet/gossipcop_fake.csv": "c6932bffadb1230bc61c66bb2ca298f4ef28ce849d268313ad2eed41d18d4c99",
+  "data/raw/fakenewsnet/gossipcop_real.csv": "d721e9a8b7e660da05c089691743c33fecb25367074e936b5fab3d85cdcbe79f",
+  "data/raw/fakenewsnet/politifact_fake.csv": "abe7fe7aad801b1e2ab5fc963cbd0881d9670190262ae3df85e91c3380bd004c",
+  "data/raw/fakenewsnet/politifact_real.csv": "2500f86a7addca0f59fe8cf089c0f802d3eca6980f53538992b3b0e9687dbae0",
+  "data/processed/coaid_text_modeling_ready.csv": "859b3db8888962de771f4ff48779f139027c9472bbe19367755f0657ad33812d",
+  "data/processed/fakehealth_text_modeling_ready.csv": "a38730db184727e3a84d2f603789e817c667fe75c6606d834f09ba106ef5cb91"
+ },
+ "target_sha256": "3acdb45a13e84ef3044d7a6ee0c47b8b9374f8d4a8b986f8a5cad6d7a4775112",
+ "labels_sha256": "17ff27377ad582307e64cd4b9cde6062259cad9cfb8f0ddfda68741003da8ba8",
+ "all_eligible_N": 23139,
+ "clean_primary_N": 23139
+}

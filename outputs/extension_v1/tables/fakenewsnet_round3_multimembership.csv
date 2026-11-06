@@ -1,0 +1,5 @@
+subset,scope,distinct_tweet_ids,total_memberships,ids_attached_to_multiple_rows,share_ids_multiple_rows,share_memberships_from_multi_row_ids,max_rows_per_id,ids_rows_1,ids_rows_2,ids_rows_3-4,ids_rows_5-9,ids_rows_10+,share_ids_rows_1,share_ids_rows_2,share_ids_rows_3-4,share_ids_rows_5-9,share_ids_rows_10+,ids_rows_10plus,share_ids_rows_10plus,component_rows,component_fake_N,component_real_N
+PolitiFact,all rows,554820,578316,20721,0.03734724775602898,0.07645819932355322,6,534099.0,17963.0,2756.0,2.0,0.0,0.9626527522439711,0.032376266176417576,0.0049673768068923254,3.604772719080062e-06,0.0,,,,,
+PolitiFact,largest component (84 rows),365712,385833,18623,0.05092258389114932,0.10041650143974207,6,,,,,,,,,,,0.0,0.0,84.0,5.0,79.0
+GossipCop,all rows,1390131,1479926,51443,0.037005864914889317,0.09543585287372476,18,1338688.0,42108.0,5735.0,1625.0,1975.0,0.9629941350851107,0.0302906704476053,0.004125510473473364,0.0011689545805395319,0.0014207294132711234,,,,,
+GossipCop,largest component (692 rows),244503,283220,29904,0.1223052477883707,0.24228868017795355,10,,,,,,,,,,,11.0,4.4989223036118165e-05,692.0,582.0,110.0

@@ -1,0 +1,4 @@
+dataset,leakage_group,N,publisher_family_N,publisher_families,unresolved_N,conflict_type,resolution
+CoAID,coaid_text_group_a3c3f07077fa3453de40144b,2,2,"[""account:twitter.com/account/antonnewcombe"", ""host:instagram.com""]",0,multiple_identified_families,indivisible publisher-resource component; exclude whole component if any source unresolved
+CoAID,coaid_text_group_e4c263627eaa21513c78c404,2,2,"[""host:teaparty.org"", ""host:therepublicpost.wordpress.com""]",0,multiple_identified_families,indivisible publisher-resource component; exclude whole component if any source unresolved
+CoAID,coaid_text_group_f2fc65d3f6d39ee7477dd6de,2,2,"[""host:beforeitsnews.com"", ""host:shtfplan.com""]",0,multiple_identified_families,indivisible publisher-resource component; exclude whole component if any source unresolved

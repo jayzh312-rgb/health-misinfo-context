@@ -1,0 +1,228 @@
+{
+  "natural_cv_sha256": "95d99f1d0d74e721dccdeaa9756772139ea2ce9f72a8827365237bb4d04756e6",
+  "protocol": {
+    "conditions": {
+      "natural": "combined_text",
+      "source_masked": "combined_text_source_masked"
+    },
+    "cv_standard_deviation_ddof": 1,
+    "grid": [
+      {
+        "C": 0.1,
+        "class_weight": "none",
+        "config_id": "cfg_00",
+        "min_df": 2,
+        "ngram_max": 1
+      },
+      {
+        "C": 0.1,
+        "class_weight": "balanced",
+        "config_id": "cfg_01",
+        "min_df": 2,
+        "ngram_max": 1
+      },
+      {
+        "C": 1.0,
+        "class_weight": "none",
+        "config_id": "cfg_02",
+        "min_df": 2,
+        "ngram_max": 1
+      },
+      {
+        "C": 1.0,
+        "class_weight": "balanced",
+        "config_id": "cfg_03",
+        "min_df": 2,
+        "ngram_max": 1
+      },
+      {
+        "C": 10.0,
+        "class_weight": "none",
+        "config_id": "cfg_04",
+        "min_df": 2,
+        "ngram_max": 1
+      },
+      {
+        "C": 10.0,
+        "class_weight": "balanced",
+        "config_id": "cfg_05",
+        "min_df": 2,
+        "ngram_max": 1
+      },
+      {
+        "C": 0.1,
+        "class_weight": "none",
+        "config_id": "cfg_06",
+        "min_df": 5,
+        "ngram_max": 1
+      },
+      {
+        "C": 0.1,
+        "class_weight": "balanced",
+        "config_id": "cfg_07",
+        "min_df": 5,
+        "ngram_max": 1
+      },
+      {
+        "C": 1.0,
+        "class_weight": "none",
+        "config_id": "cfg_08",
+        "min_df": 5,
+        "ngram_max": 1
+      },
+      {
+        "C": 1.0,
+        "class_weight": "balanced",
+        "config_id": "cfg_09",
+        "min_df": 5,
+        "ngram_max": 1
+      },
+      {
+        "C": 10.0,
+        "class_weight": "none",
+        "config_id": "cfg_10",
+        "min_df": 5,
+        "ngram_max": 1
+      },
+      {
+        "C": 10.0,
+        "class_weight": "balanced",
+        "config_id": "cfg_11",
+        "min_df": 5,
+        "ngram_max": 1
+      },
+      {
+        "C": 0.1,
+        "class_weight": "none",
+        "config_id": "cfg_12",
+        "min_df": 2,
+        "ngram_max": 2
+      },
+      {
+        "C": 0.1,
+        "class_weight": "balanced",
+        "config_id": "cfg_13",
+        "min_df": 2,
+        "ngram_max": 2
+      },
+      {
+        "C": 1.0,
+        "class_weight": "none",
+        "config_id": "cfg_14",
+        "min_df": 2,
+        "ngram_max": 2
+      },
+      {
+        "C": 1.0,
+        "class_weight": "balanced",
+        "config_id": "cfg_15",
+        "min_df": 2,
+        "ngram_max": 2
+      },
+      {
+        "C": 10.0,
+        "class_weight": "none",
+        "config_id": "cfg_16",
+        "min_df": 2,
+        "ngram_max": 2
+      },
+      {
+        "C": 10.0,
+        "class_weight": "balanced",
+        "config_id": "cfg_17",
+        "min_df": 2,
+        "ngram_max": 2
+      },
+      {
+        "C": 0.1,
+        "class_weight": "none",
+        "config_id": "cfg_18",
+        "min_df": 5,
+        "ngram_max": 2
+      },
+      {
+        "C": 0.1,
+        "class_weight": "balanced",
+        "config_id": "cfg_19",
+        "min_df": 5,
+        "ngram_max": 2
+      },
+      {
+        "C": 1.0,
+        "class_weight": "none",
+        "config_id": "cfg_20",
+        "min_df": 5,
+        "ngram_max": 2
+      },
+      {
+        "C": 1.0,
+        "class_weight": "balanced",
+        "config_id": "cfg_21",
+        "min_df": 5,
+        "ngram_max": 2
+      },
+      {
+        "C": 10.0,
+        "class_weight": "none",
+        "config_id": "cfg_22",
+        "min_df": 5,
+        "ngram_max": 2
+      },
+      {
+        "C": 10.0,
+        "class_weight": "balanced",
+        "config_id": "cfg_23",
+        "min_df": 5,
+        "ngram_max": 2
+      }
+    ],
+    "masked_retuning": false,
+    "max_iter": 5000,
+    "penalty": "l2",
+    "seed": 42,
+    "selection": "unweighted mean macro F1",
+    "sklearn_penalty_parameter": "l1_ratio=0.0",
+    "solver": "liblinear",
+    "threshold": 0.5,
+    "tie_order": [
+      "mean macro F1 within .001 of best",
+      "SD within .001 of lowest in tied set",
+      "unigram",
+      "smaller C",
+      "class_weight none",
+      "larger min_df",
+      "config_id"
+    ],
+    "tie_tolerance": 0.001,
+    "tol": 0.0001,
+    "vectorizer": {
+      "analyzer": "word",
+      "dtype": "float64",
+      "lowercase": true,
+      "max_df": 1.0,
+      "norm": "l2",
+      "smooth_idf": true,
+      "strip_accents": null,
+      "sublinear_tf": true,
+      "token_pattern": "(?u)\\b\\w\\w+\\b",
+      "use_idf": true
+    }
+  },
+  "selection_scope": "natural training-pool grouped CV only",
+  "selections": {
+    "CoAID": {
+      "C": 10.0,
+      "class_weight": "balanced",
+      "config_id": "cfg_05",
+      "min_df": 2,
+      "ngram_max": 1
+    },
+    "FakeHealth": {
+      "C": 1.0,
+      "class_weight": "balanced",
+      "config_id": "cfg_21",
+      "min_df": 5,
+      "ngram_max": 2
+    }
+  }
+}

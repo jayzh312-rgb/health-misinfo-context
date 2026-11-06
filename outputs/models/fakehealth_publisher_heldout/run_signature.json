@@ -1,0 +1,424 @@
+{
+  "inputs": {
+    "data/processed/fakehealth_text_modeling_ready.csv": "a38730db184727e3a84d2f603789e817c667fe75c6606d834f09ba106ef5cb91",
+    "outputs/reports/publisher_heldout_feasibility.json": "7867d23eba052949038654846081c8139c3c1023b271492727bf5056e5be916c",
+    "outputs/reports/tfidf_logistic_baseline.json": "88f15dd51f27532207b289400269a5dba52b0fa700bd8181454371b7003008ef",
+    "outputs/splits/fakehealth_text_grouped_cv.csv": "7b489b81a817bfecf34c89ea00060041f728a7edad182c2d0e44f3b821ee19c1",
+    "outputs/splits/fakehealth_text_holdout.csv": "2f14737ab373ebf029490579438d12f95f7df4a7245715ea1bccc10995251035",
+    "outputs/tables/publisher_family_map.csv": "1501c74686a0b59b8de70d1478d001c53228693fe2be753d27085494bd0b57d4",
+    "outputs/tables/publisher_heldout_feasibility.csv": "1aa8d5af88f420442e91a38a220c5bc451ef54f2161f8ee10c140fc8505f5b90",
+    "outputs/tables/publisher_label_support.csv": "34ca12f66ba71495e1b11a5e4f71e086a08d7c5bccdf089bbbfcb3f84a5ab2c9",
+    "outputs/tables/publisher_resource_group_conflicts.csv": "06bdc3cabdc1c73f03e9b80b504bccf8f026b42345a6f06e480d34871925a71f",
+    "outputs/tables/tfidf_logistic_holdout_results.csv": "7cae7fd4e84123bca203e2a81e0eb82e7237c5e14492d668c357e0f5c0833c13",
+    "outputs/tables/tfidf_logistic_model_selection.csv": "94f586d3507529ac5d78a050c69d65cd3f12f38c59a11e735c63292eb120b62e",
+    "src/audit_publisher_heldout_feasibility.py": "4eef8e4e8d1bdec6a477a6ce3dd95cb5f6cd7cdb8bc8d1e3fc4f737c0c106d55",
+    "src/run_tfidf_logistic_baseline.py": "a8644723c7bef66f152199eb27953a30b27815ae77f2e1cc3aaac1c98774b993"
+  },
+  "protocol": {
+    "dataset": "FakeHealth",
+    "grid": [
+      {
+        "C": 0.1,
+        "class_weight": "none",
+        "config_id": "cfg_00",
+        "min_df": 2,
+        "ngram_max": 1
+      },
+      {
+        "C": 0.1,
+        "class_weight": "balanced",
+        "config_id": "cfg_01",
+        "min_df": 2,
+        "ngram_max": 1
+      },
+      {
+        "C": 1.0,
+        "class_weight": "none",
+        "config_id": "cfg_02",
+        "min_df": 2,
+        "ngram_max": 1
+      },
+      {
+        "C": 1.0,
+        "class_weight": "balanced",
+        "config_id": "cfg_03",
+        "min_df": 2,
+        "ngram_max": 1
+      },
+      {
+        "C": 10.0,
+        "class_weight": "none",
+        "config_id": "cfg_04",
+        "min_df": 2,
+        "ngram_max": 1
+      },
+      {
+        "C": 10.0,
+        "class_weight": "balanced",
+        "config_id": "cfg_05",
+        "min_df": 2,
+        "ngram_max": 1
+      },
+      {
+        "C": 0.1,
+        "class_weight": "none",
+        "config_id": "cfg_06",
+        "min_df": 5,
+        "ngram_max": 1
+      },
+      {
+        "C": 0.1,
+        "class_weight": "balanced",
+        "config_id": "cfg_07",
+        "min_df": 5,
+        "ngram_max": 1
+      },
+      {
+        "C": 1.0,
+        "class_weight": "none",
+        "config_id": "cfg_08",
+        "min_df": 5,
+        "ngram_max": 1
+      },
+      {
+        "C": 1.0,
+        "class_weight": "balanced",
+        "config_id": "cfg_09",
+        "min_df": 5,
+        "ngram_max": 1
+      },
+      {
+        "C": 10.0,
+        "class_weight": "none",
+        "config_id": "cfg_10",
+        "min_df": 5,
+        "ngram_max": 1
+      },
+      {
+        "C": 10.0,
+        "class_weight": "balanced",
+        "config_id": "cfg_11",
+        "min_df": 5,
+        "ngram_max": 1
+      },
+      {
+        "C": 0.1,
+        "class_weight": "none",
+        "config_id": "cfg_12",
+        "min_df": 2,
+        "ngram_max": 2
+      },
+      {
+        "C": 0.1,
+        "class_weight": "balanced",
+        "config_id": "cfg_13",
+        "min_df": 2,
+        "ngram_max": 2
+      },
+      {
+        "C": 1.0,
+        "class_weight": "none",
+        "config_id": "cfg_14",
+        "min_df": 2,
+        "ngram_max": 2
+      },
+      {
+        "C": 1.0,
+        "class_weight": "balanced",
+        "config_id": "cfg_15",
+        "min_df": 2,
+        "ngram_max": 2
+      },
+      {
+        "C": 10.0,
+        "class_weight": "none",
+        "config_id": "cfg_16",
+        "min_df": 2,
+        "ngram_max": 2
+      },
+      {
+        "C": 10.0,
+        "class_weight": "balanced",
+        "config_id": "cfg_17",
+        "min_df": 2,
+        "ngram_max": 2
+      },
+      {
+        "C": 0.1,
+        "class_weight": "none",
+        "config_id": "cfg_18",
+        "min_df": 5,
+        "ngram_max": 2
+      },
+      {
+        "C": 0.1,
+        "class_weight": "balanced",
+        "config_id": "cfg_19",
+        "min_df": 5,
+        "ngram_max": 2
+      },
+      {
+        "C": 1.0,
+        "class_weight": "none",
+        "config_id": "cfg_20",
+        "min_df": 5,
+        "ngram_max": 2
+      },
+      {
+        "C": 1.0,
+        "class_weight": "balanced",
+        "config_id": "cfg_21",
+        "min_df": 5,
+        "ngram_max": 2
+      },
+      {
+        "C": 10.0,
+        "class_weight": "none",
+        "config_id": "cfg_22",
+        "min_df": 5,
+        "ngram_max": 2
+      },
+      {
+        "C": 10.0,
+        "class_weight": "balanced",
+        "config_id": "cfg_23",
+        "min_df": 5,
+        "ngram_max": 2
+      }
+    ],
+    "grouping": "unchanged audited publisher/resource connected components",
+    "inner_folds_preference": [
+      3,
+      2
+    ],
+    "inner_shuffle": true,
+    "masked_retuning": false,
+    "minimum_evaluation_class_count": 20,
+    "numerical_pipeline": {
+      "conditions": {
+        "natural": "combined_text",
+        "source_masked": "combined_text_source_masked"
+      },
+      "cv_standard_deviation_ddof": 1,
+      "grid": [
+        {
+          "C": 0.1,
+          "class_weight": "none",
+          "config_id": "cfg_00",
+          "min_df": 2,
+          "ngram_max": 1
+        },
+        {
+          "C": 0.1,
+          "class_weight": "balanced",
+          "config_id": "cfg_01",
+          "min_df": 2,
+          "ngram_max": 1
+        },
+        {
+          "C": 1.0,
+          "class_weight": "none",
+          "config_id": "cfg_02",
+          "min_df": 2,
+          "ngram_max": 1
+        },
+        {
+          "C": 1.0,
+          "class_weight": "balanced",
+          "config_id": "cfg_03",
+          "min_df": 2,
+          "ngram_max": 1
+        },
+        {
+          "C": 10.0,
+          "class_weight": "none",
+          "config_id": "cfg_04",
+          "min_df": 2,
+          "ngram_max": 1
+        },
+        {
+          "C": 10.0,
+          "class_weight": "balanced",
+          "config_id": "cfg_05",
+          "min_df": 2,
+          "ngram_max": 1
+        },
+        {
+          "C": 0.1,
+          "class_weight": "none",
+          "config_id": "cfg_06",
+          "min_df": 5,
+          "ngram_max": 1
+        },
+        {
+          "C": 0.1,
+          "class_weight": "balanced",
+          "config_id": "cfg_07",
+          "min_df": 5,
+          "ngram_max": 1
+        },
+        {
+          "C": 1.0,
+          "class_weight": "none",
+          "config_id": "cfg_08",
+          "min_df": 5,
+          "ngram_max": 1
+        },
+        {
+          "C": 1.0,
+          "class_weight": "balanced",
+          "config_id": "cfg_09",
+          "min_df": 5,
+          "ngram_max": 1
+        },
+        {
+          "C": 10.0,
+          "class_weight": "none",
+          "config_id": "cfg_10",
+          "min_df": 5,
+          "ngram_max": 1
+        },
+        {
+          "C": 10.0,
+          "class_weight": "balanced",
+          "config_id": "cfg_11",
+          "min_df": 5,
+          "ngram_max": 1
+        },
+        {
+          "C": 0.1,
+          "class_weight": "none",
+          "config_id": "cfg_12",
+          "min_df": 2,
+          "ngram_max": 2
+        },
+        {
+          "C": 0.1,
+          "class_weight": "balanced",
+          "config_id": "cfg_13",
+          "min_df": 2,
+          "ngram_max": 2
+        },
+        {
+          "C": 1.0,
+          "class_weight": "none",
+          "config_id": "cfg_14",
+          "min_df": 2,
+          "ngram_max": 2
+        },
+        {
+          "C": 1.0,
+          "class_weight": "balanced",
+          "config_id": "cfg_15",
+          "min_df": 2,
+          "ngram_max": 2
+        },
+        {
+          "C": 10.0,
+          "class_weight": "none",
+          "config_id": "cfg_16",
+          "min_df": 2,
+          "ngram_max": 2
+        },
+        {
+          "C": 10.0,
+          "class_weight": "balanced",
+          "config_id": "cfg_17",
+          "min_df": 2,
+          "ngram_max": 2
+        },
+        {
+          "C": 0.1,
+          "class_weight": "none",
+          "config_id": "cfg_18",
+          "min_df": 5,
+          "ngram_max": 2
+        },
+        {
+          "C": 0.1,
+          "class_weight": "balanced",
+          "config_id": "cfg_19",
+          "min_df": 5,
+          "ngram_max": 2
+        },
+        {
+          "C": 1.0,
+          "class_weight": "none",
+          "config_id": "cfg_20",
+          "min_df": 5,
+          "ngram_max": 2
+        },
+        {
+          "C": 1.0,
+          "class_weight": "balanced",
+          "config_id": "cfg_21",
+          "min_df": 5,
+          "ngram_max": 2
+        },
+        {
+          "C": 10.0,
+          "class_weight": "none",
+          "config_id": "cfg_22",
+          "min_df": 5,
+          "ngram_max": 2
+        },
+        {
+          "C": 10.0,
+          "class_weight": "balanced",
+          "config_id": "cfg_23",
+          "min_df": 5,
+          "ngram_max": 2
+        }
+      ],
+      "masked_retuning": false,
+      "max_iter": 5000,
+      "penalty": "l2",
+      "seed": 42,
+      "selection": "unweighted mean macro F1",
+      "sklearn_penalty_parameter": "l1_ratio=0.0",
+      "solver": "liblinear",
+      "threshold": 0.5,
+      "tie_order": [
+        "mean macro F1 within .001 of best",
+        "SD within .001 of lowest in tied set",
+        "unigram",
+        "smaller C",
+        "class_weight none",
+        "larger min_df",
+        "config_id"
+      ],
+      "tie_tolerance": 0.001,
+      "tol": 0.0001,
+      "vectorizer": {
+        "analyzer": "word",
+        "dtype": "float64",
+        "lowercase": true,
+        "max_df": 1.0,
+        "norm": "l2",
+        "smooth_idf": true,
+        "strip_accents": null,
+        "sublinear_tf": true,
+        "token_pattern": "(?u)\\b\\w\\w+\\b",
+        "use_idf": true
+      }
+    },
+    "outer_folds": 3,
+    "outer_shuffle": true,
+    "outer_test_labels": "used for fixed stratification/support validation only, never hyperparameter selection",
+    "predictor_fields": {
+      "natural": "combined_text",
+      "source_masked": "combined_text_source_masked"
+    },
+    "seed": 42,
+    "threshold": 0.5,
+    "tie_tolerance": 0.001
+  },
+  "script_sha256": "388e54724066001fadfbb233f840d222ef7d606d15d7294a6a1f45dfdf133bb9",
+  "versions": {
+    "numpy": "2.5.1",
+    "pandas": "3.0.5",
+    "python": "3.14.2",
+    "scipy": "1.18.0",
+    "sklearn": "1.9.0"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "complete": true,
+  "input_hashes_verified": true,
+  "input_sha256": {
+    "data/processed/coaid_news_high_certainty_sensitivity.csv": "abb72e719bec67ae4c432381f105f29c115ba12174b8b8127561e69a1ff7d288",
+    "data/processed/coaid_news_primary.csv": "fc2fef1b06d7c8c8a8a0d732a8204e83119087bb1ea431cc578d111f25bad6b2",
+    "data/processed/coaid_news_primary_version_aware.csv": "123b0486b0ad4569d2ded7f3cc7c94077ee2d8953f432bd56a0a6c69d492c5e8",
+    "data/processed/coaid_news_resource_level_sensitivity.csv": "a5640794cbf778208f693972265101702c0383904e3b5693a1652b8e7a368b35",
+    "data/processed/fakehealth_healthstory_primary.csv": "c975e55efaad9010814d696b6886d1c7de6315a63f05c9fedae443e1d7655e9e",
+    "data/raw/FakeHealth-master/dataset/engagements/HealthStory.json": "85c87c2462106232da708e7e1707583157ad2a7b82af1387c54cfe990e6dd564",
+    "outputs/tables/coaid_cross_entity_social_overlap.csv": "51152089b036ee2d1ff979457ff3be9bc32d0d2dc6c3751545368f31c664e184",
+    "outputs/tables/common_engagement_estimand.csv": "ccb191b8e2434a12be04930d41d83126efc6d4208d2fd05dd65bbcf1ac951815",
+    "outputs/tables/primary_engagement_descriptives.csv": "4a5b355f36252ceccdad21dba0a09d5606ecdef472a40157c15070e6e8bc0596",
+    "outputs/tables/primary_engagement_model_results.csv": "a1fa3c64794cb23e8539f9c7ae641cbefee3b2e45278842fd36a630c5b6d0abd",
+    "src/audit_engagement_estimand_robustness.py": "f043f8f49bcd081d06bd5254e02f0db864122d940b747dd803b031617911ed17",
+    "src/run_primary_engagement_eda.py": "74cd395bdeb079cb6b477a3405ef235dde1db9f57e1f1803aa8e829d31cb2510",
+    "src/run_primary_engagement_models.py": "9216e888e3124b83dadf8a8730663ec9731f19e5a9fc55eea2d2fa85452b0410"
+  },
+  "no_cross_context_contrast": true,
+  "no_raw_or_sample_changes": true,
+  "pilot_only": false,
+  "script_sha256": "990839516dae446d0cc1b58cf0e0b22a34dd472cc4d9ff286838cf9f34738af0",
+  "seed": 42,
+  "target_successful_post_refits": 1000,
+  "timestamp_variables_used_as_primary": false,
+  "workers": 4
+}

@@ -1,0 +1,6 @@
+dataset,outcome,selected_model,lowest_AIC_model,reason
+FakeHealth HealthStory,unique_post_count,NB2,NB2,"Stable NB2 selected: hurdle is unavailable, unstable, or has no >2 AIC improvement. Poisson is diagnostic; ZINB remains latent-mechanism sensitivity."
+FakeHealth HealthStory,unique_reply_count,NB2,Hurdle_Logit_ZTNB2,"Stable NB2 selected: hurdle is unavailable, unstable, or has no >2 AIC improvement. Poisson is diagnostic; ZINB remains latent-mechanism sensitivity."
+CoAID News,unique_post_count,Hurdle_Logit_ZTNB2,Hurdle_Logit_ZTNB2,"Hurdle has >2 AIC improvement over NB2, stable fit, and directly separates engagement occurrence from positive volume. ZINB remains sensitivity: latent structural-zero mechanism is not established."
+CoAID News,unique_reply_count,NB2,Hurdle_Logit_ZTNB2,"Stable NB2 selected: hurdle is unavailable, unstable, or has no >2 AIC improvement. Poisson is diagnostic; ZINB remains latent-mechanism sensitivity."
+CoAID News,engagement_present,Logit,Logit,Requested binary logistic model; stability checked.

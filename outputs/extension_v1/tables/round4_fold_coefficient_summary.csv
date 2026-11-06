@@ -1,0 +1,3 @@
+dataset,pairs,spearman_mean,spearman_min,spearman_max,cross_dataset_spearman_frozen,config
+FakeHealth,10,0.7799399033410663,0.7695221986424489,0.7941489452811827,-0.0034338168764389263,"{""C"": 1.0, ""class_weight"": ""balanced"", ""config_id"": ""cfg_21"", ""min_df"": 5, ""ngram_max"": 2}"
+CoAID,10,0.8208231890844944,0.8003388808102324,0.8354537851407671,-0.0034338168764389263,"{""C"": 10.0, ""class_weight"": ""balanced"", ""config_id"": ""cfg_05"", ""min_df"": 2, ""ngram_max"": 1}"

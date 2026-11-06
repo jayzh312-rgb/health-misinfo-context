@@ -1,0 +1,5 @@
+specification,successful_draws,failed_attempts,finite_positive_ratios,saved_interval_reproduced,original_models_refitted
+FakeHealth_HealthStory,1000,0,True,True,False
+A_primary_strict,1000,0,True,True,False
+B_resource_sensitivity,1000,0,True,True,False
+C_high_certainty,1000,0,True,True,False

@@ -1,0 +1,378 @@
+{
+ "equations_numbered": {
+  "supplement": 0,
+  "manuscript": 2
+ },
+ "equation_numbering": "explicit tag: each $$ block becomes <div class=\"equation\"><span class=\"eq-body\">MathML</span><span class=\"eq-no\">(n)</span></div>, n sequential per document, S prefix in the supplement; .eq-no is absolutely positioned at the right edge of the equation line (assets/review.css)",
+ "toolchain": {
+  "python": "3.12.7",
+  "markdown": "3.11",
+  "latex2mathml": "3.81.1",
+  "pymupdf": "1.28.2",
+  "chrome": "Google Chrome 155.0.8059.82"
+ },
+ "manuscript": {
+  "pages": 20,
+  "image_pages": [
+   8,
+   11,
+   12,
+   13
+  ],
+  "out_of_bounds_text": [],
+  "blank_pages": [],
+  "replacement_glyph_pages": [],
+  "min_words": 117,
+  "links": [
+   {
+    "page": 1,
+    "target": "supplement_review.pdf",
+    "to_page": 66
+   },
+   {
+    "page": 3,
+    "target": "supplement_review.pdf",
+    "to_page": 6
+   },
+   {
+    "page": 4,
+    "target": "supplement_review.pdf",
+    "to_page": 0
+   },
+   {
+    "page": 5,
+    "target": "supplement_review.pdf",
+    "to_page": 104
+   },
+   {
+    "page": 5,
+    "target": "supplement_review.pdf",
+    "to_page": 99
+   },
+   {
+    "page": 5,
+    "target": "supplement_review.pdf",
+    "to_page": 0
+   },
+   {
+    "page": 5,
+    "target": "supplement_review.pdf",
+    "to_page": 1
+   },
+   {
+    "page": 6,
+    "target": "supplement_review.pdf",
+    "to_page": 2
+   },
+   {
+    "page": 6,
+    "target": "supplement_review.pdf",
+    "to_page": 3
+   },
+   {
+    "page": 6,
+    "target": "supplement_review.pdf",
+    "to_page": 6
+   },
+   {
+    "page": 6,
+    "target": "supplement_review.pdf",
+    "to_page": 80
+   },
+   {
+    "page": 7,
+    "target": "supplement_review.pdf",
+    "to_page": 4
+   },
+   {
+    "page": 7,
+    "target": "supplement_review.pdf",
+    "to_page": 6
+   },
+   {
+    "page": 7,
+    "target": "supplement_review.pdf",
+    "to_page": 76
+   },
+   {
+    "page": 7,
+    "target": "supplement_review.pdf",
+    "to_page": 5
+   },
+   {
+    "page": 7,
+    "target": "supplement_review.pdf",
+    "to_page": 99
+   },
+   {
+    "page": 7,
+    "target": "supplement_review.pdf",
+    "to_page": 0
+   },
+   {
+    "page": 8,
+    "target": "supplement_review.pdf",
+    "to_page": 55
+   },
+   {
+    "page": 8,
+    "target": "supplement_review.pdf",
+    "to_page": 55
+   },
+   {
+    "page": 8,
+    "target": "supplement_review.pdf",
+    "to_page": 80
+   },
+   {
+    "page": 8,
+    "target": "supplement_review.pdf",
+    "to_page": 76
+   },
+   {
+    "page": 9,
+    "target": "supplement_review.pdf",
+    "to_page": 99
+   },
+   {
+    "page": 9,
+    "target": "supplement_review.pdf",
+    "to_page": 99
+   },
+   {
+    "page": 10,
+    "target": "supplement_review.pdf",
+    "to_page": 104
+   },
+   {
+    "page": 10,
+    "target": "supplement_review.pdf",
+    "to_page": 55
+   },
+   {
+    "page": 10,
+    "target": "supplement_review.pdf",
+    "to_page": 73
+   },
+   {
+    "page": 10,
+    "target": "supplement_review.pdf",
+    "to_page": 82
+   },
+   {
+    "page": 10,
+    "target": "supplement_review.pdf",
+    "to_page": 82
+   },
+   {
+    "page": 10,
+    "target": "supplement_review.pdf",
+    "to_page": 82
+   },
+   {
+    "page": 11,
+    "target": "supplement_review.pdf",
+    "to_page": 108
+   },
+   {
+    "page": 11,
+    "target": "supplement_review.pdf",
+    "to_page": 57
+   },
+   {
+    "page": 11,
+    "target": "supplement_review.pdf",
+    "to_page": 82
+   },
+   {
+    "page": 11,
+    "target": "supplement_review.pdf",
+    "to_page": 82
+   },
+   {
+    "page": 12,
+    "target": "supplement_review.pdf",
+    "to_page": 82
+   },
+   {
+    "page": 12,
+    "target": "supplement_review.pdf",
+    "to_page": 62
+   },
+   {
+    "page": 12,
+    "target": "supplement_review.pdf",
+    "to_page": 62
+   },
+   {
+    "page": 13,
+    "target": "supplement_review.pdf",
+    "to_page": 105
+   },
+   {
+    "page": 14,
+    "target": "supplement_review.pdf",
+    "to_page": 65
+   },
+   {
+    "page": 15,
+    "target": "supplement_review.pdf",
+    "to_page": 82
+   },
+   {
+    "page": 15,
+    "target": "supplement_review.pdf",
+    "to_page": 82
+   },
+   {
+    "page": 17,
+    "target": "supplement_review.pdf",
+    "to_page": 82
+   },
+   {
+    "page": 18,
+    "target": "supplement_review.pdf",
+    "to_page": 66
+   }
+  ]
+ },
+ "supplement": {
+  "pages": 111,
+  "image_pages": [
+   103,
+   104,
+   105
+  ],
+  "out_of_bounds_text": [],
+  "blank_pages": [],
+  "replacement_glyph_pages": [],
+  "min_words": 15,
+  "links": [
+   {
+    "page": 2,
+    "target": "data/tfidf_linear_svm_cohort_summary.csv",
+    "to_page": 0
+   },
+   {
+    "page": 6,
+    "target": "internal/provenance_notes.md",
+    "to_page": 0
+   },
+   {
+    "page": 8,
+    "target": "data/version_aware_sample_confirmation.csv",
+    "to_page": 0
+   },
+   {
+    "page": 9,
+    "target": "data/cross_context_engagement_contrast.csv",
+    "to_page": 0
+   },
+   {
+    "page": 12,
+    "target": "data/cross_context_sensitivity_results.csv",
+    "to_page": 0
+   },
+   {
+    "page": 15,
+    "target": "data/tfidf_linear_svm_cohort_summary.csv",
+    "to_page": 0
+   },
+   {
+    "page": 17,
+    "target": "data/tfidf_logistic_title_vs_combined.csv",
+    "to_page": 0
+   },
+   {
+    "page": 28,
+    "target": "data/fakehealth_publisher_heldout_results.csv",
+    "to_page": 0
+   },
+   {
+    "page": 33,
+    "target": "data/fakehealth_publisher_heldout_summary.csv",
+    "to_page": 0
+   },
+   {
+    "page": 35,
+    "target": "data/distilroberta_budget_seed_paired_deltas.csv",
+    "to_page": 0
+   },
+   {
+    "page": 37,
+    "target": "data/distilroberta_budget_seed_summary.csv",
+    "to_page": 0
+   },
+   {
+    "page": 41,
+    "target": "data/covid_rumor_external_cohort_summary.csv",
+    "to_page": 0
+   },
+   {
+    "page": 42,
+    "target": "data/covid_rumor_external_transfer_results.csv",
+    "to_page": 0
+   },
+   {
+    "page": 48,
+    "target": "data/covid_rumor_external_vocabulary_diagnostics.csv",
+    "to_page": 0
+   },
+   {
+    "page": 54,
+    "target": "data/text_coefficient_alignment_summary.csv",
+    "to_page": 0
+   }
+  ]
+ },
+ "supplement_heading_pages": {
+  "S1": 1,
+  "S2": 1,
+  "S3": 2,
+  "S4": 3,
+  "S5": 4,
+  "S6": 5,
+  "S7": 6,
+  "S8": 7,
+  "Table S3": 8,
+  "Table S4": 9,
+  "Table S5": 15,
+  "Table S6": 17,
+  "Table S7": 28,
+  "Table S8": 35,
+  "Table S9": 41,
+  "Table S10": 54,
+  "Table S11": 56,
+  "Table S12": 58,
+  "Table S13": 63,
+  "Table S14": 66,
+  "Table S15": 67,
+  "Table S16": 74,
+  "Table S17": 77,
+  "Table S18": 81,
+  "Table S19": 83,
+  "Table S20": 100,
+  "Table S21": 105,
+  "Table S22": 106,
+  "Table S23": 109
+ },
+ "caption_pages": {
+  "Figure M1.": 3,
+  "Figure 1.": 8,
+  "Table 2.": 9,
+  "Figure 2.": 11,
+  "Figure 3.": 12,
+  "Figure 4.": 13,
+  "Table 1.": 13
+ },
+ "links_repaired": {
+  "manuscript": 42,
+  "supplement": 15
+ },
+ "outputs": {
+  "manuscript.html": "69ebad8ac641405dd640a1fb0faaa41196a9ead4f0a902118da2520342a3f28b",
+  "supplementary_material.html": "9b707d1f1ef591e5cb52ac6fd65fe91a3ef8cce05a102627633414b7fdf209c8",
+  "manuscript_review.pdf": "b0d2ff14187707cff151828cb42265005c939e74ab9f6f722a9d39118cb0ac6a",
+  "supplement_review.pdf": "bb74c779dc9fd4b6c82ff44d687d2a55f87f4e9be6ad0b9762a3f40e75679510"
+ }
+}

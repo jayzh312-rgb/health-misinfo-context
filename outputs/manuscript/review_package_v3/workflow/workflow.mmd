@@ -1,0 +1,28 @@
+flowchart TD
+    A["CoAID News and FakeHealth HealthStory"]
+    B["Validate identities, versions and dataset labels"]
+    C["Engagement populations<br/>Unique observed-post counts<br/>Include zero-post entities"]
+    D["Separate text populations<br/>Quality filters and resource/text leakage groups<br/>Engagement is excluded from predictors"]
+    E["CoAID hurdle; FakeHealth NB2<br/>Standardized Fake/Real<br/>expected-post ratios"]
+    F["Independent overlap-cluster<br/>resampling within each dataset<br/>Percentile intervals"]
+    G["Cross-context ratio-of-ratios<br/>Prespecified engagement sensitivities<br/>RQ1"]
+    H["Grouped source-only selection<br/>Within-context fits: training pools<br/>Evaluation: reserved holdouts<br/>RQ2"]
+    I["Transfer fits: all eligible source rows<br/>Locked source-selected configurations<br/>Cross-context evaluation; no target tuning<br/>Matched target holdouts are primary"]
+    K["Frozen full-source LR/SVM only<br/>Common COVID-Rumor NEWS target<br/>No target fitting or tuning<br/>RQ3"]
+    J["Separate supporting checks<br/>Lexical audit: within-context LR models<br/>Publisher, representation<br/>and transformer checks"]
+    N["Extension: FakeNewsNet (PolitiFact, GossipCop)<br/>Title-only LR external target (Table S13)<br/>Engagement under frozen estimand (Table S17)<br/>Supplementary; no frozen result changes"]
+    R["Independent COVID-Rumor NEWS<br/>Inherited True/False annotations<br/>Quality and exact-overlap screening<br/>External text evaluation only"]
+    A --> B
+    B --> C
+    B --> D
+    C --> E
+    E --> F
+    F --> G
+    D --> H
+    H --> I
+    H --> J
+    I --> K
+    R --> K
+    N --> K
+    N --> E
+    %% Engagement and text populations remain distinct; there is no mediation edge.

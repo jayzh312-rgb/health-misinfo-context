@@ -1,0 +1,71 @@
+A COVID-19 RUMOR DATASET — STRUCTURAL + SUITABILITY AUDIT
+Raw root: [REDACTED_HOME]/Desktop/ML Research/data/raw/COVID-19-rumor-dataset-master
+Raw files read only; no EDA, hydration, scraping, processing, or merging.
+
+1 STRUCTURE / COMPLETENESS
+Directories: Data Analysis/, Data Analysis/code/, Data Analysis/code/input/, Data Analysis/code/utils/, Data Analysis/graphs/, Data Analysis/logs/, Data Collecting/, Data/, Data/news/, Data/twitter/
+Files total=5,367; news CSVs=3,937; Twitter CSVs=1,384.
+Required top-level files present: Data/en_dup.csv, Data/news/news.csv, Data/twitter/Twitter.csv.
+Main rows: news=4,129 (official 4,129); Twitter=2,705 (official 2,705); en_dup=7,179 (official 7,179 including duplicates).
+Per-item files: news=3,936 (official 3,936); Twitter=1,383 (official 1,383). Counts match documentation exactly after excluding main CSVs.
+Internal record totals differ slightly from the paper: local NEWS per-item rows=32,747 versus 32,750 reported; local TWITTER per-item rows=34,916 versus 34,847 reported.
+Unexpected but documented/supporting files: data-collection script, power-law analysis inputs/scripts/PDFs/figures.
+
+2 MAIN TABLE SCHEMAS
+NEWS: 4129 rows x 4 columns; columns=rumor_id | label | content | sentiment; dtypes=rumor_id:int64 | label:str | content:str | sentiment:str; missing=rumor_id:0 (0.00%) | label:0 (0.00%) | content:0 (0.00%) | sentiment:6 (0.15%); exact duplicates=0; labels={"F": 3041, "T": 659, "U": 428, "U(Twitter)": 1}
+TWITTER: 2705 rows x 8 columns; columns=rumor_id | label | content | source | sentiment | reply numbers | retweet numbers | likes numbers; dtypes=rumor_id:int64 | label:str | content:str | source:int64 | sentiment:str | reply numbers:float64 | retweet numbers:float64 | likes numbers:float64; missing=rumor_id:0 (0.00%) | label:0 (0.00%) | content:0 (0.00%) | source:0 (0.00%) | sentiment:130 (4.81%) | reply numbers:1 (0.04%) | retweet numbers:1 (0.04%) | likes numbers:1 (0.04%); exact duplicates=0; labels={"U": 1125, "T": 1040, "F": 540}
+EN_DUP: 7179 rows x 5 columns; columns=label | content | source | author | time; dtypes=label:str | content:str | source:str | author:str | time:str; missing=label:0 (0.00%) | content:0 (0.00%) | source:3281 (45.70%) | author:2441 (34.00%) | time:4366 (60.82%); exact duplicates=61; labels={"F": 3681, "T": 1878, "U": 1620}
+NEWS semantics: rumor_id, item-level T/F/U, short rumor statement, manually assigned sentiment. It is not a full-article corpus. The main table has no source, publication date, stance, or popularity column; website records supply sources/stances/dates, and their count operationalizes popularity.
+TWITTER semantics: one rumor tweet/statement with synthetic/source key, item-level T/F/U, sentiment, and aggregate reply/retweet/like counts. It contains no author/user column or main-table publication date.
+Sentiment values NEWS={'3': 2291, '4': 920, '2': 715, '#VALUE!': 195, nan: 6, '1': 2}; TWITTER={'3': 1246, '4': 611, '2': 364, '#VALUE!': 354, nan: 130}. The literal #VALUE! occurs in 195 NEWS and 354 TWITTER rows, so sentiment is not analysis-ready without a documented missing/error treatment.
+en_dup is an unprocessed combined English table with duplication, not the recommended analytical table.
+
+3 LABELS / LANGUAGE
+Observed labels are reported above without conversion. Authors define T=True factual, F=False/made-up or false information, U=Unverified/hard to judge at labeling time.
+Veracity is item-level. Fact-check labels from Snopes/PolitiFact/Boomlive are used directly; multiple sources use majority voting. Social items are checked against authoritative sites, common sense, and otherwise assigned U. Authors report manual cross-validation.
+  NEWS conservative English-looking heuristic: 4129/4129 (100.00%).
+  TWITTER conservative English-looking heuristic: 2705/2705 (100.00%).
+  EN_DUP conservative English-looking heuristic: 7177/7179 (99.97%).
+The heuristic requires >=90% Latin letters; it is a script check, not language identification. Non-English/mixed snippets can exist. en_dup is unprocessed combined English-designated data, not a filtering key.
+
+4 PER-ITEM NEWS RECORDS / LINKAGE
+Files linked by rumor#### numeric key to news.csv: 3,857/3,936 files; news rows with a file: 3,857/4,129 (93.41%).
+Orphan news files=79; news rows without file=272. A file links to at most one unique main ID because main rumor IDs are unique=True.
+Per-news records=32,747; unique website sum=31,917; exact duplicate per-file rows=745; valid repost dates=26,570.
+Per-news schema variants={'dates | website | stance': 3210, 'dates | website | Unnamed: 2': 629, 'dates | website': 80, 'dates | website | stance | Unnamed: 3': 4, 'dates | stance': 3, 'dates | website | support': 2, 'dates | website | Unnamed: 2 | Unnamed: 3': 2, 'Unnamed: 0 | website | stance': 1, 'None | website | stance': 1, 'Unnamed: 0 | website | Unnamed: 2': 1, 'dates | website | stance | stance.1': 1, 'dates | website | deny': 1, 'dates | website | Unnamed: 2 | stance': 1}. Only 3,210 files have the exact documented dates|website|stance header; many use unnamed/missing/malformed stance headers.
+Each row is a repost/discussion website with optional date and support/deny/comment/query stance. It has URL/source metadata but no full repost content. These form item->website memberships, not website-to-website propagation edges.
+
+5 PER-ITEM TWITTER RECORDS / LINKAGE
+Files linked by filename to Twitter.csv source: 1,342/1,383; Twitter rows with file=1,370/2,705 (50.65%).
+Orphan Twitter files=41; source keys without file=1,314; duplicate source keys in main=49.
+Response rows=34,916; valid response times=34,712; exact duplicate response rows=129.
+Per-Twitter schema variants={'Twitter ID | release date | comment | time | replies | retweets | likes | timestamp | stance': 1381, 'Twitter ID | release date | comment | time | replies | retweets | likes | timestamp | Unnamed: 8': 2}.
+Rows contain response/comment text, time, stance, and reply/retweet/like counts. They do not contain child tweet ID, user ID, parent ID distinct from the repeated file key, quote flag, or engagement type. Thus response text/time is local, but replies versus retweets cannot be separated at record level.
+
+6 TEMPORAL COVERAGE
+NEWS main publication dates: unavailable. Repost dates valid=26,570/32,747 (81.14%), missing=6,087, unparseable/implausible=48, range=2000-02-21 00:00:00+00:00..2020-12-01 00:00:00+00:00, months={"2000-02": 1, "2000-04": 1, "2004-10": 1, "2005-04": 1, "2007-05": 1, "2007-10": 1, "2007-12": 1, "2008-01": 1, "2008-02": 2, "2008-06": 1, "2008-08": 1, "2008-09": 3, "2008-10": 1, "2009-01": 2, "2009-02": 2, "2009-03": 1, "2009-04": 1, "2009-05": 1, "2009-06": 2, "2009-07": 1, "2009-09": 1, "2009-10": 5, "2009-12": 1, "2010-01": 1, "2010-02": 2, "2010-03": 1, "2010-04": 3, "2010-05": 1, "2010-06": 2, "2010-07": 2, "2010-08": 4, "2010-09": 3, "2010-10": 1, "2010-11": 4, "2010-12": 1, "2011-01": 4, "2011-02": 1, "2011-03": 3, "2011-04": 2, "2011-05": 1, "2011-06": 4, "2011-08": 4, "2011-09": 2, "2011-11": 4, "2011-12": 2, "2012-01": 2, "2012-02": 2, "2012-03": 3, "2012-04": 2, "2012-05": 4, "2012-06": 2, "2012-07": 4, "2012-08": 8, "2012-09": 1, "2012-10": 4, "2012-12": 4, "2013-02": 3, "2013-03": 5, "2013-04": 2, "2013-05": 6, "2013-06": 3, "2013-07": 5, "2013-08": 2, "2013-09": 1, "2013-10": 4, "2013-11": 6, "2013-12": 4, "2014-01": 7, "2014-02": 4, "2014-03": 3, "2014-04": 8, "2014-05": 6, "2014-06": 11, "2014-07": 4, "2014-08": 7, "2014-09": 7, "2014-10": 5, "2014-11": 4, "2014-12": 7, "2015-01": 8, "2015-02": 4, "2015-03": 3, "2015-04": 9, "2015-05": 6, "2015-06": 3, "2015-07": 2, "2015-08": 4, "2015-09": 3, "2015-10": 7, "2015-11": 3, "2015-12": 5, "2016-01": 5, "2016-02": 2, "2016-03": 1, "2016-04": 3, "2016-05": 5, "2016-06": 1, "2016-07": 2, "2016-09": 6, "2016-10": 5, "2016-11": 3, "2016-12": 4, "2017-01": 7, "2017-02": 6, "2017-03": 4, "2017-04": 8, "2017-05": 2, "2017-06": 3, "2017-07": 8, "2017-08": 3, "2017-09": 3, "2017-10": 6, "2017-11": 9, "2017-12": 8, "2018-01": 8, "2018-02": 4, "2018-03": 4, "2018-04": 8, "2018-05": 3, "2018-06": 4, "2018-07": 9, "2018-08": 4, "2018-09": 7, "2018-10": 6, "2018-11": 13, "2018-12": 15, "2019-01": 14, "2019-02": 14, "2019-03": 12, "2019-04": 25, "2019-05": 12, "2019-06": 17, "2019-07": 13, "2019-08": 18, "2019-09": 17, "2019-10": 25, "2019-11": 42, "2019-12": 83, "2020-01": 3118, "2020-02": 5352, "2020-03": 15274, "2020-04": 1848, "2020-05": 193, "2020-06": 3, "2020-07": 1, "2020-08": 2, "2020-09": 1, "2020-10": 2, "2020-11": 2, "2020-12": 1}
+TWITTER original release-date fields: valid=34,785/34,916 response rows (99.62%), missing=131, unparseable/implausible=0, item coverage=1,348/2,705; range=2018-03-07 00:00:00+00:00..2020-05-09 00:00:00+00:00, months={"2018-03": 1, "2018-07": 1, "2018-10": 1, "2018-12": 1, "2019-08": 1, "2019-11": 1, "2019-12": 1, "2020-01": 14, "2020-02": 29, "2020-03": 31, "2020-04": 12, "2020-05": 1}
+TWITTER response times: valid=34,712/34,916 (99.42%), missing=131, unparseable/implausible=73, range=2013-03-15 20:13:39+00:00..2020-05-21 23:45:37+00:00, months={"2013-03": 1, "2014-10": 1, "2015-12": 2, "2018-03": 4, "2018-07": 3, "2018-10": 6, "2019-01": 2, "2019-02": 1, "2019-04": 1, "2019-07": 1, "2019-08": 7, "2019-10": 10, "2019-11": 93, "2019-12": 19, "2020-01": 11811, "2020-02": 8834, "2020-03": 12668, "2020-04": 1227, "2020-05": 21}
+NEWS dated rows outside 2019-2021=481; TWITTER response rows outside 2019-2021=17.
+Parent/response temporal ordering: responses before release calendar date=460/34,712. Release dates omit time of day, so same-day ordering cannot be established.
+
+7 ENGAGEMENT / PROPAGATION
+NEWS popularity: derivable as per-item website-record count; unique reposting websites also derivable. Dates/stance are incomplete where fields are missing. It is website repost/discussion visibility, not a Twitter post count.
+TWITTER direct aggregate coverage: reply=99.96%, retweet=99.96%, like=99.96%; total engagement is derivable as their sum. Response count/timing/stance derive only for the 1,383 items with files.
+Data-quality caution: retweet count equals like count exactly in 689/2,705 main rows; preserve both raw fields but validate this pattern before modeling.
+The source/file key is described by the paper as a fakeID and is not safe to interpret as a native Twitter Snowflake ID; no timestamp was decoded from it.
+No true cascade topology is present. TWITTER has aggregate counts and first-order response records without child tweet IDs/users/types; NEWS has item->website sets without repost-to-repost edges. No recursive reply graph, retweet edge graph, user-user network, or cascade can be reconstructed.
+
+8 DUPLICATES / OVERLAP
+NEWS exact rows=0; repeated rumor IDs=0; repeated normalized content rows=98.
+TWITTER exact rows=0; repeated rumor IDs=0; repeated source keys=49; repeated normalized content rows=3.
+EN_DUP exact rows=61; repeated normalized content rows=99.
+Exact normalized NEWS/TWITTER content overlap=11. Nothing was removed.
+
+9 SUITABILITY / RECOMMENDATION
+Subset choice: Option B—use both only for different questions, never combined. NEWS is closer to FakeHealth's content-level unit but contains short statements and website reposts, not articles plus Twitter mappings. TWITTER has richer direct counts but a post-level unit and no propagation edges.
+Dataset role: B—supplement CoAID as an independent COVID robustness dataset, not replace it. It adds T/F/U labels, website repost popularity, retweets, likes, response text/time, stance and sentiment. It worsens unit alignment with FakeHealth and does not provide content->many-tweet diffusion mappings or graph topology.
+Primary common features if used: dataset, subset, content_id, veracity_original, short_text, sentiment, engagement_present; NEWS-only website_record_count/unique_website_count; TWITTER-only reply_count/retweet_count/like_count/total_engagement. Cross-context primary models should not equate NEWS website reposts with FakeHealth tweets, and temporal variables should remain subset-specific/sensitivity measures.
+Overall: not better than CoAID for the main FakeHealth comparison. CoAID remains primary because its unit is content and its mapped tweet/reply measurements align more directly with FakeHealth. COVID Rumor is valuable robustness evidence for different engagement constructs.
+
+Sources: local README; Cheng et al. 2021, https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2021.644801/full

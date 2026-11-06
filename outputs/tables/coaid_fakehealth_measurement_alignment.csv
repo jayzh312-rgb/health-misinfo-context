@@ -1,0 +1,21 @@
+variable,CoAID_definition,FakeHealth_definition,CoAID_coverage,FakeHealth_coverage,directly_comparable,transformation_needed,major_caution,recommended_for_primary_analysis
+dataset,constant CoAID,constant FakeHealth,5975/5975 (100.00%),2296/2296 (100.00%),yes,none,"Dataset identity, not an outcome.",yes
+source_release_or_subset,dated CoAID release,HealthStory/HealthRelease,5975/5975 (100.00%),2296/2296 (100.00%),no,retain as provenance/stratum,Release and subset are different constructs.,yes
+content_uid,"hash of release, raw file, original ID",hash of subset and original ID,5975/5975 (100.00%),2296/2296 (100.00%),yes,none,Synthetic stable identifier only.,yes
+content_category,News or Claim from filename,HealthStory or HealthRelease,5975/5975 (100.00%),2296/2296 (100.00%),no,"analyze/stratify, do not equate",Categories are not equivalent.,yes
+veracity_original,Fake/Real filename category,original 0-5 rating representation,5975/5975 (100.00%),2296/2296 (100.00%),no,within-dataset grouping only,Ground-truth constructs differ.,yes
+title,"newstitle, fallback title","content title, fallback review titles",5975/5975 (100.00%),2296/2296 (100.00%),partial,document fallback,Field sources differ.,yes
+text,"content, fallback abstract",locally crawled text,4470/5975 (74.81%),2208/2296 (96.17%),partial,document fallback and missingness,Claims often lack bodies; crawlers differ.,sensitivity
+publish_date_raw,raw publish_date,raw Unix-seconds publish_date,1181/5975 (19.77%),1465/2296 (63.81%),partial,parse to UTC separately,Missingness/precision differ.,yes
+publish_date_utc,parsed UTC,parsed UTC,1172/5975 (19.62%),1465/2296 (63.81%),partial,validated parsing,Substantial FakeHealth missingness.,sensitivity
+publish_date_quality,missing/unparsable/valid/range flag,same quality vocabulary,5975/5975 (100.00%),2296/2296 (100.00%),yes,none,Quality distribution differs.,yes
+observed_post_count,rows mapped in *_tweets,length of tweets ID list,5975/5975 (100.00%),2296/2296 (100.00%),yes,none,Search strategies/windows differ.,yes
+unique_post_count,distinct mapped tweet_id,distinct tweets-list ID,5975/5975 (100.00%),2296/2296 (100.00%),yes,none,Observation mechanisms differ.,yes
+reply_count,reply rows mapped by news_id,length of replies ID list,5975/5975 (100.00%),2296/2296 (100.00%),partial,aggregate at content level,Only CoAID has explicit parent tweet field.,yes
+unique_reply_count,distinct reply_id by content,distinct replies-list ID by content,5975/5975 (100.00%),2296/2296 (100.00%),partial,none,Parent attribution differs.,yes
+engagement_present,any mapped post or reply,any mapped post or reply,5975/5975 (100.00%),2296/2296 (100.00%),yes,none,Zero may mean unobserved rather than truly none.,yes
+first_observed_post_time,minimum decoded original-post ID,minimum decoded tweets-list ID,2914/5975 (48.77%),2282/2296 (99.39%),partial,Snowflake decode,Coverage/search timing differ.,sensitivity
+last_observed_post_time,maximum decoded original-post ID,maximum decoded tweets-list ID,2914/5975 (48.77%),2282/2296 (99.39%),partial,Snowflake decode,Right censoring differs.,sensitivity
+observed_lifespan,last-first original-post seconds,last-first original-post seconds,2914/5975 (48.77%),2282/2296 (99.39%),partial,Snowflake decode,"Observed window, not full lifespan.",sensitivity
+publication_to_first_post_delay,first post minus publication seconds,first post minus publication seconds,665/5975 (11.13%),1459/2296 (63.55%),partial,requires both valid dates,Negative delays and date missingness require review.,sensitivity
+provenance,JSON raw file/row/ID pointers,JSON review/content/engagement pointers,5975/5975 (100.00%),2296/2296 (100.00%),yes,none,Do not use as predictor.,yes

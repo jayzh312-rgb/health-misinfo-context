@@ -1,0 +1,9 @@
+scale,bandwidth_multiplier,kde_factor,smoothing_sample_N,reference_draw_count,prominent_peak_count,prominent_peak_locations_json,prominence_rule,inference
+ratio,0.75,0.1883914823632185,20000,1000,1,[0.2624506112362126],5% of maximum KDE height; interior peaks on fixed 600-point grid,Descriptive bandwidth sensitivity only; not a modality hypothesis test
+ratio,1.0,0.251188643150958,20000,1000,1,[0.2624506112362126],5% of maximum KDE height; interior peaks on fixed 600-point grid,Descriptive bandwidth sensitivity only; not a modality hypothesis test
+ratio,1.5,0.376782964726437,20000,1000,1,[0.2676386119326628],5% of maximum KDE height; interior peaks on fixed 600-point grid,Descriptive bandwidth sensitivity only; not a modality hypothesis test
+ratio,2.0,0.502377286301916,20000,1000,1,[0.2762852797600798],5% of maximum KDE height; interior peaks on fixed 600-point grid,Descriptive bandwidth sensitivity only; not a modality hypothesis test
+log,0.75,0.1883914823632185,20000,1000,1,[-1.2534244799613514],5% of maximum KDE height; interior peaks on fixed 600-point grid,Descriptive bandwidth sensitivity only; not a modality hypothesis test
+log,1.0,0.251188643150958,20000,1000,1,[-1.2534244799613514],5% of maximum KDE height; interior peaks on fixed 600-point grid,Descriptive bandwidth sensitivity only; not a modality hypothesis test
+log,1.5,0.376782964726437,20000,1000,1,[-1.244452975214705],5% of maximum KDE height; interior peaks on fixed 600-point grid,Descriptive bandwidth sensitivity only; not a modality hypothesis test
+log,2.0,0.502377286301916,20000,1000,1,[-1.2265099657214122],5% of maximum KDE height; interior peaks on fixed 600-point grid,Descriptive bandwidth sensitivity only; not a modality hypothesis test

@@ -1,0 +1,412 @@
+{
+  "cv_summary_sha256": "6593af4c5d135e7bcac0d4a55917c22675cb72f618bcc9be363a866e55d29dfc",
+  "protocol": {
+    "eligibility": "title_only_modeling_eligible",
+    "fields": {
+      "natural": "title_text",
+      "source_masked": "title_text_source_masked"
+    },
+    "grid": [
+      {
+        "C": 0.1,
+        "class_weight": "none",
+        "config_id": "cfg_00",
+        "min_df": 2,
+        "ngram_max": 1
+      },
+      {
+        "C": 0.1,
+        "class_weight": "balanced",
+        "config_id": "cfg_01",
+        "min_df": 2,
+        "ngram_max": 1
+      },
+      {
+        "C": 1.0,
+        "class_weight": "none",
+        "config_id": "cfg_02",
+        "min_df": 2,
+        "ngram_max": 1
+      },
+      {
+        "C": 1.0,
+        "class_weight": "balanced",
+        "config_id": "cfg_03",
+        "min_df": 2,
+        "ngram_max": 1
+      },
+      {
+        "C": 10.0,
+        "class_weight": "none",
+        "config_id": "cfg_04",
+        "min_df": 2,
+        "ngram_max": 1
+      },
+      {
+        "C": 10.0,
+        "class_weight": "balanced",
+        "config_id": "cfg_05",
+        "min_df": 2,
+        "ngram_max": 1
+      },
+      {
+        "C": 0.1,
+        "class_weight": "none",
+        "config_id": "cfg_06",
+        "min_df": 5,
+        "ngram_max": 1
+      },
+      {
+        "C": 0.1,
+        "class_weight": "balanced",
+        "config_id": "cfg_07",
+        "min_df": 5,
+        "ngram_max": 1
+      },
+      {
+        "C": 1.0,
+        "class_weight": "none",
+        "config_id": "cfg_08",
+        "min_df": 5,
+        "ngram_max": 1
+      },
+      {
+        "C": 1.0,
+        "class_weight": "balanced",
+        "config_id": "cfg_09",
+        "min_df": 5,
+        "ngram_max": 1
+      },
+      {
+        "C": 10.0,
+        "class_weight": "none",
+        "config_id": "cfg_10",
+        "min_df": 5,
+        "ngram_max": 1
+      },
+      {
+        "C": 10.0,
+        "class_weight": "balanced",
+        "config_id": "cfg_11",
+        "min_df": 5,
+        "ngram_max": 1
+      },
+      {
+        "C": 0.1,
+        "class_weight": "none",
+        "config_id": "cfg_12",
+        "min_df": 2,
+        "ngram_max": 2
+      },
+      {
+        "C": 0.1,
+        "class_weight": "balanced",
+        "config_id": "cfg_13",
+        "min_df": 2,
+        "ngram_max": 2
+      },
+      {
+        "C": 1.0,
+        "class_weight": "none",
+        "config_id": "cfg_14",
+        "min_df": 2,
+        "ngram_max": 2
+      },
+      {
+        "C": 1.0,
+        "class_weight": "balanced",
+        "config_id": "cfg_15",
+        "min_df": 2,
+        "ngram_max": 2
+      },
+      {
+        "C": 10.0,
+        "class_weight": "none",
+        "config_id": "cfg_16",
+        "min_df": 2,
+        "ngram_max": 2
+      },
+      {
+        "C": 10.0,
+        "class_weight": "balanced",
+        "config_id": "cfg_17",
+        "min_df": 2,
+        "ngram_max": 2
+      },
+      {
+        "C": 0.1,
+        "class_weight": "none",
+        "config_id": "cfg_18",
+        "min_df": 5,
+        "ngram_max": 2
+      },
+      {
+        "C": 0.1,
+        "class_weight": "balanced",
+        "config_id": "cfg_19",
+        "min_df": 5,
+        "ngram_max": 2
+      },
+      {
+        "C": 1.0,
+        "class_weight": "none",
+        "config_id": "cfg_20",
+        "min_df": 5,
+        "ngram_max": 2
+      },
+      {
+        "C": 1.0,
+        "class_weight": "balanced",
+        "config_id": "cfg_21",
+        "min_df": 5,
+        "ngram_max": 2
+      },
+      {
+        "C": 10.0,
+        "class_weight": "none",
+        "config_id": "cfg_22",
+        "min_df": 5,
+        "ngram_max": 2
+      },
+      {
+        "C": 10.0,
+        "class_weight": "balanced",
+        "config_id": "cfg_23",
+        "min_df": 5,
+        "ngram_max": 2
+      }
+    ],
+    "masked_retuning": false,
+    "numerical_pipeline": {
+      "conditions": {
+        "natural": "combined_text",
+        "source_masked": "combined_text_source_masked"
+      },
+      "cv_standard_deviation_ddof": 1,
+      "grid": [
+        {
+          "C": 0.1,
+          "class_weight": "none",
+          "config_id": "cfg_00",
+          "min_df": 2,
+          "ngram_max": 1
+        },
+        {
+          "C": 0.1,
+          "class_weight": "balanced",
+          "config_id": "cfg_01",
+          "min_df": 2,
+          "ngram_max": 1
+        },
+        {
+          "C": 1.0,
+          "class_weight": "none",
+          "config_id": "cfg_02",
+          "min_df": 2,
+          "ngram_max": 1
+        },
+        {
+          "C": 1.0,
+          "class_weight": "balanced",
+          "config_id": "cfg_03",
+          "min_df": 2,
+          "ngram_max": 1
+        },
+        {
+          "C": 10.0,
+          "class_weight": "none",
+          "config_id": "cfg_04",
+          "min_df": 2,
+          "ngram_max": 1
+        },
+        {
+          "C": 10.0,
+          "class_weight": "balanced",
+          "config_id": "cfg_05",
+          "min_df": 2,
+          "ngram_max": 1
+        },
+        {
+          "C": 0.1,
+          "class_weight": "none",
+          "config_id": "cfg_06",
+          "min_df": 5,
+          "ngram_max": 1
+        },
+        {
+          "C": 0.1,
+          "class_weight": "balanced",
+          "config_id": "cfg_07",
+          "min_df": 5,
+          "ngram_max": 1
+        },
+        {
+          "C": 1.0,
+          "class_weight": "none",
+          "config_id": "cfg_08",
+          "min_df": 5,
+          "ngram_max": 1
+        },
+        {
+          "C": 1.0,
+          "class_weight": "balanced",
+          "config_id": "cfg_09",
+          "min_df": 5,
+          "ngram_max": 1
+        },
+        {
+          "C": 10.0,
+          "class_weight": "none",
+          "config_id": "cfg_10",
+          "min_df": 5,
+          "ngram_max": 1
+        },
+        {
+          "C": 10.0,
+          "class_weight": "balanced",
+          "config_id": "cfg_11",
+          "min_df": 5,
+          "ngram_max": 1
+        },
+        {
+          "C": 0.1,
+          "class_weight": "none",
+          "config_id": "cfg_12",
+          "min_df": 2,
+          "ngram_max": 2
+        },
+        {
+          "C": 0.1,
+          "class_weight": "balanced",
+          "config_id": "cfg_13",
+          "min_df": 2,
+          "ngram_max": 2
+        },
+        {
+          "C": 1.0,
+          "class_weight": "none",
+          "config_id": "cfg_14",
+          "min_df": 2,
+          "ngram_max": 2
+        },
+        {
+          "C": 1.0,
+          "class_weight": "balanced",
+          "config_id": "cfg_15",
+          "min_df": 2,
+          "ngram_max": 2
+        },
+        {
+          "C": 10.0,
+          "class_weight": "none",
+          "config_id": "cfg_16",
+          "min_df": 2,
+          "ngram_max": 2
+        },
+        {
+          "C": 10.0,
+          "class_weight": "balanced",
+          "config_id": "cfg_17",
+          "min_df": 2,
+          "ngram_max": 2
+        },
+        {
+          "C": 0.1,
+          "class_weight": "none",
+          "config_id": "cfg_18",
+          "min_df": 5,
+          "ngram_max": 2
+        },
+        {
+          "C": 0.1,
+          "class_weight": "balanced",
+          "config_id": "cfg_19",
+          "min_df": 5,
+          "ngram_max": 2
+        },
+        {
+          "C": 1.0,
+          "class_weight": "none",
+          "config_id": "cfg_20",
+          "min_df": 5,
+          "ngram_max": 2
+        },
+        {
+          "C": 1.0,
+          "class_weight": "balanced",
+          "config_id": "cfg_21",
+          "min_df": 5,
+          "ngram_max": 2
+        },
+        {
+          "C": 10.0,
+          "class_weight": "none",
+          "config_id": "cfg_22",
+          "min_df": 5,
+          "ngram_max": 2
+        },
+        {
+          "C": 10.0,
+          "class_weight": "balanced",
+          "config_id": "cfg_23",
+          "min_df": 5,
+          "ngram_max": 2
+        }
+      ],
+      "masked_retuning": false,
+      "max_iter": 5000,
+      "penalty": "l2",
+      "seed": 42,
+      "selection": "unweighted mean macro F1",
+      "sklearn_penalty_parameter": "l1_ratio=0.0",
+      "solver": "liblinear",
+      "threshold": 0.5,
+      "tie_order": [
+        "mean macro F1 within .001 of best",
+        "SD within .001 of lowest in tied set",
+        "unigram",
+        "smaller C",
+        "class_weight none",
+        "larger min_df",
+        "config_id"
+      ],
+      "tie_tolerance": 0.001,
+      "tol": 0.0001,
+      "vectorizer": {
+        "analyzer": "word",
+        "dtype": "float64",
+        "lowercase": true,
+        "max_df": 1.0,
+        "norm": "l2",
+        "smooth_idf": true,
+        "strip_accents": null,
+        "sublinear_tf": true,
+        "token_pattern": "(?u)\\b\\w\\w+\\b",
+        "use_idf": true
+      }
+    },
+    "seed": 42,
+    "selection": "natural source grouped CV only",
+    "selection_tolerance": 0.001,
+    "target_labels": "join after all predictions frozen",
+    "threshold": 0.5,
+    "transfer_training": "all title-eligible source rows"
+  },
+  "scope": "natural source training-pool CV only; both configurations locked before holdout/transfer",
+  "selections": {
+    "CoAID": {
+      "C": 10.0,
+      "class_weight": "none",
+      "config_id": "cfg_16",
+      "min_df": 2,
+      "ngram_max": 2
+    },
+    "FakeHealth": {
+      "C": 10.0,
+      "class_weight": "balanced",
+      "config_id": "cfg_11",
+      "min_df": 5,
+      "ngram_max": 1
+    }
+  }
+}

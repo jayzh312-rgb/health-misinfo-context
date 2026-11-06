@@ -1,0 +1,1126 @@
+{
+  "all_fits_converged": true,
+  "automated_tests": {
+    "command": ".venv/bin/python -m unittest discover -s src -p 'test_tfidf_logistic_title_sensitivity.py' -q",
+    "status": "passed",
+    "test_count": 7
+  },
+  "configurations_locked_before_transfer": true,
+  "cv_fit_count": 240,
+  "execution_signature": {
+    "inputs": {
+      "data/processed/coaid_text_modeling_ready.csv": "859b3db8888962de771f4ff48779f139027c9472bbe19367755f0657ad33812d",
+      "data/processed/fakehealth_text_modeling_ready.csv": "a38730db184727e3a84d2f603789e817c667fe75c6606d834f09ba106ef5cb91",
+      "outputs/predictions/tfidf_logistic_cross_context_predictions.csv": "45cf00583f060fd20c48c7ab80864d840d228c5debb00aac97f155f0d360f3b5",
+      "outputs/predictions/tfidf_logistic_holdout_predictions.csv": "8539c367e18273bf3c0a9ecd9ea376a16503adf7111f77886d8d5b354aa71f94",
+      "outputs/reports/text_quality_and_source_cue_audit_metadata.json": "16e6d702e888bfe78e453995b999c33772de4999e87e36fd178adf31ab4cb54c",
+      "outputs/reports/tfidf_logistic_baseline.json": "88f15dd51f27532207b289400269a5dba52b0fa700bd8181454371b7003008ef",
+      "outputs/reports/tfidf_logistic_cross_context_transfer.json": "14feec786109ad921271c04f83a0aeb9c57d320706f43f2cad0ebff9892eb5d2",
+      "outputs/splits/coaid_text_grouped_cv.csv": "e916ad95f11debbe5d1f1daa338c8cb4064f81030a552525bad90abfbe60f651",
+      "outputs/splits/coaid_text_holdout.csv": "0e55802b29b72407a60985e24292e4984c22bae5b06cb33486da93eaf9cddb3c",
+      "outputs/splits/fakehealth_text_grouped_cv.csv": "7b489b81a817bfecf34c89ea00060041f728a7edad182c2d0e44f3b821ee19c1",
+      "outputs/splits/fakehealth_text_holdout.csv": "2f14737ab373ebf029490579438d12f95f7df4a7245715ea1bccc10995251035",
+      "outputs/tables/text_source_mask_dictionary.csv": "69dbe0592eb7450bed0a09640dcbb6f5d4505af87eff01cfe11135900aa764bc",
+      "outputs/tables/tfidf_logistic_holdout_results.csv": "7cae7fd4e84123bca203e2a81e0eb82e7237c5e14492d668c357e0f5c0833c13",
+      "outputs/tables/tfidf_logistic_transfer_degradation.csv": "e88793b00da36787c63d98f78742ed34c9b2d4b5fef4dda0772ac401d2a0842c",
+      "outputs/tables/tfidf_logistic_transfer_results.csv": "8e2096bdb5d2aee017d436be0aaad542e076cf182ab2453a322f859af200f1e9",
+      "src/run_tfidf_logistic_baseline.py": "a8644723c7bef66f152199eb27953a30b27815ae77f2e1cc3aaac1c98774b993",
+      "src/run_tfidf_logistic_cross_context_transfer.py": "8ac595a2e5ea3816ff03f02d3a3e10889428dcd61c663500a3b87192594f5104"
+    },
+    "protocol": {
+      "eligibility": "title_only_modeling_eligible",
+      "fields": {
+        "natural": "title_text",
+        "source_masked": "title_text_source_masked"
+      },
+      "grid": [
+        {
+          "C": 0.1,
+          "class_weight": "none",
+          "config_id": "cfg_00",
+          "min_df": 2,
+          "ngram_max": 1
+        },
+        {
+          "C": 0.1,
+          "class_weight": "balanced",
+          "config_id": "cfg_01",
+          "min_df": 2,
+          "ngram_max": 1
+        },
+        {
+          "C": 1.0,
+          "class_weight": "none",
+          "config_id": "cfg_02",
+          "min_df": 2,
+          "ngram_max": 1
+        },
+        {
+          "C": 1.0,
+          "class_weight": "balanced",
+          "config_id": "cfg_03",
+          "min_df": 2,
+          "ngram_max": 1
+        },
+        {
+          "C": 10.0,
+          "class_weight": "none",
+          "config_id": "cfg_04",
+          "min_df": 2,
+          "ngram_max": 1
+        },
+        {
+          "C": 10.0,
+          "class_weight": "balanced",
+          "config_id": "cfg_05",
+          "min_df": 2,
+          "ngram_max": 1
+        },
+        {
+          "C": 0.1,
+          "class_weight": "none",
+          "config_id": "cfg_06",
+          "min_df": 5,
+          "ngram_max": 1
+        },
+        {
+          "C": 0.1,
+          "class_weight": "balanced",
+          "config_id": "cfg_07",
+          "min_df": 5,
+          "ngram_max": 1
+        },
+        {
+          "C": 1.0,
+          "class_weight": "none",
+          "config_id": "cfg_08",
+          "min_df": 5,
+          "ngram_max": 1
+        },
+        {
+          "C": 1.0,
+          "class_weight": "balanced",
+          "config_id": "cfg_09",
+          "min_df": 5,
+          "ngram_max": 1
+        },
+        {
+          "C": 10.0,
+          "class_weight": "none",
+          "config_id": "cfg_10",
+          "min_df": 5,
+          "ngram_max": 1
+        },
+        {
+          "C": 10.0,
+          "class_weight": "balanced",
+          "config_id": "cfg_11",
+          "min_df": 5,
+          "ngram_max": 1
+        },
+        {
+          "C": 0.1,
+          "class_weight": "none",
+          "config_id": "cfg_12",
+          "min_df": 2,
+          "ngram_max": 2
+        },
+        {
+          "C": 0.1,
+          "class_weight": "balanced",
+          "config_id": "cfg_13",
+          "min_df": 2,
+          "ngram_max": 2
+        },
+        {
+          "C": 1.0,
+          "class_weight": "none",
+          "config_id": "cfg_14",
+          "min_df": 2,
+          "ngram_max": 2
+        },
+        {
+          "C": 1.0,
+          "class_weight": "balanced",
+          "config_id": "cfg_15",
+          "min_df": 2,
+          "ngram_max": 2
+        },
+        {
+          "C": 10.0,
+          "class_weight": "none",
+          "config_id": "cfg_16",
+          "min_df": 2,
+          "ngram_max": 2
+        },
+        {
+          "C": 10.0,
+          "class_weight": "balanced",
+          "config_id": "cfg_17",
+          "min_df": 2,
+          "ngram_max": 2
+        },
+        {
+          "C": 0.1,
+          "class_weight": "none",
+          "config_id": "cfg_18",
+          "min_df": 5,
+          "ngram_max": 2
+        },
+        {
+          "C": 0.1,
+          "class_weight": "balanced",
+          "config_id": "cfg_19",
+          "min_df": 5,
+          "ngram_max": 2
+        },
+        {
+          "C": 1.0,
+          "class_weight": "none",
+          "config_id": "cfg_20",
+          "min_df": 5,
+          "ngram_max": 2
+        },
+        {
+          "C": 1.0,
+          "class_weight": "balanced",
+          "config_id": "cfg_21",
+          "min_df": 5,
+          "ngram_max": 2
+        },
+        {
+          "C": 10.0,
+          "class_weight": "none",
+          "config_id": "cfg_22",
+          "min_df": 5,
+          "ngram_max": 2
+        },
+        {
+          "C": 10.0,
+          "class_weight": "balanced",
+          "config_id": "cfg_23",
+          "min_df": 5,
+          "ngram_max": 2
+        }
+      ],
+      "masked_retuning": false,
+      "numerical_pipeline": {
+        "conditions": {
+          "natural": "combined_text",
+          "source_masked": "combined_text_source_masked"
+        },
+        "cv_standard_deviation_ddof": 1,
+        "grid": [
+          {
+            "C": 0.1,
+            "class_weight": "none",
+            "config_id": "cfg_00",
+            "min_df": 2,
+            "ngram_max": 1
+          },
+          {
+            "C": 0.1,
+            "class_weight": "balanced",
+            "config_id": "cfg_01",
+            "min_df": 2,
+            "ngram_max": 1
+          },
+          {
+            "C": 1.0,
+            "class_weight": "none",
+            "config_id": "cfg_02",
+            "min_df": 2,
+            "ngram_max": 1
+          },
+          {
+            "C": 1.0,
+            "class_weight": "balanced",
+            "config_id": "cfg_03",
+            "min_df": 2,
+            "ngram_max": 1
+          },
+          {
+            "C": 10.0,
+            "class_weight": "none",
+            "config_id": "cfg_04",
+            "min_df": 2,
+            "ngram_max": 1
+          },
+          {
+            "C": 10.0,
+            "class_weight": "balanced",
+            "config_id": "cfg_05",
+            "min_df": 2,
+            "ngram_max": 1
+          },
+          {
+            "C": 0.1,
+            "class_weight": "none",
+            "config_id": "cfg_06",
+            "min_df": 5,
+            "ngram_max": 1
+          },
+          {
+            "C": 0.1,
+            "class_weight": "balanced",
+            "config_id": "cfg_07",
+            "min_df": 5,
+            "ngram_max": 1
+          },
+          {
+            "C": 1.0,
+            "class_weight": "none",
+            "config_id": "cfg_08",
+            "min_df": 5,
+            "ngram_max": 1
+          },
+          {
+            "C": 1.0,
+            "class_weight": "balanced",
+            "config_id": "cfg_09",
+            "min_df": 5,
+            "ngram_max": 1
+          },
+          {
+            "C": 10.0,
+            "class_weight": "none",
+            "config_id": "cfg_10",
+            "min_df": 5,
+            "ngram_max": 1
+          },
+          {
+            "C": 10.0,
+            "class_weight": "balanced",
+            "config_id": "cfg_11",
+            "min_df": 5,
+            "ngram_max": 1
+          },
+          {
+            "C": 0.1,
+            "class_weight": "none",
+            "config_id": "cfg_12",
+            "min_df": 2,
+            "ngram_max": 2
+          },
+          {
+            "C": 0.1,
+            "class_weight": "balanced",
+            "config_id": "cfg_13",
+            "min_df": 2,
+            "ngram_max": 2
+          },
+          {
+            "C": 1.0,
+            "class_weight": "none",
+            "config_id": "cfg_14",
+            "min_df": 2,
+            "ngram_max": 2
+          },
+          {
+            "C": 1.0,
+            "class_weight": "balanced",
+            "config_id": "cfg_15",
+            "min_df": 2,
+            "ngram_max": 2
+          },
+          {
+            "C": 10.0,
+            "class_weight": "none",
+            "config_id": "cfg_16",
+            "min_df": 2,
+            "ngram_max": 2
+          },
+          {
+            "C": 10.0,
+            "class_weight": "balanced",
+            "config_id": "cfg_17",
+            "min_df": 2,
+            "ngram_max": 2
+          },
+          {
+            "C": 0.1,
+            "class_weight": "none",
+            "config_id": "cfg_18",
+            "min_df": 5,
+            "ngram_max": 2
+          },
+          {
+            "C": 0.1,
+            "class_weight": "balanced",
+            "config_id": "cfg_19",
+            "min_df": 5,
+            "ngram_max": 2
+          },
+          {
+            "C": 1.0,
+            "class_weight": "none",
+            "config_id": "cfg_20",
+            "min_df": 5,
+            "ngram_max": 2
+          },
+          {
+            "C": 1.0,
+            "class_weight": "balanced",
+            "config_id": "cfg_21",
+            "min_df": 5,
+            "ngram_max": 2
+          },
+          {
+            "C": 10.0,
+            "class_weight": "none",
+            "config_id": "cfg_22",
+            "min_df": 5,
+            "ngram_max": 2
+          },
+          {
+            "C": 10.0,
+            "class_weight": "balanced",
+            "config_id": "cfg_23",
+            "min_df": 5,
+            "ngram_max": 2
+          }
+        ],
+        "masked_retuning": false,
+        "max_iter": 5000,
+        "penalty": "l2",
+        "seed": 42,
+        "selection": "unweighted mean macro F1",
+        "sklearn_penalty_parameter": "l1_ratio=0.0",
+        "solver": "liblinear",
+        "threshold": 0.5,
+        "tie_order": [
+          "mean macro F1 within .001 of best",
+          "SD within .001 of lowest in tied set",
+          "unigram",
+          "smaller C",
+          "class_weight none",
+          "larger min_df",
+          "config_id"
+        ],
+        "tie_tolerance": 0.001,
+        "tol": 0.0001,
+        "vectorizer": {
+          "analyzer": "word",
+          "dtype": "float64",
+          "lowercase": true,
+          "max_df": 1.0,
+          "norm": "l2",
+          "smooth_idf": true,
+          "strip_accents": null,
+          "sublinear_tf": true,
+          "token_pattern": "(?u)\\b\\w\\w+\\b",
+          "use_idf": true
+        }
+      },
+      "seed": 42,
+      "selection": "natural source grouped CV only",
+      "selection_tolerance": 0.001,
+      "target_labels": "join after all predictions frozen",
+      "threshold": 0.5,
+      "transfer_training": "all title-eligible source rows"
+    },
+    "script_sha256": "acf12931a57b38db6186daae6298095708fd2a233ec9ea40e1bbd214dd377a5a",
+    "versions": {
+      "numpy": "2.5.1",
+      "pandas": "3.0.5",
+      "python": "3.14.2",
+      "scipy": "1.18.0",
+      "sklearn": "1.9.0"
+    }
+  },
+  "final_fit_count": 8,
+  "no_split_reassignment": true,
+  "outputs": {
+    "outputs/figures/tfidf_logistic_title/title_vs_combined_transfer_macro_f1.png": "dc5ef49149301516680c22d475bb0be7f070dd7240a9dbe311106ef0adb80b0c",
+    "outputs/figures/tfidf_logistic_title/within_vs_transfer_macro_f1.png": "69349771ad28739d3c9eb04fe6fb8818d1f05da6663859ca26375f741b1405cc",
+    "outputs/models/tfidf_logistic_title/cv_coaid_cfg_00_0.json": "762b42003e5d767e98b539e424665f414c1729244501f426d5d4675c775344a0",
+    "outputs/models/tfidf_logistic_title/cv_coaid_cfg_00_1.json": "a22d48fe020b96b8d34c1668434589c8bea62b0a37713143a3872ceefeb6652f",
+    "outputs/models/tfidf_logistic_title/cv_coaid_cfg_00_2.json": "c39fa4a98c1b2752878b7859475bfa1b6d9c3c6306af4b2dc0932ac532766a8e",
+    "outputs/models/tfidf_logistic_title/cv_coaid_cfg_00_3.json": "93a696c34c9184ec307f1079d3a538a0798301fb91e38f6a2aafee2b46c9f200",
+    "outputs/models/tfidf_logistic_title/cv_coaid_cfg_00_4.json": "559f4b2dff6cc5d32a93392ee1beddb9e4f56c16d7066ba5ff1b13d384b1ffb0",
+    "outputs/models/tfidf_logistic_title/cv_coaid_cfg_01_0.json": "4343f4191d72330930e9ad198380454a1e0f691f158951c572e6536b45f580a6",
+    "outputs/models/tfidf_logistic_title/cv_coaid_cfg_01_1.json": "1b8922f087849a08508903b43f1a6ab394bde1992939af9666b74da50e825a4e",
+    "outputs/models/tfidf_logistic_title/cv_coaid_cfg_01_2.json": "133ba89c00c2caa157953fbe1cf1bc6d1bc72146eec5d35324cb8f392599cc7a",
+    "outputs/models/tfidf_logistic_title/cv_coaid_cfg_01_3.json": "344981cb968e5b15d650e4d5357c6c95b38f510c22d089a005bdb8752b9b6833",
+    "outputs/models/tfidf_logistic_title/cv_coaid_cfg_01_4.json": "9f49c0697839467e1e342509ab0100a362bf300cc2334097a9750c23c8462339",
+    "outputs/models/tfidf_logistic_title/cv_coaid_cfg_02_0.json": "a3fbbfc1be3909c9fdd704beb8d059f0375bfe9839c7aab6182943a5542d50ef",
+    "outputs/models/tfidf_logistic_title/cv_coaid_cfg_02_1.json": "14545645e62b49d7efdd025fc306b9d3b3df99a1e40eac33b50d544038abbce9",
+    "outputs/models/tfidf_logistic_title/cv_coaid_cfg_02_2.json": "f9e4ac151fa0441cb2f7fe849700391b68ab474064837a606adaafda4d690a1e",
+    "outputs/models/tfidf_logistic_title/cv_coaid_cfg_02_3.json": "9e9c5dc4e91faafc65dc5ff9b0a5efe541a9cf9340fd669a2b6b4d04660d25e5",
+    "outputs/models/tfidf_logistic_title/cv_coaid_cfg_02_4.json": "048b0cffcec3f216931d2eeb86402a9bde3898bb7b08942da4750a24dc6a6f0c",
+    "outputs/models/tfidf_logistic_title/cv_coaid_cfg_03_0.json": "ce379e29ff345fda4fc85310cffd99bce8d0fafb2a5692c12e8de77f7fe73276",
+    "outputs/models/tfidf_logistic_title/cv_coaid_cfg_03_1.json": "75a63169fb9cabdf6899332fcbc10ae443c499667ab11b754b90316386c96517",
+    "outputs/models/tfidf_logistic_title/cv_coaid_cfg_03_2.json": "fb3d43436b69eeeb6246d6093649b90764f81796299e163bf64fd34ed6588ef8",
+    "outputs/models/tfidf_logistic_title/cv_coaid_cfg_03_3.json": "757fe710b98a30b7df7c84675f23c182aea0628a5e26a577ab64a6c7aec2c231",
+    "outputs/models/tfidf_logistic_title/cv_coaid_cfg_03_4.json": "ef426a8aa723d0ab9ba60e7f82c25e08a2a9204c49ec2c361b5ca60209426dad",
+    "outputs/models/tfidf_logistic_title/cv_coaid_cfg_04_0.json": "ec38eee2ca448a559791bf2f2f41d18c88d014caa882a68ee649f275f5ff6a75",
+    "outputs/models/tfidf_logistic_title/cv_coaid_cfg_04_1.json": "c94c2bf829f197c92df378d15dc8434d9f8243ec13346f7324a3eeb8a8ed5e2b",
+    "outputs/models/tfidf_logistic_title/cv_coaid_cfg_04_2.json": "1990eb2f076cd1148d56b41c06658dd4c9a233970ecc1d8707d97bdef050c409",
+    "outputs/models/tfidf_logistic_title/cv_coaid_cfg_04_3.json": "5dcc51d89acfdd36219bf72eea2a6b21479d3b7af29f720e969d5031a8ea9049",
+    "outputs/models/tfidf_logistic_title/cv_coaid_cfg_04_4.json": "79670120e26d72b730ced7f8719b7e20ba2b5961d2938a8f7d2dbef6656b6c7a",
+    "outputs/models/tfidf_logistic_title/cv_coaid_cfg_05_0.json": "2abad03ab12e63cd7ceef7f302a238402a81b2dac8f51485740a57e51ed9af71",
+    "outputs/models/tfidf_logistic_title/cv_coaid_cfg_05_1.json": "4ce0c33289ea72f8980a498d2eb2dca87921b95410e3733f91b55308e4e5a974",
+    "outputs/models/tfidf_logistic_title/cv_coaid_cfg_05_2.json": "afb6ca6599b1805a106d8846dbc168f7f86a48ec8a45a06593895f3f70731953",
+    "outputs/models/tfidf_logistic_title/cv_coaid_cfg_05_3.json": "486b3d7f545983c3f6089b4b4fd5bfa17da49b59299e62b2677b9baadf9d4756",
+    "outputs/models/tfidf_logistic_title/cv_coaid_cfg_05_4.json": "f0c84b7d5449a2b86318d8383ad7cf32c32455bdcce4e378d600b863c466c29d",
+    "outputs/models/tfidf_logistic_title/cv_coaid_cfg_06_0.json": "8fe3d61fd6e3825a1bb70d9f4269079fe2b57dfcfd118c331bae995dfb8082f7",
+    "outputs/models/tfidf_logistic_title/cv_coaid_cfg_06_1.json": "0598d7298192c18d93c62325ea7013248cb380acf1293321333a34139d67f40d",
+    "outputs/models/tfidf_logistic_title/cv_coaid_cfg_06_2.json": "56a6764d2ad1395a33641f82b99cb0dedfde307aa48b52fe046c95d1cbfced3c",
+    "outputs/models/tfidf_logistic_title/cv_coaid_cfg_06_3.json": "fd862a47019e6555e286d77914fc2f9e7e123910f8b7b660b20b02c103d58032",
+    "outputs/models/tfidf_logistic_title/cv_coaid_cfg_06_4.json": "687280bf70bc2a15559991653c7dac9b4e6f11a610db9590cdde7a8c1eacbe7e",
+    "outputs/models/tfidf_logistic_title/cv_coaid_cfg_07_0.json": "563a0f2fbdaec91c0f4093114d50641a8c24d9ea766f7a9e3bbc21303d2ad596",
+    "outputs/models/tfidf_logistic_title/cv_coaid_cfg_07_1.json": "986ecfe89867c5104865f8a94b7249555002b5a62d9ae8861bb936de5f53045c",
+    "outputs/models/tfidf_logistic_title/cv_coaid_cfg_07_2.json": "a648d1e0cd68ac0b68e9a57eb0d20dcbf0bfb28229c5b7681f671e81210b7ea1",
+    "outputs/models/tfidf_logistic_title/cv_coaid_cfg_07_3.json": "6ab43a6f9b7bdc9d055146aabbd86aebaf122f20673de73da08eb94dbfe89223",
+    "outputs/models/tfidf_logistic_title/cv_coaid_cfg_07_4.json": "086e05f6dc64c40c7c0879134b27777ba6f196162d5c78a4efa841c848600fad",
+    "outputs/models/tfidf_logistic_title/cv_coaid_cfg_08_0.json": "e0db89dc9c795b33b7391b7327f45fb4ce1f6eb24f477173c0c1efacc3f3962a",
+    "outputs/models/tfidf_logistic_title/cv_coaid_cfg_08_1.json": "3cf3d2dc66da04ad88f27c038e387bb128c72c4876efcf35210f8eee9e7144d7",
+    "outputs/models/tfidf_logistic_title/cv_coaid_cfg_08_2.json": "5aa19c232cb5962ca44d445c8b42a81a61a3bbf4d3ce4200ea83b2adde77d284",
+    "outputs/models/tfidf_logistic_title/cv_coaid_cfg_08_3.json": "5a72051e63b59424a211eb3b97ba98fbb001b49d2f595e95e9c94c933a2873a6",
+    "outputs/models/tfidf_logistic_title/cv_coaid_cfg_08_4.json": "8034a0da9100feb1021466b15974d8b2fdfddf081b7a4c703515870e5aee874c",
+    "outputs/models/tfidf_logistic_title/cv_coaid_cfg_09_0.json": "8379892d9dfeb70945ed92a223ca612b6613708ceb564b1f14044eac5251e33e",
+    "outputs/models/tfidf_logistic_title/cv_coaid_cfg_09_1.json": "fd3663852615170913ecba05209a4a1a97b92b43b902ef9bdcbd52b7a68257fd",
+    "outputs/models/tfidf_logistic_title/cv_coaid_cfg_09_2.json": "44bf83996fd3e3a99f0ddfbd45284fabb8c649d379a4d9be129b04cd86fb3cce",
+    "outputs/models/tfidf_logistic_title/cv_coaid_cfg_09_3.json": "af4152b9cc5bbb7691832e07db9484876b5566d747d778d24f4c303a88a3c946",
+    "outputs/models/tfidf_logistic_title/cv_coaid_cfg_09_4.json": "16eaacacfe91d81daaa8debc6ae033eee17ef11ca00c22fcca61c90d2934d04b",
+    "outputs/models/tfidf_logistic_title/cv_coaid_cfg_10_0.json": "8650f26083a67d0f8b7687ef5b7a94713d1e0d643dd983cafa82033126e6f25a",
+    "outputs/models/tfidf_logistic_title/cv_coaid_cfg_10_1.json": "987eb4d0b9c5db6facb010068149ee3f1a0a29f9ea7eb5793c0c9eed31dbf26e",
+    "outputs/models/tfidf_logistic_title/cv_coaid_cfg_10_2.json": "490ff7060ee0613d858fc9b70f5b51e8a75f4ed322cdcf8547bf189bb5debc26",
+    "outputs/models/tfidf_logistic_title/cv_coaid_cfg_10_3.json": "2c843e1a1e94a481e9f764e0b36e537ebe226a0aed01cbfe2bc230eb5f62c6c3",
+    "outputs/models/tfidf_logistic_title/cv_coaid_cfg_10_4.json": "bdd4bba2f85d63a88c0e682b6ebb9ec5ababc337bc8776c28204432fee14bbe6",
+    "outputs/models/tfidf_logistic_title/cv_coaid_cfg_11_0.json": "c6f9d538a19922c093826a96b8aaeeb3fecf164e71f2753a81868b4967856f3f",
+    "outputs/models/tfidf_logistic_title/cv_coaid_cfg_11_1.json": "c2f457d0cd83c74efec76fd3912d360206dea8d464bfe2d601036049c46a9f20",
+    "outputs/models/tfidf_logistic_title/cv_coaid_cfg_11_2.json": "571aede016b984e560697fc8a7aa1bec560b92efef43496fdc9c7bddc5b869f3",
+    "outputs/models/tfidf_logistic_title/cv_coaid_cfg_11_3.json": "26784a35a289d20d058e797fd0587cf9d1194c9bf51db64911271de53c67f094",
+    "outputs/models/tfidf_logistic_title/cv_coaid_cfg_11_4.json": "0633c2b56c7c8c39722cd66847fc549ddb940ad4de3acef9a34a65132e1198d7",
+    "outputs/models/tfidf_logistic_title/cv_coaid_cfg_12_0.json": "92ab99ebcbb88bcda32bd1885e7bf34f4b9a04977bf7786fb83f8f79d2c5edb3",
+    "outputs/models/tfidf_logistic_title/cv_coaid_cfg_12_1.json": "42489dd1019343822b569841f98e425d66c2cc5caa38bdca7b38615830a64a50",
+    "outputs/models/tfidf_logistic_title/cv_coaid_cfg_12_2.json": "cdaa3b1d0d13cdb41a35a571d156f230e984acdc1428aded7afcbfc976bd073d",
+    "outputs/models/tfidf_logistic_title/cv_coaid_cfg_12_3.json": "279b167129e4f529e3e5f5daff9eb0dbdd073d50fdb2bfa62ea1fee374d52333",
+    "outputs/models/tfidf_logistic_title/cv_coaid_cfg_12_4.json": "9a6badea072b4e2d6e6eba27b5b999b5329443c5e7779a280da4283286a8f5b0",
+    "outputs/models/tfidf_logistic_title/cv_coaid_cfg_13_0.json": "5ab536f77ce92a05638c17d163a83073204a68da4f51bbc025dbac25a6e76747",
+    "outputs/models/tfidf_logistic_title/cv_coaid_cfg_13_1.json": "042d402a888bc48742fb4414578e73919092df2b06099a3fcc5c84cea336ffca",
+    "outputs/models/tfidf_logistic_title/cv_coaid_cfg_13_2.json": "8c99bc77c3f10ec0a848a363f4021d574e870e505dfb472ce36317bde6df1fff",
+    "outputs/models/tfidf_logistic_title/cv_coaid_cfg_13_3.json": "94d7421d63108f8d7a675025937e005dbe5b08e2d9c8613fadc5c601106aa1ac",
+    "outputs/models/tfidf_logistic_title/cv_coaid_cfg_13_4.json": "09d954befd73402a9085020be686ea7bf186ce593ecb84edf995caa78252066d",
+    "outputs/models/tfidf_logistic_title/cv_coaid_cfg_14_0.json": "655fdb7c221de0d86e315dbea07c8373d08025b17d6169f2b0655a5f5e246ddd",
+    "outputs/models/tfidf_logistic_title/cv_coaid_cfg_14_1.json": "a4c144dece4271d81e2fe33c475315be0fe90380686605d4f748a0fee31447f5",
+    "outputs/models/tfidf_logistic_title/cv_coaid_cfg_14_2.json": "8dedb73ad0e1c04b4f368c30776d36ab6e8771cb0287af6b4067f4d6b86a17a0",
+    "outputs/models/tfidf_logistic_title/cv_coaid_cfg_14_3.json": "ea14403cbfbc8fbe1aa764456c43d01d5913642a4dac138afaa047c4aca4566c",
+    "outputs/models/tfidf_logistic_title/cv_coaid_cfg_14_4.json": "29090e0b9773b184ef2c3b37d4ea85bcbfc24d045eb8301519ca3c76c0f15d0d",
+    "outputs/models/tfidf_logistic_title/cv_coaid_cfg_15_0.json": "289fa1efe37b40df29f1e80e499ea1a146da93c0197386685b085775de1a9210",
+    "outputs/models/tfidf_logistic_title/cv_coaid_cfg_15_1.json": "1842b86295a84e9e623c53afdd05b123d5c8dafacaeaa89611f642eba7715215",
+    "outputs/models/tfidf_logistic_title/cv_coaid_cfg_15_2.json": "17f9c32645a210076129bcb7bdac9e876270997ffe998fde66e45650affc20a8",
+    "outputs/models/tfidf_logistic_title/cv_coaid_cfg_15_3.json": "b320669213f422e0395a1a3e6e92aca00393db912e11de93431aed3678623cd8",
+    "outputs/models/tfidf_logistic_title/cv_coaid_cfg_15_4.json": "0e5c37d439fd16f5736008df254c8bb9e428c2aa156bab3d265de49293b4299f",
+    "outputs/models/tfidf_logistic_title/cv_coaid_cfg_16_0.json": "9d0d10bae6a697bdf10649f3f90cd0e4a6a91b32e68d1921e743b09db10d456b",
+    "outputs/models/tfidf_logistic_title/cv_coaid_cfg_16_1.json": "688ff48709b3ff0f84b6e49dc3b4f57e1057aa3231865d1f8635e3ecc4d2f2c1",
+    "outputs/models/tfidf_logistic_title/cv_coaid_cfg_16_2.json": "a122544ec6a422a29f58e267c3c42441dde5b1f9f406ec3d89465152367228c3",
+    "outputs/models/tfidf_logistic_title/cv_coaid_cfg_16_3.json": "0ab7998af610d77f77bceac8e2faa8a34ab1bc9e6ff955ffe1fe51403ea153a9",
+    "outputs/models/tfidf_logistic_title/cv_coaid_cfg_16_4.json": "03181ba3c172577b5c2c2f05340456a5ef45c3d8ea37dfcbe04993ad2e04a157",
+    "outputs/models/tfidf_logistic_title/cv_coaid_cfg_17_0.json": "228780bc5c80a822b39f2bbc368356e6fe53080850fb6b5b4cca72ccdd7176bc",
+    "outputs/models/tfidf_logistic_title/cv_coaid_cfg_17_1.json": "de7a54491cc2eea0d338b3321fa3ba45779081415a870b77299d87a5174464b1",
+    "outputs/models/tfidf_logistic_title/cv_coaid_cfg_17_2.json": "01b32a4f5053253785b3be8ae65c0c8abc3fd241923bf218ce8ab6b41e37b27e",
+    "outputs/models/tfidf_logistic_title/cv_coaid_cfg_17_3.json": "7895d0417a85b6250c618a2dc7841c453eaab5e01c5b506513060edfe97cc207",
+    "outputs/models/tfidf_logistic_title/cv_coaid_cfg_17_4.json": "4c52c8ab5c4ea93f2ee6f64fc232e928b543fa914b59b7bd558806c7822c455c",
+    "outputs/models/tfidf_logistic_title/cv_coaid_cfg_18_0.json": "04136f5a23e1d23a07da4f23fa7893c5db1578846a3957ab9876039cc7cb53b9",
+    "outputs/models/tfidf_logistic_title/cv_coaid_cfg_18_1.json": "04382c21b6363d788111160d92e9bdfc973bd3e15f984d82236149e366f860fc",
+    "outputs/models/tfidf_logistic_title/cv_coaid_cfg_18_2.json": "829ca3f691f7eb04514638ea1d816712fb2f8c5ec15fa15e3ecf0dcd8dd280b2",
+    "outputs/models/tfidf_logistic_title/cv_coaid_cfg_18_3.json": "871a34b6369066724b69df8293c55a2c37588e2261c45e54ffe1622edaa29854",
+    "outputs/models/tfidf_logistic_title/cv_coaid_cfg_18_4.json": "ae631e808902560919b15e644ba5d0b993dba4164017164ff057de3938ec5943",
+    "outputs/models/tfidf_logistic_title/cv_coaid_cfg_19_0.json": "c30eefa4b9fde837a94293adc6cb3cdc91521e7d5ac7e3a1722fe2878fb5183d",
+    "outputs/models/tfidf_logistic_title/cv_coaid_cfg_19_1.json": "8c73b7a6c05365d1ec7c58c9009b7b338af13c33b0dbea28fdef6764b2a9714b",
+    "outputs/models/tfidf_logistic_title/cv_coaid_cfg_19_2.json": "0b67df0f207b5667b38dc0ccd8bdd5f0c0d0f070f8702a5f28b4e3e78e563213",
+    "outputs/models/tfidf_logistic_title/cv_coaid_cfg_19_3.json": "9cac7544daaf3690c5b244224e655aa8e0d316e29ba6c8348c30466cfded225f",
+    "outputs/models/tfidf_logistic_title/cv_coaid_cfg_19_4.json": "fc45a5666c9514d6c1a68600d969848f7140aa0f1397f76bd60eaf97553d1a8d",
+    "outputs/models/tfidf_logistic_title/cv_coaid_cfg_20_0.json": "1ab417e504cd856df27c028153ebcb11c2753a4d54b129366dfe425a7a2ceebe",
+    "outputs/models/tfidf_logistic_title/cv_coaid_cfg_20_1.json": "ea430c0fc2d69257353539bad6c5522037a599e85bb742dfa4721e000e50f590",
+    "outputs/models/tfidf_logistic_title/cv_coaid_cfg_20_2.json": "d4883d89020523aaf1f5f020b4a3ab7ccb94aa6f06b69577db8673243236450e",
+    "outputs/models/tfidf_logistic_title/cv_coaid_cfg_20_3.json": "75024bcc32ddbad373c279cdd59db59636c84715f1af5acbc8633b8d3203b6f7",
+    "outputs/models/tfidf_logistic_title/cv_coaid_cfg_20_4.json": "55ca1f15fbdaaa2522d1802d7433522ff43cd2596fbb3c61700dfe6952365c82",
+    "outputs/models/tfidf_logistic_title/cv_coaid_cfg_21_0.json": "0153d65d6941d411718720b343b0dfd4d432524ea39115a823ea53889cbef7f7",
+    "outputs/models/tfidf_logistic_title/cv_coaid_cfg_21_1.json": "d3d6e59f4cd4b23f5761afed0d031ce85d3044e8c6b47c4f0176412b83891d78",
+    "outputs/models/tfidf_logistic_title/cv_coaid_cfg_21_2.json": "944bc85a9ea2471948cc82c0cffbb31caad4806b910effe3cf6453b004a8435c",
+    "outputs/models/tfidf_logistic_title/cv_coaid_cfg_21_3.json": "7a068761b9cb4b3e3b00982ed1ea155ef821cb56b4e628e61ebb99ca770948c6",
+    "outputs/models/tfidf_logistic_title/cv_coaid_cfg_21_4.json": "cfd46654323640bd0205967877b1dbf0dddc31bfa889e6364b8836d074b005f3",
+    "outputs/models/tfidf_logistic_title/cv_coaid_cfg_22_0.json": "102c0faa0c796cfb6753017cae6c57b670a85679b105cb55599fc8030063db27",
+    "outputs/models/tfidf_logistic_title/cv_coaid_cfg_22_1.json": "073ef3fb4b004ebb5b16a2f1927bed4538e560c2d3e12431290b26332fcae28d",
+    "outputs/models/tfidf_logistic_title/cv_coaid_cfg_22_2.json": "0d0c21a642f3cf20f91ce716b90c4aca455a62e8dd31a5393f7a2ee25e654265",
+    "outputs/models/tfidf_logistic_title/cv_coaid_cfg_22_3.json": "6eb0f36677a28b97ce4b40278f520490df52f840497d6a9b5e191ff84d7f7acf",
+    "outputs/models/tfidf_logistic_title/cv_coaid_cfg_22_4.json": "74613677771e68eebefbbb0e6f7fe1b7def23b3e797e35e3c93a8477d9fa95c8",
+    "outputs/models/tfidf_logistic_title/cv_coaid_cfg_23_0.json": "7cec6446190921c14043282804ecb890eaee18862f87d472e13fa354880cfcb8",
+    "outputs/models/tfidf_logistic_title/cv_coaid_cfg_23_1.json": "93559ccc3961f472e58234224ab71df4b147b66e8ece1c16274388c2e5b439dd",
+    "outputs/models/tfidf_logistic_title/cv_coaid_cfg_23_2.json": "1409b218870b25775d273e3e967f9144c62ad7f41bf652435a755545503afbbb",
+    "outputs/models/tfidf_logistic_title/cv_coaid_cfg_23_3.json": "d947af2a288cb41cc1bc68ebc1e08fce70a8cd1a33524805668c1fb52da9c6a6",
+    "outputs/models/tfidf_logistic_title/cv_coaid_cfg_23_4.json": "5f938ba126d922f38117a9bb85f301b544e2cddf163748b106f188bb811d07d4",
+    "outputs/models/tfidf_logistic_title/cv_fakehealth_cfg_00_0.json": "ab43f13142a889890fcf87a6f52585d276c796179d84fad9004036ecd5924282",
+    "outputs/models/tfidf_logistic_title/cv_fakehealth_cfg_00_1.json": "3983ca7732dfa3e98af2c28d1aa2324934d0a68ac1e84bf4d294e229515e3776",
+    "outputs/models/tfidf_logistic_title/cv_fakehealth_cfg_00_2.json": "71aa2d319377fb729a937cceedee6a11eb7a96ff7232c5e3942a35fa123c7f6c",
+    "outputs/models/tfidf_logistic_title/cv_fakehealth_cfg_00_3.json": "3bea4923d440cddad92ff35f398b4ac3ab0c26a772abf615c9f628a035e9deca",
+    "outputs/models/tfidf_logistic_title/cv_fakehealth_cfg_00_4.json": "d2dfb3807ba8be13a38f93e2f7a33d9af810f9a509d03b8582dc9216d6f978d2",
+    "outputs/models/tfidf_logistic_title/cv_fakehealth_cfg_01_0.json": "198a2e9659fa0502542b13f69fafc498c339eaba15de6924b98cadad63356a58",
+    "outputs/models/tfidf_logistic_title/cv_fakehealth_cfg_01_1.json": "396e62a4d344cc857faaeae68568e5587ab38896c1948fe40ccf07adcd04aa1f",
+    "outputs/models/tfidf_logistic_title/cv_fakehealth_cfg_01_2.json": "d3c241020b73c99ac9ad78ec32349d9c948965b9b958f765bf5071c4a0cf85d7",
+    "outputs/models/tfidf_logistic_title/cv_fakehealth_cfg_01_3.json": "e59797d1aa056628f2197d02335bc9b25a8c1f845442809f485332dcedd15498",
+    "outputs/models/tfidf_logistic_title/cv_fakehealth_cfg_01_4.json": "1a58448f5e859c46e85702deb9658ac58a10bdcf36205b6bc4814c30626abfdd",
+    "outputs/models/tfidf_logistic_title/cv_fakehealth_cfg_02_0.json": "f846651bc247517f1f8a66eccc80ac05ccb18685d5e7fe823b999ce6f249db3e",
+    "outputs/models/tfidf_logistic_title/cv_fakehealth_cfg_02_1.json": "4f9570395f64e9d91b5dd4a4ac6c0e8ae772c2541344f88f49ebf60fb55d2e24",
+    "outputs/models/tfidf_logistic_title/cv_fakehealth_cfg_02_2.json": "715d782c8fdfe57ebaec6b000d0f4e6c9557c60333864a667b71e6907f38c236",
+    "outputs/models/tfidf_logistic_title/cv_fakehealth_cfg_02_3.json": "07072e0baae40491e475481d22ad9c1ac036d7e95a044e8aaafa8474e29549dd",
+    "outputs/models/tfidf_logistic_title/cv_fakehealth_cfg_02_4.json": "30a4248954982e1292a4105021169919f2fefffd444a28e3cd3d633fe4cdd0af",
+    "outputs/models/tfidf_logistic_title/cv_fakehealth_cfg_03_0.json": "12c38b8d0cc87e4ed9410330e05761fa4320f62e581a4dcaca6525213e53f1e1",
+    "outputs/models/tfidf_logistic_title/cv_fakehealth_cfg_03_1.json": "3f10105f9ee8f6ce0310d8bbf3b71753e5c50b7ca36b3baa02f02339c0e97514",
+    "outputs/models/tfidf_logistic_title/cv_fakehealth_cfg_03_2.json": "b86c763115d052a47d582f67a8807eee03327a8d7ac946f6567ea5864fb366e6",
+    "outputs/models/tfidf_logistic_title/cv_fakehealth_cfg_03_3.json": "2f570db2ec75e1e915e8683d54fc6ab6da4dc882b8afc0d4b8b75c9dd90255fb",
+    "outputs/models/tfidf_logistic_title/cv_fakehealth_cfg_03_4.json": "f423df746bb05f3c5890a4eea802353af802e03fc06dca31352df6e43b96eb62",
+    "outputs/models/tfidf_logistic_title/cv_fakehealth_cfg_04_0.json": "ccbaa3b4f5201cb094a32ba7559113decd0b82da001a380be0860530533a04e0",
+    "outputs/models/tfidf_logistic_title/cv_fakehealth_cfg_04_1.json": "a08c87b21ef48c1a48fc2bff7086516739c719f81068919300cf4ab91be78f0e",
+    "outputs/models/tfidf_logistic_title/cv_fakehealth_cfg_04_2.json": "e32cf0629e4740a6b7098d20c050a3953c3b0949532316d1ece8a37ed52e08b3",
+    "outputs/models/tfidf_logistic_title/cv_fakehealth_cfg_04_3.json": "f884f31b6575e2dd29609dfcc8e93a2d729c6d966fb41a53ef2ccf194ee7b56b",
+    "outputs/models/tfidf_logistic_title/cv_fakehealth_cfg_04_4.json": "db4e155736e7937124483cfb3477b1d78754fd6b86508f961834a0e06de0d22f",
+    "outputs/models/tfidf_logistic_title/cv_fakehealth_cfg_05_0.json": "744dbbb257990731cd01eb472ac9767275b381ea1916f7de78125ab424f1dab3",
+    "outputs/models/tfidf_logistic_title/cv_fakehealth_cfg_05_1.json": "7e04629b2b08f369ce8d2468f8e11cd40ed20580df0746af7eb2ee5595a4abb5",
+    "outputs/models/tfidf_logistic_title/cv_fakehealth_cfg_05_2.json": "b16cff4e28709130e23afeef2dde189d6ebe3142bf3a28d1f653f59b57f9fefc",
+    "outputs/models/tfidf_logistic_title/cv_fakehealth_cfg_05_3.json": "85e888a245f6956b1c5a1ecb47d0be94e511107f87f1dd31f0091992322617c2",
+    "outputs/models/tfidf_logistic_title/cv_fakehealth_cfg_05_4.json": "b88175088878d3ac352c32b4e107d207d981a4a38dcd0827ec4774c5c80ac3d9",
+    "outputs/models/tfidf_logistic_title/cv_fakehealth_cfg_06_0.json": "fa64cf3928153d23a93e9f3edc850959e3e06f322ad23d994c6543998f9c4524",
+    "outputs/models/tfidf_logistic_title/cv_fakehealth_cfg_06_1.json": "e24690348bf075c41db03bb218273db497b27714ea94771445ca45c2697ed996",
+    "outputs/models/tfidf_logistic_title/cv_fakehealth_cfg_06_2.json": "623b4484ecc735529b9c743e8866ccbdad4ad0bbd12e4dfd58ad6c81a163df6c",
+    "outputs/models/tfidf_logistic_title/cv_fakehealth_cfg_06_3.json": "5cb0696e58086d85f1bcdb5a122fb5c875e7f0d7dbe6df9db9a72c84860f61db",
+    "outputs/models/tfidf_logistic_title/cv_fakehealth_cfg_06_4.json": "920622a0004bb4e464cafbaa73d443fa023a23a1714fb61005dd00597a70ce7b",
+    "outputs/models/tfidf_logistic_title/cv_fakehealth_cfg_07_0.json": "aab458cd7a8d491b539cd77b8a61ee86ec39aa9ddf9bc094ed6cbdbb4e041425",
+    "outputs/models/tfidf_logistic_title/cv_fakehealth_cfg_07_1.json": "2a4866551ba0bbbd441720b2685aa4c25b29a1152c8096ecd5a9342b3d0e3234",
+    "outputs/models/tfidf_logistic_title/cv_fakehealth_cfg_07_2.json": "d50dec212028e564e1686669f9d8f70dd7745d8eab1f78e19c9951da2093bb8f",
+    "outputs/models/tfidf_logistic_title/cv_fakehealth_cfg_07_3.json": "fb68de5a71046dc74db47b04765d048e2309f1a4c12a8d55c9ce27b43f4ceffb",
+    "outputs/models/tfidf_logistic_title/cv_fakehealth_cfg_07_4.json": "30d7b48b70944ad05134871f5c5b613b6b7c3146f95bc0cdb5d51a84d4be0264",
+    "outputs/models/tfidf_logistic_title/cv_fakehealth_cfg_08_0.json": "ca430c6fd784599443079e7877a222cd027dd5ca08884d383fba681a2f023155",
+    "outputs/models/tfidf_logistic_title/cv_fakehealth_cfg_08_1.json": "57d686ddb9f1c491e9db509dd23c19e3d49530c8a032d4ca05856817c6b02da1",
+    "outputs/models/tfidf_logistic_title/cv_fakehealth_cfg_08_2.json": "809ee20bb59601a7a149ef8e927c5d4b856c0887f92dc9919b25ff28cf0ab362",
+    "outputs/models/tfidf_logistic_title/cv_fakehealth_cfg_08_3.json": "55dc490417bda7b4c1a967333a6f730ffe9551e42dcc40929cc78783d93a0023",
+    "outputs/models/tfidf_logistic_title/cv_fakehealth_cfg_08_4.json": "3469921bcd24f097959055fdf04e527dd191c79c6ed56143cdee4a4755318ce2",
+    "outputs/models/tfidf_logistic_title/cv_fakehealth_cfg_09_0.json": "30bc76713ce0110740185fc257437337a0ac6b7a1e2027ba5b3af5c73abcca29",
+    "outputs/models/tfidf_logistic_title/cv_fakehealth_cfg_09_1.json": "4ca4271fdbbf3e5bf27947dbdf0eb1949ce3c1b323d61cd74813e801c94d5ae4",
+    "outputs/models/tfidf_logistic_title/cv_fakehealth_cfg_09_2.json": "9c81b1ca5b3cfa71bfa89cd9667023a13ecde5a4564709868ffaa40954ff893d",
+    "outputs/models/tfidf_logistic_title/cv_fakehealth_cfg_09_3.json": "d481cb8d13aa8fe995b320a98ca08ea5ec91b096e11e6dd30bf548a7e858fb57",
+    "outputs/models/tfidf_logistic_title/cv_fakehealth_cfg_09_4.json": "b7edfd8ee06de61c82c4e0633fd380c134b22dcff1755e58e0bf1fafd9c94e76",
+    "outputs/models/tfidf_logistic_title/cv_fakehealth_cfg_10_0.json": "702d1c09880a384d928d0efb8cdc57b6449e2c0418887bee0af8a2b653dd7de2",
+    "outputs/models/tfidf_logistic_title/cv_fakehealth_cfg_10_1.json": "db255aaee1d84bce3ae68beff30c1d6f20fd12ba473b4fc99da416bc81b7745a",
+    "outputs/models/tfidf_logistic_title/cv_fakehealth_cfg_10_2.json": "249e629d5947d682b1fe00abde18f5fc0a9d37bc97355eeb59d9fb33ae5bdf52",
+    "outputs/models/tfidf_logistic_title/cv_fakehealth_cfg_10_3.json": "978e0e926906e74ecd2975dabd6b3e8abf0bdd5428b9512bfcbbb38156b08dca",
+    "outputs/models/tfidf_logistic_title/cv_fakehealth_cfg_10_4.json": "ef4dc61a1673537578252fd3f23d63e8c07407df88dfed368d7fb3032a1b4bf5",
+    "outputs/models/tfidf_logistic_title/cv_fakehealth_cfg_11_0.json": "73e447b0334bf5015088519fbf622ff8c22a8ad36f530d9a5df4625695fe807b",
+    "outputs/models/tfidf_logistic_title/cv_fakehealth_cfg_11_1.json": "9fe43c2bef3652c162cf565665adad33e53b0862abf9df4e34977cf038775d44",
+    "outputs/models/tfidf_logistic_title/cv_fakehealth_cfg_11_2.json": "b37d3f012099ed6668264763d133a1b470f495c31b2fe9de6956f7a81aee2ffb",
+    "outputs/models/tfidf_logistic_title/cv_fakehealth_cfg_11_3.json": "436af82c41bb80fdc978981cbbefb6f8dc5ea17f4bfcd17b85deff28f1ff6877",
+    "outputs/models/tfidf_logistic_title/cv_fakehealth_cfg_11_4.json": "556c6079dd468fc5de67a7ae346210a45e4e929daa31f5782ba29b764af9317e",
+    "outputs/models/tfidf_logistic_title/cv_fakehealth_cfg_12_0.json": "acf94b66338e42d3953a03b2221c7179f6e1639172f0fda437919aed1a2fd2ef",
+    "outputs/models/tfidf_logistic_title/cv_fakehealth_cfg_12_1.json": "f9096ef6f7ef66695aaac5177ca2c4e8834c7dfcbccf16a52ae4ee6b07b75b4e",
+    "outputs/models/tfidf_logistic_title/cv_fakehealth_cfg_12_2.json": "51e3cc34200d2ae28ff7bc4cdd34dc7fb1210e0426a649b18f36a00bfd534122",
+    "outputs/models/tfidf_logistic_title/cv_fakehealth_cfg_12_3.json": "31c2a1c503619875545b6b83cbb19d0927b0ecd63819bf151f9ef8c0b0e8b43a",
+    "outputs/models/tfidf_logistic_title/cv_fakehealth_cfg_12_4.json": "57ee3498853e23fbbd307145d75ac910253cd9f2ad1bc31cb2baeaf1d190cccb",
+    "outputs/models/tfidf_logistic_title/cv_fakehealth_cfg_13_0.json": "621fc3a326d7191ffdd913f49335d66757adc950ca437a36a55e15ddbd06c240",
+    "outputs/models/tfidf_logistic_title/cv_fakehealth_cfg_13_1.json": "a190ac179e29f5608a2237256dc5b2c72155754b2bd2aa8d76a357e05a887154",
+    "outputs/models/tfidf_logistic_title/cv_fakehealth_cfg_13_2.json": "44d72b74bac52dfc15fde4058043b011d24f190c6db2dabaf2f7343dfb72ac98",
+    "outputs/models/tfidf_logistic_title/cv_fakehealth_cfg_13_3.json": "03188303e35f1f0bce8fa9f3efc942af9b135c8c6395e016db3e961fa06938d5",
+    "outputs/models/tfidf_logistic_title/cv_fakehealth_cfg_13_4.json": "e60789b9aaa76a25d34c83edf92d4c6eded285ae54e6dbdb26d65cd79cecee46",
+    "outputs/models/tfidf_logistic_title/cv_fakehealth_cfg_14_0.json": "fec4e352db0733f7f42f627166c5bbdd251c3220fabf512ac04411efc3804479",
+    "outputs/models/tfidf_logistic_title/cv_fakehealth_cfg_14_1.json": "f3e412630973ec4317fdacaa2a6ae640a3e38de18eca378cd44295e9a1ac4711",
+    "outputs/models/tfidf_logistic_title/cv_fakehealth_cfg_14_2.json": "42b3cdbfd93fedd956a3940eaf2b18d97bb6dc6706ecb8c0f9e1a7e8b79c5c56",
+    "outputs/models/tfidf_logistic_title/cv_fakehealth_cfg_14_3.json": "4c29da70f795cb2bf29e61f779ae7804562e1df85185b2d9047b4527b33041dd",
+    "outputs/models/tfidf_logistic_title/cv_fakehealth_cfg_14_4.json": "c153cb619b9c2d0fb90785a9f77055f324330945e4b2fe86db0a567ff1b370dc",
+    "outputs/models/tfidf_logistic_title/cv_fakehealth_cfg_15_0.json": "886fd3b091178bce1030ee99d61f8fbad323f402ec73373844d4fa336d56c660",
+    "outputs/models/tfidf_logistic_title/cv_fakehealth_cfg_15_1.json": "e04b646082f29de864ce1f0fdb4d236c32beaeca0f857a14e0e8b0d17bb503d5",
+    "outputs/models/tfidf_logistic_title/cv_fakehealth_cfg_15_2.json": "2d7793537f34924e83cd768e75c075a320ceb6f8f889ed6870bd3a1729184862",
+    "outputs/models/tfidf_logistic_title/cv_fakehealth_cfg_15_3.json": "5833aedcc408d1d8d4a3b070d40934e9585b375bb88461e07db2d39aa14148f4",
+    "outputs/models/tfidf_logistic_title/cv_fakehealth_cfg_15_4.json": "ed6bc990c5769c5995ab793293d0108d4cdb302a3f98ddca97493e6eac355a95",
+    "outputs/models/tfidf_logistic_title/cv_fakehealth_cfg_16_0.json": "e2e9fcfb0c80799166584ba92901ac0980594665847340a32c4b5bd6f12a5689",
+    "outputs/models/tfidf_logistic_title/cv_fakehealth_cfg_16_1.json": "915f13fdb99681579d3189e86e7480b39488d7736f3fac570eae3726a26b26f7",
+    "outputs/models/tfidf_logistic_title/cv_fakehealth_cfg_16_2.json": "5f7511e3b3da9e6bc2c3cee6f3a8016462a9451329470b1f2cb0a5dd1b04278b",
+    "outputs/models/tfidf_logistic_title/cv_fakehealth_cfg_16_3.json": "21983bcae172755690f161a86aeb881ebbdfad91c41a7a9ed6ddbdfb535f92b9",
+    "outputs/models/tfidf_logistic_title/cv_fakehealth_cfg_16_4.json": "26be106456054dfe673f491887b313f7897491557bae7fa8dfb9cf25ee3ed99b",
+    "outputs/models/tfidf_logistic_title/cv_fakehealth_cfg_17_0.json": "87b72e88af774669dbed5e5617ed41a57c05e9788a5c11a46b6364f8a0b7d147",
+    "outputs/models/tfidf_logistic_title/cv_fakehealth_cfg_17_1.json": "9bf79616d147acfd89cfd6eb367d3cf020ea81cb48d77181b63f97695a135971",
+    "outputs/models/tfidf_logistic_title/cv_fakehealth_cfg_17_2.json": "2a5aac5aa0253d3935572fc821a814d7346d6a4272b8e40dd8676caef347e0f7",
+    "outputs/models/tfidf_logistic_title/cv_fakehealth_cfg_17_3.json": "edbc2c3d6ef967cac5448b376546031cf19a7c3bf52c3f7a2db2d518e59d20ef",
+    "outputs/models/tfidf_logistic_title/cv_fakehealth_cfg_17_4.json": "ee2569849558d69756eabb1ed6a58c4eaa1d281fd975ea2947767c240dae37a0",
+    "outputs/models/tfidf_logistic_title/cv_fakehealth_cfg_18_0.json": "45dd2c2ba0c23229904fc7ce5531d59c0be5885867558446c30eb5eac5fc8676",
+    "outputs/models/tfidf_logistic_title/cv_fakehealth_cfg_18_1.json": "40880106913dbee65d663460560be10558000ea00a879d5d34b70c25a5e1c0ff",
+    "outputs/models/tfidf_logistic_title/cv_fakehealth_cfg_18_2.json": "7095d04d8eba984e65da9fe60ed932e0fa20bad2d7e6842cea4a500569fced91",
+    "outputs/models/tfidf_logistic_title/cv_fakehealth_cfg_18_3.json": "4b3e9f4fd9ac68de013fd91b95e70dcd0e7529824210daaddb40f4972430a31c",
+    "outputs/models/tfidf_logistic_title/cv_fakehealth_cfg_18_4.json": "89d72a63f5937170d1321aaeaeaf405088f1a04d1a2f89f2fa23b2d59695c522",
+    "outputs/models/tfidf_logistic_title/cv_fakehealth_cfg_19_0.json": "3c9d8190e126454e1c436a37d8f0821f9fcbf8ca9e7fedb2e85d5a5adbf6dbe6",
+    "outputs/models/tfidf_logistic_title/cv_fakehealth_cfg_19_1.json": "2f83ddce9ab9a0210096eaac5a5927bbf45301a9a73ecc9c6e4ba01a15fb9c17",
+    "outputs/models/tfidf_logistic_title/cv_fakehealth_cfg_19_2.json": "4c7626d3da04fb375857cd5f520bd43e514b9b7ddd47158df98a5d18a3e69c70",
+    "outputs/models/tfidf_logistic_title/cv_fakehealth_cfg_19_3.json": "ec8d6baea4037481744461da9d85679036997bca948b75b24d659835ef04980a",
+    "outputs/models/tfidf_logistic_title/cv_fakehealth_cfg_19_4.json": "0023107fa2e2fc56a0a3f8061b9bda0e01fd4ccc890637a34eefd6ca536ac7be",
+    "outputs/models/tfidf_logistic_title/cv_fakehealth_cfg_20_0.json": "cd7c8cf733e29dcf1e0b4040e07d5bf2ee85e03f07fe6cdddc4a63498ad9af2e",
+    "outputs/models/tfidf_logistic_title/cv_fakehealth_cfg_20_1.json": "b719a4e5eede7ed63449c6a7f9233cd98552c70a653bf7f3edf9db4cf9c6b9d5",
+    "outputs/models/tfidf_logistic_title/cv_fakehealth_cfg_20_2.json": "43bf4366293bb96236ee73c53b7bed736ea0eacda6a3d8cd78010279f3d272be",
+    "outputs/models/tfidf_logistic_title/cv_fakehealth_cfg_20_3.json": "adba8707799311c532408c06f0a999cc1f684e4564c15e30eca2580fe3c626c6",
+    "outputs/models/tfidf_logistic_title/cv_fakehealth_cfg_20_4.json": "91baa12e76dbf0e78b53654f7f0e0a7915aa3b011da73788e6c7cfa759e13167",
+    "outputs/models/tfidf_logistic_title/cv_fakehealth_cfg_21_0.json": "81822f288d15f02f79d99492747650855886d74fab14d9d04e7ad291c2de02bb",
+    "outputs/models/tfidf_logistic_title/cv_fakehealth_cfg_21_1.json": "c977c6f6e2f11891c0dc2de912c10ef151a829023197994b827abecc2cff908c",
+    "outputs/models/tfidf_logistic_title/cv_fakehealth_cfg_21_2.json": "a756fef64a9589d46e69408386b1acdc53416dd5130663c168d8e52bab67dc33",
+    "outputs/models/tfidf_logistic_title/cv_fakehealth_cfg_21_3.json": "b23e8695f204f2010b9ff9b1f1ce716a16fe676e85204f055bf016cf18cfeeb3",
+    "outputs/models/tfidf_logistic_title/cv_fakehealth_cfg_21_4.json": "3e8bbdd59c7a32e7a97897614f15d2fe38d9a38f6ad263c8e113d396f19bfbab",
+    "outputs/models/tfidf_logistic_title/cv_fakehealth_cfg_22_0.json": "1ee76364a9ee34363b4da0034d18962f11cfb9022e67dfb37f696eb7f58e2164",
+    "outputs/models/tfidf_logistic_title/cv_fakehealth_cfg_22_1.json": "16046c04f5257feba2190af5a279fe8b476e22f0be5c9ef67e7f9346c351d62f",
+    "outputs/models/tfidf_logistic_title/cv_fakehealth_cfg_22_2.json": "159a1ebe0b16e52c768049599f97cf1cb1271b615f41b10e58e7037cb976cbad",
+    "outputs/models/tfidf_logistic_title/cv_fakehealth_cfg_22_3.json": "a19db05537d6f379912eb693d148becc5b6b052dad85f6bedade484265d700d6",
+    "outputs/models/tfidf_logistic_title/cv_fakehealth_cfg_22_4.json": "8789d58a51f18149dd23609fd570393f0285ab60ce3feb6dc1c627d8c2029f96",
+    "outputs/models/tfidf_logistic_title/cv_fakehealth_cfg_23_0.json": "fd540a56c035152993deba5bc7e0b4457110a4c410fb30b2da9f9ff616e873ff",
+    "outputs/models/tfidf_logistic_title/cv_fakehealth_cfg_23_1.json": "8d70f8fca2e9d1838b087aa4cbdf2e532652d907e53e96653a7d5abdde6bcda3",
+    "outputs/models/tfidf_logistic_title/cv_fakehealth_cfg_23_2.json": "ece973f55de3c748fbc5e0c9d749e7ac3c77d86fbaf4e7530b90cf8b63ba8af1",
+    "outputs/models/tfidf_logistic_title/cv_fakehealth_cfg_23_3.json": "93a6b9b9bb779a6d66477a10ffda38fa6554a378b20c485b9bb2cad76d72fb52",
+    "outputs/models/tfidf_logistic_title/cv_fakehealth_cfg_23_4.json": "83cd2d2b9be8f7c97cfb8b6ee07cf62ad2dfff30369a44681e13399e2c80ef9b",
+    "outputs/models/tfidf_logistic_title/executed_script.py": "acf12931a57b38db6186daae6298095708fd2a233ec9ea40e1bbd214dd377a5a",
+    "outputs/models/tfidf_logistic_title/prediction_lock.json": "a46d43eed32a475ff4d53e737997cada270107be956e00e1854a1567ad87473f",
+    "outputs/models/tfidf_logistic_title/run_signature.json": "c50311cc9a81cf295408523f3906524118f043c225ce708285c3a036982804a0",
+    "outputs/models/tfidf_logistic_title/selection_lock.json": "bd2a1f02c604a42bb6a1b5df8e9dd00372d3f706c0faf2f90289e23f61b5bdfc",
+    "outputs/models/tfidf_logistic_title/transfer_coaid_natural.joblib": "362666cbd4e0195c6a77cf8271b14ff0fccbc4a3820a5b3a2c169bacde20f260",
+    "outputs/models/tfidf_logistic_title/transfer_coaid_source_masked.joblib": "cf0ac5303e4eb05456039f1814c18fe5611b188ffc6ee11da5b01702c5365782",
+    "outputs/models/tfidf_logistic_title/transfer_fakehealth_natural.joblib": "05dcd2da71410949bc451fc61285b4731a3efd28fbe5b50a59e349f2f7d4e50a",
+    "outputs/models/tfidf_logistic_title/transfer_fakehealth_source_masked.joblib": "99ac6cd086d11a97c825043821214f5e77ae29c113b89a1e96e4695892906a55",
+    "outputs/models/tfidf_logistic_title/within_coaid_natural.joblib": "4d12a8ecb32a4d0b148b73cdfc0d3e4d348a209bdadc61638679e27b205fb17a",
+    "outputs/models/tfidf_logistic_title/within_coaid_source_masked.joblib": "e87491f25851cfde3d41834094487ea0593bd6d7f0429ef9c327067f81276f0d",
+    "outputs/models/tfidf_logistic_title/within_fakehealth_natural.joblib": "2ccd38dfb76f87c31483a83f69d4061472e4aa77b887dd9ac6ee425887254b98",
+    "outputs/models/tfidf_logistic_title/within_fakehealth_source_masked.joblib": "8892c2649324975a6d6c72d2d9f83a74d5bf1efea7a4141a8c1e7dc4a326d57c",
+    "outputs/predictions/tfidf_logistic_title_predictions.csv": "91e267fb90e8d93a30598b53573dffdddbd885983785dd6804c15a6126517c25",
+    "outputs/reports/tfidf_logistic_title_sensitivity.md": "005933541ec70276f554c82f946d6f8978e05c004a890780ea958e59132475ff",
+    "outputs/tables/tfidf_logistic_title_cohort_summary.csv": "cf8c3f172e3dfde94031b809ae203162eb38600fa341b3d9f6bb1e8eef2afd72",
+    "outputs/tables/tfidf_logistic_title_cv_results.csv": "e8f7264787c2b8baab1f2ef83287d9accc7e8cd64c303a1f7baebdbe6bd1fc99",
+    "outputs/tables/tfidf_logistic_title_fit_manifest.csv": "8b64162d6e41b58900662a484a598d20f0205164835208089b53133194fef141",
+    "outputs/tables/tfidf_logistic_title_holdout_results.csv": "f796a5f7d08c2d116bf2a8b729408772a9ae7d72c1c8d23ca738f9308799da52",
+    "outputs/tables/tfidf_logistic_title_model_selection.csv": "ad282a984f50c17986dc6be5463fff47ae753db088578035175381d1ca4b8a3d",
+    "outputs/tables/tfidf_logistic_title_transfer_degradation.csv": "5f1420e4e84792ae7556d489c31fee2594fb1e0741c179d2eb3c007bf0a98429",
+    "outputs/tables/tfidf_logistic_title_transfer_results.csv": "2da524468f8648564a866d9e3d6d0e41ab0b05449b4f87fa1441db29304a3ea9",
+    "outputs/tables/tfidf_logistic_title_vocabulary_diagnostics.csv": "ca92eae29a9ef1cea5465a034d36e09317c3c1ec3e129e9a31eaaf8f7653d7b5",
+    "outputs/tables/tfidf_logistic_title_vs_combined.csv": "cb849e40cfd7a62d88864d7d36520fd831f09f48d4dede3ef392ece199974eb1"
+  },
+  "post_execution_revision": "Report interpretation added from saved metrics; preflight cohort-summary validation moved before CV for future reproduction. No fitting, predictions, selection, thresholds or metrics changed. Exact executed source preserved.",
+  "signature": {
+    "inputs": {
+      "data/processed/coaid_text_modeling_ready.csv": "859b3db8888962de771f4ff48779f139027c9472bbe19367755f0657ad33812d",
+      "data/processed/fakehealth_text_modeling_ready.csv": "a38730db184727e3a84d2f603789e817c667fe75c6606d834f09ba106ef5cb91",
+      "outputs/predictions/tfidf_logistic_cross_context_predictions.csv": "45cf00583f060fd20c48c7ab80864d840d228c5debb00aac97f155f0d360f3b5",
+      "outputs/predictions/tfidf_logistic_holdout_predictions.csv": "8539c367e18273bf3c0a9ecd9ea376a16503adf7111f77886d8d5b354aa71f94",
+      "outputs/reports/text_quality_and_source_cue_audit_metadata.json": "16e6d702e888bfe78e453995b999c33772de4999e87e36fd178adf31ab4cb54c",
+      "outputs/reports/tfidf_logistic_baseline.json": "88f15dd51f27532207b289400269a5dba52b0fa700bd8181454371b7003008ef",
+      "outputs/reports/tfidf_logistic_cross_context_transfer.json": "14feec786109ad921271c04f83a0aeb9c57d320706f43f2cad0ebff9892eb5d2",
+      "outputs/splits/coaid_text_grouped_cv.csv": "e916ad95f11debbe5d1f1daa338c8cb4064f81030a552525bad90abfbe60f651",
+      "outputs/splits/coaid_text_holdout.csv": "0e55802b29b72407a60985e24292e4984c22bae5b06cb33486da93eaf9cddb3c",
+      "outputs/splits/fakehealth_text_grouped_cv.csv": "7b489b81a817bfecf34c89ea00060041f728a7edad182c2d0e44f3b821ee19c1",
+      "outputs/splits/fakehealth_text_holdout.csv": "2f14737ab373ebf029490579438d12f95f7df4a7245715ea1bccc10995251035",
+      "outputs/tables/text_source_mask_dictionary.csv": "69dbe0592eb7450bed0a09640dcbb6f5d4505af87eff01cfe11135900aa764bc",
+      "outputs/tables/tfidf_logistic_holdout_results.csv": "7cae7fd4e84123bca203e2a81e0eb82e7237c5e14492d668c357e0f5c0833c13",
+      "outputs/tables/tfidf_logistic_transfer_degradation.csv": "e88793b00da36787c63d98f78742ed34c9b2d4b5fef4dda0772ac401d2a0842c",
+      "outputs/tables/tfidf_logistic_transfer_results.csv": "8e2096bdb5d2aee017d436be0aaad542e076cf182ab2453a322f859af200f1e9",
+      "src/run_tfidf_logistic_baseline.py": "a8644723c7bef66f152199eb27953a30b27815ae77f2e1cc3aaac1c98774b993",
+      "src/run_tfidf_logistic_cross_context_transfer.py": "8ac595a2e5ea3816ff03f02d3a3e10889428dcd61c663500a3b87192594f5104"
+    },
+    "protocol": {
+      "eligibility": "title_only_modeling_eligible",
+      "fields": {
+        "natural": "title_text",
+        "source_masked": "title_text_source_masked"
+      },
+      "grid": [
+        {
+          "C": 0.1,
+          "class_weight": "none",
+          "config_id": "cfg_00",
+          "min_df": 2,
+          "ngram_max": 1
+        },
+        {
+          "C": 0.1,
+          "class_weight": "balanced",
+          "config_id": "cfg_01",
+          "min_df": 2,
+          "ngram_max": 1
+        },
+        {
+          "C": 1.0,
+          "class_weight": "none",
+          "config_id": "cfg_02",
+          "min_df": 2,
+          "ngram_max": 1
+        },
+        {
+          "C": 1.0,
+          "class_weight": "balanced",
+          "config_id": "cfg_03",
+          "min_df": 2,
+          "ngram_max": 1
+        },
+        {
+          "C": 10.0,
+          "class_weight": "none",
+          "config_id": "cfg_04",
+          "min_df": 2,
+          "ngram_max": 1
+        },
+        {
+          "C": 10.0,
+          "class_weight": "balanced",
+          "config_id": "cfg_05",
+          "min_df": 2,
+          "ngram_max": 1
+        },
+        {
+          "C": 0.1,
+          "class_weight": "none",
+          "config_id": "cfg_06",
+          "min_df": 5,
+          "ngram_max": 1
+        },
+        {
+          "C": 0.1,
+          "class_weight": "balanced",
+          "config_id": "cfg_07",
+          "min_df": 5,
+          "ngram_max": 1
+        },
+        {
+          "C": 1.0,
+          "class_weight": "none",
+          "config_id": "cfg_08",
+          "min_df": 5,
+          "ngram_max": 1
+        },
+        {
+          "C": 1.0,
+          "class_weight": "balanced",
+          "config_id": "cfg_09",
+          "min_df": 5,
+          "ngram_max": 1
+        },
+        {
+          "C": 10.0,
+          "class_weight": "none",
+          "config_id": "cfg_10",
+          "min_df": 5,
+          "ngram_max": 1
+        },
+        {
+          "C": 10.0,
+          "class_weight": "balanced",
+          "config_id": "cfg_11",
+          "min_df": 5,
+          "ngram_max": 1
+        },
+        {
+          "C": 0.1,
+          "class_weight": "none",
+          "config_id": "cfg_12",
+          "min_df": 2,
+          "ngram_max": 2
+        },
+        {
+          "C": 0.1,
+          "class_weight": "balanced",
+          "config_id": "cfg_13",
+          "min_df": 2,
+          "ngram_max": 2
+        },
+        {
+          "C": 1.0,
+          "class_weight": "none",
+          "config_id": "cfg_14",
+          "min_df": 2,
+          "ngram_max": 2
+        },
+        {
+          "C": 1.0,
+          "class_weight": "balanced",
+          "config_id": "cfg_15",
+          "min_df": 2,
+          "ngram_max": 2
+        },
+        {
+          "C": 10.0,
+          "class_weight": "none",
+          "config_id": "cfg_16",
+          "min_df": 2,
+          "ngram_max": 2
+        },
+        {
+          "C": 10.0,
+          "class_weight": "balanced",
+          "config_id": "cfg_17",
+          "min_df": 2,
+          "ngram_max": 2
+        },
+        {
+          "C": 0.1,
+          "class_weight": "none",
+          "config_id": "cfg_18",
+          "min_df": 5,
+          "ngram_max": 2
+        },
+        {
+          "C": 0.1,
+          "class_weight": "balanced",
+          "config_id": "cfg_19",
+          "min_df": 5,
+          "ngram_max": 2
+        },
+        {
+          "C": 1.0,
+          "class_weight": "none",
+          "config_id": "cfg_20",
+          "min_df": 5,
+          "ngram_max": 2
+        },
+        {
+          "C": 1.0,
+          "class_weight": "balanced",
+          "config_id": "cfg_21",
+          "min_df": 5,
+          "ngram_max": 2
+        },
+        {
+          "C": 10.0,
+          "class_weight": "none",
+          "config_id": "cfg_22",
+          "min_df": 5,
+          "ngram_max": 2
+        },
+        {
+          "C": 10.0,
+          "class_weight": "balanced",
+          "config_id": "cfg_23",
+          "min_df": 5,
+          "ngram_max": 2
+        }
+      ],
+      "masked_retuning": false,
+      "numerical_pipeline": {
+        "conditions": {
+          "natural": "combined_text",
+          "source_masked": "combined_text_source_masked"
+        },
+        "cv_standard_deviation_ddof": 1,
+        "grid": [
+          {
+            "C": 0.1,
+            "class_weight": "none",
+            "config_id": "cfg_00",
+            "min_df": 2,
+            "ngram_max": 1
+          },
+          {
+            "C": 0.1,
+            "class_weight": "balanced",
+            "config_id": "cfg_01",
+            "min_df": 2,
+            "ngram_max": 1
+          },
+          {
+            "C": 1.0,
+            "class_weight": "none",
+            "config_id": "cfg_02",
+            "min_df": 2,
+            "ngram_max": 1
+          },
+          {
+            "C": 1.0,
+            "class_weight": "balanced",
+            "config_id": "cfg_03",
+            "min_df": 2,
+            "ngram_max": 1
+          },
+          {
+            "C": 10.0,
+            "class_weight": "none",
+            "config_id": "cfg_04",
+            "min_df": 2,
+            "ngram_max": 1
+          },
+          {
+            "C": 10.0,
+            "class_weight": "balanced",
+            "config_id": "cfg_05",
+            "min_df": 2,
+            "ngram_max": 1
+          },
+          {
+            "C": 0.1,
+            "class_weight": "none",
+            "config_id": "cfg_06",
+            "min_df": 5,
+            "ngram_max": 1
+          },
+          {
+            "C": 0.1,
+            "class_weight": "balanced",
+            "config_id": "cfg_07",
+            "min_df": 5,
+            "ngram_max": 1
+          },
+          {
+            "C": 1.0,
+            "class_weight": "none",
+            "config_id": "cfg_08",
+            "min_df": 5,
+            "ngram_max": 1
+          },
+          {
+            "C": 1.0,
+            "class_weight": "balanced",
+            "config_id": "cfg_09",
+            "min_df": 5,
+            "ngram_max": 1
+          },
+          {
+            "C": 10.0,
+            "class_weight": "none",
+            "config_id": "cfg_10",
+            "min_df": 5,
+            "ngram_max": 1
+          },
+          {
+            "C": 10.0,
+            "class_weight": "balanced",
+            "config_id": "cfg_11",
+            "min_df": 5,
+            "ngram_max": 1
+          },
+          {
+            "C": 0.1,
+            "class_weight": "none",
+            "config_id": "cfg_12",
+            "min_df": 2,
+            "ngram_max": 2
+          },
+          {
+            "C": 0.1,
+            "class_weight": "balanced",
+            "config_id": "cfg_13",
+            "min_df": 2,
+            "ngram_max": 2
+          },
+          {
+            "C": 1.0,
+            "class_weight": "none",
+            "config_id": "cfg_14",
+            "min_df": 2,
+            "ngram_max": 2
+          },
+          {
+            "C": 1.0,
+            "class_weight": "balanced",
+            "config_id": "cfg_15",
+            "min_df": 2,
+            "ngram_max": 2
+          },
+          {
+            "C": 10.0,
+            "class_weight": "none",
+            "config_id": "cfg_16",
+            "min_df": 2,
+            "ngram_max": 2
+          },
+          {
+            "C": 10.0,
+            "class_weight": "balanced",
+            "config_id": "cfg_17",
+            "min_df": 2,
+            "ngram_max": 2
+          },
+          {
+            "C": 0.1,
+            "class_weight": "none",
+            "config_id": "cfg_18",
+            "min_df": 5,
+            "ngram_max": 2
+          },
+          {
+            "C": 0.1,
+            "class_weight": "balanced",
+            "config_id": "cfg_19",
+            "min_df": 5,
+            "ngram_max": 2
+          },
+          {
+            "C": 1.0,
+            "class_weight": "none",
+            "config_id": "cfg_20",
+            "min_df": 5,
+            "ngram_max": 2
+          },
+          {
+            "C": 1.0,
+            "class_weight": "balanced",
+            "config_id": "cfg_21",
+            "min_df": 5,
+            "ngram_max": 2
+          },
+          {
+            "C": 10.0,
+            "class_weight": "none",
+            "config_id": "cfg_22",
+            "min_df": 5,
+            "ngram_max": 2
+          },
+          {
+            "C": 10.0,
+            "class_weight": "balanced",
+            "config_id": "cfg_23",
+            "min_df": 5,
+            "ngram_max": 2
+          }
+        ],
+        "masked_retuning": false,
+        "max_iter": 5000,
+        "penalty": "l2",
+        "seed": 42,
+        "selection": "unweighted mean macro F1",
+        "sklearn_penalty_parameter": "l1_ratio=0.0",
+        "solver": "liblinear",
+        "threshold": 0.5,
+        "tie_order": [
+          "mean macro F1 within .001 of best",
+          "SD within .001 of lowest in tied set",
+          "unigram",
+          "smaller C",
+          "class_weight none",
+          "larger min_df",
+          "config_id"
+        ],
+        "tie_tolerance": 0.001,
+        "tol": 0.0001,
+        "vectorizer": {
+          "analyzer": "word",
+          "dtype": "float64",
+          "lowercase": true,
+          "max_df": 1.0,
+          "norm": "l2",
+          "smooth_idf": true,
+          "strip_accents": null,
+          "sublinear_tf": true,
+          "token_pattern": "(?u)\\b\\w\\w+\\b",
+          "use_idf": true
+        }
+      },
+      "seed": 42,
+      "selection": "natural source grouped CV only",
+      "selection_tolerance": 0.001,
+      "target_labels": "join after all predictions frozen",
+      "threshold": 0.5,
+      "transfer_training": "all title-eligible source rows"
+    },
+    "script_sha256": "5056fb1b94848d45cb4b4cfe748d4cac04d5ab119303ef4579add94c85d1848b",
+    "versions": {
+      "numpy": "2.5.1",
+      "pandas": "3.0.5",
+      "python": "3.14.2",
+      "scipy": "1.18.0",
+      "sklearn": "1.9.0"
+    }
+  },
+  "source_only_fit": true,
+  "target_labels_joined_after_predictions_frozen": true,
+  "threshold": 0.5,
+  "validation": "passed"
+}

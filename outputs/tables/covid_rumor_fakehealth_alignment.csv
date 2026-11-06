@@ -1,0 +1,12 @@
+variable,FakeHealth_definition,COVID_Rumor_NEWS_definition,COVID_Rumor_TWITTER_definition,directly_comparable,major_caution
+content text,Locally crawled article/release text,Short rumor/claim statement,Tweet text,No,Neither Rumor subset supplies FakeHealth-like full articles
+veracity,Expert rating 0-5; authors use <3 vs >=3,T/F/U manually cross-validated/fact-check informed,Same T/F/U scheme,No,Different constructs; retain original labels
+publication date,Article/release publish_date,No main-item date; dated website reposts only,Original release date only through per-item response files,No,Rumor dates are incomplete/different units
+observed post/repost count,Number of mapped original tweets,Number of reposting website records/unique websites,Not applicable: content unit is a single tweet,No,Website reposts are not Twitter posts
+reply count,Reply-ID membership count per content,Unavailable,Aggregate reply number per rumor tweet,Partial,Different unit and collection
+retweet count,Retweet-ID membership count per content,Unavailable,Aggregate retweet number per rumor tweet,Partial,FakeHealth is content-level; Rumor is tweet-level
+like count,Unavailable,Unavailable,Aggregate likes per rumor tweet,No,No FakeHealth equivalent
+first engagement time,Minimum mapped tweet-ID time,Earliest dated website record (not same construct),Earliest response time for items with per-item files,No,Different platforms/units and incomplete coverage
+last engagement time,Maximum mapped tweet-ID time,Latest dated website record,Latest response time for items with files,No,Incomplete observation windows
+engagement lifespan,Last-first observed tweet time,Last-first dated website record,Last-first response time,No,Different processes
+engagement presence,Any mapped tweet/reply,Any per-item website record,Any reply/retweet/like count or response record,Partial,Meaning changes by subset

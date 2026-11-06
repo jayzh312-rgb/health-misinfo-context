@@ -1,0 +1,4 @@
+specification,coaid_entity_rule,probable_unresolved_rule,release_handling,run_now
+A Primary,Collapse connected components formed only by clear duplicate/re-observation edges; union unique post/reply IDs,Retain as separate flagged entities,All releases represented through entity provenance,False
+B Conservative,Use the same clear-collapsed entities,Exclude sensitivity_exclude_candidate=True,All releases represented through entity provenance,False
+C Release-specific,Do not collapse across releases,Retain and flag within each release,Analyze each CoAID release separately,False

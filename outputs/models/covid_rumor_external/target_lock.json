@@ -1,0 +1,8 @@
+{
+  "all_eligible_uid_sha256": "2acd578ed2e7695d7471c05f1c6236bbe18718eab00d208f9d860a7e668f0c1f",
+  "clean_uid_sha256": "3f891700a92798a9fd06037a399660e2457490726a8c3d6b71d07dd334249b3e",
+  "outcome_labels_available": false,
+  "predictor": "predictor_text",
+  "seed": 42,
+  "target_sha256": "0b610faf0cf63eb0b8c3a6d8d2b51d106373fffddd150b0fd34da7dae48b0e70"
+}

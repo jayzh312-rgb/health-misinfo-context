@@ -1,0 +1,3 @@
+dataset,status,N,median,maximum,p05,p25,p75,p95,p99,percent_gt_128,percent_gt_256,percent_gt_384,percent_gt_512,single_special_tokens,title_maximum,empty_titles_N,titles_at_combined_prefix_N,determinism_verified_N
+FakeHealth,measured,1647,760.0,5415,21.30000000000001,467.5,1050.5,1695.7999999999993,2587.959999999999,91.4996964177292,87.85670916818458,80.20643594414086,71.22040072859745,2,27,0,1647,1647
+CoAID,measured,3577,113.0,190,18.0,97.0,120.0,131.0,139.0,7.576181157394464,0.0,0.0,0.0,2,148,6,3571,3577

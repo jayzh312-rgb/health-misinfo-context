@@ -1,0 +1,13 @@
+specification,outcome,fake_N,real_N,fake_mean,real_mean,mean_difference,mean_ratio,median_difference,percentage_point_difference,notes
+A_primary_strict,unique_post_count,922,4415,11.32646420824295,32.11325028312571,-20.78678607488276,0.3527037627267077,-3.0,,Descriptive only; all observations retained; no row-independent inferential CI
+A_primary_strict,unique_reply_count,922,4415,8.044468546637743,25.63691959229898,-17.592451045661235,0.31378452148573277,0.0,,Descriptive only; all observations retained; no row-independent inferential CI
+A_primary_strict,engagement_present,922,4415,0.1594360086767896,0.5739524348810872,-0.4145164262042976,0.27778610035833706,-1.0,-41.45164262042976,Descriptive only; all observations retained; no row-independent inferential CI
+B_resource_sensitivity,unique_post_count,921,4284,11.338762214983714,33.076797385620914,-21.7380351706372,0.34280109052857943,-3.0,,Descriptive only; all observations retained; no row-independent inferential CI
+B_resource_sensitivity,unique_reply_count,921,4284,8.053203040173724,26.420868347338935,-18.36766530716521,0.3048046314868689,0.0,,Descriptive only; all observations retained; no row-independent inferential CI
+B_resource_sensitivity,engagement_present,921,4284,0.15960912052117263,0.5735294117647058,-0.41392029124353324,0.2782928255240959,-1.0,-41.39202912435332,Descriptive only; all observations retained; no row-independent inferential CI
+C_high_certainty,unique_post_count,920,4162,11.351086956521739,27.462758289283997,-16.111671332762256,0.4133265434212028,-2.0,,Descriptive only; all observations retained; no row-independent inferential CI
+C_high_certainty,unique_reply_count,920,4162,8.06195652173913,18.920711196540125,-10.858754674800995,0.42609162192663,0.0,,Descriptive only; all observations retained; no row-independent inferential CI
+C_high_certainty,engagement_present,920,4162,0.15978260869565217,0.5617491590581452,-0.40196655036249296,0.2844376464462379,-1.0,-40.1966550362493,Descriptive only; all observations retained; no row-independent inferential CI
+FakeHealth_HealthStory,unique_post_count,472,1218,199.8771186440678,237.8743842364532,-37.99726559238542,0.8402633149662085,-16.0,,Descriptive only; all observations retained; no row-independent inferential CI
+FakeHealth_HealthStory,unique_reply_count,472,1218,14.739406779661017,16.949096880131364,-2.209690100470347,0.869627855920709,0.0,,Descriptive only; all observations retained; no row-independent inferential CI
+FakeHealth_HealthStory,engagement_present,472,1218,0.9978813559322034,0.9950738916256158,0.002807464306587626,1.002821362644739,0.0,0.2807464306587626,Descriptive only; all observations retained; no row-independent inferential CI

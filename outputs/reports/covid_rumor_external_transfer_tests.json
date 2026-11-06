@@ -1,0 +1,22 @@
+{
+  "validation": "passed",
+  "tests_run": 9,
+  "command": ".venv/bin/python -m unittest discover -s src -p 'test_covid_rumor_external_transfer.py' -v",
+  "checks": [
+    "NEWS-only and binary item identity",
+    "label-blind quality and overlap interfaces",
+    "NEWS text-only feature loader",
+    "exact overlap exclusions and approximate flags",
+    "prediction freeze before label join",
+    "fixed thresholds and complete identical target UIDs",
+    "source reuse and unchanged fingerprints",
+    "independent metric and difference recomputation",
+    "output hashes and unique keys"
+  ],
+  "fingerprints": {
+    "src/test_covid_rumor_external_transfer.py": "8cd0471a2e9ee79e70306ad9754dee3cc6036d831ef252146f7c2fcb3cf725a5",
+    "src/run_covid_rumor_external_transfer.py": "e0187e0bfa709fa8f020a759375000b7623d294ca0e3d2a343c1b9f939538693",
+    "outputs/reports/covid_rumor_external_transfer.json": "5400f115f14399b7d835cfaddbf5d7762c2ce66adaef43f9509e40b40d0b6dff",
+    "logs/covid_rumor_external_transfer_tests.log": "03283031abb1fbaac586445008c2baec524d208dd9895867311540ab998cd5ae"
+  }
+}

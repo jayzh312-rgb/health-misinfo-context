@@ -1,0 +1,26 @@
+breakdown,label,group,N,fake_N,real_N,share_any_post,any_post_N
+class_x_resolution,Fake,missing,40,40,0,0.075,3
+class_x_resolution,Fake,resolved,306,306,0,0.3300653594771242,101
+class_x_resolution,Fake,unresolved,576,576,0,0.07465277777777778,43
+class_x_resolution,Real,missing,3,0,3,0.3333333333333333,1
+class_x_resolution,Real,resolved,4383,0,4383,0.5758612822267853,2524
+class_x_resolution,Real,unresolved,29,0,29,0.1724137931034483,5
+class,Fake,all,922,922,0,0.1594360086767896,147
+class,Real,all,4415,0,4415,0.5730464326160816,2530
+class_x_first_release,Fake,05-01-2020,572,572,0,0.12762237762237763,73
+class_x_first_release,Fake,07-01-2020,263,263,0,0.2623574144486692,69
+class_x_first_release,Fake,09-01-2020,56,56,0,0.07142857142857142,4
+class_x_first_release,Fake,11-01-2020,31,31,0,0.03225806451612903,1
+class_x_first_release,Real,05-01-2020,1585,0,1585,0.9129337539432176,1447
+class_x_first_release,Real,07-01-2020,1076,0,1076,0.9014869888475836,970
+class_x_first_release,Real,09-01-2020,851,0,851,0.07638072855464159,65
+class_x_first_release,Real,11-01-2020,903,0,903,0.053156146179401995,48
+fake_by_fact_check_site,Fake,politifact.com,352,352,0,0.2215909090909091,78
+fake_by_fact_check_site,Fake,leadstories.com,121,121,0,0.1322314049586777,16
+fake_by_fact_check_site,Fake,hoax-alert.leadstories.com,103,103,0,0.1650485436893204,17
+fake_by_fact_check_site,Fake,healthfeedback.org,100,100,0,0.15,15
+fake_by_fact_check_site,Fake,factcheck.org,89,89,0,0.12359550561797752,11
+fake_by_fact_check_site,Fake,factcheck.afp.com,73,73,0,0.0547945205479452,4
+fake_by_fact_check_site,Fake,checkyourfact.com,41,41,0,0.0975609756097561,4
+fake_by_fact_check_site,Fake,washingtonpost.com,20,20,0,0.05,1
+fake_by_fact_check_site,Fake,other sites (<10 each; 10 sites),23,23,0,0.043478260869565216,1

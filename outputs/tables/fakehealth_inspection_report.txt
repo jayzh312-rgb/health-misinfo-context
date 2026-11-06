@@ -1,0 +1,105 @@
+FAKEHEALTH STRUCTURAL INSPECTION — NO EDA OR MODELING
+Raw root: [REDACTED_HOME]/Desktop/Research/data/raw/FakeHealth-master
+Raw files read only; no scrape, API call, label creation, harmonization, or merge.
+
+Evidence tags: [LOCAL] computed from files; [DOC] repository/paper statement; [INFERENCE] interpretation.
+
+1 STRUCTURE / COMPLETENESS
+[LOCAL] Directories: API/, API/resource_server/, API/resources/, API/util/, dataset/, dataset/content/, dataset/content/HealthRelease/, dataset/content/HealthStory/, dataset/engagements/, dataset/reviews/
+[LOCAL] 2,257 files: 2,241 JSON, 10 Python, README/API metadata.
+[LOCAL] Present: both content folders, both review files, both engagement-ID files, collection code. Absent: user_network, hydrated posts, users, timelines, follower/following lists.
+[DOC] README locates follower/following IDs in separate Zenodo v2. Local copy is complete for the core GitHub ID release but not the paper's full four-component repository.
+[LOCAL] Content JSONs: HealthStory=1,638; HealthRelease=599. Manifest covers all 2,241 structured files.
+
+2 DEFINITIONS / GROUND TRUTH
+[DOC] HealthStory = media-reported health news stories; HealthRelease = releases from universities, research centers, and companies. They are separate because sources differ.
+[DOC] HealthNewsReview experts evaluate each item on 10 criteria: 8 shared plus 2 subset-specific; criteria contain answer and explanation. Rating 0-5 is proportional to criteria satisfied.
+[DOC] FakeHealth paper explicitly uses rating <3 as fake and >=3 as real for both subsets. [LOCAL] Unit is item/article, not source; source is separate. No new binary field was created.
+[CAUTION] This is expert-rated reporting quality, not automatically equivalent to CoAID misinformation. Sources: local README and Dai et al. 2020, https://ojs.aaai.org/index.php/ICWSM/article/download/7350/7204
+
+3 COUNTS / LINKAGE / TEXT / TIME / ENGAGEMENT
+
+HealthStory: reviews=1,690; content=1,638; engagement mappings=1,690
+  unique IDs review/content/engagement=1,690/1,638/1,690
+  review->content=1,638/1,690 (96.92%); engagement->review=1,690/1,690 (100.00%)
+  titles=1,604; full text=1,614; URLs=1,638; URL-only=22; missing text=24
+  medians: title 52 chars/8 words; text 3683 chars/592 words. Text is local when present; retrieval needed only for missing content.
+  publications 2009-12-10T05:00:00+00:00 to 2018-12-17T13:46:06+00:00; missing/unparseable=600/1,638 (36.63%)
+  years={"2009": 10, "2010": 227, "2011": 178, "2012": 109, "2013": 27, "2014": 5, "2015": 147, "2016": 124, "2017": 124, "2018": 87}
+  months={"2009-12": 10, "2010-01": 13, "2010-02": 13, "2010-03": 13, "2010-04": 13, "2010-05": 16, "2010-06": 20, "2010-07": 17, "2010-08": 30, "2010-09": 26, "2010-10": 27, "2010-11": 23, "2010-12": 16, "2011-01": 20, "2011-02": 24, "2011-03": 17, "2011-04": 16, "2011-05": 20, "2011-06": 12, "2011-07": 12, "2011-08": 22, "2011-09": 8, "2011-10": 11, "2011-11": 7, "2011-12": 9, "2012-01": 11, "2012-02": 12, "2012-03": 15, "2012-04": 9, "2012-05": 8, "2012-06": 7, "2012-07": 8, "2012-08": 8, "2012-09": 4, "2012-10": 13, "2012-11": 9, "2012-12": 5, "2013-01": 9, "2013-02": 5, "2013-03": 4, "2013-04": 4, "2013-05": 5, "2014-03": 4, "2014-09": 1, "2015-01": 20, "2015-02": 18, "2015-03": 16, "2015-04": 9, "2015-05": 12, "2015-06": 14, "2015-07": 10, "2015-08": 13, "2015-09": 15, "2015-10": 10, "2015-11": 7, "2015-12": 3, "2016-01": 11, "2016-02": 7, "2016-03": 8, "2016-04": 10, "2016-05": 12, "2016-06": 14, "2016-07": 11, "2016-08": 14, "2016-09": 7, "2016-10": 10, "2016-11": 8, "2016-12": 12, "2017-01": 7, "2017-02": 11, "2017-03": 13, "2017-04": 10, "2017-05": 14, "2017-06": 10, "2017-07": 15, "2017-08": 9, "2017-09": 12, "2017-10": 6, "2017-11": 8, "2017-12": 9, "2018-01": 8, "2018-02": 9, "2018-03": 10, "2018-04": 7, "2018-05": 7, "2018-06": 10, "2018-07": 6, "2018-08": 5, "2018-09": 9, "2018-10": 6, "2018-11": 6, "2018-12": 4}
+  tweets=384,073/382,962 unique; replies=27,601/27,600; retweets=120,709/120,594
+  all social IDs=532,383/530,064 unique; Snowflake times=532,383, range 2010-11-04T01:42:54.777000+00:00 to 2019-12-03T19:05:40.036000+00:00
+  original ratings={0: 27, 1: 107, 2: 338, 3: 525, 4: 452, 5: 241}
+
+HealthRelease: reviews=606; content=599; engagement mappings=606
+  unique IDs review/content/engagement=606/599/606
+  review->content=599/606 (98.84%); engagement->review=606/606 (100.00%)
+  titles=595; full text=594; URLs=599; URL-only=3; missing text=5
+  medians: title 75 chars/11 words; text 4397 chars/667 words. Text is local when present; retrieval needed only for missing content.
+  publications 2015-01-06T05:00:00+00:00 to 2019-09-11T03:43:00+00:00; missing/unparseable=172/599 (28.71%)
+  years={"2015": 72, "2016": 117, "2017": 128, "2018": 100, "2019": 10}
+  months={"2015-01": 3, "2015-02": 2, "2015-04": 3, "2015-05": 7, "2015-06": 9, "2015-07": 4, "2015-08": 6, "2015-09": 7, "2015-10": 11, "2015-11": 14, "2015-12": 6, "2016-01": 9, "2016-02": 14, "2016-03": 9, "2016-04": 13, "2016-05": 7, "2016-06": 13, "2016-07": 5, "2016-08": 9, "2016-09": 6, "2016-10": 13, "2016-11": 8, "2016-12": 11, "2017-01": 15, "2017-02": 11, "2017-03": 8, "2017-04": 11, "2017-05": 12, "2017-06": 12, "2017-07": 13, "2017-08": 14, "2017-09": 10, "2017-10": 9, "2017-11": 9, "2017-12": 4, "2018-01": 12, "2018-02": 8, "2018-03": 11, "2018-04": 11, "2018-05": 7, "2018-06": 6, "2018-07": 8, "2018-08": 10, "2018-09": 8, "2018-10": 8, "2018-11": 6, "2018-12": 5, "2019-09": 10}
+  tweets=47,338/47,338 unique; replies=1,575/1,575; retweets=16,959/16,959
+  all social IDs=65,872/65,844 unique; Snowflake times=65,872, range 2010-11-04T01:42:55.699000+00:00 to 2019-11-10T19:40:15.915000+00:00
+  original ratings={0: 6, 1: 83, 2: 202, 3: 224, 4: 83, 5: 8}
+
+[LOCAL] All parseable publication dates predate 2020; 772/2,237 (34.51%) local content files lack a parseable date. Thus dated items are pre-COVID; undated items remain uncertain.
+
+4 SOCIAL AVAILABILITY
+  A posts/item: directly available and countable from tweets lists
+  B unique users: requires external API/data; user IDs absent
+  C replies: IDs/counts direct; parents unavailable
+  D retweets: IDs/counts direct; originals unavailable
+  E timestamps: derivable from Twitter Snowflake IDs; not explicit
+  F user IDs: requires external API/data
+  G post IDs: directly available
+  H parent-child relationships: unavailable locally
+  I conversations: unavailable locally
+  J likes/favorites: requires hydrated tweet objects
+
+5 USER NETWORK
+[LOCAL] Cannot empirically inspect nodes/edges/direction/time/linkage because network files are absent.
+[DOC] Separate archive is a global user graph across both subsets: Twitter-user nodes and directed follower/following lists (README caps: up to 200 followers and 5,000 followings per user), not item-specific engagement edges; no edge times documented.
+[INFERENCE] It is likely a truncated crawl-time snapshot, not historical-at-publication evidence and not a diffusion network.
+
+6 IDENTIFIERS / EMPIRICAL RELATIONSHIPS
+  HealthStory: content->review 1,638/1,638 (100.00%); engagement->content 1,638/1,690 (96.92%); engagement->review 1,690/1,690 (100.00%)
+    post->user and reply/retweet->parent: not testable (fields absent).
+  HealthRelease: content->review 599/599 (100.00%); engagement->content 599/606 (98.84%); engagement->review 606/606 (100.00%)
+    post->user and reply/retweet->parent: not testable (fields absent).
+  content ID overlap across subsets=0
+  tweets cross-subset ID overlap=8
+  replies cross-subset ID overlap=5
+  retweets cross-subset ID overlap=54
+  HealthStory role overlap tweet/reply=1,092, tweet/retweet=0, reply/retweet=0
+  HealthRelease role overlap tweet/reply=28, tweet/retweet=0, reply/retweet=0
+  User uniqueness/overlap untestable. Recommended keys: (dataset, subset, content_id) and (dataset, subset, content_id, engagement_type, post_id); store IDs as strings.
+
+7 DUPLICATES / OVERLAP
+  HealthStory: exact content duplicates excluding ID=1; exact review duplicates=0
+    repeated url=1; repeated canonical_link=18; repeated title=41; repeated text=49
+    repeated tweets memberships=1,111; repeated replies memberships=1; repeated retweets memberships=115
+  HealthRelease: exact content duplicates excluding ID=0; exact review duplicates=0
+    repeated url=0; repeated canonical_link=0; repeated title=0; repeated text=0
+    repeated tweets memberships=0; repeated replies memberships=0; repeated retweets memberships=0
+  cross-subset url overlap=0
+  cross-subset canonical_link overlap=0
+  cross-subset title overlap=0
+  cross-subset text overlap=0
+[CAUTION] Repeated engagement membership may be one post matching multiple items/searches; it is not automatically an accidental duplicate. Repeated users would be legitimate but are unavailable.
+
+8 COMPARABILITY / COMMON CORE
+Detailed table: outputs/tables/coaid_fakehealth_feature_comparison.csv
+Candidate content-level core: dataset, source_release/subset, content_id, period_type, content_category, veracity_original, title, text, publish_date_raw, publish_datetime_utc, observed_post_count, unique_post_count, reply_count, unique_reply_count, engagement_present, first_observed_post_time, last_observed_post_time, observed_post_lifespan, publication_to_first_observed_post_delay, data_provenance.
+Temporal fields require valid Snowflakes and complete dates; label them observed and assess missingness. Exclude from primary comparison: FakeHealth retweets, follower graph, user/bot/profile metrics, unique users, likes, cascade depth, criteria details/reviewers.
+
+9 DEFENSIBILITY
+A Domain: broadly similar health information, but FakeHealth mixes general medical stories/releases while CoAID is COVID-specific and includes news/claims.
+B Period: strongly different for dated items (2009-2019 vs CoAID 2020); undated FakeHealth content is uncertain.
+C Labels: defensible for within-FakeHealth author-rule contrasts, not equivalent ground truth across datasets.
+D Engagement: observed tweet/reply counts align structurally, but query strategy, API/search era, platform ecology, observation window, and missingness differ.
+E Confounds: topic/content type; label/reviewer process; era/platform changes; search/window censoring; content/date missingness; sample/engagement scale; CoAID release duplication; story vs release sources.
+[INFERENCE] Suitable as a qualified non-COVID comparator for restricted content-level within-dataset contrasts in observed tweet/reply engagement—not for causal period claims or primary retweet/user/network/cascade comparisons.
+
+10 NEXT STEP
+After review, separately build provenance-preserving content-level tables using the core above; validate CoAID release deduplication and FakeHealth date/Snowflake quality; produce a measurement/missingness alignment table before EDA or merging.

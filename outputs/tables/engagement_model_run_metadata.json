@@ -1,0 +1,12 @@
+{
+  "seed": 42,
+  "python": "3.14.2",
+  "numpy": "2.5.1",
+  "pandas": "3.0.5",
+  "scipy": "1.18.0",
+  "statsmodels": "0.15.0",
+  "input_sha256": {
+    "coaid_news_primary.csv": "fc2fef1b06d7c8c8a8a0d732a8204e83119087bb1ea431cc578d111f25bad6b2",
+    "fakehealth_healthstory_primary.csv": "c975e55efaad9010814d696b6886d1c7de6315a63f05c9fedae443e1d7655e9e"
+  }
+}

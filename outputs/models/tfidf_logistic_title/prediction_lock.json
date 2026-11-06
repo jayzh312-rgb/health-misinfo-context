@@ -1,0 +1,15 @@
+{
+  "prediction_bundles": {
+    "outputs/models/tfidf_logistic_title/transfer_coaid_natural.joblib": "362666cbd4e0195c6a77cf8271b14ff0fccbc4a3820a5b3a2c169bacde20f260",
+    "outputs/models/tfidf_logistic_title/transfer_coaid_source_masked.joblib": "cf0ac5303e4eb05456039f1814c18fe5611b188ffc6ee11da5b01702c5365782",
+    "outputs/models/tfidf_logistic_title/transfer_fakehealth_natural.joblib": "05dcd2da71410949bc451fc61285b4731a3efd28fbe5b50a59e349f2f7d4e50a",
+    "outputs/models/tfidf_logistic_title/transfer_fakehealth_source_masked.joblib": "99ac6cd086d11a97c825043821214f5e77ae29c113b89a1e96e4695892906a55",
+    "outputs/models/tfidf_logistic_title/within_coaid_natural.joblib": "4d12a8ecb32a4d0b148b73cdfc0d3e4d348a209bdadc61638679e27b205fb17a",
+    "outputs/models/tfidf_logistic_title/within_coaid_source_masked.joblib": "e87491f25851cfde3d41834094487ea0593bd6d7f0429ef9c327067f81276f0d",
+    "outputs/models/tfidf_logistic_title/within_fakehealth_natural.joblib": "2ccd38dfb76f87c31483a83f69d4061472e4aa77b887dd9ac6ee425887254b98",
+    "outputs/models/tfidf_logistic_title/within_fakehealth_source_masked.joblib": "8892c2649324975a6d6c72d2d9f83a74d5bf1efea7a4141a8c1e7dc4a326d57c"
+  },
+  "selection_lock_sha256": "bd2a1f02c604a42bb6a1b5df8e9dd00372d3f706c0faf2f90289e23f61b5bdfc",
+  "target_evaluation_labels_joined": false,
+  "threshold": 0.5
+}

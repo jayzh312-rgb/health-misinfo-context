@@ -1,0 +1,13 @@
+source_dataset,overlap_type,subset,pair_evidence_N,target_items_N,fields
+FakeHealth,exact_text,PolitiFact,234,13,title_text
+FakeHealth,exact_text,GossipCop,22,1,title_text
+FakeHealth,exact_resource,PolitiFact,0,0,
+FakeHealth,exact_resource,GossipCop,0,0,
+FakeHealth,high_similarity,PolitiFact,0,0,
+FakeHealth,high_similarity,GossipCop,0,0,
+CoAID,exact_text,PolitiFact,0,0,
+CoAID,exact_text,GossipCop,0,0,
+CoAID,exact_resource,PolitiFact,0,0,
+CoAID,exact_resource,GossipCop,0,0,
+CoAID,high_similarity,PolitiFact,0,0,
+CoAID,high_similarity,GossipCop,0,0,

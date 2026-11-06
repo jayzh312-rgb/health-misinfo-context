@@ -1,0 +1,10 @@
+{
+  "all_predictions_frozen_before_target_label_join": true,
+  "predictions": {
+    "outputs/models/tfidf_logistic_transfer/frozen_CA_to_FH_natural.joblib": "3c42a6e90284121d70d7cad66142cf92c9a5454e9ac0704584faca96f71703ac",
+    "outputs/models/tfidf_logistic_transfer/frozen_CA_to_FH_source_masked.joblib": "82c5426201d0751919db9e9c154f5f9e5a2645d5ac1dcb55731e4bc25840b491",
+    "outputs/models/tfidf_logistic_transfer/frozen_FH_to_CA_natural.joblib": "217dff2888e67d469b367265f450ed9b23eec9e16e3c1ab2759f2a4437e602e6",
+    "outputs/models/tfidf_logistic_transfer/frozen_FH_to_CA_source_masked.joblib": "ba6ba5075d5e9c429d6e73a9f829c588fe5dd064d4ce1e156ec7137cb18ec837"
+  },
+  "protocol_sha256": "9870808590992e857a6dd89aeda3db27a9cf9b42dcbc23bfff117f40e9456e41"
+}

@@ -1,0 +1,25 @@
+outer_fold,scope,inner_fold,inner_folds,N,fake_N,real_N,publisher_families,constraint_components,uid_sha256,inner_choice_reason
+0,outer_train,-1,3,1098,306,792,34,34,e2fc8553fa425ee6f817bf3bccd2304d974eb2937762526b398ddaa276e32fd4,Three folds retain >=20 of each validation class with intact barriers.
+0,outer_test,-1,3,549,153,396,15,15,6921a94f21522fc462ecf98eb460c27774ed33009a016e528f6e7745c9f38dc7,Three folds retain >=20 of each validation class with intact barriers.
+0,inner_train,0,3,737,204,533,26,26,4453ac021d2dd87c7a49b98723a17b3417922d888891208e69cc7954d4133aa2,Three folds retain >=20 of each validation class with intact barriers.
+0,inner_validation,0,3,361,102,259,8,8,d506a42c4fab3d7df52fc7c4d8943afbe3d48cb35a1379e141ac5aa9f33a9e36,Three folds retain >=20 of each validation class with intact barriers.
+0,inner_train,1,3,724,205,519,28,28,6cad8603d86210ce84c60efaf1a285f40b57240b68a9d318032ef98625877e4a,Three folds retain >=20 of each validation class with intact barriers.
+0,inner_validation,1,3,374,101,273,6,6,61463c4a2369489878be5675673189a59613561eb2fba3e126c7443905692171,Three folds retain >=20 of each validation class with intact barriers.
+0,inner_train,2,3,735,203,532,14,14,3fb2e29515b556e80eab4dbc47d833510596c7e155efaed0ac66181964c765fd,Three folds retain >=20 of each validation class with intact barriers.
+0,inner_validation,2,3,363,103,260,20,20,71ae208f55a7d1d94ec92e73ea69af7a43a3e9240dd5b26ba9005e508ed1bcc7,Three folds retain >=20 of each validation class with intact barriers.
+1,outer_train,-1,3,1098,307,791,31,31,1528b2fa5bd5aad01fdb670e802471bc8a4182fbadba5f8b0ba695cc7ed049bc,Three folds retain >=20 of each validation class with intact barriers.
+1,outer_test,-1,3,549,152,397,18,18,9b2aa61c28192aabc7c2d0649bada1664aad8010ce6e7e4e8e401e24e119326e,Three folds retain >=20 of each validation class with intact barriers.
+1,inner_train,0,3,734,205,529,26,26,041ee12b579a8e5bb685101f03384e9eca4b4dff8bd4990133cc19b13e4c6887,Three folds retain >=20 of each validation class with intact barriers.
+1,inner_validation,0,3,364,102,262,5,5,454597d80aa4cbc8e0b982a820006948e022ea031ff8a96d3d235b446dd34bc8,Three folds retain >=20 of each validation class with intact barriers.
+1,inner_train,1,3,722,201,521,22,22,b24af0f3bbc2f3f67a221ca4899decae6b29cb4dfd663069f8792fb1ccddf27c,Three folds retain >=20 of each validation class with intact barriers.
+1,inner_validation,1,3,376,106,270,9,9,be3b76a86124300e8b5e1dcbfb17a219784c163dd1ec5f2fdb889b55ecaf13a7,Three folds retain >=20 of each validation class with intact barriers.
+1,inner_train,2,3,740,208,532,14,14,d062fa6e9df16728b02c8e1ce6b119946b475ca87f2adc3904493c3397c42b36,Three folds retain >=20 of each validation class with intact barriers.
+1,inner_validation,2,3,358,99,259,17,17,54b89a61d2430622f0319e80169380f89fcd13a637bbbf0f14ba241f40e76456,Three folds retain >=20 of each validation class with intact barriers.
+2,outer_train,-1,3,1098,305,793,33,33,1630102f8a1889ad1645fe82c0f5291dce525cbb7e51ff1438dd283255fabf03,Three folds retain >=20 of each validation class with intact barriers.
+2,outer_test,-1,3,549,154,395,16,16,a9a853d4d960e892c6d8bacd54fb8cc98bbd04f0e201d3abc741d8c592f2f012,Three folds retain >=20 of each validation class with intact barriers.
+2,inner_train,0,3,738,205,533,21,21,cecd647a954102c3f77f4047d082fedd7317c9cf6189575e9c04e0f11cdc0aff,Three folds retain >=20 of each validation class with intact barriers.
+2,inner_validation,0,3,360,100,260,12,12,8b1c448a0dc8c205b7efd8c93c0ae7fca5ad8d44d31be46d5b860bef3c7c0a96,Three folds retain >=20 of each validation class with intact barriers.
+2,inner_train,1,3,726,198,528,25,25,b572897088377717deef0ac7d6a3a308205aaff4cbb40703b08aef8483b6cd95,Three folds retain >=20 of each validation class with intact barriers.
+2,inner_validation,1,3,372,107,265,8,8,daf900a772589d4bc50872589dddb4e00178deee1ed316db53afb0146b6baddb,Three folds retain >=20 of each validation class with intact barriers.
+2,inner_train,2,3,732,207,525,20,20,dfb03e57b03dca2a81ea1a5ab15412da9ed03b21b6525a988c89e8d798c9ecdc,Three folds retain >=20 of each validation class with intact barriers.
+2,inner_validation,2,3,366,98,268,13,13,67346eb2831dfadd8f607ac0fdfb9bf27aaaea5104f72512cb97126b5d92a882,Three folds retain >=20 of each validation class with intact barriers.

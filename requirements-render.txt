@@ -1,0 +1,5 @@
+# Rendering toolchain for the review packages (HTML -> PDF); versions as recorded in review_package_v3/internal/rendering_record.json.
+# A Chrome/Chromium executable is also required; set REVIEW_CHROME if it is not at the macOS default path.
+markdown==3.11
+latex2mathml==3.81.1
+pymupdf==1.28.2

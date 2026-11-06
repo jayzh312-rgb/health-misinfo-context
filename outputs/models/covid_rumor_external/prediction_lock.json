@@ -1,0 +1,6 @@
+{
+  "all_four_models_frozen": true,
+  "predictions_sha256": "9d044327d9977c1af17009d218995caf9eece6ea9e8659aa308fcf8b78f80d3f",
+  "target_labels_joined": false,
+  "target_sha256": "0b610faf0cf63eb0b8c3a6d8d2b51d106373fffddd150b0fd34da7dae48b0e70"
+}

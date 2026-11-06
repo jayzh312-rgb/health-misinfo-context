@@ -1,0 +1,17 @@
+scope,specification,veracity,entity_count,post_memberships,reply_memberships,entity_count_change,entity_count_pct_change,post_memberships_change,post_memberships_pct_change,reply_memberships_change,reply_memberships_pct_change
+all_news,previous_primary,fake,903,10443,7417,0,0.0,0,0.0,0,0.0
+all_news,previous_primary,real,4170,140205,113119,0,0.0,0,0.0,0,0.0
+all_news,A_primary_strict,fake,922,10443,7417,19,2.104097452934662,0,0.0,0,0.0
+all_news,A_primary_strict,real,4415,141780,113187,245,5.875299760191846,1575,1.123355087193752,68,0.06011368558774388
+all_news,B_resource_sensitivity,fake,921,10443,7417,18,1.9933554817275747,0,0.0,0,0.0
+all_news,B_resource_sensitivity,real,4284,141701,113187,114,2.7338129496402876,1496,1.0670090225027637,68,0.06011368558774388
+all_news,C_high_certainty,fake,920,10443,7417,17,1.8826135105204873,0,0.0,0,0.0
+all_news,C_high_certainty,real,4162,114300,78748,-8,-0.19184652278177458,-25905,-18.47651652936771,-34371,-30.384815990240366
+nine_corrected_parents_only,previous_primary,fake,2,18,3,0,0.0,0,0.0,0,0.0
+nine_corrected_parents_only,previous_primary,real,7,18967,21579,0,0.0,0,0.0,0,0.0
+nine_corrected_parents_only,A_primary_strict,fake,20,18,3,18,900.0,0,0.0,0,0.0
+nine_corrected_parents_only,A_primary_strict,real,137,20417,21625,130,1857.142857142857,1450,7.644856856645753,46,0.21317021177997128
+nine_corrected_parents_only,B_resource_sensitivity,fake,20,18,3,18,900.0,0,0.0,0,0.0
+nine_corrected_parents_only,B_resource_sensitivity,real,107,20417,21625,100,1428.5714285714287,1450,7.644856856645753,46,0.21317021177997128
+nine_corrected_parents_only,C_high_certainty,fake,20,18,3,18,900.0,0,0.0,0,0.0
+nine_corrected_parents_only,C_high_certainty,real,81,9776,8774,74,1057.142857142857,-9191,-48.45784784098698,-12805,-59.34009917048983

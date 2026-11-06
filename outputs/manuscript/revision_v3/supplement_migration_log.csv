@@ -1,0 +1,36 @@
+fact_id,v2_methods_line,v3_supplement_section,v3_supplement_line,status,anchor_phrase
+2.3f,88,S1,17,migrated,Source-title changes or dates alone
+2.2d,76,S2,27,migrated,"engagement populations were 5,337"
+2.2f,78,S2,27,migrated,"1,690 HealthStory items (472 Fake, 1,218 Real)"
+2.4d,96,S2,29,migrated,retweets excluded from the primary outcome were also excluded from the overlap graph
+2.4e,96,S2,29,migrated,dependence unit for resampling
+2.4i,98,S2,29,migrated,posts-only occurrence part used by the hurdle
+2.5k,118,S2,29,migrated,"C = R_CoAID / R_FakeHealth, equivalently theta"
+2.6a,126,S3,41,migrated,Text cohorts were derived from HealthStory items and CoAID Specification A entities
+2.6c,126,S3,41,migrated,joined the usable title and body with a blank line
+2.6e,126,S3,41,migrated,substantive headline with a poor body
+2.6m,130,S3,41,migrated,Exact generic-template matches
+2.6n,130,S3,41,migrated,Publisher identity or broad topic alone
+2.6p,132,S3,41,migrated,seed-42 StratifiedGroupKFold over leakage groups
+2.8h,148,S3,41,migrated,existing overlap flags and group safeguards were retained
+2.7d,136,S4,76,migrated,random_state 42
+2.7p,142,S4,76,migrated,most-frequent and seed-42 stratified dummy
+2.8d,146,S4,76,migrated,Reverse-direction transfer results did not modify
+2.8f,148,S4,76,migrated,"only evaluation rows, not training populations"
+2.9e,156,S4,76,migrated,does not isolate text length alone
+2.10a,166,S6,96,migrated,"fb53ab8802853c8e4fbdbcd0529f21fc6f459b2b`, instantiated"
+2.10b,166,S6,96,migrated,identifies RoBERTa as the teacher
+2.10e,168,S6,96,migrated,FP32 on Apple Silicon MPS
+2.10f,168,S6,96,migrated,Microbatch size was 2
+2.10i,168,S6,96,migrated,AdamW used weight decay 0.01
+2.10l,170,S6,96,migrated,Candidate learning rates were 2e-5 and 5e-5
+2.10o,170,S6,96,migrated,"No early stopping, mixed precision"
+2.10p,172,S6,96,migrated,pinned pretrained checkpoint and trained on all eligible source rows
+2.10t,174,S6,96,migrated,identical at both caps
+2.11a,178,S6,98,migrated,headerless NEWS item table
+2.11c,178,S6,98,migrated,"IDs, sentiment, stance, dates"
+2.11e,180,S6,98,migrated,at least two alphabetic analyzer tokens
+2.11f,180,S6,98,migrated,do not establish complete language identification
+2.12a,188,S7,110,migrated,| `.venv` (classical and engagement) | Python | 3.14.2 |
+2.12b,188,S7,116,migrated,| `.venv-transformer` | Python | 3.12.7 |
+2.12c,188,S7,120,migrated,| Seed policy | Primary seed | 42

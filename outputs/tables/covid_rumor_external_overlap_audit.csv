@@ -1,0 +1,7 @@
+source_dataset,overlap_type,pair_evidence_N,all_NEWS_target_N,eligible_binary_target_N,clean_primary_target_N
+FakeHealth,exact_text,0,0,0,0
+FakeHealth,exact_resource,0,0,0,0
+FakeHealth,high_similarity,0,0,0,0
+CoAID,exact_text,4,2,2,0
+CoAID,exact_resource,126,41,31,0
+CoAID,high_similarity,29,25,24,22

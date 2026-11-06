@@ -1,0 +1,18 @@
+{
+ "seed": 42,
+ "ordinals": {
+  "politifact": 2,
+  "gossipcop": 3
+ },
+ "inputs": {
+  "fakenewsnet_engagement_results.csv": "a6ffd970be011b3c4002c1ecbb0895d6bd008d656b107ba9b1ff1e941ec7f3df",
+  "fakenewsnet_engagement_model_comparison.csv": "55e4dd922f93d42ffc2b80dfe246e4384d5a50d55e97e6aadbf9ddd817ef8227",
+  "version_aware_bootstrap_refits.csv": "0216be3838d5dd1dcec6c5030cb74fae730aafde9591fe2ac7fc4337256cf1d2",
+  "politifact_fake.csv": "abe7fe7aad801b1e2ab5fc963cbd0881d9670190262ae3df85e91c3380bd004c",
+  "politifact_real.csv": "2500f86a7addca0f59fe8cf089c0f802d3eca6980f53538992b3b0e9687dbae0",
+  "gossipcop_fake.csv": "c6932bffadb1230bc61c66bb2ca298f4ef28ce849d268313ad2eed41d18d4c99",
+  "gossipcop_real.csv": "d721e9a8b7e660da05c089691743c33fecb25367074e936b5fab3d85cdcbe79f"
+ },
+ "finished": "2026-10-12 21:53:55",
+ "complete": true
+}

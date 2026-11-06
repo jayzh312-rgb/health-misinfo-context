@@ -1,0 +1,285 @@
+{
+  "inputs": {
+    "data/processed/coaid_text_modeling_ready.csv": "859b3db8888962de771f4ff48779f139027c9472bbe19367755f0657ad33812d",
+    "data/processed/fakehealth_text_modeling_ready.csv": "a38730db184727e3a84d2f603789e817c667fe75c6606d834f09ba106ef5cb91",
+    "outputs/reports/tfidf_logistic_baseline.json": "88f15dd51f27532207b289400269a5dba52b0fa700bd8181454371b7003008ef",
+    "outputs/reports/tfidf_logistic_cross_context_transfer.json": "14feec786109ad921271c04f83a0aeb9c57d320706f43f2cad0ebff9892eb5d2",
+    "outputs/splits/coaid_text_grouped_cv.csv": "e916ad95f11debbe5d1f1daa338c8cb4064f81030a552525bad90abfbe60f651",
+    "outputs/splits/coaid_text_holdout.csv": "0e55802b29b72407a60985e24292e4984c22bae5b06cb33486da93eaf9cddb3c",
+    "outputs/splits/fakehealth_text_grouped_cv.csv": "7b489b81a817bfecf34c89ea00060041f728a7edad182c2d0e44f3b821ee19c1",
+    "outputs/splits/fakehealth_text_holdout.csv": "2f14737ab373ebf029490579438d12f95f7df4a7245715ea1bccc10995251035",
+    "outputs/tables/tfidf_logistic_holdout_results.csv": "7cae7fd4e84123bca203e2a81e0eb82e7237c5e14492d668c357e0f5c0833c13",
+    "outputs/tables/tfidf_logistic_transfer_degradation.csv": "e88793b00da36787c63d98f78742ed34c9b2d4b5fef4dda0772ac401d2a0842c",
+    "outputs/tables/tfidf_logistic_transfer_results.csv": "8e2096bdb5d2aee017d436be0aaad542e076cf182ab2453a322f859af200f1e9",
+    "src/run_tfidf_logistic_baseline.py": "a8644723c7bef66f152199eb27953a30b27815ae77f2e1cc3aaac1c98774b993"
+  },
+  "protocol": {
+    "calibration": false,
+    "eligibility": "primary_modeling_eligible",
+    "grid": [
+      {
+        "C": 0.01,
+        "class_weight": "none",
+        "config_id": "cfg_00",
+        "min_df": 2,
+        "ngram_max": 1
+      },
+      {
+        "C": 0.01,
+        "class_weight": "balanced",
+        "config_id": "cfg_01",
+        "min_df": 2,
+        "ngram_max": 1
+      },
+      {
+        "C": 0.1,
+        "class_weight": "none",
+        "config_id": "cfg_02",
+        "min_df": 2,
+        "ngram_max": 1
+      },
+      {
+        "C": 0.1,
+        "class_weight": "balanced",
+        "config_id": "cfg_03",
+        "min_df": 2,
+        "ngram_max": 1
+      },
+      {
+        "C": 1.0,
+        "class_weight": "none",
+        "config_id": "cfg_04",
+        "min_df": 2,
+        "ngram_max": 1
+      },
+      {
+        "C": 1.0,
+        "class_weight": "balanced",
+        "config_id": "cfg_05",
+        "min_df": 2,
+        "ngram_max": 1
+      },
+      {
+        "C": 10.0,
+        "class_weight": "none",
+        "config_id": "cfg_06",
+        "min_df": 2,
+        "ngram_max": 1
+      },
+      {
+        "C": 10.0,
+        "class_weight": "balanced",
+        "config_id": "cfg_07",
+        "min_df": 2,
+        "ngram_max": 1
+      },
+      {
+        "C": 0.01,
+        "class_weight": "none",
+        "config_id": "cfg_08",
+        "min_df": 5,
+        "ngram_max": 1
+      },
+      {
+        "C": 0.01,
+        "class_weight": "balanced",
+        "config_id": "cfg_09",
+        "min_df": 5,
+        "ngram_max": 1
+      },
+      {
+        "C": 0.1,
+        "class_weight": "none",
+        "config_id": "cfg_10",
+        "min_df": 5,
+        "ngram_max": 1
+      },
+      {
+        "C": 0.1,
+        "class_weight": "balanced",
+        "config_id": "cfg_11",
+        "min_df": 5,
+        "ngram_max": 1
+      },
+      {
+        "C": 1.0,
+        "class_weight": "none",
+        "config_id": "cfg_12",
+        "min_df": 5,
+        "ngram_max": 1
+      },
+      {
+        "C": 1.0,
+        "class_weight": "balanced",
+        "config_id": "cfg_13",
+        "min_df": 5,
+        "ngram_max": 1
+      },
+      {
+        "C": 10.0,
+        "class_weight": "none",
+        "config_id": "cfg_14",
+        "min_df": 5,
+        "ngram_max": 1
+      },
+      {
+        "C": 10.0,
+        "class_weight": "balanced",
+        "config_id": "cfg_15",
+        "min_df": 5,
+        "ngram_max": 1
+      },
+      {
+        "C": 0.01,
+        "class_weight": "none",
+        "config_id": "cfg_16",
+        "min_df": 2,
+        "ngram_max": 2
+      },
+      {
+        "C": 0.01,
+        "class_weight": "balanced",
+        "config_id": "cfg_17",
+        "min_df": 2,
+        "ngram_max": 2
+      },
+      {
+        "C": 0.1,
+        "class_weight": "none",
+        "config_id": "cfg_18",
+        "min_df": 2,
+        "ngram_max": 2
+      },
+      {
+        "C": 0.1,
+        "class_weight": "balanced",
+        "config_id": "cfg_19",
+        "min_df": 2,
+        "ngram_max": 2
+      },
+      {
+        "C": 1.0,
+        "class_weight": "none",
+        "config_id": "cfg_20",
+        "min_df": 2,
+        "ngram_max": 2
+      },
+      {
+        "C": 1.0,
+        "class_weight": "balanced",
+        "config_id": "cfg_21",
+        "min_df": 2,
+        "ngram_max": 2
+      },
+      {
+        "C": 10.0,
+        "class_weight": "none",
+        "config_id": "cfg_22",
+        "min_df": 2,
+        "ngram_max": 2
+      },
+      {
+        "C": 10.0,
+        "class_weight": "balanced",
+        "config_id": "cfg_23",
+        "min_df": 2,
+        "ngram_max": 2
+      },
+      {
+        "C": 0.01,
+        "class_weight": "none",
+        "config_id": "cfg_24",
+        "min_df": 5,
+        "ngram_max": 2
+      },
+      {
+        "C": 0.01,
+        "class_weight": "balanced",
+        "config_id": "cfg_25",
+        "min_df": 5,
+        "ngram_max": 2
+      },
+      {
+        "C": 0.1,
+        "class_weight": "none",
+        "config_id": "cfg_26",
+        "min_df": 5,
+        "ngram_max": 2
+      },
+      {
+        "C": 0.1,
+        "class_weight": "balanced",
+        "config_id": "cfg_27",
+        "min_df": 5,
+        "ngram_max": 2
+      },
+      {
+        "C": 1.0,
+        "class_weight": "none",
+        "config_id": "cfg_28",
+        "min_df": 5,
+        "ngram_max": 2
+      },
+      {
+        "C": 1.0,
+        "class_weight": "balanced",
+        "config_id": "cfg_29",
+        "min_df": 5,
+        "ngram_max": 2
+      },
+      {
+        "C": 10.0,
+        "class_weight": "none",
+        "config_id": "cfg_30",
+        "min_df": 5,
+        "ngram_max": 2
+      },
+      {
+        "C": 10.0,
+        "class_weight": "balanced",
+        "config_id": "cfg_31",
+        "min_df": 5,
+        "ngram_max": 2
+      }
+    ],
+    "predictor": "combined_text",
+    "seed": 42,
+    "svm": {
+      "dual": "auto",
+      "fit_intercept": true,
+      "intercept_scaling": 1,
+      "loss": "squared_hinge",
+      "max_iter": 20000,
+      "penalty": "l2",
+      "random_state": 42,
+      "tol": 0.0001
+    },
+    "target_labels": "joined for scoring after all four prediction bundles frozen",
+    "tfidf": {
+      "lowercase": true,
+      "max_df": 1.0,
+      "norm": "l2",
+      "smooth_idf": true,
+      "sublinear_tf": true
+    },
+    "threshold": 0.0,
+    "tie_order": [
+      "macro F1 within .001 of best",
+      "SD within .001 of lowest",
+      "unigram",
+      "smaller C",
+      "class_weight none",
+      "config_id"
+    ],
+    "tie_tolerance": 0.001,
+    "transfer_source": "all eligible source rows including former source holdout"
+  },
+  "script_sha256": "e342f755b629a11740a538d22a924db8e825e517bc7066bf218ebc9c5a051d07",
+  "versions": {
+    "numpy": "2.5.1",
+    "pandas": "3.0.5",
+    "python": "3.14.2",
+    "scipy": "1.18.0",
+    "sklearn": "1.9.0"
+  }
+}

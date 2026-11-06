@@ -1,0 +1,14 @@
+{
+  "seed": 42,
+  "bootstrap_resamples": 0,
+  "CI_method": "HC0 entity/item-score sandwich delta method; log-scale means/ratio, identity-scale difference; empirical covariates held fixed; no bootstrap",
+  "primary_input_sha256": {
+    "fakehealth_healthstory_primary.csv": "c975e55efaad9010814d696b6886d1c7de6315a63f05c9fedae443e1d7655e9e",
+    "coaid_news_primary.csv": "fc2fef1b06d7c8c8a8a0d732a8204e83119087bb1ea431cc578d111f25bad6b2"
+  },
+  "script_sha256": "f043f8f49bcd081d06bd5254e02f0db864122d940b747dd803b031617911ed17",
+  "fitting_module_sha256": "9216e888e3124b83dadf8a8730663ec9731f19e5a9fc55eea2d2fa85452b0410",
+  "count_fits": 25,
+  "presence_fits": 21,
+  "cross_context_contrast_computed": false
+}

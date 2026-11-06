@@ -1,0 +1,49 @@
+{
+  "automated_tests": {
+    "command": ".venv/bin/python -m unittest discover -s src -p 'test_publisher_heldout_feasibility.py' -q",
+    "status": "passed",
+    "test_count": 8,
+    "test_script_sha256": "e3442b88726781a1560964221571f987875bec5db0427db8cf62f943ecca3249"
+  },
+  "final_split_assignments_written": false,
+  "inputs": {
+    "data/processed/coaid_text_modeling_ready.csv": "859b3db8888962de771f4ff48779f139027c9472bbe19367755f0657ad33812d",
+    "data/processed/fakehealth_text_modeling_ready.csv": "a38730db184727e3a84d2f603789e817c667fe75c6606d834f09ba106ef5cb91",
+    "outputs/tables/text_modeling_ready_summary.csv": "81980818b7d1fa954d3b92ecebc00d2d31e8954bd478bb85b0394025379ba7ef",
+    "outputs/tables/text_source_confounding_audit.csv": "69c65a57b9aa4826f7b316d508b4bea2a296149e1521cc38c34fbaa629ba5299",
+    "src/audit_text_quality_and_source_cues.py": "042dfc75b7ae77abe291ba2e0721e8757a2aa9d96486ce9f28ae0aa84c1dd9a0"
+  },
+  "model_fit_count": 0,
+  "outputs": {
+    "outputs/reports/publisher_heldout_feasibility.md": "524292a28e097fd160d3da8c316cabf2a0ff69624c7b656bf59a05fe8657ec84",
+    "outputs/tables/cross_dataset_publisher_overlap.csv": "2e2ef510bcf802db95325f833f0096740a25b5aa890d1149c8994d5e162033ca",
+    "outputs/tables/publisher_family_map.csv": "1501c74686a0b59b8de70d1478d001c53228693fe2be753d27085494bd0b57d4",
+    "outputs/tables/publisher_family_summary.csv": "d49e970620ddb3c21deff85316383b69f41300f5821758f6cc0ef4fb1d78ba91",
+    "outputs/tables/publisher_heldout_feasibility.csv": "1aa8d5af88f420442e91a38a220c5bc451ef54f2161f8ee10c140fc8505f5b90",
+    "outputs/tables/publisher_label_support.csv": "34ca12f66ba71495e1b11a5e4f71e086a08d7c5bccdf089bbbfcb3f84a5ab2c9",
+    "outputs/tables/publisher_mixed_source_cohort_sizes.csv": "9d7672d5ad3431f1bf7ee925639a23bb620d02d364fe1cefe61c122aa894207e",
+    "outputs/tables/publisher_resource_group_conflicts.csv": "06bdc3cabdc1c73f03e9b80b504bccf8f026b42345a6f06e480d34871925a71f"
+  },
+  "protocol": {
+    "candidate_folds": [
+      5,
+      4,
+      3
+    ],
+    "holdout_permutations": 2048,
+    "minimum_class_diagnostic": 20,
+    "platform_domains_are_not_publishers": true,
+    "seed": 42,
+    "source_identity_uses_labels": false,
+    "source_proxy_exclusive_fraction": 0.8,
+    "source_proxy_largest_class_share": 0.5
+  },
+  "script_sha256": "4eef8e4e8d1bdec6a477a6ce3dd95cb5f6cd7cdb8bc8d1e3fc4f737c0c106d55",
+  "unchanged_splits": {
+    "outputs/splits/coaid_text_grouped_cv.csv": "e916ad95f11debbe5d1f1daa338c8cb4064f81030a552525bad90abfbe60f651",
+    "outputs/splits/coaid_text_holdout.csv": "0e55802b29b72407a60985e24292e4984c22bae5b06cb33486da93eaf9cddb3c",
+    "outputs/splits/fakehealth_text_grouped_cv.csv": "7b489b81a817bfecf34c89ea00060041f728a7edad182c2d0e44f3b821ee19c1",
+    "outputs/splits/fakehealth_text_holdout.csv": "2f14737ab373ebf029490579438d12f95f7df4a7245715ea1bccc10995251035"
+  },
+  "validation": "passed"
+}

@@ -1,0 +1,61 @@
+{
+  "locked_before_holdout_and_transfer": true,
+  "selected": [
+    {
+      "dataset": "FakeHealth",
+      "epochs": 3,
+      "learning_rate": 2e-05,
+      "locked": true,
+      "macro_f1_mean": 0.6458144694471775,
+      "macro_f1_sd": 0.03948987502218568,
+      "max_length": 512,
+      "selection": "training-pool grouped CV only"
+    },
+    {
+      "dataset": "CoAID",
+      "epochs": 3,
+      "learning_rate": 2e-05,
+      "locked": true,
+      "macro_f1_mean": 0.95603882401638,
+      "macro_f1_sd": 0.00806416246639648,
+      "max_length": 512,
+      "selection": "training-pool grouped CV only"
+    }
+  ],
+  "signature": {
+    "classical_metrics_sha256": "7e10befff64c6f0ee9d4fadb21b807bf76cc48ab202f13cdf71175a01047be1c",
+    "inputs": {
+      "data/processed/coaid_text_modeling_ready.csv": "859b3db8888962de771f4ff48779f139027c9472bbe19367755f0657ad33812d",
+      "data/processed/fakehealth_text_modeling_ready.csv": "a38730db184727e3a84d2f603789e817c667fe75c6606d834f09ba106ef5cb91",
+      "outputs/splits/coaid_text_grouped_cv.csv": "e916ad95f11debbe5d1f1daa338c8cb4064f81030a552525bad90abfbe60f651",
+      "outputs/splits/coaid_text_holdout.csv": "0e55802b29b72407a60985e24292e4984c22bae5b06cb33486da93eaf9cddb3c",
+      "outputs/splits/fakehealth_text_grouped_cv.csv": "7b489b81a817bfecf34c89ea00060041f728a7edad182c2d0e44f3b821ee19c1",
+      "outputs/splits/fakehealth_text_holdout.csv": "2f14737ab373ebf029490579438d12f95f7df4a7245715ea1bccc10995251035"
+    },
+    "packer_sha256": "1a905b0ae66912489da77285748412d145c12d6330fb67fc492cd85250f47836",
+    "requirements_sha256": "647956e19d15873bf41137fb188e2257fb5cc34df0b98814b2b0872309bfcd31",
+    "settings": {
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "checkpoint": "distilbert/distilroberta-base",
+      "class_weight": "N_train/(2*N_train,c)",
+      "decay_policy": "all parameters except bias and LayerNorm weights",
+      "effective_batch_size": 16,
+      "epsilon": 1e-08,
+      "gradient_clip_norm": 1.0,
+      "optimizer": "torch.optim.AdamW",
+      "packing": "validated full-title pair; body prefix; dynamic padding",
+      "precision": "float32",
+      "revision": "fb53ab8802853c8e4fbdbcd0529f21fc6f459b2b",
+      "scheduler": "constant",
+      "seed": 42,
+      "threshold": 0.5,
+      "warmup_steps": 0,
+      "weight_decay": 0.01
+    },
+    "torch_version": "2.14.0",
+    "training_code_sha256": "58267e6771348a9327b67c3c8b27c7898926082cb51b41f82df39b0bf8968bbd"
+  }
+}
