@@ -36,4 +36,6 @@ preferred-citation:
       orcid: "https://orcid.org/0000-0002-8542-1247"
   year: 2026
   status: preprint
-  notes: "SocArXiv preprint. DOI to be added after posting."
+  journal: "SocArXiv"
+  doi: "10.31235/osf.io/c83dk_v1"
+  url: "https://doi.org/10.31235/osf.io/c83dk_v1"

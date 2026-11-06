@@ -10,7 +10,7 @@ Summary: 33 staged files differ from their source (27 CSV, 6 text/JSON); 7,524 m
 
 | Staged path | Source | Source SHA-256 | Staged SHA-256 | Columns dropped | Columns masked (cells) | Masked cells |
 |---|---|---|---|---|---|---|
-| `CHANGELOG_release.md` | `CHANGELOG_release.md` | `fb7d06519a566db22bc2b1f07048d9ef1e69d64741dbd41e64afd7b3650acc45` | `bd8c828d46fbc56b7c925b472f19ca941150f79a64903b03d1a8cec90d5c9064` | — | `[personal file]` (10), ``[personal file]`` (10) | 20 |
+| `CHANGELOG_release.md` | `CHANGELOG_release.md` | `0407b909da911ce73d4cbac1603bf2b4e07da9c0feb5b21899088fba143ff901` | `c3726abf43f5cc3030e809d1b5930f887b26c973bcab7ff72aeaa5beffbe6a05` | — | `[personal file]` (10), ``[personal file]`` (10) | 20 |
 | `data/processed/coaid_content_level.csv` | `data/processed/coaid_content_level.csv` | `3a6543efb07ab8a36f16714cb8ef38534eafca289c4ff01905151d498cde0dff` | `f1b051ab4c24cd53e41b23a523b37a03cffa0661724c9cdbac857f8725eb6c26` | `title`, `text`, `source_title` | `news_url` (274), `fact_check_url` (1) | 275 |
 | `data/processed/coaid_news_high_certainty_sensitivity.csv` | `data/processed/coaid_news_high_certainty_sensitivity.csv` | `abb72e719bec67ae4c432381f105f29c115ba12174b8b8127561e69a1ff7d288` | `f8ac04c3593c0b821f6727fb67a1f75e7abca95cd74efb43e1201658be6b1db4` | `title`, `text`, `source_title`, `member_capture_metadata_json` | `news_url` (273), `fact_check_url` (1), `canonical_resource_key` (272) | 546 |
 | `data/processed/coaid_news_primary.csv` | `data/processed/coaid_news_primary.csv` | `fc2fef1b06d7c8c8a8a0d732a8204e83119087bb1ea431cc578d111f25bad6b2` | `0cea49f7761b42ba6b3b484a20b97b6970cba63f8eba90b34668051dd4119ba2` | `title`, `text`, `source_title` | `news_url` (249), `fact_check_url` (1) | 250 |

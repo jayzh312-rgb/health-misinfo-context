@@ -29,6 +29,8 @@ Edits made for the public release. Nothing under `outputs/tables/`, `outputs/ext
 | `CITATION.cff` | `date-released`, `doi` | `95dda98b85972604a0c30184d1bd385bcbc4c8ce705abecfafd8081c65f545d9` | `f1329b4cd6d18bd3cb339c9f6fc8a5b1e70722a1d2fa554d69d0e83caeb197f3` | Zenodo concept DOI and release date (2026-11-06) |
 | `scripts/build_release_staging.py` | deposit README "How to cite" | `0ba4fba9f3303926079fc48150dec94ea1f3a1da543a6dc1ab17b625b684e4d6` | `2554c7028ae3c298a44d6bf39f080ec4291f03abe289bde42784177aea964738` | Zenodo concept DOI added |
 | `outputs/manuscript/review_package_v3/manuscript.md` | 2.12 availability pointer; end statements before References | `f86916d4c49b60dc0a3b8f9d0fb62771d3cc5b2208c4ad1d3060f9aa079f54c0` | `6db9e47e3e3205238fbd84303f578685a17f72ef7b2061d8693178d6e259df5d` | package source aligned with the posted PDF; archived-at DOI clause added |
+| `CITATION.cff` | preferred-citation: journal, doi, url | `f1329b4cd6d18bd3cb339c9f6fc8a5b1e70722a1d2fa554d69d0e83caeb197f3` | `2a396475764f60e4d0b6eee561aa7a2039db16788fd22a5a1482d7ba22e9f7c7` | SocArXiv preprint DOI 10.31235/osf.io/c83dk_v1 |
+| `scripts/build_release_staging.py` | deposit README "How to cite" | `2554c7028ae3c298a44d6bf39f080ec4291f03abe289bde42784177aea964738` | `08b16a9d5eb817d718107d47bfef8bde7be613c9c037504a5784760beec49013` | SocArXiv preprint reference and DOI |
 
 New files: `LICENSE` (MIT, placeholders for year and author), `CITATION.cff` (placeholders), `requirements-render.txt`, `outputs/manuscript/revision_v3/check1_inputs/` (two inputs copied from the session scratch directory), `scripts/build_release_staging.py`.
 
@@ -41,3 +43,5 @@ Release pass 2026-10-19 (v1.0.0): rebuilt after manuscript rounds 6 and 6b; LICE
 Release pass 2026-11-06 (v1.0.0 final): research folder aligned with the release branch; rebuilt for the single-commit public repository.
 
 Post-release follow-up 2026-11-06: Zenodo concept DOI and release date added; package manuscript source aligned with the posted PDF (availability pointer and end statements). No release created.
+
+Post-release follow-up 2026-11-06: SocArXiv preprint DOI added to CITATION.cff and README. No release created.
