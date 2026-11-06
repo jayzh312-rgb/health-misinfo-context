@@ -87,8 +87,8 @@ for p in sorted((ROOT/'outputs/extension_v1/round5').iterdir()):   # round 5: wi
     if p.is_file() and p.name != '.DS_Store': (csv_copy if p.suffix == '.csv' else copy_file)(p)
 for p in sorted((ROOT/'outputs/extension_v1/figures').glob('*')):
     if p.is_file() and p.name != '.DS_Store': copy_file(p)
-for f in ['AGENTS.md', 'REPRODUCING.md', 'LICENSE', 'CITATION.cff', 'requirements.txt', 'requirements-transformer.txt', 'requirements-render.txt', 'CHANGELOG_release.md', 'README.md']:
-    tt = (ROOT/f).read_text(errors='replace'); (redact_copy if (HOME in tt or (f not in ('LICENSE', 'CITATION.cff') and any(a in tt for a, _ in NAME_PATTERNS))) else copy_file)(ROOT/f, 'README_project.md' if f == 'README.md' else None)   # LICENSE and CITATION.cff carry the authors' names by design
+for f in ['AGENTS.md', 'REPRODUCING.md', 'LICENSE', 'CITATION.cff', '.zenodo.json', 'requirements.txt', 'requirements-transformer.txt', 'requirements-render.txt', 'CHANGELOG_release.md', 'README.md']:
+    tt = (ROOT/f).read_text(errors='replace'); (redact_copy if (HOME in tt or (f not in ('LICENSE', 'CITATION.cff', '.zenodo.json') and any(a in tt for a, _ in NAME_PATTERNS))) else copy_file)(ROOT/f, 'README_project.md' if f == 'README.md' else None)   # LICENSE and CITATION.cff carry the authors' names by design
 copy_file(ROOT/'scripts/build_release_staging.py')
 # 2. splits, locks, classical bundles
 for p in sorted((ROOT/'outputs/splits').glob('*.csv')): csv_copy(p)
@@ -164,7 +164,7 @@ The repository holds the analysis, audit and figure scripts, the pre-specified e
 
 ## Repository layout
 - `src/`: analysis, audit and figure scripts with their unit tests (`src/test_*.py`). `outputs/extension_v1/scripts/`, `protocols/` and `reports/`: the extension analyses with their pre-specified protocols.
-- `README.md`, `REPRODUCING.md`, `LICENSE` (MIT), `LICENSE-DERIVED-TABLES.md` (CC BY 4.0), `CITATION.cff`, `CHANGELOG_release.md`, `requirements.txt` (Python 3.14.2), `requirements-transformer.txt` (Python 3.12.7), `requirements-render.txt`; `README_project.md` and `AGENTS.md` are the working project notes.
+- `README.md`, `REPRODUCING.md`, `LICENSE` (MIT), `LICENSE-DERIVED-TABLES.md` (CC BY 4.0), `CITATION.cff`, `.zenodo.json`, `CHANGELOG_release.md`, `requirements.txt` (Python 3.14.2), `requirements-transformer.txt` (Python 3.12.7), `requirements-render.txt`; `README_project.md` and `AGENTS.md` are the working project notes.
 - `outputs/splits/`: grouped-CV, holdout, outer-partition and transfer assignment manifests.
 - `outputs/models/*/`: every selection, prediction and target lock, the transformer `locked_configurations.json`, and all classical joblib model bundles (TF-IDF LR/SVM, title-only, transfer, publisher-held-out).
 - `outputs/extension_v1/round5/`: the within-length-quintile ROC-AUC re-scoring diagnostic (Supplementary Table S19.4): script, table, SHA-256 and README.

@@ -8,7 +8,7 @@ The repository holds the analysis, audit and figure scripts, the pre-specified e
 
 ## Repository layout
 - `src/`: analysis, audit and figure scripts with their unit tests (`src/test_*.py`). `outputs/extension_v1/scripts/`, `protocols/` and `reports/`: the extension analyses with their pre-specified protocols.
-- `README.md`, `REPRODUCING.md`, `LICENSE` (MIT), `LICENSE-DERIVED-TABLES.md` (CC BY 4.0), `CITATION.cff`, `CHANGELOG_release.md`, `requirements.txt` (Python 3.14.2), `requirements-transformer.txt` (Python 3.12.7), `requirements-render.txt`; `README_project.md` and `AGENTS.md` are the working project notes.
+- `README.md`, `REPRODUCING.md`, `LICENSE` (MIT), `LICENSE-DERIVED-TABLES.md` (CC BY 4.0), `CITATION.cff`, `.zenodo.json`, `CHANGELOG_release.md`, `requirements.txt` (Python 3.14.2), `requirements-transformer.txt` (Python 3.12.7), `requirements-render.txt`; `README_project.md` and `AGENTS.md` are the working project notes.
 - `outputs/splits/`: grouped-CV, holdout, outer-partition and transfer assignment manifests.
 - `outputs/models/*/`: every selection, prediction and target lock, the transformer `locked_configurations.json`, and all classical joblib model bundles (TF-IDF LR/SVM, title-only, transfer, publisher-held-out).
 - `outputs/extension_v1/round5/`: the within-length-quintile ROC-AUC re-scoring diagnostic (Supplementary Table S19.4): script, table, SHA-256 and README.

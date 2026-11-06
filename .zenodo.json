@@ -1,0 +1,28 @@
+{
+  "title": "health-misinfo-context: code and derived tables for a comparison of CoAID and FakeHealth",
+  "upload_type": "software",
+  "version": "1.0.0",
+  "description": "<p>Code, saved splits, model locks, classical model bundles, aggregate tables, bootstrap draws and item-level predictions behind the preprint 'Fake–Real gaps in observed spread and detectability differ between health misinformation datasets built in different ways: a comparison of CoAID and FakeHealth'. Source datasets (CoAID, FakeHealth, the COVID-19 Rumor Dataset and FakeNewsNet) are not redistributed. See README.md and REPRODUCING.md.</p>",
+  "creators": [
+    {
+      "name": "Zhao, Ji",
+      "affiliation": "New England Innovation Academy",
+      "orcid": "0009-0001-5218-0192"
+    },
+    {
+      "name": "Valdiviezo, Jesús",
+      "affiliation": "Department of Computer Science, Princeton University",
+      "orcid": "0000-0002-8542-1247"
+    }
+  ],
+  "access_right": "open",
+  "license": "mit",
+  "keywords": [
+    "health misinformation",
+    "social media engagement",
+    "cross-dataset generalization",
+    "dataset construction"
+  ],
+  "language": "eng",
+  "notes": "Code is released under the MIT license. Derived tables, bootstrap draws, predictions and figures are released under CC BY 4.0 (see LICENSE-DERIVED-TABLES.md)."
+}

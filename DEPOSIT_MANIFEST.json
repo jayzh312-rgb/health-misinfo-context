@@ -456,6 +456,11 @@
    "source_sha256": "95dda98b85972604a0c30184d1bd385bcbc4c8ce705abecfafd8081c65f545d9"
   },
   {
+   "path": ".zenodo.json",
+   "bytes": 1323,
+   "source_sha256": "eba90d8d7f3db6ab0b16a439d994755a762d5aa0fef5247daa4a16dd188814d4"
+  },
+  {
    "path": "requirements.txt",
    "bytes": 167,
    "source_sha256": "064bbf29a0bbd9696bfe1162b90c780ca8d4b726c2291c5fb67e170c0e8812c8"
@@ -477,8 +482,8 @@
   },
   {
    "path": "scripts/build_release_staging.py",
-   "bytes": 31642,
-   "source_sha256": "0f8443a00b6801a9501c9de170c1a16c7eb56ccbaea8ad114a87b5b712b2306f"
+   "bytes": 31690,
+   "source_sha256": "0ba4fba9f3303926079fc48150dec94ea1f3a1da543a6dc1ab17b625b684e4d6"
   },
   {
    "path": "outputs/splits/coaid_text_grouped_cv.csv",
@@ -4112,8 +4117,8 @@
    "path": "CHANGELOG_release.md",
    "occurrences_replaced": 11,
    "placeholder": "[REDACTED_HOME]",
-   "source_sha256": "6026faa6977535b378daa04517ca02b650a844afb0aafa103c54171ffa14eefe",
-   "staged_sha256": "4321cfbed6995ed3ad25a29d2a999b1abfd3845f17ab05a6a815f753c1f72ece"
+   "source_sha256": "952f1353b617a69e0ef2409957a6299aac2660a0c92d72ecb2cfa7528ae31d4a",
+   "staged_sha256": "2c7420b35237eee708eec9853d6b4d8dcde855086b8e91e38f03da47e9f516a0"
   },
   {
    "path": "outputs/tables/coaid_inspection_report.txt",
